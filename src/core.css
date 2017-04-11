@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+nav, section, footer {
+  display: flex;
+  flex-flow: row nowrap;
+  background: #0e0e0e;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+nav {
+  justify-content: flex-end;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+section#hero {
+}
+
+section#hero img.hero-image {
+  display: block;
+  width: 100%;
+}
+
+section.copy {
+  background: rgb(6, 102, 102);
+  padding: 1rem 0;
+}
+
+section.copy p {
+  width: 50rem;
+}
+
+section.cta {
+  padding: 1rem 0;
+}
+
+section.cta .btn-large {
+  margin-left: 1rem;
+}
