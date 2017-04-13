@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node bin/dev-server.js",
     "build": "webpack --config config/webpack.config.js",
-    "deploy": "surge -p ./dist -d onerous-lock.surge.sh",
-    "publish": "yarn build && yarn deploy"
+    "deploy": "surge -p ./dist"
   },
   "author": "Matt Hink <matt.hink@formidable.com>",
   "license": "MIT",
