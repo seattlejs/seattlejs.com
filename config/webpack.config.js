@@ -62,6 +62,8 @@ module.exports = {
           { loader: 'style-loader' },
           { loader: 'css-loader',
             options: {
+              modules: true,
+              localIdentName: "[local]__[path][name]__[hash:base64:5]",
               importLoader: 1
             }
           },
@@ -73,7 +75,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.png$/,
+        test: /\.(png|jpg)$/,
         loader: 'file-loader'
       },
 			{

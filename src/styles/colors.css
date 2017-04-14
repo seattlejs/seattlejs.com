@@ -1,0 +1,15 @@
+:root {
+  --sjsGreen: #5d9731;
+  --sjsTeal: #26965e;
+  --sjsNavy: #00298c;
+  --sjsBrightYellow: #7dac01;
+  --sjsBrightGreen: #4ca428;
+  --sjsBrightTeal: #12994a;
+
+  --bgTeal: rgb(54, 97, 115);
+  --bgTealLight: rgb(75, 118, 134);
+  --bgOutline: rgb(137, 167, 177);
+
+  --realBrightGreen: rgb(185,219,111);
+  --realBtnGreen: rgb(140,170,29);
+}

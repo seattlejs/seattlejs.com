@@ -1,48 +1,61 @@
-body {
+@import "styles/colors.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  border: 0;
+  outline: 0;
+  box-sizing: inherit;
 }
 
-nav, section, footer {
-  display: flex;
-  flex-flow: row nowrap;
-  background: #0e0e0e;
-  align-items: center;
-  justify-content: center;
+body {
+  background: var(--bgTeal);
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+h3 {
+  margin: 1rem 0;
+  font-size: 24px;
+}
+
+h4 {
+  text-transform: uppercase;
+  margin: 2rem 0 1rem;
+  font-size: 14px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+
+:global a.btn {
   color: white;
+  font-size: 0.8rem;
+  background: var(--realBtnGreen);
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem;
+  text-transform: none;
 }
 
-nav {
-  justify-content: flex-end;
-}
-
-nav ul {
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-section#hero {
-}
-
-section#hero img.hero-image {
-  display: block;
-  width: 100%;
-}
-
-section.copy {
-  background: rgb(6, 102, 102);
-  padding: 1rem 0;
-}
-
-section.copy p {
-  width: 50rem;
-}
-
-section.cta {
-  padding: 1rem 0;
-}
-
-section.cta .btn-large {
-  margin-left: 1rem;
+main {
 }

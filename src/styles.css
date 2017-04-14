@@ -1,0 +1,131 @@
+@import "styles/colors.css";
+
+.palette {
+  position: fixed;
+  width: 10rem;
+  height: 10rem;
+  right: 0;
+  bottom: 0;
+  background: black;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.palette > div { width: 1rem; height: 1rem; margin: 1rem;}
+.p1 { background-color: var(--sjsGreen); }
+.p2 { background-color: var(--sjsTeal); }
+.p3 { background-color: var(--sjsNavy); }
+.p4 { background-color: var(--sjsBrightYellow); }
+.p5 { background-color: var(--sjsBrightGreen); }
+.p6 { background-color: var(--sjsBrightTeal); }
+.p7 { background-color: var(--bgTeal); }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 1rem 0;
+}
+
+nav a {
+  font-size: 0.8rem;
+  color: var(--realBrightGreen);
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 1rem 3rem;
+}
+
+.navList {
+  flex: 1 1 auto;
+}
+
+.navCtaButton  {
+  flex: 0 0 auto;
+  margin: 0.5rem 3rem;
+}
+.navContactUs {
+  flex: 0 0 auto;
+}
+
+:global #hero {
+  margin-bottom: 2rem;
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+}
+
+.cta {
+  border: 1px solid var(--bgOutline);
+  background: var(--bgTealLight);
+  width: 960px;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cta > .ctaText {
+  color: var(--realBrightGreen);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cta > i {
+  color: var(--realBrightGreen);
+  text-align: center;
+}
+
+.copy {
+  width: 960px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.copy > * {
+  margin: 2rem 0;
+}
+.copy > div:not(:first-child) {
+  margin-left: 2rem;
+}
+.copy > div:not(:last-child) {
+  margin-right: 2rem;
+}
+.copy > .copyText {
+  flex: 1 1 50%;
+  border-top: 1px solid white;
+}
+
+.copy > .copyImg {
+  flex: 1 1 50%;
+}
+
+.copy > .copyImg > img {
+  display: block;
+  width: 100%;
+}
+
+footer.container > .innerFooter {
+  width: 960px;
+  border-top: 1px solid white;
+  padding: 2rem 0;
+  display: flex;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 2rem 0;
+}
+
+.navList a:not(:first-child) {
+  margin-left: 2rem;
+}
+.navList a:not(:last-child) {
+  margin-right: 2rem;
+}
+footer a::before {
+  content: "+";
+}
