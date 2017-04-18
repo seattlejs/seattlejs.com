@@ -57,7 +57,7 @@ export const App = () => (
         <a href="#cta-proposals">Call for Proposals</a>
       </div>
       <div className={styles.navCtaButton}>
-        <a href="#" className="btn">Register</a>
+        <a href="https://www.papercall.io/sjs" className="btn">Register</a>
       </div>
     </nav>
 
@@ -73,9 +73,8 @@ export const App = () => (
 
     <Copy id="about">
       <div className={styles.copyText}>
-        <h3>About the Seattle.js Conf</h3>
-        <p>Voluptatum impedit ut. Dolore asperiores in quia veritatis. Nihil odit reiciendis similique et quia. Omnis ut voluptatem consectetur veritatis. Dolorum ab ut doloremque rerum saepe ratione reiciendis amet sit. Consequatur ipsum itaque et. Nam doloribus vel sed consequuntur assumenda ut voluptate. A voluptatum non aperiam dicta cupiditate impedit.</p>
-        <p>Voluptatum impedit ut. Dolore asperiores in quia veritatis. Nihil odit reiciendis similique et quia. Omnis ut voluptatem consectetur veritatis. Dolorum ab ut doloremque rerum saepe ratione reiciendis amet sit. Consequatur ipsum itaque et. Nam doloribus vel sed consequuntur assumenda ut voluptate. A voluptatum non aperiam dicta cupiditate impedit.</p>
+        <h3>About SeattleJS Conference</h3>
+        <p>SeattleJS Conference is a two day, single track conference covering the depth and breadth of JavaScript. Put on by one of the largest JavaScript user groups in the country (and the world!), SeattleJS Conference is a convergence of the top talent in JavaScript from the Pacific Northwest and beyond. An urban conference, SeattleJS Conference is located in the heart of the Fremont neighborhood.</p>
       </div>
       <div className={styles.copyImg}>
         <img src={pikePlaceUrl} />
@@ -83,7 +82,7 @@ export const App = () => (
     </Copy>
 
     <CTA id="cta-sponsor">
-      <h2 className={styles.ctaText}>{"Want to become a sponsor? (You're the best.)"}</h2>
+      <h2 className={styles.ctaText}>{"Interested in Sponsoring?)"}</h2>
       <i className="material-icons">arrow_forward</i>
       <a className="btn" href="#">Contact Us</a>
     </CTA>
@@ -94,17 +93,17 @@ export const App = () => (
       </div>
       <div className={styles.copyText}>
         <h3>The Details</h3>
-        <h4>When: August 10-11. 2017</h4>
-        <p>Voluptatum impedit ut. Dolore asperiores in quia veritatis. Nihil odit reiciendis similique et quia. Omnis ut voluptatem consectetur veritatis. Dolorum ab ut doloremque rerum saepe ratione reiciendis amet sit. Consequatur ipsum itaque et. Nam doloribus vel sed consequuntur assumenda ut voluptate. A voluptatum non aperiam dicta cupiditate impedit.</p>
+        <h4>When: August 10 - 11. 2017, with training days August 8-9)</h4>
+        <p></p>
         <h4>Where: Fremont Foundry</h4>
-        <p>Voluptatum impedit ut. Dolore asperiores in quia veritatis. Nihil odit reiciendis similique et quia. Omnis ut voluptatem consectetur veritatis. Dolorum ab ut doloremque rerum saepe ratione reiciendis amet sit. Consequatur ipsum itaque et. Nam doloribus vel sed consequuntur assumenda ut voluptate. A voluptatum non aperiam dicta cupiditate impedit.</p>
+        <p>SeattleJS's inaugural annual conference will be located at the beautiful and unique Fremont Foundry, located at 154 North 35th Street, Seattle, WA 98103.</p>
       </div>
     </Copy>
 
     <CTA id="cta-register">
-      <h2 className={styles.ctaText}>{"Can't wait? Early Bird Registration starts here"}</h2>
+      <h2 className={styles.ctaText}>{"Limited Early Bird Tickets Available"}</h2>
       <i className="material-icons">arrow_forward</i>
-      <a className="btn" href="#">Buy Tickets</a>
+      <a className="btn" href="https://seattlejs2017.eventbrite.com">Buy Now</a>
     </CTA>
 
     <Footer>
