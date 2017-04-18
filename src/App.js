@@ -35,21 +35,8 @@ const CTA   = ({ children, ...restProps }) => (
   </section>
 );
 
-const Palette = () => (
-  <div className={styles.palette}>
-    <div className={styles.p1} />
-    <div className={styles.p2} />
-    <div className={styles.p3} />
-    <div className={styles.p4} />
-    <div className={styles.p5} />
-    <div className={styles.p6} />
-    <div className={styles.p7} />
-  </div>
-);
-
 export const App = () => (
   <main>
-    <Palette />
     <nav className={styles.container}>
       <div className={styles.navList}>
         <a href="#about">About</a>
