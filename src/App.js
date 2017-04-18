@@ -41,7 +41,7 @@ export const App = () => (
       <div className={styles.navList}>
         <a href="#about">About</a>
         <a href="#location">Location</a>
-        <a href="#cta-proposals">Call for Proposals</a>
+        <a href="https://www.papercall.io/sjs">Call for Proposals</a>
       </div>
       <div className={styles.navCtaButton}>
         <a href="https://seattlejs2017.eventbrite.com" className="btn">Register</a>
