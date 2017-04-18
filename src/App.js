@@ -69,7 +69,7 @@ export const App = () => (
     </Copy>
 
     <CTA id="cta-sponsor">
-      <h2 className={styles.ctaText}>{"Interested in Sponsoring?)"}</h2>
+      <h2 className={styles.ctaText}>{"Interested in Sponsoring?"}</h2>
       <i className="material-icons">arrow_forward</i>
       <a className="btn" href="#">Contact Us</a>
     </CTA>
