@@ -1,25 +1,5 @@
 @import "styles/colors.css";
 
-.palette {
-  position: fixed;
-  width: 10rem;
-  height: 10rem;
-  right: 0;
-  bottom: 0;
-  background: black;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.palette > div { width: 1rem; height: 1rem; margin: 1rem;}
-.p1 { background-color: var(--sjsGreen); }
-.p2 { background-color: var(--sjsTeal); }
-.p3 { background-color: var(--sjsNavy); }
-.p4 { background-color: var(--sjsBrightYellow); }
-.p5 { background-color: var(--sjsBrightGreen); }
-.p6 { background-color: var(--sjsBrightTeal); }
-.p7 { background-color: var(--bgTeal); }
-
 .container {
   display: flex;
   align-items: center;
