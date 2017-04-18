@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node bin/dev-server.js",
-    "clobber": "rimraf dist",
     "build": "webpack --config config/webpack.config.js",
-    "commit": "git commit -am 'Autocommit from build.'",
+    "commit": "git add dist/ && git commit -am 'Autocommit from build.'",
     "deploy:gh-pages": "git subtree push --prefix dist origin gh-pages",
-    "deploy": "npm run clobber && npm run build && npm run commit && npm run deploy:gh-pages"
+    "deploy": "npm run build && npm run commit && npm run deploy:gh-pages"
   },
   "author": "Matt Hink <matt.hink@formidable.com>",
   "license": "MIT",
