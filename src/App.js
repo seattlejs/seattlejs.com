@@ -44,7 +44,7 @@ export const App = () => (
         <a href="#cta-proposals">Call for Proposals</a>
       </div>
       <div className={styles.navCtaButton}>
-        <a href="https://www.papercall.io/sjs" className="btn">Register</a>
+        <a href="https://seattlejs2017.eventbrite.com" className="btn">Register</a>
       </div>
     </nav>
 
@@ -55,7 +55,7 @@ export const App = () => (
     <CTA id="cta-proposals">
       <h2 className={styles.ctaText}>{"The call for proposals is now open!"}</h2>
       <i className="material-icons">arrow_forward</i>
-      <a className="btn" href="#">Submit a Talk</a>
+      <a className="btn" href="https://www.papercall.io/sjs">Submit a Talk</a>
     </CTA>
 
     <Copy id="about">
@@ -71,7 +71,7 @@ export const App = () => (
     <CTA id="cta-sponsor">
       <h2 className={styles.ctaText}>{"Interested in Sponsoring?"}</h2>
       <i className="material-icons">arrow_forward</i>
-      <a className="btn" href="#">Contact Us</a>
+      <a className="btn" href="mailto:conference@seattlejs.com">Contact Us</a>
     </CTA>
 
     <Copy id="location">
@@ -95,8 +95,8 @@ export const App = () => (
 
     <Footer>
       <div className={styles.navList}>
-        <a href="#">Code of Conduct</a>
-        <a href="#">Twitter</a>
+        <a href="https://github.com/seattlejs/seattlejs/blob/master/code-of-conduct.md">Code of Conduct</a>
+        <a href="https://twitter.com/seattlejs">Twitter</a>
       </div>
       <div className={styles.navContactUs}>
         <a href="mailto:conference@seattlejs.com">conference@seattlejs.com</a>
