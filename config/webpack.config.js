@@ -7,7 +7,7 @@ const paths = {
   base,
   src     : path.resolve(base, 'src'),
   dist    : path.resolve(base, 'dist'),
-  static  : path.resolve(base, 'static'),
+  static  : path.resolve(base, 'src', 'static'),
   config  : path.resolve(base, 'config'),
 };
 
@@ -85,7 +85,18 @@ module.exports = {
 			{
 					test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
 					loader: "file-loader"
-			}
+			},
+      {
+        test: /CNAME/,
+        exclude: /node_modules/,
+        use: [
+          { loader: 'file-loader',
+            options: {
+              name: '[name]'
+            }
+          }
+        ]
+      }
     ]
   },
   plugins: [
