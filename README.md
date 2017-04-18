@@ -8,9 +8,14 @@
 
 The development server will start up at `localhost:8080`
 
-## Build
-- `yarn build`
+## Build & Deploy
 
-Build artifacts will be written to the `dist/` directory.
+When you're happy with your changes...
 
-## Deploy
+- Commit changes to master
+- Run `yarn deploy` (or `npm run deploy` if that's your thing)
+
+This does the following:
+- Runs Webpack
+- Adds & commits the new build artifacts
+- Pushes the `dist/` directory to the `gh-pages` branch of the repository
