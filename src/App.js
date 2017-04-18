@@ -99,7 +99,7 @@ export const App = () => (
         <a href="#">Twitter</a>
       </div>
       <div className={styles.navContactUs}>
-        <a href="#">us@seattlejs.org</a>
+        <a href="mailto:conference@seattlejs.com">conference@seattlejs.com</a>
       </div>
     </Footer>
   </main>
