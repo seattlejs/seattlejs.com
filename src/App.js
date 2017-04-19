@@ -4,14 +4,15 @@ import heroImgUrl from 'images/seattlejs-hero.png';
 import pikePlaceUrl from 'images/pike-place.jpg';
 import locationImgUrl from 'images/fremont-foundry.jpg';
 import styles from './styles.css';
+import formidableLogoSvg from 'images/formidable-logo.svg';
 
 const Container = ({ tagName="section", children, className, wrapperClassName, ...restProps }) => (
-  React.createElement(tagName, { ...restProps, className: cs(styles.container, wrapperClassName) }, [
+  React.createElement(tagName, { ...restProps, className: cs(styles.container, wrapperClassName) }, 
     React.createElement('div', { className }, children)
-  ])
+  )
 );
 
-const Tagline = (props) => <Container wrapperClassName={styles.tagline} />
+const Tagline = (props) => <Container wrapperClassName={styles.tagline} {...props}/>
 const Copy    = (props) => <Container className={styles.copy} {...props } />
 const CTA     = (props) => <Container className={styles.cta} {...props } />
 const Footer  = (props) => <Container tagName="footer" className={styles.innerFooter} {...props } />
@@ -28,6 +29,7 @@ export const App = () => (
         <a href="https://seattlejs2017.eventbrite.com" className="btn">Register</a>
       </div>
     </nav>
+    <div className={styles.navPlaceholder} />
 
     <section id="hero" className={styles.hero}>
       <img src={heroImgUrl}></img>
@@ -36,6 +38,16 @@ export const App = () => (
     <Tagline>
       <p>Minima voluptatibus nobis eum numquam similique veritatis doloribus. Assumenda quos molestiae sint odit sunt quidem et recusandae. Nam eaque aut.</p>
     </Tagline>
+
+    <Container
+      wrapperClassName={styles.formidableBanner_outer}
+      className={styles.formidableBanner}>
+      <div className={styles.sponsoredBy}>Sponsored by</div>
+      <div
+        className={styles.svgContainer}
+        dangerouslySetInnerHTML={{ __html: formidableLogoSvg }}
+      />
+    </Container>
 
     <CTA id="cta-proposals">
       <h2 className={styles.ctaText}>{"The call for proposals is now open!"}</h2>
