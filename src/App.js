@@ -91,6 +91,17 @@ export const App = () => (
       <a className="btn" href="https://seattlejs2017.eventbrite.com">Buy Now</a>
     </CTA>
 
+    <Copy id="training">
+      <div className={styles.copyText}>
+        <h3>Pre-Conference Training</h3>
+        <p>Expand your SeattleJS conference experience with two days of training in <a href="https://facebook.github.io/react/">advanced React</a> and <a href="https://facebook.github.io/react-native/">React Native</a>. Taught by foremost experts in the field, the two days of training will level up your expertise in modern React and prepare you to build production-ready web and mobile applications.</p>
+        <p>These exclusive trainings, hosted by <a href="http://formidable.com">Formidable</a>, are limited to a small group of conference attendees on Tuesday and Wednesday, August 8th and 9th. <a href="https://seattlejs2017.eventbrite.com">Register</a> early to ensure your participation.</p>
+      </div>
+      <div className={styles.copyImg}>
+        <img src={pikePlaceUrl} />
+      </div>
+    </Copy>
+
     <Footer>
       <div className={styles.navList}>
         <a href="https://github.com/seattlejs/seattlejs/blob/master/code-of-conduct.md">Code of Conduct</a>
