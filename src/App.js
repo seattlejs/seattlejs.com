@@ -7,7 +7,7 @@ import styles from './styles.css';
 import formidableLogoSvg from 'images/formidable-logo.svg';
 
 const Container = ({ tagName="section", children, className, wrapperClassName, ...restProps }) => (
-  React.createElement(tagName, { ...restProps, className: cs(styles.container, wrapperClassName) }, 
+  React.createElement(tagName, { ...restProps, className: cs(styles.container, wrapperClassName) },
     React.createElement('div', { className }, children)
   )
 );
@@ -83,13 +83,13 @@ export const App = () => (
     </section>
 
     <Tagline>
-      <p>Minima voluptatibus nobis eum numquam similique veritatis doloribus. Assumenda quos molestiae sint odit sunt quidem et recusandae. Nam eaque aut.</p>
+      <h1>The Pacific Northwest's Conference for All Things JavaScript</h1>
     </Tagline>
 
     <Container
       wrapperClassName={styles.formidableBanner_outer}
       className={styles.formidableBanner}>
-      <div className={styles.sponsoredBy}>Sponsored by</div>
+      <div className={styles.sponsoredBy}>Presenting Sponsor</div>
       <div
         className={styles.svgContainer}
         dangerouslySetInnerHTML={{ __html: formidableLogoSvg }}
@@ -104,8 +104,9 @@ export const App = () => (
 
     <Copy id="about">
       <div className={styles.copyText}>
-        <h3>About SeattleJS Conference</h3>
-        <p>SeattleJS Conference is a two day, single track conference covering the depth and breadth of JavaScript. Put on by one of the largest JavaScript user groups in the country (and the world!), SeattleJS Conference is a convergence of the top talent in JavaScript from the Pacific Northwest and beyond. An urban conference, SeattleJS Conference is located in the heart of the Fremont neighborhood.</p>
+        <h3>Introducing SeattleJS Conference</h3>
+        <p>SeattleJS Conference is a two day conference covering the depth and breadth of JavaScript. Put on by one of the largest JavaScript user groups in the country, SeattleJS Conference is a convergence of the top talent in JavaScript from the Pacific Northwest and beyond. SeattleJS Conference is located in the heart of the Fremont neighborhood at the distinctive Fremont Foundry.</p>
+        <p>SeattleJS exisits to inform, inspire, and encourage members of the JavaScript community. Our goal is for you to leave inspired and ready to innovate.</p>
       </div>
       <div className={styles.copyImg}>
         <img src={pikePlaceUrl} />
@@ -136,6 +137,17 @@ export const App = () => (
       <i className="material-icons">arrow_forward</i>
       <a className="btn" href="https://seattlejs2017.eventbrite.com">Buy Now</a>
     </CTA>
+
+    <Copy id="training">
+      <div className={styles.copyText}>
+        <h3>Pre-Conference Training</h3>
+        <p>Expand your SeattleJS conference experience with two days of training in <a href="https://facebook.github.io/react/">advanced React</a> and <a href="https://facebook.github.io/react-native/">React Native</a>. Taught by foremost experts in the field, the two days of training will level up your expertise in modern React and prepare you to build production-ready web and mobile applications.</p>
+        <p>These exclusive trainings, hosted by <a href="http://formidable.com">Formidable</a>, are limited to a small group of conference attendees on Tuesday and Wednesday, August 8th and 9th. <a href="https://seattlejs2017.eventbrite.com">Register</a> early to ensure your participation.</p>
+      </div>
+      <div className={styles.copyImg}>
+        <img src={pikePlaceUrl} />
+      </div>
+    </Copy>
 
     <Footer>
       <div className={styles.navList}>
