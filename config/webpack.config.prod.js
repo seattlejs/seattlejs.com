@@ -112,7 +112,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new ExtractTextPlugin({
       filename: '[name].[hash].css'
@@ -122,6 +121,7 @@ module.exports = {
         'NODE_ENV': JSON.stringify('production'),
       }
     }),
+    new webpack.optimize.UglifyJsPlugin(),
     new HtmlWebpackPlugin({
       template: 'index.html',
       favicon: path.resolve(paths.static, 'favicon.ico'),
