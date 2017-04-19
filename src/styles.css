@@ -237,6 +237,15 @@ nav {
   display: flex;
 }
 
+.copy a {
+  color: var(--realBrightGreen);
+  text-decoration: none;
+}
+
+.copy a:hover {
+  text-decoration: underline;
+}
+
 /* Desktop */
 @media (min-width: 800px) {
   .copy {
