@@ -8,7 +8,7 @@
     "build": "webpack --config config/webpack.config.js",
     "commit": "",
     "deploy:gh-pages": "git subtree push --prefix dist origin gh-pages",
-    "deploy": "npm run build && git add dist/ && git commit --allow-empty -am 'Autocommit from build.' && npm run deploy:gh-pages"
+    "deploy": "npm run build && git add dist/ && git commit --allow-empty -am 'Autocommit from build.' && git push origin master && npm run deploy:gh-pages"
   },
   "author": "Matt Hink <matt.hink@formidable.com>",
   "license": "MIT",
