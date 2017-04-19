@@ -7,7 +7,7 @@ import styles from './styles.css';
 import formidableLogoSvg from 'images/formidable-logo.svg';
 
 const Container = ({ tagName="section", children, className, wrapperClassName, ...restProps }) => (
-  React.createElement(tagName, { ...restProps, className: cs(styles.container, wrapperClassName) }, 
+  React.createElement(tagName, { ...restProps, className: cs(styles.container, wrapperClassName) },
     React.createElement('div', { className }, children)
   )
 );
@@ -36,7 +36,7 @@ export const App = () => (
     </section>
 
     <Tagline>
-      <p>Minima voluptatibus nobis eum numquam similique veritatis doloribus. Assumenda quos molestiae sint odit sunt quidem et recusandae. Nam eaque aut.</p>
+      <h1>The Pacific Northwest's Conference for All Things JavaScript</h1>
     </Tagline>
 
     <Container

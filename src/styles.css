@@ -56,10 +56,11 @@ nav a {
   color: white;
 }
 
-.tagline p {
-  width: 50%;
+.tagline h1 {
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 20px;
+  color: rgb(185, 219, 111);
 }
 
 .cta {
