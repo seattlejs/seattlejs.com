@@ -79,7 +79,9 @@ export const App = () => (
     <DesktopNav />
 
     <section id="hero" className={styles.hero}>
-      <img src={heroImgUrl}></img>
+      <div>
+        <img src={heroImgUrl}></img>
+      </div>
     </section>
 
     <Tagline>
