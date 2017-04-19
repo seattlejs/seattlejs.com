@@ -57,8 +57,9 @@ export const App = () => (
 
     <Copy id="about">
       <div className={styles.copyText}>
-        <h3>About SeattleJS Conference</h3>
-        <p>SeattleJS Conference is a two day, single track conference covering the depth and breadth of JavaScript. Put on by one of the largest JavaScript user groups in the country (and the world!), SeattleJS Conference is a convergence of the top talent in JavaScript from the Pacific Northwest and beyond. An urban conference, SeattleJS Conference is located in the heart of the Fremont neighborhood.</p>
+        <h3>Introducing SeattleJS Conference</h3>
+        <p>SeattleJS Conference is a two day conference covering the depth and breadth of JavaScript. Put on by one of the largest JavaScript user groups in the country, SeattleJS Conference is a convergence of the top talent in JavaScript from the Pacific Northwest and beyond. SeattleJS Conference is located in the heart of the Fremont neighborhood at the distinctive Fremont Foundry.</p>
+        <p>SeattleJS exisits to inform, inspire, and encourage members of the JavaScript community. Our goal is for you to leave inspired and ready to innovate.</p>
       </div>
       <div className={styles.copyImg}>
         <img src={pikePlaceUrl} />
