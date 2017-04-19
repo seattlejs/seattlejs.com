@@ -5,35 +5,16 @@ import pikePlaceUrl from 'images/pike-place.jpg';
 import locationImgUrl from 'images/fremont-foundry.jpg';
 import styles from './styles.css';
 
-const Nav = (props) => <nav {...props} className={styles.container} />;
-const NavLink = (props) => <NavItem><a {...props} /></NavItem>;
-const NavItem = (props) => <li {...props}/>;
-const NavList = (props) => <ul {...props}/>;
-const Hero  = (props) => <section {...props} className={cs(styles.container, styles.hero)} />
-
-const Footer = ({ children, ...restProps }) => (
-  <footer {...restProps} className={styles.container}>
-    <div className={styles.innerFooter}>
-      { children }
-    </div>
-  </footer>
+const Container = ({ tagName="section", children, className, wrapperClassName, ...restProps }) => (
+  React.createElement(tagName, { ...restProps, className: cs(styles.container, wrapperClassName) }, [
+    React.createElement('div', { className }, children)
+  ])
 );
 
-const Copy  = ({ children, ...restProps}) => (
-  <section {...restProps} className={styles.container}>
-    <div className={styles.copy}>
-      { children }
-    </div>
-  </section>
-);
-
-const CTA   = ({ children, ...restProps }) => (
-  <section {...restProps} className={styles.container}>
-    <div className={styles.cta}>
-      { children }
-    </div>
-  </section>
-);
+const Tagline = (props) => <Container wrapperClassName={styles.tagline} />
+const Copy    = (props) => <Container className={styles.copy} {...props } />
+const CTA     = (props) => <Container className={styles.cta} {...props } />
+const Footer  = (props) => <Container tagName="footer" className={styles.innerFooter} {...props } />
 
 export const App = () => (
   <main>
@@ -48,9 +29,13 @@ export const App = () => (
       </div>
     </nav>
 
-    <section id="hero">
-      <img className={styles.heroImage} src={heroImgUrl}></img>
+    <section id="hero" className={styles.hero}>
+      <img src={heroImgUrl}></img>
     </section>
+
+    <Tagline>
+      <p>Minima voluptatibus nobis eum numquam similique veritatis doloribus. Assumenda quos molestiae sint odit sunt quidem et recusandae. Nam eaque aut.</p>
+    </Tagline>
 
     <CTA id="cta-proposals">
       <h2 className={styles.ctaText}>{"The call for proposals is now open!"}</h2>

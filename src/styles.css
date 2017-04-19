@@ -28,13 +28,24 @@ nav a {
   flex: 0 0 auto;
 }
 
-:global #hero {
-  margin-bottom: 2rem;
+.hero {
+  /* margin-bottom: 2rem; */
 }
 
-.heroImage {
+.hero img {
   display: block;
   width: 100%;
+}
+
+.tagline {
+  background: rgb(15,13,15);
+  color: white;
+}
+
+.tagline p {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .cta {
