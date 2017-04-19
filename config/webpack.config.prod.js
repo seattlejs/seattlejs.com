@@ -59,7 +59,6 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            { loader: 'style-loader' },
             { loader: 'css-loader',
               options: {
                 modules: true,
@@ -115,7 +114,9 @@ module.exports = {
   plugins: [
     new webpack.optimize.UglifyJsPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new ExtractTextPlugin('styles.css'),
+    new ExtractTextPlugin({
+      filename: '[name].[hash].css'
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
