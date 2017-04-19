@@ -90,8 +90,9 @@ export const App = () => (
       wrapperClassName={styles.formidableBanner_outer}
       className={styles.formidableBanner}>
       <div className={styles.sponsoredBy}>Presenting Sponsor</div>
-      <div
+      <a
         className={styles.svgContainer}
+        href="https://formidable.com"
         dangerouslySetInnerHTML={{ __html: formidableLogoSvg }}
       />
     </Container>

@@ -202,6 +202,16 @@ nav {
   display: flex;
 }
 
+.formidableBanner a {
+  height: 5rem;
+  color: white;
+  transition: color 0.4s ease-out, fill 0.5s ease-out;
+}
+
+.formidableBanner a:hover {
+  color: #dc7a6b;
+}
+
 .formidableBanner svg {
   fill: currentColor;
 }
@@ -218,10 +228,6 @@ nav {
     position: relative;
     bottom: 1.5rem;
     margin-right: 1rem;
-  }
-
-  .formidableBanner > .svgContainer {
-    height: 5rem;
   }
 }
 
