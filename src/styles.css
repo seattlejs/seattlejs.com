@@ -258,10 +258,6 @@ nav {
     flex-flow: row nowrap;
   }
 
-  .copy > div {
-    margin: 2rem 0;
-  }
-
   .copy > div:not(:first-child) {
     margin-left: 2rem;
   }
