@@ -17,19 +17,66 @@ const Copy    = (props) => <Container className={styles.copy} {...props } />
 const CTA     = (props) => <Container className={styles.cta} {...props } />
 const Footer  = (props) => <Container tagName="footer" className={styles.innerFooter} {...props } />
 
+class DesktopNav extends React.Component {
+  render() {
+    return (
+      <div className={styles.desktopNavContainer}>
+        <nav className={styles.desktopNav}>
+          <div className={styles.navList}>
+            <a href="#about">About</a>
+            <a href="#location">Location</a>
+            <a href="https://www.papercall.io/sjs">Call for Proposals</a>
+          </div>
+          <div className={styles.navCtaButton}>
+            <a href="https://seattlejs2017.eventbrite.com" className="btn">Register</a>
+          </div>
+        </nav>
+      </div>
+    );
+  }
+}
+
+class MobileNav extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false
+    };
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle() {
+    this.setState({ open: !this.state.open });
+  }
+
+  render() {
+    const { open } = this.state;
+    return (
+      <div className={styles.mobileNavContainer}>
+        <nav className={styles.mobileNav}>
+          <button className={styles.hamburgerButton} onClick={this.toggle}>
+            <i className="material-icons">{ open ? "close" : "menu" }</i>
+          </button>
+          <div className={styles.navCtaButton}>
+            <a href="https://seattlejs2017.eventbrite.com" className="btn">Register</a>
+          </div>
+          { open &&
+            <div className={styles.navList}>
+              <a href="#about" onClick={this.toggle}>About</a>
+              <a href="#location" onClick={this.toggle}>Location</a>
+              <a href="https://www.papercall.io/sjs" onClick={this.toggle}>Call for Proposals</a>
+            </div>
+          }
+        </nav>
+      </div>
+    );
+  }
+}
+
 export const App = () => (
   <main>
-    <nav className={styles.container}>
-      <div className={styles.navList}>
-        <a href="#about">About</a>
-        <a href="#location">Location</a>
-        <a href="https://www.papercall.io/sjs">Call for Proposals</a>
-      </div>
-      <div className={styles.navCtaButton}>
-        <a href="https://seattlejs2017.eventbrite.com" className="btn">Register</a>
-      </div>
-    </nav>
-    <div className={styles.navPlaceholder} />
+    <MobileNav />
+    <DesktopNav />
 
     <section id="hero" className={styles.hero}>
       <img src={heroImgUrl}></img>
