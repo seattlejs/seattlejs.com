@@ -10,14 +10,16 @@
   padding: 1rem 0;
 }
 
-@media (max-device-width: 960px) {
+/* Desktop */
+@media (min-device-width: 960px) and (min-width: 800px) {
   .container > div {
     margin: 0 2rem;
     width: 960px;
   }
 }
 
-@media (min-device-width: 960px) {
+/* Mobile */
+@media (max-device-width: 960px), (min-device-width: 960px) and (max-width: 960px) {
   .container > div {
     margin: 0 2rem;
     width: 960px;
@@ -38,7 +40,7 @@ nav {
 }
 
 /* Desktop styles */
-@media (min-device-width: 800px) {
+@media (min-device-width: 800px) and (min-width: 800px) {
   .mobileNavContainer {
     display: none;
   }
@@ -84,7 +86,7 @@ nav {
 
 
 /* Mobile styles */
-@media (max-device-width: 800px) {
+@media (max-device-width: 800px), (min-device-width: 800px) and (max-width: 800px) {
   .desktopNavContainer {
     display: none;
   }
@@ -178,14 +180,14 @@ nav {
 }
 
 /* Desktop styles */
-@media (min-device-width: 800px) {
+@media (min-device-width: 800px) and (min-width: 800px) {
   .cta {
     flex-flow: row nowrap;
   }
 }
 
 /* Mobile styles */
-@media (max-device-width: 800px) {
+@media (max-device-width: 800px), (min-device-width: 800px) and (max-width: 800px) {
   .cta {
     flex-flow: column nowrap;
   }
@@ -229,7 +231,7 @@ nav {
 }
 
 /* Desktop */
-@media (min-device-width: 800px) {
+@media (min-device-width: 800px) and (min-width: 800px) {
   .formidableBanner {
     flex-flow: row nowrap;
     align-items: baseline;
@@ -244,7 +246,7 @@ nav {
 }
 
 /* Mobile */
-@media (max-device-width: 800px) {
+@media (max-device-width: 800px), (min-device-width: 800px) and (max-width: 800px) {
   .formidableBanner {
     flex-flow: column nowrap;
     align-items: center;
@@ -265,7 +267,7 @@ nav {
 }
 
 /* Desktop */
-@media (min-device-width: 800px) {
+@media (min-device-width: 800px) and (min-width: 800px) {
   .copy {
     flex-flow: row nowrap;
   }
@@ -279,7 +281,7 @@ nav {
 }
 
 /* Mobile */
-@media (max-device-width: 800px) {
+@media (max-device-width: 800px), (min-device-width: 800px) and (max-width: 800px) {
   .copy {
     flex-flow: column nowrap;
   }
@@ -330,7 +332,7 @@ footer a::before {
 }
 
 /* Desktop */
-@media (min-device-width: 800px) {
+@media (min-device-width: 800px) and (min-width: 800px) {
   footer > .innerFooter {
     flex-flow: row nowrap;
   }
@@ -350,7 +352,7 @@ footer a::before {
 }
 
 /* Mobile */
-@media (max-device-width: 800px) {
+@media (max-device-width: 800px), (min-device-width: 800px) and (max-width: 800px) {
   footer > .innerFooter {
     flex-flow: column nowrap;
   }
