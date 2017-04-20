@@ -5,6 +5,18 @@ html {
   background: var(--bgTeal);
 }
 
+@media (min-device-width: 800px) {
+  html {
+    font-size: 16px; /* default */
+  }
+}
+
+@media (max-device-width: 800px) {
+  html {
+    font-size: 36px; /* default */
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -37,22 +49,30 @@ h2 {
 
 h3 {
   margin: 1rem 0;
-  font-size: 24px;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 h4 {
   text-transform: uppercase;
   margin: 2rem 0 1rem;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 p {
   font-family: "Open Sans", sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 300;
   line-height: 2;
   margin-bottom: 1rem;
 }
+
+@media (max-device-width: 800px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
 
 :global a.btn {
   color: white;
