@@ -3,6 +3,7 @@ import cs from 'classnames';
 import heroImgUrl from 'images/seattlejs-hero.png';
 import pikePlaceUrl from 'images/pike-place.jpg';
 import locationImgUrl from 'images/fremont-foundry.jpg';
+import reactTrainingUrl from 'images/react-training.png';
 import styles from './styles.css';
 import formidableLogoSvg from 'images/formidable-logo.svg';
 
@@ -143,7 +144,7 @@ export const App = () => (
         <p>These exclusive trainings, hosted by <a href="http://formidable.com">Formidable</a>, are limited to a small group of conference attendees on Tuesday and Wednesday, August 8th and 9th. <a href="https://seattlejs2017.eventbrite.com">Register</a> early to ensure your participation.</p>
       </div>
       <div className={styles.copyImg}>
-        <img src={pikePlaceUrl} />
+        <img src={reactTrainingUrl} />
       </div>
     </Copy>
 
