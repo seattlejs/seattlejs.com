@@ -141,7 +141,7 @@ nav {
 .hero {
   display: flex;
   justify-content: center;
-  background: rgb(15,13,15);
+  background: var(--semiBlack);
   /* margin-bottom: 2rem; */
 }
 
@@ -155,7 +155,7 @@ nav {
 }
 
 .tagline {
-  background: rgb(15,13,15);
+  background: var(--semiBlack);
   color: white;
 }
 
