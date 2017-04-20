@@ -1,5 +1,4 @@
-@import "styles/colors.css";
-@import "styles/box-shadow.css";
+@import "variables.css";
 
 .container {
   display: flex;

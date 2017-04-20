@@ -1,10 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { h, render } from 'preact';
 import App from './App';
 
 import 'static/CNAME';
 import 'core.css';
-import 'styles/icons.css';
 
 let scrollingUp = false;
 let scrollY = window.scrollY;
@@ -24,7 +22,7 @@ window.onscroll = () => {
   }
 }
 
-ReactDOM.render(
+render(
   <App />,
   document.getElementById('root')
 );

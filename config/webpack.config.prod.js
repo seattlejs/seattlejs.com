@@ -31,6 +31,11 @@ module.exports = {
       'node_modules'
     ],
   },
+  // HACK: workaround for https://github.com/webpack-contrib/css-loader/issues/454
+  // fix is incoming soonish
+  node: {
+    "Buffer": false
+  },
   module: {
     rules: [
       {
@@ -39,8 +44,15 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [['es2015', { modules: false }], 'react', 'stage-0'],
-            plugins: ['transform-runtime'],
+            presets: [['es2015', { modules: false }], 'stage-0'],
+            plugins: [
+              ['transform-runtime', {
+                "regenerator": false,
+              }],
+              'syntax-jsx',
+              ['transform-react-jsx', { pragma: 'h'}],
+              'transform-react-display-name'
+            ],
           }
         }
       },
@@ -75,13 +87,31 @@ module.exports = {
         })
       },
       {
-        test: /\.(png|jpg)$/,
-        use: {
-          loader: 'url-loader',
-          options: {
-            limit: 10000,
-          }
-        }
+        test: /\.(png|jpe?g)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+            }
+          },
+					{
+						loader: 'image-webpack-loader',
+						query: {
+							progressive: true,
+              gifsicle: {
+                interlaced: false,
+              },
+              optipng: {
+                optimizationLevel: 7,
+              },
+							pngquant: {
+								quality: '65-90',
+								speed: 4
+							}
+						}
+					}
+        ]
       },
 			{
 					test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,

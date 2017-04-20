@@ -41,8 +41,13 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [['es2015', { modules: false }], 'react', 'stage-0'],
-            plugins: ['transform-runtime'],
+            presets: [['es2015', { modules: false }], 'stage-0'],
+            plugins: [
+              'transform-runtime',
+              'syntax-jsx',
+              ['transform-react-jsx', { pragma: 'h'}],
+              'transform-react-display-name'
+            ],
           }
         }
       },
@@ -75,8 +80,8 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpg)$/,
-        loader: 'file-loader'
+        test: /\.(png|jpe?g)$/,
+        loader: 'file-loader',
       },
 			{
 					test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
