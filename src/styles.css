@@ -155,6 +155,8 @@ nav {
 }
 
 .tagline {
+  border-top: 2px solid var(--semiBlack);
+  border-bottom: 2px solid var(--semiBlack);
   background: var(--semiBlack);
   color: white;
 }
