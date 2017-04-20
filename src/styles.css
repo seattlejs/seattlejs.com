@@ -114,7 +114,8 @@ nav {
 
   nav .navList {
     position: absolute;
-    top: 3rem;
+    top: 4rem;
+    left: 0;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
