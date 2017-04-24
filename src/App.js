@@ -124,7 +124,7 @@ export const App = () => (
       </div>
       <div className={styles.copyText}>
         <h3>The Details</h3>
-        <h4>When: August 10 - 11. 2017, with training days August 8-9)</h4>
+        <h4>When: August 10 - 11. 2017, with training days August 8-9</h4>
         <p></p>
         <h4>Where: Fremont Foundry</h4>
         <p>SeattleJS's inaugural annual conference will be located at the beautiful and unique Fremont Foundry, located at 154 North 35th Street, Seattle, WA 98103.</p>
