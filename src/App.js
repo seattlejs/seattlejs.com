@@ -115,6 +115,8 @@ export const App = () => (
     <CTA id="cta-sponsor">
       <h2 className={styles.ctaText}>{"Interested in Sponsoring?"}</h2>
       <i className="material-icons">arrow_forward</i>
+      <a className="btn" href="https://github.com/FormidableLabs/seattle.js-conference-site/files/967262/SeattleJS.2017.Prospectus.pdf">Get Prospectus</a>
+      <h2>or</h2>
       <a className="btn" href="mailto:conference@seattlejs.com">Contact Us</a>
     </CTA>
 
@@ -125,7 +127,6 @@ export const App = () => (
       <div className={styles.copyText}>
         <h3>The Details</h3>
         <h4>When: August 10 - 11. 2017, with training days August 8-9</h4>
-        <p></p>
         <h4>Where: Fremont Foundry</h4>
         <p>SeattleJS's inaugural annual conference will be located at the beautiful and unique Fremont Foundry, located at 154 North 35th Street, Seattle, WA 98103.</p>
       </div>
