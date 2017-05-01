@@ -3,7 +3,7 @@ import cs from 'classnames';
 import heroImgUrl from 'images/seattlejs-hero.png';
 import pikePlaceUrl from 'images/pike-place.jpg';
 import locationImgUrl from 'images/fremont-foundry.jpg';
-import reactTrainingUrl from 'images/react-training.png';
+import reactTrainingUrl from 'images/react-training.jpg';
 import styles from './styles.css';
 import formidableLogoSvg from 'images/formidable-logo.svg';
 
