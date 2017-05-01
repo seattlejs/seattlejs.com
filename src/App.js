@@ -104,7 +104,7 @@ export const App = () => (
     <Copy id="about">
       <div className={styles.copyText}>
         <h3>Introducing SeattleJS Conference</h3>
-        <p>SeattleJS Conference is a two day conference covering the depth and breadth of JavaScript. Put on by one of the largest JavaScript user groups in the country, SeattleJS Conference is a convergence of the top talent in JavaScript from the Pacific Northwest and beyond. SeattleJS Conference is located in the heart of the Fremont neighborhood at the distinctive Fremont Foundry.</p>
+        <p>SeattleJS Conference is a two day, single track conference covering the depth and breadth of JavaScript. Put on by one of the largest JavaScript user groups in the country, SeattleJS Conference is a convergence of the top talent in JavaScript from the Pacific Northwest and beyond. SeattleJS Conference is located in the heart of the Fremont neighborhood at the distinctive Fremont Foundry.</p>
         <p>SeattleJS exisits to inform, inspire, and encourage members of the JavaScript community. Our goal is for you to leave inspired and ready to innovate.</p>
       </div>
       <div className={styles.copyImg}>
@@ -132,7 +132,7 @@ export const App = () => (
     </Copy>
 
     <CTA id="cta-register">
-      <h2 className={styles.ctaText}>{"Limited Early Bird Tickets Available"}</h2>
+      <h2 className={styles.ctaText}>{"Limited Tickets Available"}</h2>
       <i className="material-icons">arrow_forward</i>
       <a className="btn" href="https://seattlejs2017.eventbrite.com">Buy Now</a>
     </CTA>
