@@ -4,6 +4,7 @@ import heroImgUrl from 'images/seattlejs-hero.png';
 import pikePlaceUrl from 'images/pike-place.jpg';
 import locationImgUrl from 'images/fremont-foundry.jpg';
 import reactTrainingUrl from 'images/react-training.jpg';
+import scholarshipUrl from 'images/scholarship.jpg';
 import styles from './styles.css';
 import formidableLogoSvg from 'images/formidable-logo.svg';
 
@@ -146,6 +147,19 @@ export const App = () => (
       </div>
       <div className={styles.copyImg}>
         <img src={reactTrainingUrl} />
+      </div>
+    </Copy>
+
+    <Copy id="diversity">
+      <div className={styles.copyImg}>
+        <img src={scholarshipUrl} />
+      </div>
+      <div className={styles.copyText}>
+        <h3>Diversity Scholarships</h3>
+        <p>SeattleJS believes that inclusivity, diversity, and accessibility are vital to a thriving community. In order to ensure that SeattleJS Conference is accessible to groups who are underrepresented in technology, we’re pleased to offer diversity scholarships to our inaugural conference. Applications are now open and will be accepted through June 12th - scholarship recipients will be selected shortly thereafter.</p>
+        <p style={{textAlign: 'center' }}>
+          <a className="btn" href="https://docs.google.com/a/formidable.com/forms/d/e/1FAIpQLSfHBUqOGOKJ_Q_t-ix3n3f2a_uEwJbKMYW80Npj9mgsejkB8Q/viewform">Apply Now</a>
+        </p>
       </div>
     </Copy>
 
