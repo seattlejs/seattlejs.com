@@ -116,7 +116,7 @@ export const App = () => (
     <CTA id="cta-sponsor">
       <h2 className={styles.ctaText}>{"Interested in Sponsoring?"}</h2>
       <i className="material-icons">arrow_forward</i>
-      <a className="btn" href="https://github.com/FormidableLabs/seattle.js-conference-site/files/967262/SeattleJS.2017.Prospectus.pdf">Get Prospectus</a>
+      <a className="btn" href="https://github.com/FormidableLabs/seattle.js-prospectus/files/980039/SeattleJS.2017.Prospectus.pdf">Get Prospectus</a>
       <h2>or</h2>
       <a className="btn" href="mailto:conference@seattlejs.com">Contact Us</a>
     </CTA>
