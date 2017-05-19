@@ -68,7 +68,7 @@ p {
 }
 
 :global a.btn {
-  color: white;
+  color: var(--darkBlue);
   font-size: 0.8rem;
   background: var(--realBtnGreen);
   border-radius: 2rem;
