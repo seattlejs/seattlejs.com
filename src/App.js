@@ -19,6 +19,13 @@ const Copy    = (props) => <Container className={styles.copy} {...props } />
 const CTA     = (props) => <Container className={styles.cta} {...props } />
 const Footer  = (props) => <Container tagName="footer" className={styles.innerFooter} {...props } />
 
+const FooterLink = ({ children, ...restProps }) => (
+  <a {...restProps}>
+    <span aria-hidden className={styles.footerLinkIcon}>+</span>
+    {children}
+  </a>
+);
+
 const DesktopNav = () => (
   <div className={styles.desktopNavContainer}>
     <nav className={styles.desktopNav}>
@@ -77,7 +84,10 @@ export const App = () => (
 
     <section id="hero" className={styles.hero}>
       <div>
-        <img src={heroImgUrl}></img>
+        <img
+          alt='August 10-11, Fremont Seattle, Seattle.js Conference'
+          src={heroImgUrl}
+        />
       </div>
     </section>
 
@@ -98,7 +108,7 @@ export const App = () => (
 
     <CTA id="cta-proposals">
       <h2 className={styles.ctaText}>{"The call for proposals is now open!"}</h2>
-      <i className="material-icons">arrow_forward</i>
+      <i aria-hidden className="material-icons">arrow_forward</i>
       <a className="btn" href="https://www.papercall.io/sjs">Submit a Talk</a>
     </CTA>
 
@@ -109,13 +119,13 @@ export const App = () => (
         <p>SeattleJS exisits to inform, inspire, and encourage members of the JavaScript community. Our goal is for you to leave inspired and ready to innovate.</p>
       </div>
       <div className={styles.copyImg}>
-        <img src={pikePlaceUrl} />
+        <img alt='' src={pikePlaceUrl} />
       </div>
     </Copy>
 
     <CTA id="cta-sponsor">
       <h2 className={styles.ctaText}>{"Interested in Sponsoring?"}</h2>
-      <i className="material-icons">arrow_forward</i>
+      <i aria-hidden className="material-icons">arrow_forward</i>
       <a className="btn" href="https://github.com/FormidableLabs/seattle.js-prospectus/files/980039/SeattleJS.2017.Prospectus.pdf">Get Prospectus</a>
       <h2>or</h2>
       <a className="btn" href="mailto:conference@seattlejs.com">Contact Us</a>
@@ -123,7 +133,7 @@ export const App = () => (
 
     <Copy id="location">
       <div className={styles.copyImg}>
-        <img src={locationImgUrl} />
+        <img alt='' src={locationImgUrl} />
       </div>
       <div className={styles.copyText}>
         <h3>The Details</h3>
@@ -135,7 +145,7 @@ export const App = () => (
 
     <CTA id="cta-register">
       <h2 className={styles.ctaText}>{"Limited Tickets Available"}</h2>
-      <i className="material-icons">arrow_forward</i>
+      <i aria-hidden className="material-icons">arrow_forward</i>
       <a className="btn" href="https://seattlejs2017.eventbrite.com">Buy Now</a>
     </CTA>
 
@@ -146,13 +156,13 @@ export const App = () => (
         <p>These exclusive trainings, hosted by <a href="http://formidable.com">Formidable</a>, are limited to a small group of conference attendees on Tuesday and Wednesday, August 8th and 9th. <a href="https://seattlejs2017.eventbrite.com">Register</a> early to ensure your participation.</p>
       </div>
       <div className={styles.copyImg}>
-        <img src={reactTrainingUrl} />
+        <img alt='' src={reactTrainingUrl} />
       </div>
     </Copy>
 
     <Copy id="diversity">
       <div className={styles.copyImg}>
-        <img src={scholarshipUrl} />
+        <img alt='' src={scholarshipUrl} />
       </div>
       <div className={styles.copyText}>
         <h3>Diversity Scholarships</h3>
@@ -165,11 +175,11 @@ export const App = () => (
 
     <Footer>
       <div className={styles.navList}>
-        <a href="https://github.com/seattlejs/seattlejs/blob/master/code-of-conduct.md">Code of Conduct</a>
-        <a href="https://twitter.com/seattlejs">Twitter</a>
+        <FooterLink href="https://github.com/seattlejs/seattlejs/blob/master/code-of-conduct.md">Code of Conduct</FooterLink>
+        <FooterLink href="https://twitter.com/seattlejs">Twitter</FooterLink>
       </div>
       <div className={styles.navContactUs}>
-        <a href="mailto:conference@seattlejs.com">conference@seattlejs.com</a>
+        <FooterLink href="mailto:conference@seattlejs.com">conference@seattlejs.com</FooterLink>
       </div>
     </Footer>
   </main>
