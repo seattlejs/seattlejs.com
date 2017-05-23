@@ -93,7 +93,7 @@ nav {
   .navPlaceholder {
     height: 4rem;
   }
-  
+
   .mobileNavContainer {
     height: 4rem;
     position: relative;
@@ -360,7 +360,7 @@ footer a::before {
     display: flex;
     flex-flow: column nowrap;
   }
-  
+
   footer .navList a {
     margin: 1rem 0;
   }

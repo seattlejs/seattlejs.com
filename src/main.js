@@ -2,7 +2,7 @@ import { h, render } from 'preact';
 import App from './App';
 
 import 'static/CNAME';
-import 'core.css';
+import './core.css';
 
 let scrollingUp = false;
 let scrollY = window.scrollY;

@@ -1,0 +1,70 @@
+@import "../../variables.css";
+
+.sponsorContainer {
+  display: inline-block;
+  padding: 3em .5em;
+  width: 100%;
+
+  @media (min-device-width: 960px) and (min-width: 960px) {
+    padding: 3em;
+  }
+}
+
+.headline {
+  border-bottom: 1px solid white;
+  color: white;
+  letter-spacing: .05em;
+  margin: 0 auto 1em auto;
+  padding-bottom: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.presenting {
+  width: 100%;
+
+  @media (min-device-width: 960px) and (min-width: 960px) {
+    margin: 0 10%;
+    width: 80%;
+  }
+}
+
+.diamond {
+  width: 100%;
+
+  @media (min-device-width: 960px) and (min-width: 960px) {
+    width: 50%;
+  }
+}
+
+.platinum {
+  width: 100%;
+
+  @media (min-device-width: 960px) and (min-width: 960px) {
+    width: 33%;
+  }
+}
+
+.gold {
+  width: 50%;
+
+  @media (min-device-width: 960px) and (min-width: 960px) {
+    width: 33%;
+  }
+}
+
+.silver {
+  width: 33%;
+
+  @media (min-device-width: 960px) and (min-width: 960px) {
+    width: 25%;
+  }
+}
+
+.community {
+  width: 25%;
+
+  @media (min-device-width: 960px) and (min-width: 960px) {
+    width: 20%;
+  }
+}

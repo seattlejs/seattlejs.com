@@ -1,0 +1,33 @@
+.sponsor {
+  padding: 1em;
+  display: flex;
+  float: left;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex: 1;
+
+  @media (min-device-width: 960px) and (min-width: 960px) {
+    padding: 2em;
+  }
+}
+
+.imageContainer {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.imageContainer img {
+  width: 100%;
+  max-width: 300px;
+
+  @media (min-device-width: 960px) and (min-width: 960px) {
+    padding: 0;
+    max-width: 250px;
+  }
+}
