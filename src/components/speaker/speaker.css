@@ -1,0 +1,72 @@
+@import "../../variables.css";
+
+.speaker {
+  border-radius: 0;
+  color: white;
+  cursor: default;
+  padding: 2em;
+  transition: background .1s linear;
+  width: 100%;
+
+  @media(min-device-width: 32em) and (min-width: 32em) {
+    padding: 1em 1em 1em 4em;
+  }
+
+  @media(min-device-width: 960px) and (min-width: 960px) {
+    cursor: pointer;
+  }
+}
+
+.speaker:hover, .speaker:focus {
+  @media(min-device-width: 960px) and (min-width: 960px) {
+    background-color: rgba(255,255,255, .25);
+    transition: background-color(.5s);
+  }
+}
+
+.selected-true, .selected-true:hover, .selected-true:focus {
+  @media(min-device-width: 960px) and (min-width: 960px) {
+    font-weight: 700;
+    background-color: var(--transparentWhite);
+  }
+}
+
+.image {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  float: left;
+
+  @media(min-device-width: 32em) and (min-width: 32em) {
+    height: 125px;
+    width: 125px;
+  }
+}
+
+.image img {
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 125px;
+  justify-content: center;
+  padding-left: 2em;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+.name {
+  font-size: 2em;
+  letter-spacing: .05em;
+  padding-bottom: .25em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 1.25em;
+  font-weight: 500;
+}

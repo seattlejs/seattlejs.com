@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 
 import HomePage from './pages/home';
 import SponsorPage from './pages/sponsors/sponsors';
+import SpeakerPage from './pages/speakers/speakers';
 
 const DesktopNav = () => (
   <div className={styles.desktopNavContainer}>
@@ -14,6 +15,7 @@ const DesktopNav = () => (
         <a href="home#about">About</a>
         <a href="home#location">Location</a>
         <a href="/sponsors">Sponsors</a>
+        <a href="/speakers">Speakers</a>
         <a href="https://www.papercall.io/sjs">Call for Proposals</a>
       </div>
       <div className={styles.navCtaButton}>
@@ -52,6 +54,7 @@ class MobileNav extends Component {
               <a href="home#about" onClick={this.toggle}>About</a>
               <a href="home#location" onClick={this.toggle}>Location</a>
               <a href="/sponsors" onClick={this.toggle}>Sponsors</a>
+              <a href="/speakers" onClick={this.toggle}>Speakers</a>
               <a href="https://www.papercall.io/sjs" onClick={this.toggle}>Call for Proposals</a>
             </div>
           }
@@ -69,6 +72,7 @@ export const App = () => (
       <Router>
         <HomePage path="/home" default />
         <SponsorPage path="/sponsors" />
+        <SpeakerPage path="/speakers" />
       </Router>
 
       <Footer />

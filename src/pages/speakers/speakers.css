@@ -1,0 +1,90 @@
+@import "../../variables.css";
+
+.speakers {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 3em;
+  min-height: 100vh;
+}
+
+.speakersSidebar {
+  width: 100%;
+
+  @media(min-device-width: 32em) and (min-width: 32em) {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  @media(min-device-width: 960px) and (min-width: 960px) {
+    width: 45%;
+    margin-left: 0;
+    float: left;
+  }
+}
+
+.speakersHeadline {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  padding: 1.5em 0;
+  font-size: 1.75em;
+}
+
+.featuredSpeaker {
+  display: none;
+
+  @media(min-device-width: 960px) and (min-width: 960px) {
+    color: white;
+    display: block;
+    padding: 4em 4em 3em 2em;
+    position: fixed;
+    width: 55%;
+    margin-left: 45%;
+  }
+}
+
+.featuredTop {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.topContent {
+  float: left;
+  padding-left: 1.5em;
+}
+
+.imageContainer {
+  flex-shrink: 0;
+  border-radius: 50%;
+  height: 175px;
+  overflow: hidden;
+  width: 175px;
+}
+
+.imageContainer img {
+  height: 100%;
+}
+
+.name {
+  letter-spacing: .05em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+
+.bio {
+  line-height: 1.6;
+}
+
+.title {
+  display: inline-block;
+  padding: 2em 0 1em 0;
+}
+
+.synopsis {
+  text-align: justify;
+  font-size: .8em;
+}
+
