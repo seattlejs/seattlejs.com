@@ -31,8 +31,10 @@ class SpeakerPage extends Component {
 
     return (
       <div className={styles.speakers}>
+        <div className={styles.skyline}>
+          <h1 className={styles.headline}>Our shining speakers</h1>
+        </div>
         <div className={styles.speakersSidebar}>
-          <h1 className={styles.speakersHeadline}>Our Decadent Speakers</h1>
           {
             speakers.map((speaker, i) => (
               <Speaker

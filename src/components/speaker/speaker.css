@@ -9,10 +9,11 @@
   width: 100%;
 
   @media(min-device-width: 32em) and (min-width: 32em) {
-    padding: 1em 1em 1em 4em;
+    padding: 1em;
   }
 
   @media(min-device-width: 960px) and (min-width: 960px) {
+    padding: 1em 1em 1em 4em;
     cursor: pointer;
   }
 }
@@ -40,8 +41,13 @@
   float: left;
 
   @media(min-device-width: 32em) and (min-width: 32em) {
-    height: 125px;
-    width: 125px;
+    height: 75px;
+    width: 75px;
+  }
+
+  @media(min-device-width: 960px) and (min-width: 960px) {
+    height: 100px;
+    width: 100px;
   }
 }
 
@@ -52,7 +58,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  height: 125px;
+  height: 100px;
   justify-content: center;
   padding-left: 2em;
   text-align: left;
