@@ -325,8 +325,7 @@ footer a {
   text-transform: uppercase;
 }
 
-footer a::before {
-  content: "+";
+.footerLinkIcon {
   margin-right: 0.5rem;
 }
 

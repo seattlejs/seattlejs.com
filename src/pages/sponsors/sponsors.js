@@ -7,6 +7,11 @@ import CTA from "../../components/cta";
 
 const SponsorPage = () => (
   <div className={styles.sponsors}>
+
+    <div className={styles.skyline}>
+      <h1>Our shining sponsors</h1>
+    </div>
+
     <CTA id="cta-sponsor">
       <h2>{"Interested in Sponsoring?"}</h2>
       <i className="material-icons">arrow_forward</i>

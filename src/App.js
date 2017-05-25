@@ -73,7 +73,6 @@ export const App = () => (
 
       <Footer />
     </main>
-
 );
 
 export default App;
