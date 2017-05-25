@@ -10,6 +10,19 @@
   }
 }
 
+.skyline {
+  width: 100%;
+  height: 200px;
+  background-image: url(../../images/skylineShort.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 2em;
+}
+
 .headline {
   border-bottom: 1px solid white;
   color: white;

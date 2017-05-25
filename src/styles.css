@@ -143,7 +143,6 @@ nav {
   display: flex;
   justify-content: center;
   background: var(--semiBlack);
-  /* margin-bottom: 2rem; */
 }
 
 .hero > div {
@@ -325,8 +324,7 @@ footer a {
   text-transform: uppercase;
 }
 
-footer a::before {
-  content: "+";
+.footerLinkIcon {
   margin-right: 0.5rem;
 }
 
