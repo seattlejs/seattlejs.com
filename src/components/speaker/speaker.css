@@ -8,41 +8,46 @@
   transition: background .1s linear;
   width: 100%;
 
-  @media(min-device-width: 32em) and (min-width: 32em) {
+  @media(min-device-width: 640px) and (min-width: 640px) {
+    cursor: pointer;
     padding: 1em;
   }
 
   @media(min-device-width: 960px) and (min-width: 960px) {
     padding: 1em 1em 1em 4em;
-    cursor: pointer;
   }
 }
 
 .speaker:hover, .speaker:focus {
-  @media(min-device-width: 960px) and (min-width: 960px) {
+  outline: none;
+
+  @media(min-device-width: 640px) and (min-width: 640px) {
     background-color: rgba(255,255,255, .25);
+    outline: 3px dotted #fff;
+    outline-offset: 3px;
     transition: background-color(.5s);
   }
 }
 
 .selected-true, .selected-true:hover, .selected-true:focus {
-  @media(min-device-width: 960px) and (min-width: 960px) {
+  @media(min-device-width: 640px) and (min-width: 640px) {
     font-weight: 700;
     background-color: var(--transparentWhite);
   }
 }
 
 .image {
-  display: inline-block;
   border-radius: 50%;
+  display: inline-block;
   overflow: hidden;
-  height: 100px;
-  width: 100px;
-  float: left;
+  height: 125px;
+  width: 125px;
+  margin-left: 0;
 
-  @media(min-device-width: 32em) and (min-width: 32em) {
-    height: 75px;
-    width: 75px;
+  @media(min-device-width: 640px) and (min-width: 640px) {
+    float: left;
+    height: 50px;
+    width: 50px;
   }
 
   @media(min-device-width: 960px) and (min-width: 960px) {
@@ -58,21 +63,43 @@
 .content {
   display: flex;
   flex-direction: column;
-  height: 100px;
   justify-content: center;
-  padding-left: 2em;
+  padding-left: 1em;
   text-align: left;
   font-family: "Montserrat", sans-serif;
+  margin-top: 2em;
+
+  @media(min-device-width: 640px) and (min-width: 640px) {
+    margin-top: 0;
+    height: 75px;
+  }
+
+  @media(min-device-width: 960px) and (min-width: 960px) {
+    height: 100px;
+    padding-left: 2em;
+  }
 }
 
 .name {
-  font-size: 2em;
+  font-size: 1.5em;
   letter-spacing: .05em;
   padding-bottom: .25em;
   text-transform: uppercase;
+
+  @media(min-device-width: 960px) and (min-width: 960px) {
+    font-size: 2em;
+  }
 }
 
 .title {
   font-size: 1.25em;
   font-weight: 500;
+}
+
+.bio, .synopsis {
+  margin-top: .5em;
+
+  @media(min-device-width: 640px) and (min-width: 640px) {
+    display: none;
+  }
 }

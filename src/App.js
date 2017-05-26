@@ -11,11 +11,10 @@ const DesktopNav = () => (
   <div className={styles.desktopNavContainer}>
     <nav className={styles.desktopNav}>
       <div className={styles.navList}>
-        <a href="/">Home</a>
-        <a href="home#about">About</a>
+        <a href="home">Home</a>
         <a href="home#location">Location</a>
-        <a href="/sponsors">Sponsors</a>
-        <a href="/speakers">Speakers</a>
+        <a href="sponsors">Sponsors</a>
+        <a href="speakers">Speakers</a>
         <a href="https://www.papercall.io/sjs">Call for Proposals</a>
       </div>
       <div className={styles.navCtaButton}>
@@ -51,7 +50,6 @@ class MobileNav extends Component {
           { open &&
             <div className={styles.navList}>
               <a href="/" onClick={this.toggle}>Home</a>
-              <a href="home#about" onClick={this.toggle}>About</a>
               <a href="home#location" onClick={this.toggle}>Location</a>
               <a href="/sponsors" onClick={this.toggle}>Sponsors</a>
               <a href="/speakers" onClick={this.toggle}>Speakers</a>

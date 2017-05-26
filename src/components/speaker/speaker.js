@@ -5,6 +5,7 @@ import styles from "./speaker.css";
 const Speaker = ({onClick, speaker, selected}) => {
 
   const {
+    bio,
     image,
     name,
     synopsis,
@@ -17,12 +18,16 @@ const Speaker = ({onClick, speaker, selected}) => {
 
   return (
     <button tabindex="0" className={classnames(styles[`selected-${selected}`], styles.speaker)} onClick={_onClick}>
-      <div className={styles.image}>
+
+      <span className={styles.image}>
         <img src={image} alt={name} />
-      </div>
+      </span>
+
       <div className={styles.content}>
         <span className={styles.name}>{name}</span>
+        <p className={styles.bio}>{bio}</p>
         <span className={styles.title}>{title}</span>
+        <p className={styles.synopsis}>{synopsis}</p>
       </div>
     </button>
   )
