@@ -13,6 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "classnames": "^2.2.5",
+    "exenv": "^1.2.2",
     "lodash": "^4.17.4",
     "materialize-css": "^0.98.1",
     "preact": "^8.1.0",
