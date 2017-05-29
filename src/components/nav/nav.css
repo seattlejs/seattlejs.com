@@ -1,0 +1,114 @@
+@import "../../variables.css";
+
+nav {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 1rem 0;
+
+  background: var(--bgTeal);
+  position: fixed;
+  width: 100%;
+  box-shadow: var(--zdepth-shadow-1);
+  z-index: 101;
+}
+
+/* Desktop styles */
+@media (min-device-width: 800px) and (min-width: 800px) {
+  .mobileNavContainer {
+    display: none;
+  }
+
+  .navPlaceholder {
+    height: 3rem;
+  }
+
+  .desktopNavContainer {
+    height: 3rem;
+    position: relative;
+  }
+
+  nav.desktopNav {
+    height: 3rem;
+    justify-content: center;
+  }
+
+  nav .navList {
+    flex: 1 1 auto;
+  }
+
+  nav .navList a:not(:first-child) {
+    margin-left: 2rem;
+  }
+  nav .navList a:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+    color: var(--realBrightGreen);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 1rem 3rem;
+  }
+
+  .navCtaButton  {
+    flex: 0 0 auto;
+    margin: 0.5rem 3rem;
+  }
+}
+
+
+/* Mobile styles */
+@media (max-device-width: 800px), (min-device-width: 800px) and (max-width: 800px) {
+  .desktopNavContainer {
+    display: none;
+  }
+
+  .navPlaceholder {
+    height: 4rem;
+  }
+
+  .mobileNavContainer {
+    height: 4rem;
+    position: relative;
+  }
+
+  nav.mobileNav {
+    height: 4rem;
+    justify-content: space-between;
+  }
+
+  nav button.hamburgerButton {
+    color: white;
+    padding: 1.5rem;
+  }
+
+  nav .hamburgerButton i {
+    font-size: 2rem;
+  }
+
+  nav .navList {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    background: var(--bgTealMenu);
+  }
+
+  nav .navList a {
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  nav .navList a:hover {
+    background: var(--realBtnGreen);
+  }
+}
