@@ -1,13 +1,14 @@
-import { h } from "preact";
+import { h, Component } from "preact";
+import { canUseDOM } from "exenv";
 import classnames from "classnames";
 import styles from './sponsors.css';
 import sponsors from "../../../data/sponsors";
 import Sponsor from "../../components/sponsor/sponsor.js";
+import BasePage from "../../components/base-page";
 import CTA from "../../components/cta";
 
 const SponsorPage = () => (
-  <div className={styles.sponsors}>
-
+  <BasePage className={styles.sponsors}>
     <div className={styles.skyline}>
       <h1>Our shining sponsors</h1>
     </div>
@@ -67,8 +68,7 @@ const SponsorPage = () => (
         { sponsors.community.map((sponsor, i) => <Sponsor className={styles.community} {...sponsor} />) }
       </section>
     }
-
-  </div>
+  </BasePage>
 );
 
 export default SponsorPage;

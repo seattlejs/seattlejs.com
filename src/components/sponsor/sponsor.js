@@ -2,17 +2,17 @@ import { h } from "preact";
 import classnames from "classnames";
 import styles from "./sponsor.css";
 
-const Sponsor = ({className, image, body, name}) => (
+const Sponsor = ({className, image, body, name, url}) => (
   <div className={classnames(className, styles.sponsor)}>
     {
       image &&
-      <div className={styles.imageContainer}>
+      <a href={url} className={styles.imageContainer}>
         <img className={styles.image} src={image} alt={name} />
-      </div>
+      </a>
     }
     {
       body &&
-      <p>{body}</p>
+      <p className={styles.body}>{body}</p>
     }
   </div>
 );
