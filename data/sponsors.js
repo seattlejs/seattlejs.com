@@ -25,11 +25,11 @@ export default {
   silver: [
     {
       image: zillowLogo,
-      url: "https://www.zillow.com"
+      url: "https://www.zillow.com/",
     },
     {
       image: galvanizeLogo,
-      url: "https://www.galvanize.com/seattle/web-development"
+      url: "https://www.galvanize.com/seattle/web-development",
     }
   ],
   community: [

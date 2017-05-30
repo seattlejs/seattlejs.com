@@ -10,7 +10,7 @@ import CTA from "../../components/cta";
 const SponsorPage = () => (
   <BasePage className={styles.sponsors}>
     <div className={styles.skyline}>
-      <h1>Our shining sponsors</h1>
+      <h1>Sponsors</h1>
     </div>
 
     <CTA id="cta-sponsor">
@@ -33,39 +33,53 @@ const SponsorPage = () => (
       !!sponsors.diamond.length &&
       <section className={styles.sponsorContainer}>
         <h1 className={styles.headline}>Diamond Sponsors</h1>
-        { sponsors.diamond.map((sponsor, i) => (
-          <Sponsor className={styles.diamond} {...sponsor} />
-        ))}
+        <div className={styles.sponsorRow}>
+          { sponsors.diamond.map((sponsor, i) => (
+            <Sponsor className={styles.diamond} {...sponsor} />
+          ))}
+        </div>
       </section>
     }
     {
       !!sponsors.platinum.length &&
       <section className={styles.sponsorContainer}>
         <h1 className={styles.headline}>Platinum Sponsors</h1>
-        { sponsors.platinum.map((sponsor, i) => (
-          <Sponsor className={styles.platinum} {...sponsor} />
-        ))}
+        <div className={styles.sponsorRow}>
+          { sponsors.platinum.map((sponsor, i) => (
+            <Sponsor className={styles.platinum} {...sponsor} />
+          ))}
+        </div>
       </section>
     }
     {
       !!sponsors.gold.length &&
       <section className={classnames(styles.sponsorContainer)}>
         <h1 className={styles.headline}>Gold Sponsors</h1>
-        { sponsors.gold.map((sponsor, i) => <Sponsor className={styles.gold} {...sponsor} />) }
+        <div className={styles.sponsorRow}>
+          {sponsors.gold.map((sponsor, i) => <Sponsor className={styles.gold} {...sponsor} />)}
+        </div>
       </section>
     }
     {
       !!sponsors.silver.length &&
       <section className={classnames(styles.sponsorContainer)}>
         <h1 className={styles.headline}>Silver Sponsors</h1>
-        { sponsors.silver.map((sponsor, i) => <Sponsor className={styles.silver} {...sponsor} />) }
+        <div className={styles.sponsorRow}>
+          {sponsors.silver.map((sponsor, i) => (
+            <Sponsor className={styles.silver} {...sponsor} />
+          ))}
+        </div>
       </section>
     }
     {
       !!sponsors.community.length &&
       <section className={classnames(styles.sponsorContainer)}>
         <h1 className={styles.headline}>Community Sponsors</h1>
-        { sponsors.community.map((sponsor, i) => <Sponsor className={styles.community} {...sponsor} />) }
+        <div className={styles.sponsorRow}>
+          {sponsors.community.map((sponsor, i) => (
+            <Sponsor className={styles.community} {...sponsor} />
+          ))}
+        </div>
       </section>
     }
   </BasePage>

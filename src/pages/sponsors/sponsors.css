@@ -34,6 +34,15 @@
   text-transform: uppercase;
 }
 
+.sponsorRow {
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-wrap: wrap;
+}
+
 .presenting {
   width: 100%;
 }
@@ -41,6 +50,10 @@
 .presenting p {
   @media (min-device-width: 960px) and (min-width: 960px) {
     padding: 0em 8em 5em 8em;
+  }
+
+  @media(min-device-width: 1500px) and (min-width: 1500px) {
+    padding: 0em 12em 8em 12em;
   }
 }
 
