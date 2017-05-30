@@ -6,17 +6,18 @@
   width: 100%;
 
   @media (min-device-width: 960px) and (min-width: 960px) {
-    padding: 3em;
+    padding: 4em 3em;
   }
 }
 
 .skyline {
   align-items: center;
-  color: white;
-  display: flex;
   background-image: url(../../images/skylineShort.jpg);
   background-position: bottom;
   background-size: cover;
+  color: white;
+  display: flex;
+  font-size: 1.5em;
   height: 200px;
   justify-content: center;
   margin-bottom: 2em;
@@ -26,19 +27,33 @@
 .headline {
   border-bottom: 1px solid white;
   color: white;
+  font-size: 1.75em;
   letter-spacing: .05em;
-  margin: 0 auto 1em auto;
-  padding-bottom: 1.5em;
+  padding-bottom: 1em;
   text-align: center;
   text-transform: uppercase;
 }
 
+.sponsorRow {
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-wrap: wrap;
+}
+
 .presenting {
   width: 100%;
+}
 
+.presenting p {
   @media (min-device-width: 960px) and (min-width: 960px) {
-    margin: 0 10%;
-    width: 80%;
+    padding: 0em 8em 5em 8em;
+  }
+
+  @media(min-device-width: 1500px) and (min-width: 1500px) {
+    padding: 0em 12em 8em 12em;
   }
 }
 
@@ -52,6 +67,7 @@
 
 .platinum, .gold {
   width: 100%;
+  font-size: .8em;
 
   @media (min-device-width: 960px) and (min-width: 960px) {
     width: 33%;
@@ -59,7 +75,11 @@
 }
 
 .silver {
-  width: 33%;
+  width: 100%;
+
+  @media (min-device-width: 640px) and (min-width: 640px) {
+    width: 50%;
+  }
 
   @media (min-device-width: 960px) and (min-width: 960px) {
     width: 25%;
@@ -67,7 +87,11 @@
 }
 
 .community {
-  width: 25%;
+  width: 100%;
+
+  @media (min-device-width: 640px) and (min-width: 640px) {
+    width: 50%;
+  }
 
   @media (min-device-width: 960px) and (min-width: 960px) {
     width: 20%;

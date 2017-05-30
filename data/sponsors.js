@@ -1,4 +1,4 @@
-import formidableLogo from "../src/images/sponsors/formidable-logo-white.png";
+import formidableLogo from "../src/images/sponsors/formidable-logo-black.png";
 import zillowLogo from "../src/images/sponsors/zillow.png";
 import galvanizeLogo from "../src/images/sponsors/galvanize.png";
 
@@ -25,13 +25,13 @@ export default {
   silver: [
     {
       image: zillowLogo,
-      url: "https://www.zillow.com"
+      url: "https://www.zillow.com/",
     },
     {
       image: galvanizeLogo,
-      url: "https://www.galvanize.com/seattle/web-development"
+      url: "https://www.galvanize.com/seattle/web-development",
     }
   ],
   community: [
-  ],
+  ]
 };

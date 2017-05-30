@@ -32,7 +32,7 @@ class SpeakerPage extends Component {
     return (
       <div className={styles.speakers}>
         <div className={styles.skyline}>
-          <h1 className={styles.headline}>Our shining speakers</h1>
+          <h1 className={styles.headline}>Speakers</h1>
         </div>
         <div className={styles.speakersSidebar}>
           {

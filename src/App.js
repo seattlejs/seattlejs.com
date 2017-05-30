@@ -49,7 +49,7 @@ class MobileNav extends Component {
           </div>
           { open &&
             <div className={styles.navList}>
-              <a href="/" onClick={this.toggle}>Home</a>
+              <a href="home" onClick={this.toggle}>Home</a>
               <a href="home#location" onClick={this.toggle}>Location</a>
               <a href="/sponsors" onClick={this.toggle}>Sponsors</a>
               <a href="/speakers" onClick={this.toggle}>Speakers</a>
