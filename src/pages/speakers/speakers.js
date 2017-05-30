@@ -52,7 +52,7 @@ class SpeakerPage extends Component {
             <div className={styles.imageContainer}>
               <img src={selectedSpeaker.image} alt={selectedSpeaker.name} />
             </div>
-            <div className={styles.topContent}>
+            <div className={styles.bioContainer}>
               <h5 className={styles.name}>{selectedSpeaker.name}</h5>
               <p className={styles.bio}>{selectedSpeaker.bio}</p>
             </div>

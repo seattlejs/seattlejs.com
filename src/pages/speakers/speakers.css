@@ -45,10 +45,6 @@
     height: 100vh;
     width: 35%;
   }
-
-  @media(min-device-width: 960px) and (min-width: 960px) {
-    width: 40%;
-  }
 }
 
 .featuredSpeaker {
@@ -68,23 +64,19 @@
   }
 
   @media(min-device-width: 960px) and (min-width: 960px) {
-    padding: 4em 4em 3em 2em;
-    width: 60%;
+    padding: 4em;
   }
+
+  @media(min-device-width: 1400px) and (min-width: 1400px) {
+    padding: 6em 8em;
+  }
+
 }
 
 .featuredTop {
   display: flex;
   flex-direction: row;
   width: 100%;
-}
-
-.topContent {
-  float: left;
-
-  @media(min-device-width: 960px) and (min-width: 960px) {
-    padding-left: 1.5em;
-  }
 }
 
 .imageContainer {
@@ -110,6 +102,14 @@
   height: 100%;
 }
 
+.bioContainer {
+  float: left;
+
+  @media(min-device-width: 960px) and (min-width: 960px) {
+    padding-left: 1.5em;
+  }
+}
+
 .name {
   letter-spacing: .05em;
   margin-bottom: 1em;
@@ -128,6 +128,6 @@
 
 .synopsis {
   text-align: justify;
-  font-size: .8em;
+  font-size: .9em;
 }
 

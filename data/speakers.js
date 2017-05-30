@@ -34,4 +34,4 @@ export default [
       never dreamt possible in the web browser. To top it off, a sneak peak into what the future of
       web perf will look like.`
   }
-]
+];
