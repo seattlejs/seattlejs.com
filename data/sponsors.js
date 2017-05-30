@@ -1,4 +1,4 @@
-import formidableLogo from "../src/images/sponsors/formidable-logo-white.png";
+import formidableLogo from "../src/images/sponsors/formidable-logo-black.png";
 import zillowLogo from "../src/images/sponsors/zillow.png";
 import galvanizeLogo from "../src/images/sponsors/galvanize.png";
 
@@ -33,5 +33,5 @@ export default {
     }
   ],
   community: [
-  ],
+  ]
 };
