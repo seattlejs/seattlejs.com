@@ -1,0 +1,135 @@
+@import "../../variables.css";
+
+.speakers {
+  display: inline-block;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.skyline {
+  align-items: center;
+  background-image: url(../../images/skylineShort.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+}
+
+.headline {
+  color: white;
+}
+
+.speakersSidebar {
+  float: left;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+
+
+  &::-webkit-scrollbar {
+      -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:vertical {
+      width: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      background-color: rgba(0,0,0,.35);
+      border-radius: 12px;
+  }
+
+  @media(min-device-width: 640px) and (min-width: 640px) {
+    height: 100vh;
+    width: 35%;
+  }
+}
+
+.featuredSpeaker {
+  color: white;
+  display: none;
+  padding: 4em 4em 3em 2em;
+  min-height: 100vh;
+  -webkit-box-shadow: -1px -2px 2px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: -1px -2px 2px 0px rgba(0,0,0,0.25);
+  box-shadow: -1px -2px 2px 0px rgba(0,0,0,0.25);
+
+  @media(min-device-width: 640px) and (min-width: 640px) {
+    padding: 2em;
+    display: block;
+    float: left;
+    width: 65%;
+  }
+
+  @media(min-device-width: 960px) and (min-width: 960px) {
+    padding: 4em;
+  }
+
+  @media(min-device-width: 1400px) and (min-width: 1400px) {
+    padding: 6em 8em;
+  }
+
+}
+
+.featuredTop {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.imageContainer {
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  display: flex;
+
+  @media(min-device-width: 640px) and (min-width: 640px) {
+    display: none;
+  }
+
+  @media(min-device-width: 960px) and (min-width: 960px) {
+    display: block;
+    height: 175px;
+    width: 175px;
+  }
+}
+
+.imageContainer img {
+  height: 100%;
+}
+
+.bioContainer {
+  float: left;
+
+  @media(min-device-width: 960px) and (min-width: 960px) {
+    padding-left: 1.5em;
+  }
+}
+
+.name {
+  letter-spacing: .05em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+
+.bio {
+  line-height: 1.6;
+}
+
+.title {
+  display: inline-block;
+  padding: 2em 0 1em 0;
+  font-size: 1.25em;
+}
+
+.synopsis {
+  text-align: justify;
+  font-size: .9em;
+}
+
