@@ -24,15 +24,17 @@
   @media(min-device-width: 640px) and (min-width: 640px) {
     background-color: rgba(255,255,255, .25);
     outline: 3px dotted #fff;
-    outline-offset: 3px;
+    outline-offset: -3px;
     transition: background-color(.5s);
   }
 }
 
 .selected-true, .selected-true:hover, .selected-true:focus {
   @media(min-device-width: 640px) and (min-width: 640px) {
-    font-weight: 700;
     background-color: var(--transparentWhite);
+    font-weight: 700;
+    outline: 3px dotted #fff;
+    outline-offset: -3px;
   }
 }
 
@@ -63,15 +65,15 @@
 .content {
   display: flex;
   flex-direction: column;
+  font-family: "Montserrat", sans-serif;
   justify-content: center;
+  margin-top: 2em;
   padding-left: 1em;
   text-align: left;
-  font-family: "Montserrat", sans-serif;
-  margin-top: 2em;
 
   @media(min-device-width: 640px) and (min-width: 640px) {
+    height: 50px;
     margin-top: 0;
-    height: 75px;
   }
 
   @media(min-device-width: 960px) and (min-width: 960px) {
@@ -85,6 +87,10 @@
   letter-spacing: .05em;
   padding-bottom: .25em;
   text-transform: uppercase;
+
+  @media(min-device-width: 640px) and (min-width: 640px) {
+    font-size: 1.25em;
+  }
 
   @media(min-device-width: 960px) and (min-width: 960px) {
     font-size: 2em;
