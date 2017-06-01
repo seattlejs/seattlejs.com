@@ -3,18 +3,20 @@ import classnames from "classnames";
 import styles from "./sponsor.css";
 
 const Sponsor = ({className, image, body, name, url}) => (
-  <div className={classnames(className, styles.sponsor)}>
+  <a href={url} className={classnames(className, styles.sponsor)}>
+    <span className={styles.container}>
     {
       image &&
-      <a href={url} className={styles.imageContainer}>
+      <span className={styles.imageContainer}>
         <img className={styles.image} src={image} alt={name} />
-      </a>
+      </span>
     }
     {
       body &&
       <p className={styles.body}>{body}</p>
     }
-  </div>
+    </span>
+  </a>
 );
 
 export default Sponsor;

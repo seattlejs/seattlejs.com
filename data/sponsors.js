@@ -1,6 +1,7 @@
-import formidableLogo from "../src/images/sponsors/formidable-logo-white.png";
-import zillowLogo from "../src/images/sponsors/zillow.png";
+import alexaLogo from "../src/images/sponsors/alexaLogo.png";
+import formidableLogo from "../src/images/sponsors/formidable-logo-black.png";
 import galvanizeLogo from "../src/images/sponsors/galvanize.png";
+import zillowLogo from "../src/images/sponsors/zillow.png";
 
 export default {
   presenting: [
@@ -19,19 +20,27 @@ export default {
   diamond: [
   ],
   platinum: [
+    {
+      image: alexaLogo,
+      body: `Alexa is Amazon's voice service and the brain behind millions of devices, including
+        Amazon Echo. We believe voice is the future of technology interaction, providing a natural
+        interface to make complex things simple. Are you passionate about building the world of
+        tomorrow? If so, join us!`,
+      url: "https://www.amazon.jobs/en/business_categories/alexa"
+    }
   ],
   gold: [
   ],
   silver: [
     {
       image: zillowLogo,
-      url: "https://www.zillow.com"
+      url: "https://www.zillow.com/",
     },
     {
       image: galvanizeLogo,
-      url: "https://www.galvanize.com/seattle/web-development"
+      url: "https://www.galvanize.com/seattle/web-development",
     }
   ],
   community: [
-  ],
+  ]
 };

@@ -25,8 +25,8 @@ class MobileNav extends Component {
           <div className={styles.navCtaButton}>
             <a href="https://seattlejs2017.eventbrite.com" className="btn">Register</a>
           </div>
-          { open &&
-            <NavList />
+            { open &&
+            <NavList onClick={this.toggle} />
           }
         </nav>
       </div>

@@ -5,18 +5,6 @@ html {
   background: var(--bgTeal);
 }
 
-@media (min-device-width: 800px) {
-  html {
-    font-size: 16px; /* default */
-  }
-}
-
-@media (max-device-width: 800px) {
-  html {
-    font-size: 36px; /* default */
-  }
-}
-
 *,
 *::before,
 *::after {

@@ -2,12 +2,12 @@ import { h } from "preact";
 import styles from "./nav.css";
 
 // shared nav links for mobile and desktop components
-const NavList = () => (
+const NavList = ({onClick}) => (
   <ul className={styles.navList}>
-    <a href="home">Home</a>
-    <a href="home#location">Location</a>
-    <a href="/sponsors">Sponsors</a>
-    <a href="https://www.papercall.io/sjs">Call for Proposals</a>
+    <a href="home" onClick={onClick} >Home</a>
+    <a href="home#location" onClick={onClick}>Location</a>
+    <a href="sponsors" onClick={onClick} >Sponsors</a>
+    <a href="speakers" onClick={onClick} >Speakers</a>
   </ul>
 );
 

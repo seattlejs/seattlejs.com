@@ -14,7 +14,7 @@ nav {
 }
 
 /* Desktop styles */
-@media (min-device-width: 800px) and (min-width: 800px) {
+@media (min-width: 800px) {
   .mobileNavContainer {
     display: none;
   }
@@ -60,7 +60,7 @@ nav {
 
 
 /* Mobile styles */
-@media (max-device-width: 800px), (min-device-width: 800px) and (max-width: 800px) {
+@media (max-width: 800px) {
   .desktopNavContainer {
     display: none;
   }
