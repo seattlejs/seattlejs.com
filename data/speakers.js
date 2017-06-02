@@ -53,7 +53,7 @@ export default [
   {
     name: "Kat Marchán",
     image: katMarchan,
-    title: "npm@5: Brining JS Package Management into the Future",
+    title: "npm@5: Bringing JS Package Management into the Future",
     bio: `Kat Marchán is an active open source maintainer, a recovering Lisp hacker, and one of the
       core developers for the npm CLI, the JavaScript package manager.`,
     synopsis: `npm released npm@5 back in May, with a huge list of changes meant to overhaul the

@@ -162,5 +162,23 @@ module.exports = {
       favicon: path.resolve(paths.static, 'favicon.ico'),
       inject: true
     }),
+    new HtmlWebpackPlugin({
+      template: 'index.html',
+      filename: "speakers.html",
+      favicon: path.resolve(paths.static, 'favicon.ico'),
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: 'index.html',
+      filename: "sponsors.html",
+      favicon: path.resolve(paths.static, 'favicon.ico'),
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: 'index.html',
+      filename: "home.html",
+      favicon: path.resolve(paths.static, 'favicon.ico'),
+      inject: true
+    })
   ],
 };
