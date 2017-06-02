@@ -44,10 +44,16 @@
 
 .body {
   color: black;
-  font-size: 1em;
+  font-size: .8em;
   font-weight: 400;
   margin-bottom: 0;
   padding: 0 2em 2em;
+  text-align: justify;
+
+  @media (min-device-width: 640px) and (min-width: 640px) {
+    font-size: 1em;
+    text-align: left;
+  }
 
   @media (min-device-width: 960px) and (min-width: 960px) {
     padding: 0 3em 3em;

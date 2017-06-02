@@ -1,6 +1,7 @@
 import { h, Component } from "preact";
 import { canUseDOM } from "exenv";
 import classnames from "classnames";
+import { ctaText } from "../../styles.css";
 import styles from './sponsors.css';
 import sponsors from "../../../data/sponsors";
 import Sponsor from "../../components/sponsor/sponsor.js";
@@ -14,12 +15,13 @@ const SponsorPage = () => (
     </div>
 
     <CTA id="cta-sponsor">
-      <h2>{"Interested in Sponsoring?"}</h2>
+      <h2 className={ctaText}>{"Interested in Sponsoring?"}</h2>
       <i className="material-icons">arrow_forward</i>
       <a className="btn" href="https://github.com/FormidableLabs/seattle.js-prospectus/files/980039/SeattleJS.2017.Prospectus.pdf">Get Prospectus</a>
       <h2>or</h2>
       <a className="btn" href="mailto:conference@seattlejs.com">Contact Us</a>
     </CTA>
+
     {
       !!sponsors.presenting.length &&
       <section className={styles.sponsorContainer}>

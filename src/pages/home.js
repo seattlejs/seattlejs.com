@@ -39,10 +39,10 @@ const HomePage = () => (
       />
     </Container>
 
-    <CTA id="cta-proposals">
-      <h2 className={styles.ctaText}>{"The call for proposals is now open!"}</h2>
+    <CTA id="cta-register">
+      <h2 className={styles.ctaText}>{"Limited Tickets Available"}</h2>
       <i className="material-icons">arrow_forward</i>
-      <a className="btn" href="https://www.papercall.io/sjs">Submit a Talk</a>
+      <a className="btn" href="https://seattlejs2017.eventbrite.com">Buy Now</a>
     </CTA>
 
     <Copy id="about">
@@ -75,12 +75,6 @@ const HomePage = () => (
         <p>SeattleJS's inaugural annual conference will be located at the beautiful and unique Fremont Foundry, located at 154 North 35th Street, Seattle, WA 98103.</p>
       </div>
     </Copy>
-
-    <CTA id="cta-register">
-      <h2 className={styles.ctaText}>{"Limited Tickets Available"}</h2>
-      <i className="material-icons">arrow_forward</i>
-      <a className="btn" href="https://seattlejs2017.eventbrite.com">Buy Now</a>
-    </CTA>
 
     <Copy id="training">
       <div className={styles.copyText}>
