@@ -1,6 +1,7 @@
 import alexaLogo from "../src/images/sponsors/alexaLogo.png";
 import formidableLogo from "../src/images/sponsors/formidable-logo-black.png";
 import galvanizeLogo from "../src/images/sponsors/galvanize.png";
+import npmLogo from "../src/images/sponsors/npm-logo.png";
 import zillowLogo from "../src/images/sponsors/zillow.png";
 
 export default {
@@ -42,5 +43,9 @@ export default {
     }
   ],
   community: [
+    {
+      image: npmLogo,
+      url: "https://www.npmjs.com/"
+    }
   ]
 };
