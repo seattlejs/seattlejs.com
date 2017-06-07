@@ -1,6 +1,7 @@
 import alexaLogo from "../src/images/sponsors/alexaLogo.png";
 import formidableLogo from "../src/images/sponsors/formidable-logo-black.png";
 import galvanizeLogo from "../src/images/sponsors/galvanize.png";
+import imdbLogo from "../src/images/sponsors/imdb.png";
 import npmLogo from "../src/images/sponsors/npm-logo.png";
 import zillowLogo from "../src/images/sponsors/zillow.png";
 
@@ -31,6 +32,12 @@ export default {
     }
   ],
   gold: [
+    {
+      image: imdbLogo,
+      body: `IMDb is the #1 movie website in the world with a combined web and mobile audience of
+        more than 250 million unique monthly visitors.`,
+      url: "http://www.imdb.com/"
+    }
   ],
   silver: [
     {
