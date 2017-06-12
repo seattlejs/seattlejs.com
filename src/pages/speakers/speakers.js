@@ -1,4 +1,5 @@
 import { h, Component } from "preact";
+import classnames from "classnames";
 import speakers from "../../../data/speakers";
 import styles from "./speakers.css";
 import Speaker from "../../components/speaker/speaker";
@@ -47,14 +48,14 @@ class SpeakerPage extends Component {
           }
         </div>
 
-        <div className={styles.featuredSpeaker}>
+        <div className={classnames("copy__styles__24m_0", styles.featuredSpeaker)}>
           <div className={styles.featuredTop}>
             <div className={styles.imageContainer}>
               <img src={selectedSpeaker.image} alt={selectedSpeaker.name} />
             </div>
             <div className={styles.bioContainer}>
               <h5 className={styles.name}>{selectedSpeaker.name}</h5>
-              <p className={styles.bio}>{selectedSpeaker.bio}</p>
+              <p className={styles.bio} dangerouslySetInnerHTML={{__html: selectedSpeaker.bio}}></p>
             </div>
           </div>
           <span className={styles.title}>{selectedSpeaker.title}</span>

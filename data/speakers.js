@@ -1,3 +1,4 @@
+import bryanHughes from "../src/images/speakers/bryan-hughes.jpg";
 import johnDavidDalton from "../src/images/speakers/john-david-dalton.jpg";
 import katMarchan from "../src/images/speakers/kat-marchan.jpg";
 import marcySutton from "../src/images/speakers/marcy-sutton.jpg";
@@ -69,5 +70,25 @@ export default [
     synopsis: `Despite the rise of ES6, CommonJS rules the land forcing fans of ECMAScript modules
       to use special file extensions or cumbersome build steps. Will a code warrior emerge to save the day. Tune in to find
       out.`
+  },
+  {
+    name: "Bryan Hughes",
+    image: bryanHughes,
+    title: "The Node.js Event Loop: Not So Single Threaded",
+    bio: `Bryan Hughes is a technical evangelist at Microsoft, a member of the
+      <a href="https://github.com/nodejs/TSC" target="_blank">Node.js Technical Steering
+      Committee</a>, and chairperson of the
+      <a href="https://github.com/nodejs/community-committee" target="_blank">Node.js Community
+      Committee</a>. Bryan is also the creator of
+      <a href="https://github.com/nebrius/raspi-io/" target="_blank">Raspi IO</a>, a Raspberry Pi
+      plugin for the <a href="http://johnny-five.io" target="_blank">Johnny-Five</a> JavaScript
+      robotics library. Outside of tech, Bryan is an
+      <a href="http://500px.com/nebrius" target="_blank">amateur photographer</a>,
+      <a target="_blank" href="https://medium.com/@nebrius">occasional writer</a>, a once upon a
+      time pianist, and a wine aficionado.`,
+    synopsis: `You've heard Node.js is single threaded. It's true that all JavaScript executed by
+      Node.js is run in a single thread, but JS isn't all. The event loop, written in C++, is multi
+      threaded! Come learn how the event loop works, how it affects performance, and how you can
+      use it your advantage!`
   }
 ];
