@@ -68,8 +68,8 @@ export default [
     bio: `JavaScript tinkerer, bug fixer, & benchmark runner • Creator of Lodash • Former Chakra
       Perf PM • Current Web Apps & Frameworks PM @Microsoft.`,
     synopsis: `Despite the rise of ES6, CommonJS rules the land forcing fans of ECMAScript modules
-      to use special file extensions or cumbersome build steps. Will a code warrior emerge to save the day. Tune in to find
-      out.`
+      to use special file extensions or cumbersome build steps. Will a code warrior emerge to save
+      the day? Tune in to find out.`
   },
   {
     name: "Bryan Hughes",
