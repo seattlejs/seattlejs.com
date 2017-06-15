@@ -1,9 +1,11 @@
 import bryanHughes from "../src/images/speakers/bryan-hughes.jpg";
+import catherineLopez from "../src/images/speakers/catherine-lopez.jpg";
 import johnDavidDalton from "../src/images/speakers/john-david-dalton.jpg";
 import katMarchan from "../src/images/speakers/kat-marchan.jpg";
 import marcySutton from "../src/images/speakers/marcy-sutton.jpg";
 import patrickKettner from "../src/images/speakers/patrick-kettner.png";
 import rebeccaMurphey from "../src/images/speakers/rebecca-murphy.jpg";
+import tracyHinds from "../src/images/speakers/tracy-hinds.jpg";
 
 export default [
   {
@@ -90,5 +92,38 @@ export default [
       Node.js is run in a single thread, but JS isn't all. The event loop, written in C++, is multi
       threaded! Come learn how the event loop works, how it affects performance, and how you can
       use it your advantage!`
+  },
+  {
+    name: "Tracy Hinds",
+    image: tracyHinds,
+    title: "Community, Governance, and Sausages: Do You Really Want to Know How They are Made?",
+    bio: `Tracy is the Node.js Foundation Education Community Manager by day, and a JavaScript
+      Engineer scheming about the next conference she's organizing outside of work by most other
+      hours—she loves people as much as code. When not baking, rock climbing, or wandering the city,
+      you can find her at one of the amazing meetups in NYC. If you're building tech communities
+      that are supportive to all walks of life, she'd love to speak with you!`,
+    synopsis: `Founding, running, maintaining...conferences! What does it mean to maintain a
+      conference? What does it mean to the organizers, and also the community it benefited, to
+      retire one? Different geographies and cultures allow for experimentation, risks, failures and
+      successes on the human-centered projects that Catherine Lopez and Tracy Hinds have been
+      working on for years. Join us on an ever-expanding story of growing more caring communities
+      through the trials and tribulations of A/B testing experiences within Cascadia, EmpireJS/Node,
+      JSConfCO, ScaleConf, and code project communities such as Node.js.`
+  },
+  {
+    name: "Catherine Lopez",
+    image: catherineLopez,
+    title: "Community, Governance, and Sausages: Do You Really Want to Know How They are Made?",
+    bio: `Catherine has always been passionate about bringing people together and empowering
+      communities, which she is able to do through conferences in NY and Colombia.  When not
+      conference organizing, she is usually hanging out with her dog, supporting the Marina Orth
+      Foundation, and working at Hooklift.`,
+    synopsis: `Founding, running, maintaining...conferences! What does it mean to maintain a
+      conference? What does it mean to the organizers, and also the community it benefited, to
+      retire one? Different geographies and cultures allow for experimentation, risks, failures and
+      successes on the human-centered projects that Catherine Lopez and Tracy Hinds have been
+      working on for years. Join us on an ever-expanding story of growing more caring communities
+      through the trials and tribulations of A/B testing experiences within Cascadia, EmpireJS/Node,
+      JSConfCO, ScaleConf, and code project communities such as Node.js.`
   }
 ];
