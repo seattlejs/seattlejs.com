@@ -2,6 +2,7 @@ import bryanHughes from "../src/images/speakers/bryan-hughes.jpg";
 import catherineLopez from "../src/images/speakers/catherine-lopez.jpg";
 import johnDavidDalton from "../src/images/speakers/john-david-dalton.jpg";
 import katMarchan from "../src/images/speakers/kat-marchan.jpg";
+import kimCrayton from "../src/images/speakers/kim-crayton.jpg";
 import marcySutton from "../src/images/speakers/marcy-sutton.jpg";
 import patrickKettner from "../src/images/speakers/patrick-kettner.png";
 import rebeccaMurphey from "../src/images/speakers/rebecca-murphy.jpg";
@@ -125,5 +126,18 @@ export default [
       working on for years. Join us on an ever-expanding story of growing more caring communities
       through the trials and tribulations of A/B testing experiences within Cascadia, EmpireJS/Node,
       JSConfCO, ScaleConf, and code project communities such as Node.js.`
+  },
+  {
+    name: "Kim Crayton",
+    image: kimCrayton,
+    title: "What The Doc?!?! How to Write and Read Documentation That Allows You To Get Shit Done!",
+    bio: `Kim, is a Community Engineer and Technology Edutainer, because who said doing GOOD has to
+      be BORING! She has years of experience working with learners of all ages, skill level, and
+      abilities and is now using her knowledge to develop technical people, ideas, organizations,
+      and communities.`,
+    synopsis: `Often documentation is treated as an afterthought and an undesirable part of the
+      creative process but it doesn't have to be. Documentation can be seen as your effective and
+      efficient method for you to tell your story in a comprehensive and engaging way. What the
+      Doc?!?! will help both the writer and reader.`
   }
 ];
