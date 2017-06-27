@@ -131,8 +131,8 @@ export default [
     name: "Kim Crayton",
     image: kimCrayton,
     title: "What The Doc?!?! How to Write and Read Documentation That Allows You To Get Shit Done!",
-    bio: `Kim, is a Community Engineer and Technology Edutainer, because who said doing GOOD has to
-      be BORING! She has years of experience working with learners of all ages, skill level, and
+    bio: `Kim, is a Community Engineer and advocate for diversity, inclusion, and safe spaces in
+      tech. She has years of experience working with learners of all ages, skill level, and
       abilities and is now using her knowledge to develop technical people, ideas, organizations,
       and communities.`,
     synopsis: `Often documentation is treated as an afterthought and an undesirable part of the
