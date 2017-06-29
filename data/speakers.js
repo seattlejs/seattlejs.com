@@ -7,6 +7,13 @@ import marcySutton from "../src/images/speakers/marcy-sutton.jpg";
 import patrickKettner from "../src/images/speakers/patrick-kettner.png";
 import rebeccaMurphey from "../src/images/speakers/rebecca-murphy.jpg";
 import tracyHinds from "../src/images/speakers/tracy-hinds.jpg";
+import billyRoh from "../src/images/speakers/billy-roh.jpg";
+import felixRieseberg from "../src/images/speakers/felix-rieseberg.jpg";
+import luisMontes from "../src/images/speakers/luis-montes.jpg";
+import thomasWilburn from "../src/images/speakers/thomas-wilburn.jpg";
+import ryanLewis from "../src/images/speakers/ryan-lewis.jpg";
+import maggiePint from "../src/images/speakers/maggie-pint.jpg";
+import parashuramNarasimhan from "../src/images/speakers/parashuram.jpg";
 
 export default [
   {
@@ -139,5 +146,100 @@ export default [
       creative process but it doesn't have to be. Documentation can be seen as your effective and
       efficient method for you to tell your story in a comprehensive and engaging way. What the
       Doc?!?! will help both the writer and reader.`
+  },
+  {
+    name: "Billy Roh",
+    image: billyRoh,
+    title: "Albers as a Millennial",
+    bio: `Billy Roh is a product design lead at Opendoor. He helps organize a monthly meetup called
+      WaffleJS in his spare time. Before Opendoor, he was a designer at Facebook, where he worked on
+      profiles and advertiser tools.`,
+    synopsis: `What kind of art would Josef and Anni Albers have made if they were millennials?
+      Come learn about making generative interactive art with JavaScript. The audience will learn
+      about applying colour theory with HSL, generating your own patterns with SVG, and creating a
+      sense of depth with interaction.`
+  },
+  {
+    name: "Felix Rieseberg",
+    image: felixRieseberg,
+    title: "Fast Cross-Platform Apps with Electron",
+    bio: `Felix Rieseberg is a Desktop Engineer at Slack, a member of the Ghost Core Team, and a
+      maintainer of Electron. Previously, he built open source code for Microsoft. He’s known to eat
+      way too much candy.`,
+    synopsis: `Popular apps like Slack or Visual Studio Code use Electron to combine native code
+      with Node.js. They’re already cross-platform - let’s make them crazy fast 🚀. What
+      differentiates a slow, wrapped website from a snappy app? What actually happens in the
+      underbelly of Electron, Chrome, and V8?`
+  },
+  {
+    name: "Luis Montes",
+    image: luisMontes,
+    title: "From Nodebots to Browserbots",
+    bio: `Luis Montes is the founder and CEO of Iced Development. He brings 18 years of medical,
+      manufacturing, and financial enterprise software experience. Iced Development is a Phoenix
+      based web and IoT company focused on providing services around the latest innovations. It was
+      founded on a desire to advance the open web, and driven by continual excitement for
+      ever-evolving technologies.`,
+    synopsis: `Using PWA practices we can create applications that are approaching feature parity
+      with what was previously in the realm of native development. Let’s combine PWAs with hardware
+      & networking APIs such as P2P Data Channels, Bluetooth, and USB to build IoT and robotics apps
+      in your browser!`
+  },
+  {
+    name: "Thomas Wilburn",
+    image: thomasWilburn,
+    title: "Hacks and Hackers: How The Seattle Times Makes Digital News",
+    bio: `Thomas Wilburn is the news developer for The Seattle Times. Before that, he built
+      web-based UI for Guild Wars 2 at ArenaNet, and ran the Multimedia Team at Congressional
+      Quarterly. He’s also the developer of the Caret text editor for Chrome OS.`,
+    synopsis: `The past decade has seen the rise of a new kind of journalism: one that’s highly
+      visual, interactive, data-driven, and online. In this talk, we’ll tour the Seattle Times news
+      app template, and talk about how we do our work with no servers, little budget, and a CMS that
+      actively works against us.`
+  },
+  {
+    name: "Ryan H Lewis",
+    image: ryanLewis,
+    title: "No-Side JavaScript and the Serverless Revolution",
+    bio: `Ryan Lewis is an author at Pluralsight and Senior Web Engineer at Expedia. In addition to
+      slinging code, he has also taught developers how to program with JavaScript and Java at the
+      University of Washington and Seattle Central College. Ryan started building websites over 15
+      years ago to support his bands and record label. After traveling around the world playing
+      music, he brought his talents to the Pacific Northwest.`,
+    synopsis: `The battle royale between client-side vs. server-side JavaScript has a new
+      challenger: no-side JavaScript! With the proliferation of JavaScript on Serverless
+      architectures, a new type of cloud-based JavaScript application has emerged that follows
+      unique patterns from classic server-side JavaScript.`
+  },
+  {
+    name: "Maggie Pint",
+    image: maggiePint,
+    title: "Sharing is Caring - Patterns for JavaScript Library Design",
+    bio: `Maggie Pint loves open source. She is a maintainer of the popular DateTime library
+      Moment.js. In addition, she is a delegate of the JS Foundation to TC39 (the committee that
+      designs the JavaScript programming language) where she advocates for the interests of the
+      open source community. In her day job, Maggie is an engineering manager in Microsoft Azure
+      Site Reliability Engineering, where she creates Node.js tooling that helps to more quickly
+      mitigate incidents in the cloud. When not making software, Maggie enjoys showing Australian
+      Shepherds in obedience competition, drinking a lot of coffee, and hanging out with her five
+      year old son.`,
+    synopsis: `Do you have an idea for an open source library? Are you thinking the code you keep
+      pasting in projects could be packaged and shared internally? Let’s use examples from popular
+      libraries like LoDash, Moment, and Q to find tried and true library design patterns that will
+      make users love your code.`
+  },
+  {
+    name: "Parashuram Narasimhan",
+    image: parashuramNarasimhan,
+    title: "Using Chrome Traces to Measure Rendering Performance of Web Pages and Mobile Apps",
+    bio: `Parashuram is a front end developer and web performance enthusiast and author of tools
+      like browser-perf. He has created the Web Worker based render for ReactJS and runs
+      “science-like” experiments to explore ways to make web applications faster. He is also an open
+      source contributor, a committer in the Apache Cordova project and works as a Program Manager
+      in Microsoft.`,
+    synopsis: `Chrome has excellent devtools that help fixing rendering performance issues in web
+      pages. In this session, we will create scripts that use the same source of information as the
+      devtools to automatically measure metrics like frame rates, paint times and layout
+      calculations.`
   }
 ];
