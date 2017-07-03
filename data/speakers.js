@@ -14,6 +14,7 @@ import thomasWilburn from "../src/images/speakers/thomas-wilburn.jpg";
 import ryanLewis from "../src/images/speakers/ryan-lewis.jpg";
 import maggiePint from "../src/images/speakers/maggie-pint.jpg";
 import parashuramNarasimhan from "../src/images/speakers/parashuram.jpg";
+import gabeScholz from "../src/images/speakers/gabe-scholz.png";
 
 export default [
   {
@@ -241,5 +242,15 @@ export default [
       pages. In this session, we will create scripts that use the same source of information as the
       devtools to automatically measure metrics like frame rates, paint times and layout
       calculations.`
+  },
+{
+    name: "Gabe Scholz",
+    image: gabeScholz,
+    title: "Property-Based Testing for Godly Tests",
+    bio: `Physicist turned JavaScript wizard and reactive programming addict.`,
+    synopsis: `Testing is necessary for professional software development, but testing well is
+      difficult to do and often overlooked. When inputs become large, edge cases become almost
+      impossible to identify. Property-based testing is an approach putting emphasis on validating
+      properties which hold for all inputs.`
   }
 ];
