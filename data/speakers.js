@@ -15,6 +15,8 @@ import ryanLewis from "../src/images/speakers/ryan-lewis.jpg";
 import maggiePint from "../src/images/speakers/maggie-pint.jpg";
 import parashuramNarasimhan from "../src/images/speakers/parashuram.jpg";
 import gabeScholz from "../src/images/speakers/gabe-scholz.png";
+import housseinDjirdeh from "../src/images/speakers/houssein-djirdeh.jpg";
+import kenWheeler from "../src/images/speakers/ken-wheeler.jpg"
 
 export default [
   {
@@ -243,7 +245,7 @@ export default [
       devtools to automatically measure metrics like frame rates, paint times and layout
       calculations.`
   },
-{
+  {
     name: "Gabe Scholz",
     image: gabeScholz,
     title: "Property-Based Testing for Godly Tests",
@@ -252,5 +254,29 @@ export default [
       difficult to do and often overlooked. When inputs become large, edge cases become almost
       impossible to identify. Property-based testing is an approach putting emphasis on validating
       properties which hold for all inputs.`
+  },
+  {
+    name: "Houssein Djirdeh",
+    image: housseinDjirdeh,
+    title: "Once You Go PRPL...",
+    bio: `Houssein does JavaScript at Rangle.io focusing on both web and mobile development. In his
+      spare time, he enjoys contributing talks and technical writing to the development community.
+      On the rare occasions when Houssein is not working on a blog post or his next side project,
+      he enjoys weightlifting and watching far too much YouTube.`,
+    synopsis: `The mobile web is slow. This talk will cover the PRPL pattern, what it is and how you
+      can use it to build a progressive single-page application that loads fast and reliably for all
+      users, regardless of their device and network connection.`
+  },
+  {
+    name: "Ken Wheeler",
+    image: kenWheeler,
+    title: "Master of Ceremonies",
+    bio: `Ken Wheeler is the Director of Open Source at Formidable, where he oversees the creation
+      and maintenance of their open source properties. He is the author of popular open source
+      libraries such as Slick Carousel, Spectacle, and Webpack Dashboard. When he isn’t at work, he
+      enjoys starting arguments on Twitter, recreational archery, boxing, all varieties of red meat,
+      and loving the USA.`,
+    synopsis: `Our Master of Ceremonies, Ken Wheeler, will lead you through the SeattleJS Conference
+      experience.`
   }
 ];
