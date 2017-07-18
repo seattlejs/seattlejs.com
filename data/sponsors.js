@@ -5,6 +5,7 @@ import imdbLogo from "../src/images/sponsors/imdb.png";
 import npmLogo from "../src/images/sponsors/npm-logo.png";
 import sitepenLogo from "../src/images/sponsors/sitepen.png";
 import zillowLogo from "../src/images/sponsors/zillow.png";
+import microsoftLogo from "../src/images/sponsors/microsoft.png";
 
 export default {
   presenting: [
@@ -15,12 +16,23 @@ export default {
         projects need expert help. For us, quality is paramount in everything we do. Quality
         software scales, performs better, and leads to more happiness and an improved bottom line.
         We approach each project with a long term view, with sustainability and maintainability at
-        the core of our decisions. Take a look at how we've helped household names construct some of
-        the most visited sites and apps on earth.`,
+        the core of our decisions. We've helped household names construct some of the most visited
+        sites and apps on earth.`,
       url: "http://formidable.com/"
     },
   ],
   diamond: [
+  {
+      image: microsoftLogo,
+      body: `Our mission is to empower every person and organization on the planet to achieve more.
+        That’s what inspires us, drives our work and pushes us to challenge the status quo every
+        day. At Microsoft, we also work to empower our employees, so they can achieve more. We
+        believe we should each find meaning in our work and we ensure employees have the freedom and
+        the reach to help make a difference in the world. We know where we’re going as a company and
+        how we’ll get there. We are committed to reinvent productivity and business processes, build
+        the intelligent cloud platform and create more personal computing.`,
+      url: "https://msdn.microsoft.com/en-us"
+    },
   ],
   platinum: [
     {
