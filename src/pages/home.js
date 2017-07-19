@@ -93,10 +93,7 @@ const HomePage = () => (
       </div>
       <div className={styles.copyText}>
         <h3>Diversity Scholarships</h3>
-        <p>SeattleJS believes that inclusivity, diversity, and accessibility are vital to a thriving community. In order to ensure that SeattleJS Conference is accessible to groups who are underrepresented in technology, we’re pleased to offer diversity scholarships to our inaugural conference. Applications are now open and will be accepted through June 12th - scholarship recipients will be selected shortly thereafter.</p>
-        <p style={{textAlign: 'center' }}>
-          <a className="btn" href="https://docs.google.com/a/formidable.com/forms/d/e/1FAIpQLSfHBUqOGOKJ_Q_t-ix3n3f2a_uEwJbKMYW80Npj9mgsejkB8Q/viewform">Apply Now</a>
-        </p>
+        <p>SeattleJS believes that inclusivity, diversity, and accessibility are vital to a thriving community. In order to ensure that SeattleJS Conference is accessible to groups who are underrepresented in technology, we’re pleased to offer diversity scholarships to our inaugural conference. The application deadline has closed and scholarships have been awarded.</p>
       </div>
     </Copy>
   </div>

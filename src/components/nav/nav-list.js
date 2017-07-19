@@ -8,6 +8,7 @@ const NavList = ({onClick}) => (
     <a href="home#location" onClick={onClick}>Location</a>
     <a href="sponsors" onClick={onClick} >Sponsors</a>
     <a href="speakers" onClick={onClick} >Speakers</a>
+    <a href="schedule" onClick={onClick} >Schedule</a>
   </ul>
 );
 

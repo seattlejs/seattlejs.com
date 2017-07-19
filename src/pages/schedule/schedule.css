@@ -1,0 +1,30 @@
+@import "../../variables.css";
+
+.schedule {
+  display: inline-block;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.skyline {
+  align-items: center;
+  background-image: url(../../images/skylineShort.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+}
+
+.headline {
+  color: white;
+}
+
+iframe {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #777;
+    display: block;
+}
