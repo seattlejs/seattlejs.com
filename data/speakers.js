@@ -18,6 +18,8 @@ import gabeScholz from "../src/images/speakers/gabe-scholz.png";
 import housseinDjirdeh from "../src/images/speakers/houssein-djirdeh.jpg";
 import ashleyWilliams from "../src/images/speakers/ashley-williams.jpg";
 import steveKinney from "../src/images/speakers/steve-kinney.jpg";
+import shaguftaGurmukhdas from "../src/images/speakers/shagufta-gurmukhdas.jpg";
+import jonPeck from "../src/images/speakers/jon-peck.jpg";
 import kenWheeler from "../src/images/speakers/ken-wheeler.jpg"
 
 export default [
@@ -302,6 +304,35 @@ export default [
       all sorts of crazy and wild sounds with the Web Audio API baked into all of the modern
       browser. But the real magic begins when you begin to mix the ability to make sounds with the
       other Web APIs.`
+  },
+  {
+    name: "Shagufta Gurmukhdas",
+    image: shaguftaGurmukhdas,
+    title: "Web Based Virtual Reality",
+    bio: `I am a Tech-Speaker for Mozilla and have been volunteering for Mozilla for about 4 years.
+      I have been exploring ‘virtual reality’ as a technology since the past one year and it has
+      indeed been the first time technology has made me feel so excited ever since I came to know
+      about the internet. Other than that, I am the initiator and organizer of Django Girls Pune.
+      I’m currently working in HSBC Technology India, as a software developer. I am also a decent
+      artist, and love to play the piano in my free time!`,
+    synopsis: `A-Frame is an open source web-based framework which allows the developers to leverage
+      the power of the web to create powerful VR experiences. The attendees of the talk will learn
+      about using A-Frame to build virtual worlds, to create a basic VR application with primitive
+      components.`
+  },
+  {
+    name: "Jon Peck",
+    image: jonPeck,
+    title: "Using Publicly-Available APIs to Supercharge Your Applications",
+    bio: `Steve is a senior front end engineer at SendGrid where is works on building a rich WYSIWYG
+      editor for building HTML emails. Previously, he was the director of the front-end engineering
+      program at the Turing School of Software and Design in Denver, Colorado where he taught
+      JavaScript and other technologies to aspiring developers from across the country. He is a
+      recovering New York City public school teacher and recently learned how to drive a car.`,
+    synopsis: `By adding a few lines of code (and zero DevOps tasks), you can integrate
+      machine-learning tools, crawl public datasources, or have a dozen cloud-compute units crank
+      through a problem. We’ll go over some popular APIs and see examples of how they can be
+      integrated into web, desktop, mobile, & IoT.`
   },
   {
     name: "Ken Wheeler",
