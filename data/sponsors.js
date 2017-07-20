@@ -6,6 +6,9 @@ import npmLogo from "../src/images/sponsors/npm-logo.png";
 import sitepenLogo from "../src/images/sponsors/sitepen.png";
 import zillowLogo from "../src/images/sponsors/zillow.png";
 import microsoftLogo from "../src/images/sponsors/microsoft.png";
+import indeedLogo from "../src/images/sponsors/Indeed.png";
+import opendoorLogo from "../src/images/sponsors/Opendoor.png";
+import shecodesnowLogo from "../src/images/sponsors/she-codes-now.png";
 
 export default {
   presenting: [
@@ -70,6 +73,18 @@ export default {
     {
       image: sitepenLogo,
       url: "https://www.sitepen.com/"
+    },
+    {
+      image: indeedLogo,
+      url: "https://www.indeed.jobs/"
+    },
+    {
+      image: opendoorLogo,
+      url: "https://www.opendoor.com/"
+    },
+    {
+      image: shecodesnowLogo,
+      url: "http://shecodesnow.com/"
     }
   ]
 };
