@@ -9,6 +9,7 @@ import microsoftLogo from "../src/images/sponsors/microsoft.png";
 import indeedLogo from "../src/images/sponsors/Indeed.png";
 import opendoorLogo from "../src/images/sponsors/Opendoor.png";
 import shecodesnowLogo from "../src/images/sponsors/she-codes-now.png";
+import appsheetLogo from "../src/images/sponsors/appsheet-logo.png";
 
 export default {
   presenting: [
@@ -63,6 +64,10 @@ export default {
     {
       image: galvanizeLogo,
       url: "https://www.galvanize.com/seattle/web-development",
+    },
+    {
+    image: appsheetLogo,
+      url: "https://www.appsheet.com/",
     }
   ],
   community: [
