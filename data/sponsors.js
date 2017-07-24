@@ -8,8 +8,9 @@ import zillowLogo from "../src/images/sponsors/zillow.png";
 import microsoftLogo from "../src/images/sponsors/microsoft.png";
 import indeedLogo from "../src/images/sponsors/Indeed.png";
 import opendoorLogo from "../src/images/sponsors/Opendoor.png";
-import shecodesnowLogo from "../src/images/sponsors/she-codes-now.png";
+import shecodesnowLogo from "../src/images/sponsors/she-codes-now-logo.png";
 import appsheetLogo from "../src/images/sponsors/appsheet-logo.png";
+import godaddyLogo from "../src/images/sponsors/godaddy-logo.png";
 
 export default {
   presenting: [
@@ -68,6 +69,10 @@ export default {
     {
     image: appsheetLogo,
       url: "https://www.appsheet.com/",
+    },
+    {
+    image: godaddyLogo,
+      url: "https://www.godaddy.com/",
     }
   ],
   community: [
