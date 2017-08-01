@@ -11,6 +11,7 @@ import opendoorLogo from "../src/images/sponsors/Opendoor.png";
 import shecodesnowLogo from "../src/images/sponsors/she-codes-now-logo.png";
 import appsheetLogo from "../src/images/sponsors/appsheet-logo.png";
 import godaddyLogo from "../src/images/sponsors/godaddy-logo.png";
+import sendgridLogo from "../src/images/sponsors/sendgrid-logo.png";
 
 export default {
   presenting: [
@@ -95,6 +96,10 @@ export default {
     {
       image: shecodesnowLogo,
       url: "http://shecodesnow.com/"
+    },
+    {
+      image: sendgridLogo,
+      url: "https://sendgrid.com/"
     }
   ]
 };
