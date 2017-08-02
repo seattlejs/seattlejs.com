@@ -324,11 +324,13 @@ export default [
     name: "Jon Peck",
     image: jonPeck,
     title: "Using Publicly-Available APIs to Supercharge Your Applications",
-    bio: `Steve is a senior front end engineer at SendGrid where is works on building a rich WYSIWYG
-      editor for building HTML emails. Previously, he was the director of the front-end engineering
-      program at the Turing School of Software and Design in Denver, Colorado where he taught
-      JavaScript and other technologies to aspiring developers from across the country. He is a
-      recovering New York City public school teacher and recently learned how to drive a car.`,
+    bio: `Jon began coding at the age of seven, in an area with no internet connectivity and only an
+      MS-DOS manual to guide him. Since, then, he's been witness to (and an active participant in)
+      the explosion of knowledge, architectures, libraries, and services available to programmers
+      everywhere.  Nowadays, the majority of his time is spent reflecting on the day-to-day needs of
+      developers across the globe... extolling the benefits of scalable serverless algorithms that
+      work across all languages, build upon each other, and form the basis of an active algorithm
+      marketplace.`,
     synopsis: `By adding a few lines of code (and zero DevOps tasks), you can integrate
       machine-learning tools, crawl public datasources, or have a dozen cloud-compute units crank
       through a problem. We’ll go over some popular APIs and see examples of how they can be
