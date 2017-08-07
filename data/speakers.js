@@ -20,6 +20,7 @@ import ashleyWilliams from "../src/images/speakers/ashley-williams.jpg";
 import steveKinney from "../src/images/speakers/steve-kinney.jpg";
 import shaguftaGurmukhdas from "../src/images/speakers/shagufta-gurmukhdas.jpg";
 import jonPeck from "../src/images/speakers/jon-peck.jpg";
+import guillermoRauch from "../src/images/speakers/Guillermo-Rauch.jpg";
 import kenWheeler from "../src/images/speakers/ken-wheeler.jpg"
 
 export default [
@@ -336,6 +337,35 @@ export default [
       machine-learning tools, crawl public datasources, or have a dozen cloud-compute units crank
       through a problem. We’ll go over some popular APIs and see examples of how they can be
       integrated into web, desktop, mobile, & IoT.`
+  },
+  {
+    name: "Guillermo Rauch",
+    image: guillermoRauch,
+    title: "To Be Announced",
+    bio: `Guillermo Rauch is the CEO and founder of ▲ZEIT (https://zeit.co). Before, he was the CTO
+      and co-founder of LearnBoost and Cloudup, acquired by WordPress.com in 2013. At ZEIT he's
+      co-led the development of Now, Micro and Next.js.
+
+      His background and expertise is in the realtime web.
+
+      He's the creator of socket.io, one of the most popular JavaScript projects on GitHub, with
+      implementations in many different programming languages and frameworks (currently running the
+      realtime backend of high profile webapps like Skype and NASA internal dashboards). He's the
+      author of "Smashing Node.JS" published by Wiley in 2012, best-selling book about Node.JS on
+      Amazon in multiple programming categories.
+
+      He co-authored the MongoDB document engine for Node.JS Mongoose, now officially supported by
+      MongoDB, Inc.
+
+      At WordPress he led the re-launch of the VideoPress platform (relaunching with a HTML5
+      pure-JavaScript Video Player), and helped the company transition from PHP to JavaScript for
+      the new administration interface Calypso.
+
+      He's spoken at dozens of conferences all around the world about JavaScript and the realtime
+      web, such as O'Reilly OSCon, QCon and NDC. He's currently also a mentor of an Open Source
+      Engineering class organized and pioneered by Stanford and Facebook, with students from
+      Harvard, MIT, Carnegie Mellon, UPenn, Columbia and others.`,
+    synopsis: `Talk info coming soon!`
   },
   {
     name: "Ken Wheeler",
