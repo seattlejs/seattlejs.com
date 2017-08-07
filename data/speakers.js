@@ -253,7 +253,8 @@ export default [
     name: "Gabe Scholz",
     image: gabeScholz,
     title: "Property-Based Testing for Godly Tests",
-    bio: `Physicist turned JavaScript wizard and reactive programming addict.`,
+    bio: `Gabe is physicist turned JavaScript wizard and reactive programming addict. He builds
+      JavaScript tooling at Unbounce in Vancouver.`,
     synopsis: `Testing is necessary for professional software development, but testing well is
       difficult to do and often overlooked. When inputs become large, edge cases become almost
       impossible to identify. Property-based testing is an approach putting emphasis on validating
