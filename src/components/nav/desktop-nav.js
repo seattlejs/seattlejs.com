@@ -7,7 +7,7 @@ const DesktopNav = () => (
     <nav className={styles.desktopNav}>
       <NavList />
       <div className={styles.navCtaButton}>
-        <a href="https://seattlejs2017.eventbrite.com" className="btn">Register</a>
+        <a href="#" className="btn">Sold Out</a>
       </div>
     </nav>
   </div>
