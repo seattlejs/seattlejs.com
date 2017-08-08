@@ -341,7 +341,7 @@ export default [
   {
     name: "Guillermo Rauch",
     image: guillermoRauch,
-    title: "To Be Announced",
+    title: "",
     bio: `Guillermo Rauch is the CEO and founder of ▲ZEIT (https://zeit.co). Before, he was the CTO
       and co-founder of LearnBoost and Cloudup, acquired by WordPress.com in 2013. At ZEIT he's
       co-led the development of Now, Micro and Next.js.
@@ -365,7 +365,7 @@ export default [
       web, such as O'Reilly OSCon, QCon and NDC. He's currently also a mentor of an Open Source
       Engineering class organized and pioneered by Stanford and Facebook, with students from
       Harvard, MIT, Carnegie Mellon, UPenn, Columbia and others.`,
-    synopsis: `Talk info coming soon!`
+    synopsis: ``
   },
   {
     name: "Ken Wheeler",
