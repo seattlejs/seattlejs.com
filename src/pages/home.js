@@ -40,9 +40,7 @@ const HomePage = () => (
     </Container>
 
     <CTA id="cta-register">
-      <h2 className={styles.ctaText}>{"Limited Tickets Available"}</h2>
-      <i className="material-icons">arrow_forward</i>
-      <a className="btn" href="https://seattlejs2017.eventbrite.com">Buy Now</a>
+      <h2 className={styles.ctaText}>{"SeattleJS Conference is sold out."}</h2>
     </CTA>
 
     <Copy id="about">
@@ -57,11 +55,11 @@ const HomePage = () => (
     </Copy>
 
     <CTA id="cta-sponsor">
-      <h2 className={styles.ctaText}>{"Interested in Sponsoring?"}</h2>
+      <h2 className={styles.ctaText}>{"Download the Schedule App"}</h2>
       <i className="material-icons">arrow_forward</i>
-      <a className="btn" href="https://github.com/FormidableLabs/seattle.js-prospectus/files/980039/SeattleJS.2017.Prospectus.pdf">Get Prospectus</a>
+      <a className="btn" href="https://itunes.apple.com/us/app/seattlejs/id1266855314?ls=1&mt=8">Apple</a>
       <h2>or</h2>
-      <a className="btn" href="mailto:conference@seattlejs.com">Contact Us</a>
+      <a className="btn" href="https://play.google.com/store/apps/details?id=com.kenwheeler.seattlejs">Android</a>
     </CTA>
 
     <Copy id="location">
@@ -80,7 +78,7 @@ const HomePage = () => (
       <div className={styles.copyText}>
         <h3>Pre-Conference Training</h3>
         <p>Expand your SeattleJS conference experience with two days of training in advanced <a href="https://facebook.github.io/react/">React</a> and <a href="https://facebook.github.io/react-native/">React Native</a>. Taught by foremost experts in the field, the two days of training will level up your expertise in modern React and prepare you to build production-ready web and mobile applications.</p>
-        <p>These exclusive trainings, hosted by <a href="http://formidable.com">Formidable</a>, are limited to a small group of conference attendees on Tuesday and Wednesday, August 8th and 9th. <a href="https://seattlejs2017.eventbrite.com">Register</a> early to ensure your participation.</p>
+        <p>These exclusive trainings, hosted by <a href="http://formidable.com">Formidable</a>, are limited to a small group of conference attendees on Tuesday and Wednesday, August 8th and 9th. This pre-event training is sold out.</p>
       </div>
       <div className={styles.copyImg}>
         <img src={reactTrainingUrl} />
