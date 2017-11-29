@@ -91,10 +91,6 @@
   text-align: center;
 }
 
-.formidableBanner_outer {
-  background: url('images/formidable-space-bg.jpg');
-}
-
 .formidableBanner {
   color: white;
   display: flex;

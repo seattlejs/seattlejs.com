@@ -5,10 +5,7 @@ import styles from '../styles.css';
 // Images
 import heroImgUrl from 'images/blank-seattlejs-header.png';
 import pikePlaceUrl from 'images/pike-place.jpg';
-import locationImgUrl from 'images/fremont-foundry.jpg';
 import reactTrainingUrl from 'images/react-training.jpg';
-import scholarshipUrl from 'images/scholarship.jpg';
-import formidableLogoSvg from 'images/formidable-logo.svg';
 
 // Components
 import Tagline from "../components/tagline";
