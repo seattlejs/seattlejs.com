@@ -23,7 +23,7 @@ class MobileNav extends Component {
             <i className="material-icons">{ open ? "close" : "menu" }</i>
           </button>
           <div className={styles.navCtaButton}>
-            <a href="#" className="btn">Sold Out</a>
+            <a href="https://www.meetup.com/seattlejs/" className="btn">Upcoming Events</a>
           </div>
             { open &&
             <NavList onClick={this.toggle} />

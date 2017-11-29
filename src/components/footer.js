@@ -16,7 +16,7 @@ const Footer = (props) => (
       <FooterLink href="https://twitter.com/seattlejs">Twitter</FooterLink>
     </div>
     <div className={styles.navContactUs}>
-      <FooterLink href="mailto:conference@seattlejs.com">conference@seattlejs.com</FooterLink>
+      <FooterLink href="mailto:emma.brillhart@formidable.com">Email Us</FooterLink>
     </div>
   </Container>
 );

@@ -5,10 +5,9 @@ import styles from "./nav.css";
 const NavList = ({onClick}) => (
   <ul className={styles.navList}>
     <a href="home" onClick={onClick} >Home</a>
-    <a href="home#location" onClick={onClick}>Location</a>
-    <a href="sponsors" onClick={onClick} >Sponsors</a>
-    <a href="speakers" onClick={onClick} >Speakers</a>
-    <a href="schedule" onClick={onClick} >Schedule</a>
+    <a href="home#sponsor" onClick={onClick}>Sponsor or Host</a>
+    <a href="home#speak" onClick={onClick} >Speak</a>
+    <a href="home#about" onClick={onClick} >About</a>
   </ul>
 );
 

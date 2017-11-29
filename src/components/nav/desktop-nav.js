@@ -7,7 +7,7 @@ const DesktopNav = () => (
     <nav className={styles.desktopNav}>
       <NavList />
       <div className={styles.navCtaButton}>
-        <a href="#" className="btn">Sold Out</a>
+        <a href="https://www.meetup.com/seattlejs/" className="btn">Upcoming Events</a>
       </div>
     </nav>
   </div>
