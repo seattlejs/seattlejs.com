@@ -5,9 +5,6 @@ import Footer from "./components/footer";
 import DesktopNav from "./components/nav/desktop-nav";
 import MobileNav from "./components/nav/mobile-nav";
 import HomePage from './pages/home';
-import SponsorPage from './pages/sponsors/sponsors';
-import SpeakerPage from './pages/speakers/speakers';
-import SchedulePage from './pages/schedule/schedule';
 
 export const App = () => (
     <main>
