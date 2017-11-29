@@ -13,9 +13,6 @@ export const App = () => (
 
       <Router>
         <HomePage path="/home" default />
-        <SponsorPage path="/sponsors" />
-        <SpeakerPage path="/speakers" />
-        <SchedulePage path="/schedule" />
       </Router>
 
       <Footer />
