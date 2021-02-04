@@ -3,7 +3,7 @@ import Container from './container';
 import styles from '../styles.css';
 
 const FooterLink = ({ children, ...restProps }) => (
-  <a {...restProps}>
+  <a {...restProps} target='_blank' rel='noreferrer'>
     <span aria-hidden className={styles.footerLinkIcon}>
       +
     </span>
@@ -18,6 +18,10 @@ const Footer = props => (
         Code of Conduct
       </FooterLink>
       <FooterLink href="https://twitter.com/seattlejs">Twitter</FooterLink>
+      <FooterLink href="https://t.co/OXLIuxXvER?amp=1">Slack</FooterLink>
+      <FooterLink href="https://www.youtube.com/channel/UCcSA-OGuAesfDqFNdEYGTaQ">Youtube</FooterLink>
+      <FooterLink href="https://www.meetup.com/seattlejs">Meetup</FooterLink>
+
     </div>
     <div className={styles.navContactUs}>
       <FooterLink href="mailto:meetup@formidable.com">Email Us</FooterLink>

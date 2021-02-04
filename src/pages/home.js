@@ -28,9 +28,18 @@ const HomePage = () => (
     <CTA id="cta-meetup">
       <h2 className={styles.ctaText}>{"View Our meetup.com Page"}</h2>
       <i className="material-icons">arrow_forward</i>
-      <a className="btn" href="https://www.meetup.com/seattlejs/">Upcoming Events</a>
+      <a className="btn" href="https://www.meetup.com/seattlejs/" target='_blank' rel='noreferrer'>Upcoming Events</a>
     </CTA>
-
+    <CTA id="cta-slack">
+      <h2 className={styles.ctaText}>{"Join the Conversation on Slack"}</h2>
+      <i className="material-icons">arrow_forward</i>
+      <a className="btn" href="https://t.co/OXLIuxXvER?amp=1" target='_blank' rel='noreferrer'>Invite Link</a>
+    </CTA>
+    <CTA id="cta-youtube">
+      <h2 className={styles.ctaText}>{"Watch our past talks on Youtube"}</h2>
+      <i className="material-icons">arrow_forward</i>
+      <a className="btn" href="https://www.youtube.com/channel/UCcSA-OGuAesfDqFNdEYGTaQ" target='_blank' rel='noreferrer'>Our Channel</a>
+    </CTA>
     <CTA id="cta-sponsor">
       <h2 className={styles.ctaText}>{"Sponsor or Host a SeattleJS Meet Up"}</h2>
       <i className="material-icons">arrow_forward</i>
