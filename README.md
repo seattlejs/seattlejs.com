@@ -1,4 +1,4 @@
-# Seattle.JS Conference Site
+# Seattle.JS Site
 
 ## Getting Started
 - `yarn install`
