@@ -94,23 +94,37 @@ module.exports = {
             options: {
               limit: 10000,
             }
-          },
-					{
-						loader: 'image-webpack-loader',
-						query: {
-							progressive: true,
-              gifsicle: {
-                interlaced: false,
-              },
-              optipng: {
-                optimizationLevel: 7,
-              },
-							pngquant: {
-								quality: '65-90',
-								speed: 4
-							}
-						}
-					}
+          }
+          // Images erroring with:
+          // ```
+          // ERROR in ./images/pike-place.jpg
+          // Module build failed: Error: dyld: Library not loaded: /usr/local/opt/libpng/lib/libpng16.16.dylib
+          //   Referenced from: /Users/rye/scm/seattlejs/seattlejs.com/node_modules/mozjpeg/vendor/cjpeg
+          //   Reason: image not found
+
+          //     at Promise.all.then.arr (/Users/rye/scm/seattlejs/seattlejs.com/node_modules/execa/index.js:201:11)
+          //     at process._tickCallback (internal/process/next_tick.js:68:7)
+          //  @ ./pages/home.js 7:0-49
+          //  @ ./App.js
+          //  @ ./main.js
+          // ```
+          // ,
+					// {
+					// 	loader: 'image-webpack-loader',
+					// 	query: {
+					// 		progressive: true,
+          //     gifsicle: {
+          //       interlaced: false,
+          //     },
+          //     optipng: {
+          //       optimizationLevel: 7,
+          //     },
+					// 		pngquant: {
+					// 			quality: '65-90',
+					// 			speed: 4
+					// 		}
+					// 	}
+					// }
         ]
       },
 			{
