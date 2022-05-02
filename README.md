@@ -1,21 +1,14 @@
-# Seattle.JS Site
+# SeattleJS Website
 
-## Getting Started
-- `yarn install`
+## Install
 
-## Development Environment
-- `yarn start`
+- clone this repo
+- `npm i`
 
-The development server will start up at `localhost:8080`
+## Run dev server
 
-## Build & Deploy
+`npm start`
 
-When you're happy with your changes...
+## Update production website
 
-- Commit changes to master
-- Run `yarn deploy` (or `npm run deploy` if that's your thing)
-
-This does the following:
-- Runs Webpack
-- Adds & commits the new build artifacts
-- Pushes the `dist/` directory to the `gh-pages` branch of the repository
+Submit a pull request with your changes. Once it is approved and merged, the website will be updated.

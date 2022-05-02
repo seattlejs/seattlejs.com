@@ -1,0 +1,88 @@
+html, body {
+	width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: canada-type-gibson, sans-serif;
+    background-color: #ddd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: rift-soft
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+img {
+    max-width: 100%;
+}
+
+input {
+    display: block;
+    margin-bottom: 8px;
+}
+
+header {
+    padding: 5px;
+    background-color: rgb(140, 170, 29);
+    text-align: center;
+}
+
+header a {
+    display: inline-block;
+    margin: 0 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header a:visited {
+    color: #fff;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+#main {
+    background-color: #fff;
+    padding: 20px;
+    min-height:100%;
+}
+
+.card {
+    padding: 5px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+/* responsive Youtube embed */
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px; height: 0; overflow: hidden;
+}
+	
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    #main {
+        background-color: #fff;
+        width: 60vw;
+        margin: 0 auto;
+        padding: 20px 40px;
+    }
+}
