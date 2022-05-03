@@ -12,3 +12,6 @@ get /*
 
 @views
 src src/views
+
+@shared
+src src/shared

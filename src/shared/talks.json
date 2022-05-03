@@ -1,0 +1,11 @@
+[
+    {
+        "name": "Amber Hoak",
+        "company": "Microsoft Research",
+        "twitter": "amber_hoak",
+        "photo": "amber-hoak.jpg",
+        "title": "Stumbling through ML in JavaScript: the good, the bad, and the computationally intensive",
+        "abstract": "Does Tensorflow make you tense? Let's unpack how you can get started with ML in the browser, no math required. Learn how to build models on the browser, why we would use client-side ML, and what ML tooling (and lack of tooling) is in the js ecosystem.",
+        "date": "2022-05-11"
+    }
+]
