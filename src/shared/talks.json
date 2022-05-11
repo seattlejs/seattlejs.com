@@ -7,5 +7,14 @@
         "title": "Stumbling through ML in JavaScript: the good, the bad, and the computationally intensive",
         "abstract": "Does Tensorflow make you tense? Let's unpack how you can get started with ML in the browser, no math required. Learn how to build models on the browser, why we would use client-side ML, and what ML tooling (and lack of tooling) is in the js ecosystem.",
         "date": "2022-05-11"
+    },
+    {
+        "name": "Jamund Ferguson",
+        "company": "PayPal",
+        "twitter": "xjamundxk",
+        "photo": "jamund-ferguson.jpg",
+        "title": "🧟 Web Performance Horror Stories🧛",
+        "abstract": "Experience the cringe inducing horror caused by excessively slow web performance. Be shocked to hear about megabytes of CSS going unused, endlessly duplicated polyfills, input fields freezing the main thread for 50ms per keystroke and assorted other terrors. Together we'll dissect these performance poltergeists and vanquish them from our apps forever.",
+        "date": "2022-06-08"
     }
 ]
