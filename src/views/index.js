@@ -31,26 +31,37 @@ let Template = function({ talks }) {
     <p>SeattleJS is the largest JavaScript meet up in Seattle. We hold our meet ups on the second Wednesday of every month.</p>
     <p>SeattleJS exisits to inform, inspire, and encourage members of the JavaScript community. Our goal is for you to leave inspired and ready to innovate.</p>
     <h2>Venue</h2>
-    <p>We meet at <a href="https://www.collectiveseattle.com">The Collective Seattle</a>, a co-working space and community in South Lake Union.</p>
+    <p>We meet at <a target="_blank" href="https://www.collectiveseattle.com">The Collective Seattle</a>, a co-working space and community in South Lake Union.</p>
     <ul>
-        <li><a href="https://goo.gl/maps/rc11qrTiJXffBagC7">400 Dexter Ave N</a></li>
+        <li><a target="_blank" href="https://goo.gl/maps/rc11qrTiJXffBagC7">400 Dexter Ave N</a></li>
         <li>Street parking is free after 6pm</li>
     </ul>
-    <p>Members of SeattleJS can sign-up for a <a href="https://www.collectiveseattle.com/visitus">free Day Pass</a>. Feel free to bring your laptop for work or climbing shoes to hop on the bouldering wall - make a day of it!</p>
+    <p>Members of SeattleJS can sign-up for a <a target="_blank" href="https://www.collectiveseattle.com/visitus">free Day Pass</a>. Feel free to bring your laptop for work or climbing shoes to hop on the bouldering wall - make a day of it!</p>
     <h2>Upcoming Talks</h2>
     ${ futureTalks(talks).map(Talk) }
     <h2>Attend</h2>
-    <p>RSVP for an <a href="https://ti.to/event-loop/">upcoming meetup</a>, everyone is welcome!</p>
+    <p>RSVP for an <a target="_blank" href="https://ti.to/event-loop/">upcoming meetup</a>, everyone is welcome!</p>
     <h2>Join our Community</h2>
     <ul>
         <li>Sign-up for our zero-spam <a href="/signup">community mailing list</a></li>
-        <li>Join us on <a href="https://discord.gg/HQdmgyWN58">Discord</a></li>
-        <li>Follow-up on <a href="https://twitter.com/cascadiajs">Twitter</a></li>
+        <li>Join us on <a target="_blank" href="https://discord.gg/HQdmgyWN58">Discord</a></li>
+        <li>Follow-up on <a target="_blank" href="https://twitter.com/cascadiajs">Twitter</a></li>
     </ul>
     <h2>Sponsor Us</h2>
     <p>If your company would like to sponsor an upcoming meetup, please email us at <a href="mailto:info@cascadiajs.com">info@cascadiajs.com</a>.
+    <h2>Organizers</h2>
+    <div id="organizers">
+        <div class="organizer">
+            <p><img src="/images/organizers/carter-rabasa.jpg" alt="photo of Carter Rabasa"/></p>
+            <p>Carter Rabasa // <a href="https://twitter.com/crtr0">@crtr0</a></p>
+        </div>
+        <div class="organizer">
+            <p><img src="/images/organizers/ehtesh-choudhury.jpg" alt="photo of Ehtesh Choudhury"/></p>
+            <p>Ehtesh Choudhury // <a target="_blank" href="https://twitter.com/digifireblast">@digifireblast</a></p>
+        </div>
+    </div>
     <h2>Code</h2>
-    <p>The code for this website is hosted on <a href="https://github.com/seattlejs/seattlejs.com">Github</a>.</p>
+    <p>The code for this website is hosted on <a target="_blank" href="https://github.com/seattlejs/seattlejs.com">Github</a>.</p>
 `
 }
 

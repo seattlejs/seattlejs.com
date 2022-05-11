@@ -78,6 +78,25 @@ header a:hover {
 	height: 100%;
 }
 
+.talk {
+    display: flex;
+}
+
+.talk .photo {
+    height: 300px;
+    width: 300px;
+    margin-right: 16px;
+}
+
+.talk .details {
+    flex: 1;
+}
+
+.organizer img {
+    height: 300px;
+    width: 300px;
+}
+
 @media only screen and (min-width: 768px) {
     #main {
         background-color: #fff;
@@ -86,18 +105,12 @@ header a:hover {
         padding: 20px 40px;
     }
 
-    .talk {
+    #organizers {
         display: flex;
     }
 
-    .talk .photo {
-        height: 300px;
-        width: 300px;
+    .organizer {
         margin-right: 16px;
-    }
-
-    .talk .details {
-        flex: 1;
     }
 
 }
