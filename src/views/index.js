@@ -10,14 +10,14 @@ function Talk(talk) {
     let d = new Date(date)
     return /*html*/`
         <div class="talk">
-            <div class="photo"><img src="/images/speakers/${ photo }" alt="photo of ${ name }"/></div>
+            <div class="photo">
+                <img src="/images/speakers/${ photo }" alt="photo of ${ name }"/>
+                <p><a target="_blank" href="https://twitter.com/${ twitter }">@${ name }</a> // ${ company }</p>
+            </div>
             <div class="details">
                 <h3>${ title }</h3>
                 <p>${ abstract }</p>
-                <p>Meetup: ${ new Intl.DateTimeFormat('en-US', {month: 'long'}).format(d) } ${ d.getFullYear() } </p>
-                <p>Speaker: ${ name }</p>
-                <p>Company: ${ company }</p>
-                <p>Twitter: <a target="_blank" href="https://twitter.com/${ twitter }">@${ twitter }</a></p>
+                <p>Coming up: ${ new Intl.DateTimeFormat('en-US', {month: 'long'}).format(d) } ${ d.getFullYear() } </p>
             </div>
         </div>
     `

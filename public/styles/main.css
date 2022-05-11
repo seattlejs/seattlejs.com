@@ -78,23 +78,13 @@ header a:hover {
 	height: 100%;
 }
 
-.talk {
-    display: flex;
-}
-
-.talk .photo {
+.talk img, .organizer img {
     height: 300px;
     width: 300px;
-    margin-right: 16px;
 }
 
-.talk .details {
-    flex: 1;
-}
-
-.organizer img {
-    height: 300px;
-    width: 300px;
+.talk h3 {
+    margin-top: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -111,6 +101,18 @@ header a:hover {
 
     .organizer {
         margin-right: 16px;
+    }
+
+    .talk {
+        display: flex;
+    }
+    
+    .talk .photo {
+        margin-right: 16px;
+    }
+    
+    .talk .details {
+        flex: 1;
     }
 
 }
