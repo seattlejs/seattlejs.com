@@ -12,7 +12,7 @@ function Talk(talk) {
         <div class="talk">
             <div class="photo">
                 <img src="/images/speakers/${ photo }" alt="photo of ${ name }"/>
-                <p><a target="_blank" href="https://twitter.com/${ twitter }">@${ name }</a> // ${ company }</p>
+                <p><a target="_blank" href="https://twitter.com/${ twitter }">${ name }</a> // ${ company }</p>
             </div>
             <div class="details">
                 <h3>${ title }</h3>

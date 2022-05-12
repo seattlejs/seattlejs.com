@@ -11,7 +11,7 @@
     {
         "name": "Jamund Ferguson",
         "company": "PayPal",
-        "twitter": "xjamundxk",
+        "twitter": "xjamundx",
         "photo": "jamund-ferguson.jpg",
         "title": "🧟 Web Performance Horror Stories🧛",
         "abstract": "Experience the cringe inducing horror caused by excessively slow web performance. Be shocked to hear about megabytes of CSS going unused, endlessly duplicated polyfills, input fields freezing the main thread for 50ms per keystroke and assorted other terrors. Together we'll dissect these performance poltergeists and vanquish them from our apps forever.",
