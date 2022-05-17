@@ -45,7 +45,7 @@ let Template = function({ talks }) {
     <ul>
         <li>Sign-up for our zero-spam <a href="/signup">community mailing list</a></li>
         <li>Join us on <a target="_blank" href="https://discord.gg/HQdmgyWN58">Discord</a></li>
-        <li>Follow-up on <a target="_blank" href="https://twitter.com/cascadiajs">Twitter</a></li>
+        <li>Follow-up on <a target="_blank" href="https://twitter.com/seattlejs">Twitter</a></li>
     </ul>
     <h2>Sponsor Us</h2>
     <p>If your company would like to sponsor an upcoming meetup, please email us at <a href="mailto:info@cascadiajs.com">info@cascadiajs.com</a>.
