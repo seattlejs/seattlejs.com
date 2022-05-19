@@ -35,6 +35,7 @@ let Template = function({ talks }) {
     <ul>
         <li><a target="_blank" href="https://goo.gl/maps/rc11qrTiJXffBagC7">400 Dexter Ave N</a></li>
         <li>Street parking is free after 6pm</li>
+        <li>The nearest bus stop is Dexter Ave N & Harrison St, King County Metro stop ID <a href="https://w3w.co/length.humble.slam">18455</a> or <a href="https://w3w.co/never.glitz.wakes">18390</a>, currently served by route 62</li>
     </ul>
     <p>Members of SeattleJS can sign-up for a <a target="_blank" href="https://www.collectiveseattle.com/visitus">free Day Pass</a>. Feel free to bring your laptop for work or climbing shoes to hop on the bouldering wall - make a day of it!</p>
     <h2>Upcoming Talks</h2>
