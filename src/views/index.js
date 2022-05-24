@@ -47,7 +47,11 @@ let Template = function({ talks }) {
         <li>Join us on <a target="_blank" href="https://discord.gg/HQdmgyWN58">Discord</a></li>
         <li>Follow-up on <a target="_blank" href="https://twitter.com/seattlejs">Twitter</a></li>
     </ul>
-    <h2>Sponsor Us</h2>
+    <h2>Sponsors</h2>
+    <div id="sponsors">
+        <div><a target="_blank" href="https://formidable.com"><img src="/images/sponsors/formidable.svg"/></a></div>
+        <div><a target="_blank" href="https://www.collectiveseattle.com"><img src="/images/sponsors/collective.webp"/></a></div>
+    </div>
     <p>If your company would like to sponsor an upcoming meetup, please email us at <a href="mailto:info@cascadiajs.com">info@cascadiajs.com</a>.
     <h2>Organizers</h2>
     <div id="organizers">

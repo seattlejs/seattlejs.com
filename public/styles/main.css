@@ -87,6 +87,14 @@ header a:hover {
     margin-top: 0;
 }
 
+#sponsors {
+    display: flex;
+}
+
+#sponsors img {
+    height: 100px;
+}
+
 @media only screen and (min-width: 768px) {
     #main {
         background-color: #fff;
