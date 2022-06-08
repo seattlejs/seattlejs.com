@@ -57,11 +57,15 @@ let Template = function({ talks }) {
     <div id="organizers">
         <div class="organizer">
             <p><img src="/images/organizers/carter-rabasa.jpg" alt="photo of Carter Rabasa"/></p>
-            <p>Carter Rabasa // <a href="https://twitter.com/crtr0">@crtr0</a></p>
+            <p>Carter Rabasa<br/><a href="https://twitter.com/crtr0">@crtr0</a></p>
         </div>
         <div class="organizer">
             <p><img src="/images/organizers/ehtesh-choudhury.jpg" alt="photo of Ehtesh Choudhury"/></p>
-            <p>Ehtesh Choudhury // <a target="_blank" href="https://twitter.com/digifireblast">@digifireblast</a></p>
+            <p>Ehtesh Choudhury<br/><a target="_blank" href="https://twitter.com/digifireblast">@digifireblast</a></p>
+        </div>
+        <div class="organizer">
+            <p><img src="/images/organizers/justin-oliver-lee.jpg" alt="photo of Justin Oliver Lee"/></p>
+            <p>Justin Oliver Lee<br/><a target="_blank" href="https://twitter.com/JustinOliverLee">@JustinOliverLee</a></p>
         </div>
     </div>
     <h2>Code</h2>
