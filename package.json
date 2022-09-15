@@ -9,8 +9,8 @@
     "node-fetch": "^2.6.7"
   },
   "devDependencies": {
-    "@architect/architect": "^10.2.2",
-    "@architect/sandbox": "^5.2.0"
+    "@architect/architect": "^10.6.0",
+    "@architect/sandbox": "^5.3.4"
   },
   "scripts": {
     "start": "npx sandbox"
