@@ -1,11 +1,12 @@
-let arc = require('@architect/functions')
-let fetch = require('node-fetch')
+const arc = require('@architect/functions')
+const fetch = require('node-fetch')
+const validator = require('email-validator')
 
 exports.handler = arc.http.async(signup)
 
 async function signup(req) {
   let { first_name, last_name, email_address } = req.body
-  if (email_address) {
+  if (email_address && validator.validate(email_address)) {
     // set customer.io REST API headers
     let headers = {
       'Authorization': `Basic ${ Buffer.from(process.env.CIO_SITE_ID + ':' + process.env.CIO_API_KEY).toString('base64') }`,
