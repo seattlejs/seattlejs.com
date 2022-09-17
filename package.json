@@ -3,18 +3,37 @@
   "version": "2.0.13",
   "description": "An evergreen website for the SeattleJS meetup and community",
   "dependencies": {
-    "@architect/functions": "^5.0.4",
+    "@enhance/arc-plugin-enhance": "latest",
+    "@architect/functions": "latest",
     "email-validator": "^2.0.4",
     "front-matter": "^4.0.2",
     "marked": "^4.0.12",
     "node-fetch": "^2.6.7"
   },
   "devDependencies": {
-    "@architect/architect": "^10.2.2",
-    "@architect/sandbox": "^5.2.0"
+    "@architect/sandbox": "latest",
+    "eslint": "latest"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ]
+    },
+    "ignorePatterns": [],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2022
+    }
   },
   "scripts": {
-    "start": "npx sandbox"
+    "start": "npx sandbox",
+    "lint": "eslint ./app/**/*.mjs --fix"
   },
   "repository": {
     "type": "git",

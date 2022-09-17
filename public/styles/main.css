@@ -26,32 +26,42 @@ input {
     margin-bottom: 8px;
 }
 
-header {
+my-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
     padding: 5px;
     background-color: rgb(140, 170, 29);
+    color: #fff;
     text-align: center;
 }
 
-header a {
+header a, footer a {
     display: inline-block;
-    margin: 0 6px;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
 }
 
-header a:visited {
+nav a {
+    margin-right: 16px;
+}
+
+header a:visited, footer a:visited {
     color: #fff;
 }
 
-header a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
 #main {
     background-color: #fff;
     padding: 20px;
-    min-height:100%;
+    flex: 1;
 }
 
 .card {
