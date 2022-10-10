@@ -21,6 +21,7 @@ export async function post (req) {
       return { location: '/signup-next-steps' }
     }
     else {
+      console.log("Sending OK response")
       return { json: { ok: true } }
     }
   }

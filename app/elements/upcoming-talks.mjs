@@ -9,7 +9,7 @@ function Talk(talk) {
   return /*html*/`
           <div class="talk">
               <div class="photo">
-                  <img src="/_static/images/speakers/${ photo }" alt="photo of ${ name }"/>
+                  <img src="/images/speakers/${ photo }" alt="photo of ${ name }"/>
                   <p><a target="_blank" href="https://twitter.com/${ twitter }">${ name }</a> // ${ company }</p>
               </div>
               <div class="details">

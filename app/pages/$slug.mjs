@@ -2,7 +2,6 @@ import { existsSync, readFileSync } from 'fs'
 import { marked } from 'marked'
 import fm from 'front-matter'
 import { join } from 'path'
-//import MyLayout from '../elements/my-layout.mjs'
 
 /**
  * Page view: catchall for pages authored in markdown

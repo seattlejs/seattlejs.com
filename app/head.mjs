@@ -8,7 +8,7 @@ export default function Head(req = { }) {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- ${ path } -->
         <title>SeattleJS</title>
-        <link rel="stylesheet" href="/_static/styles/main.css">
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="icon" href="/_static/favicon.ico">
         <link rel="stylesheet" href="https://use.typekit.net/nln6hzq.css">
       </head>
