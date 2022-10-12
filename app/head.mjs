@@ -9,7 +9,7 @@ export default function Head(req = { }) {
         <!-- ${ path } -->
         <title>SeattleJS</title>
         <link rel="stylesheet" href="/styles/main.css">
-        <link rel="icon" href="/_static/favicon.ico">
+        <link rel="icon" href="/_public/favicon.ico">
         <link rel="stylesheet" href="https://use.typekit.net/nln6hzq.css">
       </head>
     `
