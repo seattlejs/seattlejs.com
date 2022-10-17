@@ -1,6 +1,12 @@
 import fetch from 'node-fetch'
 import validator from 'email-validator'
 
+export async function get () {
+  return {
+    location: '/404'
+  }
+}
+
 export async function post (req) {
   let { first_name, last_name, email_address } = req.body
   if (email_address && validator.validate(email_address)) {

@@ -6,7 +6,6 @@ html, body {
 
 body {
     font-family: canada-type-gibson, sans-serif;
-    background-color: #ddd;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,6 +25,17 @@ input {
     margin-bottom: 8px;
 }
 
+i {
+    width: 25px;
+}
+
+a[target="_blank"]:after {
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 10px;
+    margin-right:8px;
+    content: " \f08e";
+}
+
 my-layout {
     display: flex;
     flex-direction: column;
@@ -36,7 +46,6 @@ header, footer {
     padding: 5px;
     background-color: rgb(140, 170, 29);
     color: #fff;
-    text-align: center;
 }
 
 header a, footer a {
@@ -46,8 +55,17 @@ header a, footer a {
     font-weight: 600;
 }
 
-nav a {
-    margin-right: 16px;
+footer {
+    text-align: center;
+}
+
+nav div {
+    margin: 0 0 8px 0;
+}
+
+div#logo img {
+    height: 30px;
+    border: 1px solid #fff;
 }
 
 header a:visited, footer a:visited {
@@ -59,9 +77,11 @@ header a:hover, footer a:hover {
 }
 
 #main {
-    background-color: #fff;
-    padding: 20px;
     flex: 1;
+}
+
+#page {
+    padding: 8px 24px;
 }
 
 .card {
@@ -106,11 +126,41 @@ header a:hover, footer a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-    #main {
-        background-color: #fff;
+    nav {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    nav div {
+        margin: 0 16px 0 0;
+    }
+
+    nav div a {
+        display: inline-block;
+        margin: 4px;
+    }
+
+    nav div#logo a {
+        display:flex;
+        align-items: center;
+    }
+
+    nav div#logo img {
+        display: inline-block;
+    }
+    
+    #page {
         width: 60vw;
         margin: 0 auto;
-        padding: 20px 40px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav div#logo {
+        flex: 1;
     }
 
     #organizers {
