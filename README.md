@@ -42,7 +42,7 @@ Pages that require data to render are paired with an identically names JS file i
 There are two files named `$stub.mjs` that live in the `api` and `pages` directories. The dollar sign ($) functions as a wildcard and catches paths that are not defined by named files. This enables us to render Markdown files from the `md` directory based on the path requested:
 
 - `/foo` will render `md/foo.md`
-- `/foo/bar will render `md/foo/bar.md`
+- `/foo/bar` will render `md/foo/bar.md`
 
 If there is no Markdown file that matches the path, a 404 error will be returned.
 
