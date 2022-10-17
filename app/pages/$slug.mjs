@@ -1,18 +1,14 @@
-import { existsSync, readFileSync } from 'fs'
 import { marked } from 'marked'
-import fm from 'front-matter'
-import { join } from 'path'
 
 /**
  * Page view: catchall for pages authored in markdown
  */
-export default function ({ html, state = { } }) {
-  let { store = { } } = state
-  let { path } = store
-  // remove the leading "/" slash
-  let page = path.substr(1)
-  let doc = join(process.cwd(), 'node_modules', '@architect', 'views', 'md', `${page}.md`)
-  if (!existsSync(doc)) {
+export default function ({ html, state }) {
+  let { store } = state
+  let { attributes, body, notFound } = store
+  let title = attributes?.title
+
+  if (notFound) {
     return html`
       <my-layout>
         <my-404></my-404>
@@ -20,12 +16,6 @@ export default function ({ html, state = { } }) {
     `
   }
   else {
-  // Read the file
-    doc = readFileSync(doc).toString()
-    // pull out any front-matter key/values
-    let { attributes, body } = fm(doc)
-    let title = attributes.title || 'The Seattle JavaScript Meetup'
-
     return html`
       <my-layout>
         <div id="page">
