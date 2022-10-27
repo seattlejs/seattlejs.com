@@ -1,13 +1,13 @@
 export default function ({ html, state = { } }) {
   let { store = { } } = state
-  let { speakers } = store
+  let { talks } = store
   return html`
     <my-layout>
       <div id="page">
-        <div class="page-title"><h1>Speaker List</h1></div>
+        <div class="page-title"><h1>Talk List</h1></div>
         <div class="page-body">
           <ul>
-              ${ speakers.map(s => /*html*/`<li><a href="/speakers/${ s.id }">${ s.name }</a></li>`).join('') }
+              ${ talks.map(t => /*html*/`<li>${ t.title }</li>`).join('') }
           </ul>
         </div>
       </div>

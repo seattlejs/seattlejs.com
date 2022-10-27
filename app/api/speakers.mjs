@@ -25,5 +25,19 @@ export const speakers = [
     "company": "AWS Amplify",
     "twitter": "rachelnabors",
     "photo": "rachel-lee-nabors.jpg",
+  },
+  {
+    "id": "matthew-bauer",
+    "name": "Matthew Bauer",
+    "company": "WebPinata",
+    "twitter": "LotusBladeStorm",
+    "photo": "matthew-bauer.jpg",
+  },
+  {
+    "id": "brian-gershon",
+    "name": "Brian Gershon",
+    "company": "Freelance",
+    "twitter": "brianfive",
+    "photo": "brian-gershon.jpg",
   } 
 ]

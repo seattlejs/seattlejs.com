@@ -1,7 +1,7 @@
 export default function ({ html, state = { } }) {
   let { store = { } } = state
   let { events } = store
-  console.log(events)
+  //console.log(events)
   return html`
     <my-layout>
       <div id="page">
