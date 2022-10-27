@@ -1,8 +1,9 @@
 export default function Head(state) {
-  const { store, status, req, error } = state
-  const { path } = req
+  //const { store, status, req, error } = state
+  const { store } = state
+  //const { path } = req
   const { title } = store 
-  console.log(path, store, status, req, error)
+  //console.log(path, store, status, req, error)
   return `
       <!DOCTYPE html>
       <html lang="en">
