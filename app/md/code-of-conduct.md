@@ -45,7 +45,7 @@ SeattleJS expects all participants (attendees, sponsors, speakers, organizers an
 
 ## Contact Information
 
-If you have any questions about this document or would like to reach us, please email: seattlejs@cascadiajs.com
+If you have any questions about this document or would like to reach us, please email: info@seattlejs.com
 
 ## License and Attribution
 
