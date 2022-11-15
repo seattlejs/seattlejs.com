@@ -6,5 +6,6 @@ export default function ViewEvent({ html, state = { } }) {
   return html`
     <h3>${ event.title }</h3>
     <list-talks event_id="${ event.id }"></list-talks>
+    <p><a target="_blank" href="https://ti.to/event-loop/seattlejs-${ event.id }">More Info</a></p>
   `
 }
