@@ -1,6 +1,7 @@
 import { events } from './events.mjs'
 import { talks } from './talks.mjs'
 import { speakers } from './speakers.mjs'
+import { organizers } from './organizers.mjs'
 
 
 function inflateTalk(talk_id) {
@@ -20,7 +21,7 @@ function inflateEvent(event) {
 
 function filterFutureEvents() {
   const ONE_DAY = 1000 * 60 * 60 * 24
-  return events.filter(t => (new Date(t.date)).getTime() + ONE_DAY > Date.now())
+  return events.filter(t => (new Date(`${ t.date }T21:00-08:00`)).getTime() + ONE_DAY > Date.now())
 }
 
 /**
@@ -29,6 +30,6 @@ function filterFutureEvents() {
 export async function get () {
   let events = filterFutureEvents().map(inflateEvent)
   return {
-    json: { events }
+    json: { events, organizers }
   }
 }

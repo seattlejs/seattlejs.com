@@ -117,10 +117,6 @@ header a:hover, footer a:hover {
     margin-top: 0;
 }
 
-#sponsors {
-    display: flex;
-}
-
 #sponsors img {
     height: 100px;
 }
@@ -163,12 +159,17 @@ header a:hover, footer a:hover {
         flex: 1;
     }
 
-    #organizers {
-        display: flex;
-    }
-
     .organizer {
         margin-right: 16px;
+    }
+
+    #sponsors {
+        display: flex;
+    }    
+
+    #organizers {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .talk {
