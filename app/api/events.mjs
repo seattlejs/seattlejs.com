@@ -47,8 +47,15 @@ export const events = [
   {
     "id": "november-2022",
     "title": "SeattleJS November 2022",
-    "date": "2022-11-9",
+    "date": "2022-11-09",
     "sponsors": ["collective-seattle"],
     "talks": ["matthew-bauer-november-2022", "brian-gershon-november-2022"]
+  },
+  {
+    "id": "december-2022",
+    "title": "SeattleJS December 2022 - Holiday Party Edition",
+    "date": "2022-12-14",
+    "sponsors": ["collective-seattle"],
+    "talks": []
   }
 ]
