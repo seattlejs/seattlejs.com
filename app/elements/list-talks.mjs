@@ -5,7 +5,7 @@ export default function ListTalks({ html, state = { } }) {
   let event = events.find(e => e.id === event_id)
   let { talks } = event
   if (talks.length === 0) {
-    return html`<p>There are no talks at the moment, maybe propose one?</p>`
+    return html`<p>There are no talks at the moment, maybe <a href="/speak">propose one</a>?</p>`
   }
   else {
     return html`
