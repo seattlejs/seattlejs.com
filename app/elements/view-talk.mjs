@@ -9,7 +9,7 @@ export default function ViewTalk({ html, state = { } }) {
   let { title, abstract, speaker } = talk
   let { name, twitter, company, photo } = speaker
   return html`
-    <h4>${ title }</h4>
+    <h4>${ name } - ${ title }</h4>
     <p>${ abstract }</p>
     <view-speaker name="${ name }" twitter="${ twitter }" company="${ company }" photo="${ photo }"></view-speaker>
   `
