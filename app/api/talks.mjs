@@ -39,5 +39,12 @@ export const talks = [
     "event_id": "november-2022", 
     "title": "Tales of a Transition to Tailwind CSS",
     "abstract": "After some doubts, I gave Tailwind CSS a try and discovered a new love for styling my web applications. I'll discuss some reasons you'll like it, and also introduce component frameworks built on Tailwind."
+  },
+  {
+    "id": "calvin-kipperman-january-2023",
+    "speaker_id": "calvin-kipperman",
+    "event_id": "january-2023", 
+    "title": "React Is Holding Me Hostage",
+    "abstract": "A love &amp; horror story - why React isn't a good model for building interactive applications and why I'm still a React developer."
   }
 ]

@@ -39,5 +39,12 @@ export const speakers = [
     "company": "Freelance",
     "twitter": "brianfive",
     "photo": "brian-gershon.jpg",
-  } 
+  },
+  {
+    "id": "calvin-kipperman",
+    "name": "Calvin Kipperman",
+    "company": "Lyft",
+    "twitter": "emnudge",
+    "photo": "calvin-kipperman.jpg",
+  }  
 ]

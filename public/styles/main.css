@@ -12,6 +12,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: rift-soft
 }
 
+h1 { font-size: 200% }
+h2 { font-size: 180% }
+h3 { font-size: 160% }
+h4 { font-size: 140% }
+
+
 pre {
     white-space: pre-wrap;
 }
@@ -117,8 +123,61 @@ header a:hover, footer a:hover {
     margin-top: 0;
 }
 
-#sponsors img {
-    height: 100px;
+list-sponsors div {
+    padding: 16px;
+}
+
+list-sponsors img {
+    height: 80px;
+}
+
+.cta {
+    font-family: alkaline-caps, sans-serif;
+    background-color: #0033FF;
+    border: 4px solid #0033FF;
+    font-weight: 500;
+}
+
+div.cta {
+	font-size: 120%;
+    padding: 8px 16px;
+    margin: 16px 0;
+    display: inline-block;
+}
+
+span.cta {
+	font-size: 18px;
+    padding: 8px;
+}
+
+.cta a, .cta a:visited {
+    color: #fff5cc;
+  	text-decoration: none;
+}
+
+.cta:hover {
+	background-color: #112378;
+    border: 4px solid #112378;
+}
+
+.cta.secondary {
+    color: #0033FF;
+    background: none;
+    border: 4px solid #0033FF;
+}
+
+
+.cta.secondary a, .cta.secondary a:visited {
+    color: #0033FF;
+  	text-decoration: none;
+}
+
+.cta.secondary:hover {
+	border: 4px solid #112378;
+}
+
+.cta.secondary:hover a {
+    color: #112378;
 }
 
 @media only screen and (min-width: 768px) {
@@ -163,11 +222,7 @@ header a:hover, footer a:hover {
         margin-right: 16px;
     }
 
-    #sponsors {
-        display: flex;
-    }    
-
-    #organizers {
+    list-sponsors, list-organizers {
         display: flex;
         flex-wrap: wrap;
     }

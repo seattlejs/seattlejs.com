@@ -57,5 +57,13 @@ export const events = [
     "date": "2022-12-14",
     "sponsors": ["collective-seattle"],
     "talks": []
+  },
+  {
+    "id": "january-2023",
+    "title": "SeattleJS January 2023",
+    "date": "2023-01-11",
+    "sponsors": ["aws-skills-center"],
+    "talks": ["calvin-kipperman-january-2023"],
+    "description": "Join us and celebrate a great start to 2023 with your fellow web devs!\n\nTHANK YOU to the folks at AWS Skills Center Seattle for sponsoring this month! ❤️\n\nTickets are $5 and go up to $10 the day of, so don't delay!"
   }
 ]
