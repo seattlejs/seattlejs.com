@@ -2,6 +2,7 @@ import { events } from './events.mjs'
 import { talks } from './talks.mjs'
 import { speakers } from './speakers.mjs'
 import { organizers } from './organizers.mjs'
+import { sponsors } from './sponsors.mjs'
 
 
 function inflateTalk(talk_id) {
@@ -30,6 +31,6 @@ function filterFutureEvents() {
 export async function get () {
   let events = filterFutureEvents().map(inflateEvent)
   return {
-    json: { events, organizers }
+    json: { events, organizers, sponsors }
   }
 }
