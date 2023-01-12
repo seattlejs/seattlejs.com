@@ -46,5 +46,21 @@ export const talks = [
     "event_id": "january-2023", 
     "title": "React Is Holding Me Hostage",
     "abstract": "A love &amp; horror story - why React isn't a good model for building interactive applications and why I'm still a React developer."
+  },
+  {
+    "id": "tim-obrien-january-2023",
+    "speaker_id": "tim-obrien",
+    "event_id": "january-2023", 
+    "title": "Were Your Skis Cut with Javascript?",
+    "type": "lightning",
+    "abstract": "Just a quick snapshot of how you can use React and Express and Javascript to manufacture skis.   What are the pros and cons of using Javascript to generate CNC files and what's worked and not worked?  Looking to show a quick demo and also looking for people interested in contributing."
+  },
+  {
+    "id": "josh-scotland-january-2023",
+    "speaker_id": "josh-scotland",
+    "event_id": "january-2023", 
+    "title": "Supercharge Your Coding With ChatGPT",
+    "type": "lightning",
+    "abstract": "Learn how to use ChatGPT, a powerful AI programming tool, to enhance your coding skills and boost your productivity. In this demo, we'll explore the capabilities and limitations of ChatGPT to see firsthand how it might revolutionize your workflow."
   }
 ]

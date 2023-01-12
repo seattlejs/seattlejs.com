@@ -46,5 +46,18 @@ export const speakers = [
     "company": "Lyft",
     "twitter": "emnudge",
     "photo": "calvin-kipperman.jpg",
+  },
+  {
+    "id": "tim-obrien",
+    "name": "Tim O'Brien",
+    "company": "Wagner Custom Skis",
+    "twitter": "tobrien",
+    "photo": "tim-obrien.jpg",
+  },
+  {
+    "id": "josh-scotland",
+    "name": "Josh Scotland",
+    "company": "Startup",
+    "photo": "josh-scotland.jpg",
   }  
 ]

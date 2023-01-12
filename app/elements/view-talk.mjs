@@ -6,10 +6,10 @@ export default function ViewTalk({ html, state = { } }) {
   let talk = event.talks.find(t => t.id === id)
 
   // find talk/speaker from events 
-  let { title, abstract, speaker } = talk
+  let { title, abstract, speaker, type } = talk
   let { name, twitter, company, photo } = speaker
   return html`
-    <h4>${ name } - ${ title }</h4>
+    <h4>${ name } - ${ type === 'lightning' ? '⚡️ ' : '' }${ title }</h4>
     <p>${ abstract }</p>
     <view-speaker name="${ name }" twitter="${ twitter }" company="${ company }" photo="${ photo }"></view-speaker>
   `
