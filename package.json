@@ -4,7 +4,7 @@
   "description": "An evergreen website for the SeattleJS meetup and community",
   "dependencies": {
     "@architect/functions": "latest",
-    "@enhance/arc-plugin-enhance": "^4.3.5",
+    "@enhance/arc-plugin-enhance": "^4.4.1",
     "front-matter": "^4.0.2",
     "marked": "^4.0.12",
     "node-fetch": "^2.6.7"

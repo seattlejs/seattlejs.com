@@ -7,7 +7,7 @@ export default function ({ html, state }) {
   let { store } = state
   let { attributes, body, notFound } = store
   let title = attributes?.title
-
+  // if the path did not resolve to a markdown file on the file system
   if (notFound) {
     return html`
       <my-layout>
@@ -15,7 +15,9 @@ export default function ({ html, state }) {
       </my-layout>
     `
   }
+  // if it did resolve to a markdown file
   else {
+    console.log("2")
     return html`
       <my-layout>
         <div id="page">
@@ -27,6 +29,5 @@ export default function ({ html, state }) {
           </div>
         </div>
       </my-layout>`
-
   }
 }
