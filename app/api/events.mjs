@@ -65,5 +65,13 @@ export const events = [
     "sponsors": ["aws-skills-center"],
     "talks": ["calvin-kipperman-january-2023", "josh-scotland-january-2023", "tim-obrien-january-2023"],
     "description": "Join us and celebrate a great start to 2023 with your fellow web devs!\n\nTHANK YOU to the folks at AWS Skills Center Seattle for sponsoring this month! ❤️\n\nTickets are $5 and go up to $10 the day of, so don't delay!"
+  },
+  {
+    "id": "february-2023",
+    "title": "SeattleJS February 2023",
+    "date": "2023-02-08",
+    "sponsors": ["collective-seattle"],
+    "talks": ["brian-tran-february-2023"],
+    "description": "Join us and celebrate a great start to 2023 with your fellow web devs!\n\nTickets are $5 and go up to $10 the day of, so don't delay!"
   }
 ]

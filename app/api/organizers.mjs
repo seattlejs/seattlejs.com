@@ -16,11 +16,6 @@ export const organizers = [
     "twitter": "JustinOliverLee"
   },
   {
-    "id": "ehtesh-choudhury",
-    "full_name": "Ehtesh Choudhury",
-    "twitter": "digifireblast"
-  },
-  {
     "id": "andres-wiggins",
     "full_name": "Andres Wiggins",
     "twitter": "andre_wiggins"

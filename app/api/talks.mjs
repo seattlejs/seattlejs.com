@@ -62,5 +62,13 @@ export const talks = [
     "title": "Supercharge Your Coding With ChatGPT",
     "type": "lightning",
     "abstract": "Learn how to use ChatGPT, a powerful AI programming tool, to enhance your coding skills and boost your productivity. In this demo, we'll explore the capabilities and limitations of ChatGPT to see firsthand how it might revolutionize your workflow."
+  },
+  {
+    "id": "brian-tran-february-2023",
+    "speaker_id": "brian-tran",
+    "event_id": "february-2023", 
+    "title": "I want my data and I want it now!",
+    "type": "lightning",
+    "abstract": "A quick talk about stream processing using NodeJS and some other use cases including displaying the data in real-time over WebSockets and React."
   }
 ]

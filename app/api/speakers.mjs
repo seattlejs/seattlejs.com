@@ -59,5 +59,30 @@ export const speakers = [
     "name": "Josh Scotland",
     "company": "Startup",
     "photo": "josh-scotland.jpg",
+  },
+  {
+    "id": "brian-tran",
+    "name": "Brian Tran",
+    "company": "REMAX",
+    "photo": "brian-tran.jpg",
+    "twitter": "_briantran_"
+  },
+  {
+    "id": "josh-scotland",
+    "name": "Josh Scotland",
+    "company": "Startup",
+    "photo": "josh-scotland.jpg",
+  },
+  {
+    "id": "josh-scotland",
+    "name": "Josh Scotland",
+    "company": "Startup",
+    "photo": "josh-scotland.jpg",
+  },
+  {
+    "id": "josh-scotland",
+    "name": "Josh Scotland",
+    "company": "Startup",
+    "photo": "josh-scotland.jpg",
   }  
 ]
