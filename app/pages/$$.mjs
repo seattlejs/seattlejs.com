@@ -17,7 +17,6 @@ export default function ({ html, state }) {
   }
   // if it did resolve to a markdown file
   else {
-    console.log("2")
     return html`
       <my-layout>
         <div id="page">
