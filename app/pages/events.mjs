@@ -1,5 +1,5 @@
-export default function ({ html, state = { } }) {
-  let { store = { } } = state
+export default function ({ html, state = {} }) {
+  let { store = {} } = state
   let { events } = store
   //console.log(events)
   return html`
@@ -8,10 +8,10 @@ export default function ({ html, state = { } }) {
         <div class="page-title"><h1>Our Events</h1></div>
         <div class="page-body">
           <ul>
-              ${ events.map(e => /*html*/`<li>${ e.title }</li>`).join('') }
+            ${events.map(e => /*html*/ `<li>${e.title}</li>`).join('')}
           </ul>
         </div>
       </div>
     </my-layout>
-`
+  `
 }

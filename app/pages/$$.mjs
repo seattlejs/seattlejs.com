@@ -17,16 +17,13 @@ export default function ({ html, state }) {
   }
   // if it did resolve to a markdown file
   else {
-    return html`
-      <my-layout>
-        <div id="page">
-          <div class="page-title">
-            <div><h1>${ title }</h1></div>
-          </div>
-          <div class="page-body">
-            ${ marked(body) }
-          </div>
+    return html` <my-layout>
+      <div id="page">
+        <div class="page-title">
+          <div><h1>${title}</h1></div>
         </div>
-      </my-layout>`
+        <div class="page-body">${marked(body)}</div>
+      </div>
+    </my-layout>`
   }
 }

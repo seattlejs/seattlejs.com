@@ -4,7 +4,6 @@ import { speakers } from './speakers.mjs'
 import { organizers } from './organizers.mjs'
 import { sponsors } from './sponsors.mjs'
 
-
 function inflateTalk(talk_id) {
   let talk = talks.find(t => t.id === talk_id)
   if (talk.speaker_id) {
@@ -22,13 +21,15 @@ function inflateEvent(event) {
 
 function filterFutureEvents() {
   const ONE_DAY = 1000 * 60 * 60 * 24
-  return events.filter(t => (new Date(`${ t.date }T21:00-08:00`)).getTime() + ONE_DAY > Date.now())
+  return events.filter(
+    t => new Date(`${t.date}T21:00-08:00`).getTime() + ONE_DAY > Date.now()
+  )
 }
 
 /**
  * Load upcoming events and, if there are any, the talks being given
  */
-export async function get () {
+export async function get() {
   let events = filterFutureEvents().map(inflateEvent)
   return {
     json: { events, organizers, sponsors }
