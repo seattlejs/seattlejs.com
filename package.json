@@ -11,13 +11,17 @@
   },
   "devDependencies": {
     "@architect/sandbox": "^5.4.1",
-    "eslint": "latest"
+    "eslint": "latest",
+    "eslint-config-prettier": "^8.6.0"
   },
   "eslintConfig": {
     "env": {
       "node": true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
     "rules": {
       "indent": [
         "error",
