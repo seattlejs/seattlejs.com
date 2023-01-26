@@ -77,7 +77,7 @@ export const speakers = [
   {
     id: 'lauro-silva',
     name: 'Lauro Silva',
-    company: 'egghead.io',
+    company: 'Lauro Silva, LLC',
     photo: 'lauro-silva.jpg',
     twitter: 'laurosilvacom'
   },

@@ -1,3 +1,5 @@
+import { marked } from 'marked'
+
 export default function ViewTalk({ html, state = {} }) {
   const { attrs, store } = state
   const { events } = store
@@ -10,7 +12,7 @@ export default function ViewTalk({ html, state = {} }) {
   let { name, twitter, company, photo } = speaker
   return html`
     <h4>${name} - ${type === 'lightning' ? '⚡️ ' : ''}${title}</h4>
-    <p>${abstract}</p>
+    <p>${marked(abstract)}</p>
     <view-speaker
       name="${name}"
       twitter="${twitter}"
