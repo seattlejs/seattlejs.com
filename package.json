@@ -11,19 +11,18 @@
   },
   "devDependencies": {
     "@architect/sandbox": "^5.4.1",
-    "eslint": "latest"
+    "eslint": "latest",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.3"
   },
   "eslintConfig": {
     "env": {
       "node": true
     },
-    "extends": "eslint:recommended",
-    "rules": {
-      "indent": [
-        "error",
-        2
-      ]
-    },
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
     "ignorePatterns": [],
     "parserOptions": {
       "sourceType": "module",
@@ -32,7 +31,7 @@
   },
   "scripts": {
     "start": "npx sandbox",
-    "lint": "eslint ./app/**/*.mjs --fix"
+    "lint": "eslint ./app/**/*.mjs --fix && prettier \"**/*.mjs\" --write"
   },
   "repository": {
     "type": "git",

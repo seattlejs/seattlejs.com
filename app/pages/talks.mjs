@@ -1,5 +1,5 @@
-export default function ({ html, state = { } }) {
-  let { store = { } } = state
+export default function ({ html, state = {} }) {
+  let { store = {} } = state
   let { talks } = store
   return html`
     <my-layout>
@@ -7,10 +7,10 @@ export default function ({ html, state = { } }) {
         <div class="page-title"><h1>Talk List</h1></div>
         <div class="page-body">
           <ul>
-              ${ talks.map(t => /*html*/`<li>${ t.title }</li>`).join('') }
+            ${talks.map(t => /*html*/ `<li>${t.title}</li>`).join('')}
           </ul>
         </div>
       </div>
     </my-layout>
-`
+  `
 }
