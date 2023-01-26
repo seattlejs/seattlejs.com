@@ -77,7 +77,12 @@ export const events = [
     title: 'SeattleJS February 2023',
     date: '2023-02-08',
     sponsors: ['collective-seattle'],
-    talks: ['brian-tran-february-2023'],
+    talks: [
+      'brian-tran-february-2023',
+      'lupe-canaviri-maydana-februrary-2023',
+      'lauro-silva-february-2023',
+      'jacob-ebey-february-2023'
+    ],
     description:
       "Join us and celebrate a great start to 2023 with your fellow web devs!\n\nTickets are $5 and go up to $10 the day of, so don't delay!"
   }

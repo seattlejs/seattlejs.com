@@ -68,21 +68,24 @@ export const speakers = [
     twitter: '_briantran_'
   },
   {
-    id: 'josh-scotland',
-    name: 'Josh Scotland',
-    company: 'Startup',
-    photo: 'josh-scotland.jpg'
+    id: 'lupe-canaviri-maydana',
+    name: 'Lupe Canaviri Maydana',
+    company: 'Microsoft',
+    photo: 'lupe-canaviri-maydana.png',
+    twitter: 'luucamay_'
   },
   {
-    id: 'josh-scotland',
-    name: 'Josh Scotland',
-    company: 'Startup',
-    photo: 'josh-scotland.jpg'
+    id: 'lauro-silva',
+    name: 'Lauro Silva',
+    company: 'egghead.io',
+    photo: 'lauro-silva.jpg',
+    twitter: 'laurosilvacom'
   },
   {
-    id: 'josh-scotland',
-    name: 'Josh Scotland',
-    company: 'Startup',
-    photo: 'josh-scotland.jpg'
+    id: 'jacob-ebey',
+    name: 'Jacob Ebey',
+    company: 'Remix / Shopify',
+    photo: 'jacob-ebey.jpg',
+    twitter: 'ebey_jacob'
   }
 ]
