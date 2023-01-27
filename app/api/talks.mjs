@@ -92,15 +92,6 @@ export const talks = [
       'In 5 mins I will show you how to create your first end to end test with Playwright'
   },
   {
-    id: 'lauro-silva-february-2023',
-    speaker_id: 'lauro-silva',
-    event_id: 'february-2023',
-    title: 'Model resources, not layouts',
-    type: 'lightning',
-    abstract:
-      'My biggest takeaway from designing and contributing to educational products (https://egghead.io, https://www.totaltypescript.com, https://www.escuelafrontend.com, https://www.protailwind.com) is that you can build a bespoke, contextual, robust, lovely content-authoring experience by modeling resources, not layouts.\n\nYou want to design flexible content that can withstand heavy changes to design and presentation from the start. Data should work in different contexts across your application, so you should avoid layout concerns in the content modeling phase. The data describes what, not where the content will ultimately be displayed.'
-  },
-  {
     id: 'jacob-ebey-february-2023',
     speaker_id: 'jacob-ebey',
     event_id: 'february-2023',

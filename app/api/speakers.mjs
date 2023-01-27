@@ -75,13 +75,6 @@ export const speakers = [
     twitter: 'luucamay_'
   },
   {
-    id: 'lauro-silva',
-    name: 'Lauro Silva',
-    company: 'Lauro Silva, LLC',
-    photo: 'lauro-silva.jpg',
-    twitter: 'laurosilvacom'
-  },
-  {
     id: 'jacob-ebey',
     name: 'Jacob Ebey',
     company: 'Remix / Shopify',
