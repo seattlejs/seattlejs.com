@@ -29,5 +29,10 @@ export const sponsors = [
     id: 'customer-io',
     url: 'https://customer.io/',
     image: 'customer-io.svg'
+  },
+  {
+    id: 'remix',
+    url: 'https://remix.run/',
+    image: 'remix.png'
   }
 ]

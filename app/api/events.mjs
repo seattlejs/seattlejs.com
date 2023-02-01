@@ -80,7 +80,6 @@ export const events = [
     talks: [
       'brian-tran-february-2023',
       'lupe-canaviri-maydana-februrary-2023',
-      'lauro-silva-february-2023',
       'jacob-ebey-february-2023'
     ],
     description:
