@@ -35,6 +35,12 @@ i {
     width: 25px;
 }
 
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
 a[target="_blank"]:after {
     font-family: 'Font Awesome 5 Pro';
     font-size: 10px;
@@ -65,11 +71,37 @@ footer {
     text-align: center;
 }
 
-nav div {
-    margin: 0 0 8px 0;
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+nav > details {
+    display: contents;
+}
+
+nav > details > summary {
+    display: flex;
+    align-items: center;
+    grid-column: -2;
+    cursor: pointer;
+}
+
+nav > details > ul {
+    grid-row: 2;
+    grid-column: 1 / -1;
+}
+
+nav ul > li > a {
+    padding: 8px 0;
+}
+
+div#logo a {
+    display: flex;
 }
 
 div#logo img {
+    display: block;
     height: 30px;
     border: 1px solid #fff;
 }
@@ -182,40 +214,24 @@ span.cta {
 
 @media only screen and (min-width: 768px) {
     nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 80vw;
         margin: 0 auto;
     }
 
-    nav div {
-        margin: 0 16px 0 0;
+    nav ul {
+        display: flex;
     }
 
-    nav div a {
-        display: inline-block;
-        margin: 4px;
+    nav ul > li {
+        margin: 0 8px;
     }
 
-    nav div#logo a {
-        display:flex;
-        align-items: center;
-    }
-
-    nav div#logo img {
-        display: inline-block;
-    }
-    
     #page {
         width: 60vw;
         margin: 0 auto;
-    }
-
-    nav {
-        display: flex;
-        align-items: center;
-    }
-
-    nav div#logo {
-        flex: 1;
     }
 
     .organizer {
