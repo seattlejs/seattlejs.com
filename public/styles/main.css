@@ -55,7 +55,7 @@ my-layout {
 }
 
 header, footer {
-    padding: 5px;
+    padding: 7.5px;
     background-color: rgb(140, 170, 29);
     color: #fff;
 }
@@ -76,33 +76,43 @@ nav {
     grid-template-columns: auto 1fr auto;
 }
 
-nav > details {
-    display: contents;
-}
-
-nav > details > summary {
-    display: flex;
-    align-items: center;
+nav > .nav-toggler {
     grid-column: -2;
+    padding: 4px 12px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 6px;
     cursor: pointer;
 }
 
-nav > details > ul {
-    grid-row: 2;
-    grid-column: 1 / -1;
+.nav-toggler > svg {
+    display: block;
+    height: 24px;
 }
 
-nav ul > li > a {
+#nav-links {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    display: none;
+    margin-top: 8px;
+}
+
+.nav-toggler[aria-expanded=true] + #nav-links {
+    display: block;
+}
+
+#nav-links a {
     padding: 8px 0;
 }
 
 div#logo a {
     display: flex;
+    margin-right: 8px;
 }
 
 div#logo img {
     display: block;
-    height: 30px;
+    height: 32px;
     border: 1px solid #fff;
 }
 
@@ -221,12 +231,17 @@ span.cta {
         margin: 0 auto;
     }
 
-    nav ul {
-        display: flex;
+    nav .nav-toggler {
+        display: none;
     }
 
-    nav ul > li {
-        margin: 0 8px;
+    /* Always show the nav menu on desktop */
+    .nav-toggler[aria-expanded=true] + #nav-links,
+    .nav-toggler[aria-expanded=false] + #nav-links,
+    #nav-links {
+        display: flex;
+        gap: 24px;
+        margin: 0;
     }
 
     #page {
