@@ -1,6 +1,8 @@
 name: Deploy to staging
 on: [push]
-uses: beginner-corp/actions/deploy@main
-  with:
-    begin_token: ${{ secrets.BEGIN_TOKEN }}
-    begin_env_name: staging
+jobs:
+  deploy:
+    uses: beginner-corp/actions/deploy@main
+    with:
+      begin_token: ${{ secrets.BEGIN_TOKEN }}
+      begin_env_name: staging
