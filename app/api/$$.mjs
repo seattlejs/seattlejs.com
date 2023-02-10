@@ -15,6 +15,7 @@ export async function get(req) {
   )
   if (!existsSync(filePath)) {
     return {
+      statusCode: 404,
       json: {
         path,
         notFound: true
