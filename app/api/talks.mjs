@@ -98,5 +98,21 @@ export const talks = [
     title: '"Promises" over the wire',
     abstract:
       'Learn how Remix\'s `defer()` feature utilizes native language features, a single HTTP request and a few react tricks to deliver, what I believe will be, the next big trend in "full stack frameworks".'
+  },
+  {
+    id: 'aaroh-mankad-march-2023',
+    speaker_id: 'aaroh-mankad',
+    event_id: 'march-2023',
+    title: 'Tinkering with Framer Motion',
+    abstract:
+      "I've been learning how to use Framer Motion recently, and wanted to walk through how it works, what you can use it for, and go through a couple of the examples from the documentation!"
+  },
+  {
+    id: 'chris-griffing-march-2023',
+    speaker_id: 'chris-griffing',
+    event_id: 'march-2023',
+    title: 'Porting Boring Avatars using Mitosis',
+    abstract:
+      'boringavatars.com is an awesome avatars library, but it\'s only for React. People have ported it to other frameworks but they are one-offs. I decided to use Mitosis from builder.io to make "one repo to rule them all". In this talk, I will go over the process and some of the issues I encountered along the way.'
   }
 ]
