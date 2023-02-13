@@ -80,5 +80,19 @@ export const speakers = [
     company: 'Remix / Shopify',
     photo: 'jacob-ebey.jpg',
     twitter: 'ebey_jacob'
+  },
+  {
+    id: 'aaroh-mankad',
+    name: 'Aaroh Mankad',
+    company: 'Plaid',
+    photo: 'aaroh-mankad.jpg',
+    twitter: 'aarohmankad'
+  },
+  {
+    id: 'chris-griffing',
+    name: 'Chris Griffing',
+    company: 'Fairwinds',
+    photo: 'chris-griffing.jpg',
+    twitter: 'cmgriffing'
   }
 ]
