@@ -34,5 +34,10 @@ export const sponsors = [
     id: 'remix',
     url: 'https://remix.run/',
     image: 'remix.png'
+  },
+  {
+    id: "Appwrite",
+    url: "https://appwrite.io",
+    image: "Appwrite.jpg"
   }
 ]
