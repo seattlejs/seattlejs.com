@@ -104,6 +104,7 @@ export const talks = [
     speaker_id: 'aaroh-mankad',
     event_id: 'march-2023',
     title: 'Tinkering with Framer Motion',
+    type: 'lightning',
     abstract:
       "I've been learning how to use Framer Motion recently, and wanted to walk through how it works, what you can use it for, and go through a couple of the examples from the documentation!"
   },
