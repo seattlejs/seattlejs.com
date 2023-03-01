@@ -12,9 +12,14 @@ function inflateTalk(talk_id) {
   return talk
 }
 
+function inflateSponsors(sponsor_id) {
+  return sponsors.find(s => s.id === sponsor_id)
+}
+
 function inflateEvent(event) {
   if (event.talks) {
     event.talks = event.talks.map(inflateTalk)
+    event.sponsors = event.sponsors.map(inflateSponsors)
   }
   return event
 }
@@ -27,7 +32,7 @@ function filterFutureEvents() {
 }
 
 /**
- * Load upcoming events and, if there are any, the talks being given
+ * Load upcoming events + all organizers + all sponsors
  */
 export async function get() {
   let events = filterFutureEvents().map(inflateEvent)

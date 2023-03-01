@@ -89,9 +89,9 @@ export const events = [
     id: 'march-2023',
     title: 'SeattleJS March 2023',
     date: '2023-03-08',
-    sponsors: ['collective-seattle'],
+    sponsors: ['appwrite'],
     talks: ['aaroh-mankad-march-2023', 'chris-griffing-march-2023'],
     description:
-      "Join your fellow web devs for an evening of talks, networking and fun!\n\nTickets are $5 and go up to $10 the day of, so don't delay!"
+      "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!"
   }
 ]

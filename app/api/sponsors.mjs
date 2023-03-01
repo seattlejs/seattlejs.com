@@ -36,8 +36,10 @@ export const sponsors = [
     image: 'remix.png'
   },
   {
-    id: "Appwrite",
-    url: "https://appwrite.io",
-    image: "Appwrite.jpg"
+    id: 'appwrite',
+    name: 'Appwrite',
+    url: 'https://appwrite.io',
+    image: 'appwrite.jpg',
+    copy: 'Appwrite is a secure open-source backend server provides the core APIs required to build web and mobile applications. Appwrite provides authentication, database, storage, functions, and advanced real-time capabilities.'
   }
 ]
