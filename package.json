@@ -1,6 +1,6 @@
 {
   "name": "seattle-js",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "An evergreen website for the SeattleJS meetup and community",
   "dependencies": {
     "@architect/functions": "latest",
