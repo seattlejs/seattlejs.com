@@ -94,5 +94,12 @@ export const speakers = [
     company: 'Fairwinds',
     photo: 'chris-griffing.jpg',
     twitter: 'cmgriffing'
+  },
+  {
+    id: 'mason-lynass',
+    name: 'Mason Lynass',
+    company: 'Freelance',
+    photo: 'mason-lynass.jpg',
+    twitter: ''
   }
 ]
