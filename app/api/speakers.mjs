@@ -99,7 +99,6 @@ export const speakers = [
     id: 'mason-lynass',
     name: 'Mason Lynass',
     company: 'Freelance',
-    photo: 'mason-lynass.jpg',
-    twitter: ''
+    photo: 'mason-lynass.jpg'
   }
 ]
