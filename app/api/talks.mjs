@@ -109,6 +109,16 @@ export const talks = [
       "I've been learning how to use Framer Motion recently, and wanted to walk through how it works, what you can use it for, and go through a couple of the examples from the documentation!"
   },
   {
+    id: 'mason-lynass-march-2023',
+    speaker_id: 'mason-lynass',
+    event_id: 'march-2023',
+    title:
+      'useSound - a creative, versatile tool to use audio & sound effects in React',
+    type: 'lightning',
+    abstract:
+      "useSound is a custom React hook developed by Josh Comeau, designed to creatively implement audio assets in React applications. I'll talk about installation and setup, differences between useSound and HTMLAudioElement, and quickly showcase a simple musical instrument built in React!"
+  },
+  {
     id: 'chris-griffing-march-2023',
     speaker_id: 'chris-griffing',
     event_id: 'march-2023',
