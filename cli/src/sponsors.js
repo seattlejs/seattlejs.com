@@ -2,9 +2,9 @@ exports.mapSponsors = async airtableSponsors => {
   const Jimp = require('jimp')
   const fs = require('fs/promises')
 
-  const SPONSORS_LOGO_DIR = './images'
+  const SPONSORS_LOGO_DIR = '../public/images/sponsors'
 
-  const SPONSORS_JSON_OUTPUT = './sponsors.json'
+  const SPONSORS_JSON_OUTPUT = '../app/api/spnsors.json'
   const MAX_LOGO_SIZE_BYTES = 500000
 
   const sponsorShape = {
@@ -30,7 +30,7 @@ exports.mapSponsors = async airtableSponsors => {
     if (logoObj.size >= MAX_LOGO_SIZE_BYTES) {
       logo.resize(300, Jimp.AUTO)
     }
-    await logo.writeAsync(SPONSORS_LOGO_DIR + `/${cleanName}.jpg`)
+    await logo.writeAsync(SPONSORS_LOGO_DIR + `/${cleanName}`)
     sponsorsOutput.push(output)
   }
   if (sponsorsOutput) {

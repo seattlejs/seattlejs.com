@@ -3,9 +3,9 @@ exports.mapSpeakers = async airtableSpeakers => {
   const fs = require('fs/promises')
   const normalizeTwitterHandle = require('./normalizers').normalizeTwitterHandle
   // this output will make directories if they don't exist
-  const SPEAKERS_IMAGE_DIR = './images'
+  const SPEAKERS_IMAGE_DIR = '../public/images/speakers'
   // currently this output can't make directories, path must exist
-  const SPEAKERS_JSON_OUTPUT = './speakers.json'
+  const SPEAKERS_JSON_OUTPUT = '../app/api/speakers.json'
   const MAX_IMAGE_SIZE_BYTES = 300000
 
   const speakerShape = {

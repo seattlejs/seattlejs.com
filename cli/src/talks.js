@@ -5,7 +5,7 @@
  */
 exports.mapTalks = async (airtableEvent, airtableSpeakers) => {
   const fs = require('fs/promises')
-  const TALKS_JSON_OUTPUT = './talks.json'
+  const TALKS_JSON_OUTPUT = '../app/api/talks.json'
   const makeEventId = require('./normalizers').makeEventId
   const makeSpeakerId = require('./normalizers').makeSpeakerId
   const makeTalkId = require('./normalizers').makeTalkId
