@@ -1,0 +1,54 @@
+{
+  "name": "seattlejs-airtable-cli",
+  "version": "1.0.0",
+  "description": "cli for managing seattlejs data",
+  "main": "index.js",
+  "scripts": {
+    "all": "node --no-experimental-fetch index.js --speakers --talks",
+    "speakers": "node --no-experimental-fetch index.js --speakers",
+    "sponsors": "node --no-experimental-fetch index.js --sponsors",
+    "lint": "prettier ./index.js ./src --write && eslint ./index.js ./src --fix"
+  },
+  "dependencies": {
+    "airtable": "^0.11.6",
+    "dotenv": "^16.0.3",
+    "jimp": "^0.22.4",
+    "prompts": "^2.4.2",
+    "yargs": "^17.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^4.2.1",
+    "mocha": "^10.2.0",
+    "prettier": "2.8.3"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "ignorePatterns": [],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2022
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fx-wood/seattlejs-airtable-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "seattlejs"
+  ],
+  "author": "fx-wood",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fx-wood/seattlejs-airtable-cli/issues"
+  },
+  "homepage": "https://github.com/fx-wood/seattlejs-airtable-cli#readme"
+}
