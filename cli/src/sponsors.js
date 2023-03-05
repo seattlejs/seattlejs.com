@@ -4,7 +4,7 @@ exports.mapSponsors = async airtableSponsors => {
 
   const SPONSORS_LOGO_DIR = '../public/images/sponsors'
 
-  const SPONSORS_JSON_OUTPUT = '../app/api/spnsors.json'
+  const SPONSORS_JSON_OUTPUT = '../app/api/sponsors.json'
   const MAX_LOGO_SIZE_BYTES = 500000
 
   const sponsorShape = {
