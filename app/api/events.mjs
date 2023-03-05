@@ -6,4 +6,3 @@ export async function get() {
 }
 
 export const events = data
-
