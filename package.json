@@ -11,6 +11,8 @@
   },
   "devDependencies": {
     "@architect/sandbox": "^5.4.1",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/plugin-syntax-import-assertions": "^7.20.0",
     "eslint": "latest",
     "eslint-config-prettier": "^8.6.0",
     "prettier": "^2.8.3"
@@ -24,7 +26,14 @@
       "prettier"
     ],
     "ignorePatterns": [],
+    "parser": "@babel/eslint-parser",
     "parserOptions": {
+      "requireConfigFile": false,
+      "babelOptions": {
+        "plugins": [
+          "@babel/plugin-syntax-import-assertions"
+        ]
+      },
       "sourceType": "module",
       "ecmaVersion": 2022
     }
