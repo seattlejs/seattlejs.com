@@ -94,5 +94,19 @@
     "name": "Mason Lynass",
     "company": "Freelance",
     "photo": "mason-lynass.jpg"
+  },
+  {
+      "id": "catherine-johnson",
+      "name": "Catherine Johnson",
+      "company": "Microsoft",
+      "photo": "catherine-johnson.jpg",
+      "twitter": ""
+  },
+  {
+      "id": "philip-swan",
+      "name": "Philip Swan",
+      "company": "The Atlantis Project",
+      "photo": "philip-swan.png",
+      "twitter": "tetheredring"
   }
 ]

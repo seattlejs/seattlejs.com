@@ -119,5 +119,21 @@
    "title":"Porting Boring Avatars using Mitosis",
    "abstract":
      "boringavatars.com is an awesome avatars library, but it's only for React. People have ported it to other frameworks but they are one-offs. I decided to use Mitosis from builder.io to make \"one repo to rule them all\". In this talk, I will go over the process and some of the issues I encountered along the way."
+  },
+  {
+    "id": "philip-swan-april-2023",
+    "speaker_id": "philip-swan",
+    "event_id": "april-2023",
+    "title": "The Tethered Ring Space Infrastructure Interactive 3D Architecture Model in three.js",
+    "abstract": "The Tethered Ring a game-changing architecture for making space safe, sustainable, and affordable for everyone - which clearly is not going to happen if we keep on using chemical rockets. An on-line interactive three.js-based JavaScript model captures the engineering, science, and economics behind the technology. Now anyone with internet access can review the code and contribute to the project. Come and be inspired!",
+    "type": "regular"
+  },
+  {
+    "id": "catherine-johnson-april-2023",
+    "speaker_id": "catherine-johnson",
+    "event_id": "april-2023",
+    "title": "How to Build Accessible React Components",
+    "abstract": "Hope you are strapped in for some accessibility! In this session we will breakdown how you can use built-in React tools and web accessibility guidelines to create flexible and accessible components for your website.",
+    "type": "regular"
   }
 ]
