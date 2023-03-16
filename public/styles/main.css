@@ -35,6 +35,12 @@ i {
     width: 25px;
 }
 
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
 a[target="_blank"]:after {
     font-family: 'Font Awesome 5 Pro';
     font-size: 10px;
@@ -49,7 +55,7 @@ my-layout {
 }
 
 header, footer {
-    padding: 5px;
+    padding: 7.5px;
     background-color: rgb(140, 170, 29);
     color: #fff;
 }
@@ -65,12 +71,48 @@ footer {
     text-align: center;
 }
 
-nav div {
-    margin: 0 0 8px 0;
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+nav > .nav-toggler {
+    grid-column: -2;
+    padding: 4px 12px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.nav-toggler > svg {
+    display: block;
+    height: 24px;
+}
+
+#nav-links {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    display: none;
+    margin-top: 8px;
+}
+
+.nav-toggler[aria-expanded=true] + #nav-links {
+    display: block;
+}
+
+#nav-links a {
+    padding: 8px 0;
+}
+
+div#logo a {
+    display: flex;
+    margin-right: 8px;
 }
 
 div#logo img {
-    height: 30px;
+    display: block;
+    height: 32px;
     border: 1px solid #fff;
 }
 
@@ -182,40 +224,29 @@ span.cta {
 
 @media only screen and (min-width: 768px) {
     nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 80vw;
         margin: 0 auto;
     }
 
-    nav div {
-        margin: 0 16px 0 0;
+    nav .nav-toggler {
+        display: none;
     }
 
-    nav div a {
-        display: inline-block;
-        margin: 4px;
+    /* Always show the nav menu on desktop */
+    .nav-toggler[aria-expanded=true] + #nav-links,
+    .nav-toggler[aria-expanded=false] + #nav-links,
+    #nav-links {
+        display: flex;
+        gap: 24px;
+        margin: 0;
     }
 
-    nav div#logo a {
-        display:flex;
-        align-items: center;
-    }
-
-    nav div#logo img {
-        display: inline-block;
-    }
-    
     #page {
         width: 60vw;
         margin: 0 auto;
-    }
-
-    nav {
-        display: flex;
-        align-items: center;
-    }
-
-    nav div#logo {
-        flex: 1;
     }
 
     .organizer {
