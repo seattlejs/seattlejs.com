@@ -3,7 +3,7 @@
   "version": "3.2.1",
   "description": "An evergreen website for the SeattleJS meetup and community",
   "engines": {
-    "node": ">=17.1.0"
+    "node": ">=16.19.0"
   },
   "dependencies": {
     "@architect/functions": "latest",
