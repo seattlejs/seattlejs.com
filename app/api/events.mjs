@@ -1,4 +1,4 @@
-import data from './events.json' assert { type: 'json' }
+import data from '../data/events.json' assert { type: 'json' }
 export async function get() {
   return {
     json: { data }
