@@ -1,27 +1,8 @@
+import data from './organizers.json' assert { type: 'json' }
 export async function get() {
   return {
-    json: { organizers }
+    json: { data }
   }
 }
 
-export const organizers = [
-  {
-    id: 'carter-rabasa',
-    full_name: 'Carter Rabasa',
-    twitter: 'crtr0'
-  },
-  {
-    id: 'justin-oliver-lee',
-    full_name: 'Justin Oliver Lee',
-    twitter: 'JustinOliverLee'
-  },
-  {
-    id: 'andres-wiggins',
-    full_name: 'Andres Wiggins',
-    twitter: 'andre_wiggins'
-  },
-  {
-    id: 'fx-wood',
-    full_name: 'FX Wood'
-  }
-]
+export const organizers = data
