@@ -20,10 +20,12 @@ export default airtableEvents => {
     const data = { ...eventsShape }
     const name = event.get('Name')
     const date = event.get('Date')
+    const description = event.get('Description') || ''
     const id = makeEventId(name)
     data.id = id
     data.title = name
     data.date = date
+    data.description = description
     eventsData[event.id] = data
     // the website doesn't support having events later than the current one
     // stop going through the (sorted) events when we get to the next one

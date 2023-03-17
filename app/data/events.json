@@ -59,7 +59,7 @@
     "id": "may-2022",
     "title": "SeattleJS May 2022",
     "date": "2022-05-11",
-    "sponsors": [],
+    "sponsors": ["collective-seattle"],
     "talks": ["amber-hoak-may-2022"],
     "description": ""
   },
@@ -67,7 +67,7 @@
     "id": "june-2022",
     "title": "SeattleJS June 2022",
     "date": "2022-06-08",
-    "sponsors": [],
+    "sponsors": ["collective-seattle"],
     "talks": ["jamund-ferguson-june-2022", "michael-fitzgerald-june-2022"],
     "description": ""
   },
@@ -75,7 +75,7 @@
     "id": "july-2022",
     "title": "SeattleJS July 2022",
     "date": "2022-07-13",
-    "sponsors": [],
+    "sponsors": ["collective-seattle"],
     "talks": [],
     "description": ""
   },
@@ -83,7 +83,7 @@
     "id": "august-2022",
     "title": "SeattleJS August 2022",
     "date": "2022-08-10",
-    "sponsors": [],
+    "sponsors": ["collective-seattle"],
     "talks": [],
     "description": ""
   },
@@ -91,7 +91,7 @@
     "id": "september-2022",
     "title": "SeattleJS September 2022",
     "date": "2022-09-14",
-    "sponsors": [],
+    "sponsors": ["collective-seattle"],
     "talks": [],
     "description": ""
   },
@@ -99,7 +99,7 @@
     "id": "october-2022",
     "title": "SeattleJS October 2022",
     "date": "2022-10-12",
-    "sponsors": [],
+    "sponsors": ["silicon-valley-bank"],
     "talks": ["rachel-lee-nabors-october-2022"],
     "description": ""
   },
