@@ -108,5 +108,12 @@
       "company": "The Atlantis Project",
       "photo": "philip-swan.png",
       "twitter": "tetheredring"
+  },
+  {
+      "id": "michael-solati",
+      "name": "Michael Solati",
+      "company": "Amplication",
+      "photo": "michael-solati.jpg",
+      "twitter": "michaelsolati"
   }
 ]

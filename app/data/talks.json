@@ -135,5 +135,13 @@
     "title": "How to Build Accessible React Components",
     "abstract": "Hope you are strapped in for some accessibility! In this session we will breakdown how you can use built-in React tools and web accessibility guidelines to create flexible and accessible components for your website.",
     "type": "regular"
+  },
+  {
+    "id": "michael-solati-april-2023",
+    "speaker_id": "michael-solati",
+    "event_id": "april-2023",
+    "title": "0 to 100 with Lighthouse",
+    "abstract": "There are a slew of tools to help developers improve their web applications: one of them is Google's Lighthouse. In this session you'll learn about what Lighthouse is, and see how you can use Lighthouse CI as part of your build and testing process.",
+    "type": "lightning"
   }
 ]

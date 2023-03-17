@@ -96,8 +96,9 @@
       "id": "april-2023",
       "title": "SeattleJS April 2023",
       "date": "2023-04-12",
-      "sponsors": [],
+      "sponsors": ["amplication"],
       "talks": [
+          "michael-solati-april-2023",
           "philip-swan-april-2023",
           "catherine-johnson-april-2023"
       ],

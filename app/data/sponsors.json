@@ -35,5 +35,12 @@
     "url": "https://appwrite.io",
     "image": "appwrite.jpg",
     "copy": "Appwrite is a secure open-source backend server provides the core APIs required to build web and mobile applications. Appwrite provides authentication, database, storage, functions, and advanced real-time capabilities."
+  },
+  {
+    "id": "amplication",
+    "name": "Amplication",
+    "url": "https://amplication.com",
+    "image": "amplication.png",
+    "copy": "Amplication is an opensource based SaaS backend development solution that empowers professional developers to accelerate the development of Node.js applications. By using Amplication to build repetitive backend services, development teams will yield significant increases in developer productivity, reliability, and consistency of delivering critical applications to production."
   }
 ]
