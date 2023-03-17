@@ -27,6 +27,6 @@ This tool takes all of our airtable data and generates output appropriate for th
 
 ### Run the tool
 1. navigate to the root of the seattlejs/seattlejs.com project
-2. `cd data-munger`
-3. `npm run munge`
+2. `cd data-pipeline`
+3. `npm run pipeline`
 

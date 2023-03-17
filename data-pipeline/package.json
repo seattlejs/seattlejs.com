@@ -1,11 +1,11 @@
 {
-  "name": "seattlejs-airtable-cli",
+  "name": "seattlejs-data-pipeline",
   "version": "1.0.0",
-  "description": "cli for managing seattlejs data",
+  "description": "data pipeline for producing seattlejs website data",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "munge": "node --no-experimental-fetch index.js",
+    "pipeline": "node --no-experimental-fetch index.js",
     "lint": "prettier ./index.js ./src --write && eslint ./index.js ./src --fix"
   },
   "dependencies": {
@@ -39,16 +39,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fx-wood/seattlejs-airtable-cli.git"
+    "url": "git+https://github.com/seattlejs/seattlejs.com.git"
   },
   "keywords": [
-    "cli",
     "seattlejs"
-  ],
-  "author": "fx-wood",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fx-wood/seattlejs-airtable-cli/issues"
-  },
-  "homepage": "https://github.com/fx-wood/seattlejs-airtable-cli#readme"
+  ]
 }
