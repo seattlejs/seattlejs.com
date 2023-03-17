@@ -2,41 +2,49 @@
   {
     "id": "formidable",
     "url": "https://formidable.com",
-    "image": "formidable.svg"
+    "image": "formidable.svg",
+    "copy": "We build the modern web."
   },
   {
     "id": "silicon-valley-bank",
     "url": "https://www.svb.com/startup-banking",
-    "image": "silicon-valley-bank.svg"
+    "image": "silicon-valley-bank.svg",
+    "copy": "There are many ways to describe us. \"Bank” is just one."
   },
   {
     "id": "collective-seattle",
     "url": "https://www.collectiveseattle.com",
-    "image": "collective-seattle.webp"
+    "image": "collective-seattle.webp",
+    "copy": "Your basecamp for the mind, body, + soul"
   },
   {
     "id": "aws-skills-center-seattle",
     "url": "https://aws.amazon.com/training/skills-centers/seattle-skills-center/",
-    "image": "aws-skills-center-seattle.png"
+    "image": "aws-skills-center-seattle.png",
+    "copy": "AWS Skills Center is a free training center where people can\nlearn about cloud computing by engaging with interactive\nexhibits, taking free foundational cloud classroom training, and\nparticipating in local community events.\nThe AWS Skills Center supports Amazon’s 2025 skills\ncommitment to train 29 million people in cloud computing by\n2025."
   },
   {
     "id": "customer-io",
     "url": "https://customer.io/",
-    "image": "customer-io.svg"
+    "image": "customer-io.svg",
+    "copy": "Build your dream messaging workflows"
   },
   {
     "id": "shopify-remix",
     "url": "https://remix.run",
-    "image": "shopify-remix.png"
+    "image": "shopify-remix.png",
+    "copy": "Remix is a full stack web framework that lets you focus on the user interface and work back through web standards to deliver a fast, slick, and resilient user experience. People are gonna love using your stuff."
   },
   {
     "id": "amplication",
     "url": "https://amplication.com",
-    "image": "amplication.png"
+    "image": "amplication.png",
+    "copy": "Amplication is an opensource based SaaS backend development solution that empowers professional developers to accelerate the development of Node.js applications. By using Amplication to build repetitive backend services, development teams will yield significant increases in developer productivity, reliability, and consistency of delivering critical applications to production. \n\nThe platform enables developers to rapidly build new services with automated generation of a fully functional, production-ready backend in minutes. It does so without compromising the ownership, customizability, and control that are so crucial for developers.\n\nAmplication is a truly flexible platform with no vendor lock-in. You can always choose to continue the development of your service leveraging your coding skills and existing tools. Our investment in scale, reliability, and robustness, ensures all the services created with Amplication meet the requirements and standards of large organizations and enterprises. Our platform is open-source, built for developers with the help of the open-source community."
   },
   {
     "id": "appwrite",
     "url": "https://appwrite.io",
-    "image": "appwrite.png"
+    "image": "appwrite.png",
+    "copy": "Appwrite is a secure open-source backend server provides the core APIs required to build web and mobile applications. Appwrite provides authentication, database, storage, functions, and advanced real-time capabilities."
   }
 ]

@@ -3,7 +3,8 @@ import { normalizeSponsorName, getFileExtension } from './normalizers.js'
 const sponsorShape = {
   id: '',
   url: '',
-  image: ''
+  image: '',
+  copy: ''
 }
 
 const logoShape = {
@@ -28,6 +29,7 @@ export default airtableSponsors => {
       const fileName = `${name}.${fileExtension}`
       logo.filename = fileName
       data.image = fileName
+      data.copy = sponsor.get('Web Copy') || ''
     }
     sponsorsLogos.push(logo)
     sponsorsData.push(data)
