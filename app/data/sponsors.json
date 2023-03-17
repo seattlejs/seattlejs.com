@@ -1,13 +1,18 @@
 [
   {
-    "id": "collective-seattle",
-    "url": "https://www.collectiveseattle.com",
-    "image": "collective.webp"
+    "id": "formidable",
+    "url": "https://formidable.com",
+    "image": "formidable.svg"
   },
   {
-    "id": "svb",
+    "id": "silicon-valley-bank",
     "url": "https://www.svb.com/startup-banking",
-    "image": "svb.svg"
+    "image": "silicon-valley-bank.svg"
+  },
+  {
+    "id": "collective-seattle",
+    "url": "https://www.collectiveseattle.com",
+    "image": "collective-seattle.webp"
   },
   {
     "id": "aws-skills-center-seattle",
@@ -15,25 +20,23 @@
     "image": "aws-skills-center-seattle.png"
   },
   {
-    "id": "formidable",
-    "url": "https://formidable.com",
-    "image": "formidable.svg"
-  },
-  {
     "id": "customer-io",
     "url": "https://customer.io/",
     "image": "customer-io.svg"
   },
   {
-    "id": "remix",
-    "url": "https://remix.run/",
-    "image": "remix.png"
+    "id": "shopify-remix",
+    "url": "https://remix.run",
+    "image": "shopify-remix.png"
+  },
+  {
+    "id": "amplication",
+    "url": "https://amplication.com",
+    "image": "amplication.png"
   },
   {
     "id": "appwrite",
-    "name": "Appwrite",
     "url": "https://appwrite.io",
-    "image": "appwrite.jpg",
-    "copy": "Appwrite is a secure open-source backend server provides the core APIs required to build web and mobile applications. Appwrite provides authentication, database, storage, functions, and advanced real-time capabilities."
+    "image": "appwrite.png"
   }
 ]
