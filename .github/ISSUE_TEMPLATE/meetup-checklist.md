@@ -6,7 +6,6 @@ labels: ''
 assignees: ''
 ---
 # Meetup Checklist
-```[tasklist]
 # Details
 - [ ] lock in sponsor
 - [ ] lock in location
@@ -35,9 +34,12 @@ assignees: ''
 - [ ] bring nametags, stickers (pronouns, job status), sharpies
 - [ ] bring tickets
 - [ ] send ti.to link to volunteers in discord
-- [ ] 
+- [ ] set up stage (speakers, tv, podium)
+- [ ] set up chairs
+- [ ] check sound/video/slides with speakers
+- [ ] put away chairs and sound/video equipment
+- [ ] clean up venue
 
 # After the meetup
 - [ ] create next meetup checklist
 - [ ] submit invoice to sponsor
-```
