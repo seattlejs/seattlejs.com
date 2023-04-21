@@ -115,5 +115,19 @@
       "company": "Amplication",
       "photo": "michael-solati.jpg",
       "twitter": "michaelsolati"
+  },
+  {
+    "id": "spenser-solys",
+    "name": "Spenser Solys",
+    "company": "Project Archer",
+    "photo": "spenser-solys.jpg",
+    "twitter": "scub3d"
+  },
+  {
+    "id": "tiger-oakes",
+    "name": "Tiger Oakes",
+    "company": "Microsoft",
+    "photo": "tiger-oakes.jpg",
+    "twitter": "Not_Woods"
   }
 ]

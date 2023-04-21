@@ -143,5 +143,21 @@
     "title": "0 to 100 with Lighthouse",
     "abstract": "There are a slew of tools to help developers improve their web applications: one of them is Google's Lighthouse. In this session you'll learn about what Lighthouse is, and see how you can use Lighthouse CI as part of your build and testing process.",
     "type": "lightning"
+  },
+  {
+    "id": "spenser-solys-may-2023",
+    "speaker_id": "spenser-solys",
+    "event_id": "may-2023",
+    "title": "Augmented Reality Business Card",
+    "abstract": "I made a \"business card\" using AFrame + AR.js. Just want to show it off",
+    "type": "lightning"
+  },
+  {
+    "id": "tiger-oakes-may-2023",
+    "speaker_id": "tiger-oakes",
+    "event_id": "may-2023",
+    "title": "Hacking an e-reader to show my tea menu",
+    "abstract": "E-Readers are great and use so little power! I wanted to have a tea menu to show guests and for my own reference. I'll share how to generate an e-book with all your drinks in Deno, as well as rendering a custom cover page with SVG. Wow your friends by turning an old device into a smart home tea menu.",
+    "type": "lightning"
   }
 ]
