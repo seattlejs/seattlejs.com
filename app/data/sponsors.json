@@ -1,46 +1,46 @@
 [
-  {
-    "id": "collective-seattle",
-    "url": "https://www.collectiveseattle.com",
-    "image": "collective.webp"
-  },
-  {
-    "id": "svb",
-    "url": "https://www.svb.com/startup-banking",
-    "image": "svb.svg"
-  },
-  {
-    "id": "aws-skills-center-seattle",
-    "url": "https://aws.amazon.com/training/skills-centers/seattle-skills-center/",
-    "image": "aws-skills-center-seattle.png"
-  },
-  {
-    "id": "formidable",
-    "url": "https://formidable.com",
-    "image": "formidable.svg"
-  },
-  {
-    "id": "customer-io",
-    "url": "https://customer.io/",
-    "image": "customer-io.svg"
-  },
-  {
-    "id": "remix",
-    "url": "https://remix.run/",
-    "image": "remix.png"
-  },
-  {
-    "id": "appwrite",
-    "name": "Appwrite",
-    "url": "https://appwrite.io",
-    "image": "appwrite.jpg",
-    "copy": "Appwrite is a secure open-source backend server provides the core APIs required to build web and mobile applications. Appwrite provides authentication, database, storage, functions, and advanced real-time capabilities."
-  },
-  {
-    "id": "amplication",
-    "name": "Amplication",
-    "url": "https://amplication.com",
-    "image": "amplication.png",
-    "copy": "Amplication is an opensource based SaaS backend development solution that empowers professional developers to accelerate the development of Node.js applications. By using Amplication to build repetitive backend services, development teams will yield significant increases in developer productivity, reliability, and consistency of delivering critical applications to production."
-  }
+    {
+        "id": "amplication",
+        "name": "Amplication",
+        "url": "https://amplication.com",
+        "image": "amplication.png",
+        "copy": "Amplication is an opensource based SaaS backend development solution that empowers professional developers to accelerate the development of Node.js applications. By using Amplication to build repetitive backend services, development teams will yield significant increases in developer productivity, reliability, and consistency of delivering critical applications to production."
+    },
+    {
+        "id": "appwrite",
+        "name": "Appwrite",
+        "url": "https://appwrite.io",
+        "image": "appwrite.jpg",
+        "copy": "Appwrite is a secure open-source backend server provides the core APIs required to build web and mobile applications. Appwrite provides authentication, database, storage, functions, and advanced real-time capabilities."
+    },
+    {
+        "id": "remix",
+        "url": "https://remix.run/",
+        "image": "remix.png"
+    },
+    {
+        "id": "customer-io",
+        "url": "https://customer.io/",
+        "image": "customer-io.svg"
+    },
+    {
+        "id": "formidable",
+        "url": "https://formidable.com",
+        "image": "formidable.svg"
+    },
+    {
+        "id": "aws-skills-center-seattle",
+        "url": "https://aws.amazon.com/training/skills-centers/seattle-skills-center/",
+        "image": "aws-skills-center-seattle.png"
+    },
+    {
+        "id": "svb",
+        "url": "https://www.svb.com/startup-banking",
+        "image": "svb.svg"
+    },
+    {
+        "id": "collective-seattle",
+        "url": "https://www.collectiveseattle.com",
+        "image": "collective.webp"
+    }
 ]
