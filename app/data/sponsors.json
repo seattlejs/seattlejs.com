@@ -42,5 +42,12 @@
     "url": "https://amplication.com",
     "image": "amplication.png",
     "copy": "Amplication is an opensource based SaaS backend development solution that empowers professional developers to accelerate the development of Node.js applications. By using Amplication to build repetitive backend services, development teams will yield significant increases in developer productivity, reliability, and consistency of delivering critical applications to production."
+  },
+  {
+    "id": "twilio",
+    "name": "Twilio",
+    "url": "https://www.twilio.com/en-us",
+    "image": "twilio.png",
+    "copy": "Twilio is the customer layer for the internet, powering the most engaging interactions companies build for their customers. We provide simple tools that solve hard problems, delivered as a developer-first cloud platform with global reach and no shenanigans pricing."
   }
 ]

@@ -102,17 +102,17 @@
           "philip-swan-april-2023",
           "catherine-johnson-april-2023"
       ],
-      "description": ""
+      "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!"
   },
   {
     "id": "may-2023",
     "title": "SeattleJS May 2023",
     "date": "2023-05-10",
-    "sponsors": [],
+    "sponsors": ["twilio"],
     "talks": [
       "spenser-solys-may-2023",
       "tiger-oakes-may-2023"
     ],
-    "description": ""
+    "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!"
   }
 ]
