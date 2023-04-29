@@ -126,5 +126,21 @@
         "title": "How to Build Accessible React Components",
         "abstract": "Hope you are strapped in for some accessibility! In this session we will breakdown how you can use built-in React tools and web accessibility guidelines to create flexible and accessible components for your website.",
         "type": "regular"
+    },
+    {
+      "id": "spenser-solys-may-2023",
+      "speaker_id": "spenser-solys",
+      "event_id": "may-2023",
+      "title": "Augmented Reality Business Card",
+      "abstract": "I made a \"business card\" using AFrame + AR.js. Just want to show it off",
+      "type": "lightning"
+    },
+    {
+      "id": "tiger-oakes-may-2023",
+      "speaker_id": "tiger-oakes",
+      "event_id": "may-2023",
+      "title": "Hacking an e-reader to show my tea menu",
+      "abstract": "E-Readers are great and use so little power! I wanted to have a tea menu to show guests and for my own reference. I'll share how to generate an e-book with all your drinks in Deno, as well as rendering a custom cover page with SVG. Wow your friends by turning an old device into a smart home tea menu.",
+      "type": "lightning"
     }
 ]

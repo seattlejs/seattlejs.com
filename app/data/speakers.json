@@ -110,6 +110,20 @@
         "photo": "rachel-lee-nabors.jpg"
     },
     {
+      "id": "spenser-solys",
+      "name": "Spenser Solys",
+      "company": "Project Archer",
+      "photo": "spenser-solys.jpg",
+      "twitter": "scub3d"
+    },
+    {
+      "id": "tiger-oakes",
+      "name": "Tiger Oakes",
+      "company": "Microsoft",
+      "photo": "tiger-oakes.jpg",
+      "twitter": "Not_Woods"
+    },
+    {
         "id": "tim-obrien",
         "name": "Tim O\"Brien",
         "company": "Wagner Custom Skis",
