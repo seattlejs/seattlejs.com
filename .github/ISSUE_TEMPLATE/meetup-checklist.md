@@ -34,10 +34,7 @@ assignees: ''
 - [ ] send ti.to check-in link to volunteers in discord
 - [ ] set up stage (speakers, tv, podium)
 - [ ] set up chairs
-- [ ] check sound/video/slides with speakers
-  - mic volume check
-  - wifi connection 
-  - audio output if sound in presentation
+- [ ] check A/V with speakers (slide/video/audio output, mic volume check, wifi connection)
 - [ ] put away chairs and sound/video equipment
 - [ ] clean up venue
 
