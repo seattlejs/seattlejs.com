@@ -7,12 +7,13 @@ assignees: ''
 ---
 # Meetup Checklist
   
-**(Immediately following previous event)**
+## (Immediately following previous event)
 - [ ] confirm location
 - [ ] update meetup.com auto-created event with location info (if not Collective)
 - [ ] create new event in ti.to
+- [ ] create "event" and update website
   
-**(T-3 weeks)**
+## (3 weeks out)
 - [ ] confirm sponsor & update website
 - [ ] submit invoice to sponsor
 - [ ] confirm speakers & update website
@@ -20,16 +21,20 @@ assignees: ''
 - [ ] click "announce" on meetup.com
 - [ ] post tweet
 
-**(T-2 weeks)**
-- [ ] send email using customer.io
-- [ ] post in discord
+## (2 weeks out)
+- [ ] send email to mailing list (customer.io)
+- [ ] announce in discord
 
-**(T-5 days)**
+## (1 week out)
+- [ ] send email to meetup.com
+- [ ] post tweet
+
+## (1-2 days before)
 - [ ] send info to speakers on where/when/what
 - [ ] send message to volunteers
 - [ ] prepare MC slide deck, get sign-off
-
-**(T-0 days)**
+  
+## (day of)
 - [ ] bring nametags, stickers (pronouns, job status), sharpies & drink tickets
 - [ ] send ti.to check-in link to volunteers in discord
 - [ ] set up stage (speakers, tv, podium)
@@ -38,5 +43,5 @@ assignees: ''
 - [ ] put away chairs and sound/video equipment
 - [ ] clean up venue
 
-**(T+1 day)**
+**(day after)**
 - [ ] create next meetup checklist
