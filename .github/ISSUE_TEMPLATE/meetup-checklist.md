@@ -43,5 +43,5 @@ assignees: ''
 - [ ] put away chairs and sound/video equipment
 - [ ] clean up venue
 
-**(day after)**
+## (day after)
 - [ ] create next meetup checklist
