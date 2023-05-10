@@ -2,7 +2,7 @@
 name: Meetup Checklist
 about: checklist for meetup organizers to track meetup tasks
 title: '<Month> Meetup Checklist'
-labels: ''
+labels: 'meetup-checklist'
 assignees: ''
 ---
 # Meetup Checklist
@@ -39,7 +39,7 @@ assignees: ''
 - [ ] send ti.to check-in link to volunteers in discord
 - [ ] set up stage (speakers, tv, podium)
 - [ ] set up chairs
-- [ ] check sound/video/slides with speakers
+- [ ] check A/V with speakers (slide/video/audio output, mic volume check, wifi connection)
 - [ ] put away chairs and sound/video equipment
 - [ ] clean up venue
 
