@@ -11,6 +11,8 @@ assignees: ''
 - [ ] confirm location
 - [ ] update meetup.com auto-created event with location info (if not Collective)
 - [ ] create new event in ti.to
+- [ ] duplicate meetup survey and update speaker info (Google Docs)
+- [ ] send email via Tito to previous month's attendees with link to survey + link to tickets
 - [ ] create "event" and update website
   
 ## (3 weeks out)
