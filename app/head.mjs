@@ -1,10 +1,10 @@
 function getBaseUrl() {
   let url
-  if (process.env.NODE_ENV === 'testing') {
+  if (process.env.ARC_ENV === 'testing') {
       url = 'http://localhost:3333'
   }
   else  {
-      url = `https://${ process.env.NODE_ENV === 'staging' ? 'staging.' : '' }seattlejs.com`
+      url = `https://${ process.env.ARC_ENV === 'staging' ? 'staging.' : '' }seattlejs.com`
   }
   return url
 }
