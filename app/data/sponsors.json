@@ -49,5 +49,19 @@
     "url": "https://www.twilio.com/en-us",
     "image": "twilio.png",
     "copy": "Twilio is the customer layer for the internet, powering the most engaging interactions companies build for their customers. We provide simple tools that solve hard problems, delivered as a developer-first cloud platform with global reach and no shenanigans pricing."
+  },
+  {
+    "id": "aws",
+    "name": "AWS",
+    "url": "https://docs.amplify.aws/",
+    "image": "aws.png",
+    "copy": ""
+  },
+  {
+    "id": "courier",
+    "name": "Courier",
+    "url": "http://courier.com?utm_campaign=devrel-meetups&utm_source=meetups&utm_medium=website",
+    "image": "courier.png",
+    "copy": ""
   }
 ]

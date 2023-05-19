@@ -5,13 +5,12 @@ export default function ({ html }) {
       <div id="page">
         <!-- no title needed -->
         <div class="page-body">
-          <div><img src="/_public/images/seattlejsconf-2023-logo.png" alt="logo for SeattleJS Conf 2023"/></div>
-          <h2>What</h2>
-          <p>This is the 2nd official SeattleJS conference. We are a 1-day conference for web developers that will feature 12 amazing speakers, covering the latest in web and JS development. The last time we did this was when the CascadiaJS folks took a break in 2017. They're taking another break, so we're back!</p>
+          <div style="text-align:center"><img width="500" src="/_public/images/seattlejsconf-2023-logo.png" alt="logo for SeattleJS Conf 2023"/></div>
+          <p class="lead-in">This is the 2nd official SeattleJS conference. We are a 1-day conference for web developers that will feature 12 amazing speakers, covering the latest in web and JS development. The last time we did this was when the CascadiaJS folks took a break in 2017. They're taking another break, so we're back!</p>
           <h2>When</h2>
           <ul>
-            <li>Tuesday, August 8 2023</li>
-            <li>Doors Open at 8am</li>
+            <li>Tuesday, August 8, 2023</li>
+            <li>Doors open at 8am</li>
             <li>Talks run from 9am - 5pm</li>
             <li>Closing Party runs from 7pm - midnight</li>
           </ul>

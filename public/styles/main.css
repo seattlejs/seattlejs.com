@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 200% }
-h2 { font-size: 180% }
+h2 { font-size: 180%; color: #052460 }
 h3 { font-size: 160% }
 h4 { font-size: 140% }
 
@@ -139,6 +139,11 @@ header a:hover, footer a:hover {
     padding: 8px 24px;
 }
 
+.lead-in {
+    font-size: 120%;
+    color: #052460;
+}
+
 .card {
     padding: 5px;
     border-radius: 4px;
@@ -167,9 +172,16 @@ header a:hover, footer a:hover {
     margin: 8px;
 }
 
-.speaker .name, .company, .twitter {
+.speaker .name, .speaker .company, .speaker .twitter {
     font-family: rift-soft;
     font-weight: bold;
+}
+
+.speaker .name {
+    font-size: 150%;
+}
+
+.speaker .company, .speaker .twitter {
     font-size: 120%;
 }
 
