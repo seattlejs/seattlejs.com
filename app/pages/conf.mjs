@@ -23,7 +23,7 @@ export default function ({ html }) {
             <li>Please use public transportation (bus or light rail) if possible.</li>
           </ul>
           <h2>Speakers</h2>
-            <p>We can't wait to announce the rest of our line-up for the conference. And it's not too late to apply to speak! We are running an <a href="https://airtable.com/shrhxFyPF0ZD66jpt">OPEN CFP</a> that closes June 2. The full line-up will be announced on Monday, June 4.</p>
+            <p>We can't wait to announce the rest of our line-up for the conference. And it's not too late to apply to speak! We are running an <a target="_blank" href="https://airtable.com/shrhxFyPF0ZD66jpt">OPEN CFP</a> that closes June 2. The full line-up will be announced on Monday, June 4.</p>
             <div style="display:flex">
               <view-speaker name="Jason Lengstorf" company="Learn With Jason" twitter="jlengstorf" photo="jason-lengstorf.jpg"></view-speaker>
               <view-speaker name="Adam Argyle" company="Google" twitter="argyleink" photo="adam-argyle.jpg"></view-speaker>
@@ -36,8 +36,10 @@ export default function ({ html }) {
             <view-sponsor name="AWS" url="https://docs.amplify.aws/" image="aws.png"></view-sponsor>
             <view-sponsor name="Courier" url="http://courier.com?utm_campaign=q2-fy23-conference-seattlejsconf&utm_source=conference&utm_medium=website" image="courier.png"></view-sponsor>
           </div>
+          <h2>Scholarships</h2>
+          <p>We are <a target="_blank" href="https://airtable.com/shrZcxLRhznKQ1sIm">accepting applications</a> for our Scholarship Program! If you are an under-represented minority in tech or need financial aid in order to attend this event, please consider applying. We want everyone to be able to attend this event! And if you are in a position to help fund this program, please consider making a donation below when you buy your ticket ❤️</p>
           <h2>Tickets</h2>
-          <tito-widget event="event-loop/seattlejs-conf-2023"></tito-widget>
+          <tito-widget event="event-loop/seattlejs-conf-2023"></tito-widget> 
         </div>
       </div>
     </my-layout>
