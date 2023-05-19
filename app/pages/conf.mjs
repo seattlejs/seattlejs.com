@@ -23,7 +23,7 @@ export default function ({ html }) {
           </ul>
           <h2>Speakers</h2>
             <p>We can't wait to announce the rest of our line-up for the conference. And it's not too late to apply to speak! We are running an <a target="_blank" href="https://airtable.com/shrhxFyPF0ZD66jpt">OPEN CFP</a> that closes June 2. The full line-up will be announced on Monday, June 4.</p>
-            <div style="display:flex">
+            <div style="display:flex; flex-wrap: wrap">
               <view-speaker name="Jason Lengstorf" company="Learn With Jason" twitter="jlengstorf" photo="jason-lengstorf.jpg"></view-speaker>
               <view-speaker name="Adam Argyle" company="Google" twitter="argyleink" photo="adam-argyle.jpg"></view-speaker>
               <view-speaker name="Kevin Whinnery" company="Deno" twitter="kevinwhinnery" photo="kevin-whinnery.jpg"></view-speaker>
