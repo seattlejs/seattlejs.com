@@ -1,6 +1,18 @@
+function getBaseUrl() {
+  let url
+  if (process.env.NODE_ENV === 'testing') {
+      url = 'http://localhost:3333'
+  }
+  else  {
+      url = `https://${ process.env.NODE_ENV === 'staging' ? 'staging.' : '' }seattlejs.com`
+  }
+  return url
+}
+
 export default function Head(state) {
   const { store, req /*, status, error*/ } = state
   const { path } = req
+  const baseUrl = getBaseUrl()
   const { title } = store
   //console.log(path, store, status, req, error)
   return `
@@ -17,12 +29,12 @@ export default function Head(state) {
         ${ path === '/conf' 
           ? `
           <script src="https://js.tito.io/v2" async></script>
-          <meta name="image" property="og:image" content="https://seattlejs.com/_public/images/seattlejsconf-share.jpg" />
-          <meta name="url" property="og:url" content="https://seattlejs.com/conf" />
+          <meta name="image" property="og:image" content="${ baseUrl }/_public/images/seattlejsconf-share.jpg" />
+          <meta name="url" property="og:url" content="${ baseUrl }/conf" />
           <meta name="type" property="og:type" content="website" />
           <meta name="author" content="Carter Rabasa">
           <meta property="og:title" content="SeattleJS Conf- August 8, 2023" />
-          <meta name="twitter:image" content="https://seattlejs.com/_public/images/seattlejsconf-share.jpg">
+          <meta name="twitter:image" content="${ baseUrl }/_public/images/seattlejsconf-share.jpg">
           <meta name="twitter:card" content="summary_large_image">
           <meta name="twitter:site" content="@seattlejs">
           <meta name="twitter:title" content="SeattleJS Conf - August 8, 2023">
