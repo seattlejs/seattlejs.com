@@ -1,14 +1,11 @@
-import { marked } from 'marked'
-
-export default function ViewSpeaker({ html, state = {} }) {
+export default function ViewSponsor({ html, state = {} }) {
   const { attrs } = state
   let { url, name, image, copy } = attrs
   return html`
-    <p>
+    <div>
       <a href="${url}" target="_new"
         ><img src="/_public/images/sponsors/${image}" alt="logo for ${name}"
       /></a>
-    </p>
-    <p>${marked(copy)}</p>
+    </div>
   `
 }

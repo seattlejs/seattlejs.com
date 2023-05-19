@@ -29,6 +29,7 @@ export default function MyHeader({ html }) {
           </svg>
         </button>
         <ul id="nav-links">
+          <li class="special"><a href="/conf">SeattleJS Conf 2023</a></li>
           <li><a href="/about-us">About Us</a></li>
           <li><a href="/speak">Give a Talk</a></li>
           <li><a href="/join">Join Our Community</a></li>

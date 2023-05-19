@@ -1,7 +1,6 @@
 export default function Head(state) {
-  //const { store, status, req, error } = state
-  const { store } = state
-  //const { path } = req
+  const { store, req /*, status, error*/ } = state
+  const { path } = req
   const { title } = store
   //console.log(path, store, status, req, error)
   return `
@@ -15,6 +14,7 @@ export default function Head(state) {
         <link rel="stylesheet" href="/_public/styles/main.css">
         <link rel="icon" href="/_public/favicon.ico">
         <link rel="stylesheet" href="https://use.typekit.net/nln6hzq.css">
+        ${ path === '/conf' ? '<script src="https://js.tito.io/v2" async></script>' : ''}
       </head>
     `
 }
