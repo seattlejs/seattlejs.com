@@ -112,6 +112,10 @@ nav > .nav-toggler {
     padding: 8px 0;
 }
 
+#nav-links li {
+    margin: 8px;
+}
+
 div#logo a {
     display: flex;
     margin-right: 8px;

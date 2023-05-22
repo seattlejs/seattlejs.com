@@ -31,7 +31,7 @@ export default function ({ html }) {
             </div>
           <h2>Sponsors</h2>
           <p>Please email info@seattlejs.com if you are interested in learning about sponsoring this event!</p>
-          <div style="display:flex">
+          <div style="display:flex; flex-wrap: wrap">
             <view-sponsor name="AWS" url="https://docs.amplify.aws/" image="aws.png"></view-sponsor>
             <view-sponsor name="Courier" url="http://courier.com?utm_campaign=q2-fy23-conference-seattlejsconf&utm_source=conference&utm_medium=website" image="courier.png"></view-sponsor>
           </div>
