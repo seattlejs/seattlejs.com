@@ -129,5 +129,18 @@
     "company": "Microsoft",
     "photo": "tiger-oakes.jpg",
     "twitter": "Not_Woods"
+  },
+  {
+    "id": "dm-liao",
+    "name": "DM Liao",
+    "company": "n/a",
+    "photo": "dm-liao.jpg"
+  },
+  {
+    "id": "aiden-bai",
+    "name": "Aiden Bai",
+    "company": "Dimension.dev",
+    "photo": "aiden-bai.jpg",
+    "twitter": "aidenybai"
   }
 ]

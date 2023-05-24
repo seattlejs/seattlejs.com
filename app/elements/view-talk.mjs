@@ -11,7 +11,7 @@ export default function ViewTalk({ html, state = {} }) {
   let { title, abstract, speaker, type } = talk
   let { name, twitter, company, photo } = speaker
   return html`
-    <h4>${name} - ${type === 'lightning' ? '⚡️ ' : ''}${title}</h4>
+    <h4>${type === 'lightning' ? '⚡️ ' : ''}${title}</h4>
     <p>${marked(abstract)}</p>
     <view-speaker
       name="${name}"

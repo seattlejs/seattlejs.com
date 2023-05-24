@@ -159,5 +159,23 @@
     "title": "Hacking an e-reader to show my tea menu",
     "abstract": "E-Readers are great and use so little power! I wanted to have a tea menu to show guests and for my own reference. I'll share how to generate an e-book with all your drinks in Deno, as well as rendering a custom cover page with SVG. Wow your friends by turning an old device into a smart home tea menu.",
     "type": "lightning"
+  },
+  {
+    "id": "aiden-bai-june-2023",
+    "speaker_id": "aiden-bai",
+    "event_id": "june-2023",
+    "title": "Speeding up React with Million.js",
+    "abstract": "Up to 70% faster React Components with Million.js.",
+    "topics": ["reactjs", "millionjs", "nextjs", "performance", "rendering", "javascript", "typescript"],
+    "type": "lightning"
+  },
+  {
+    "id": "dm-liao-june-2023",
+    "speaker_id": "dm-liao",
+    "event_id": "june-2023",
+    "title": "Using the web to make interactive fanfiction",
+    "abstract": "Over the pandemic, people developed a wide variety of hobbies to fill the time, and for me, that was writing a ridiculous amount of fanfiction. One of the most ambitious pieces was an interactive, choice-based and animated story written using Ink and 'set' with Preact and InkJS, and this talk goes through some of the creative and technical decisions I made to get them to play nicely with each other.",
+    "topics": ["preactjs", "inkjs", "immutable data", "text parsing", "interactive fiction"],
+    "type": "regular"
   }
 ]
