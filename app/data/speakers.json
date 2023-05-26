@@ -142,5 +142,12 @@
     "company": "Dimension.dev",
     "photo": "aiden-bai.jpg",
     "twitter": "aidenybai"
+  },
+  {
+    "id": "cristina-rodriguez",
+    "name": "Cristina Rodriguez",
+    "company": "Techtonica.org",
+    "photo": "cristina-rodriguez.jpg",
+    "twitter": "yosola"
   }
 ]

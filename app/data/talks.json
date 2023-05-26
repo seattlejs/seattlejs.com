@@ -177,5 +177,14 @@
     "abstract": "Over the pandemic, people developed a wide variety of hobbies to fill the time, and for me, that was writing a ridiculous amount of fanfiction. One of the most ambitious pieces was an interactive, choice-based and animated story written using Ink and 'set' with Preact and InkJS, and this talk goes through some of the creative and technical decisions I made to get them to play nicely with each other.",
     "topics": ["preactjs", "inkjs", "immutable data", "text parsing", "interactive fiction"],
     "type": "regular"
+  },
+  {
+    "id": "cristina-rodriguez-june-2023",
+    "speaker_id": "cristina-rodriguez",
+    "event_id": "june-2023",
+    "title": "Overcoming Blank Page Syndrome with your Template",
+    "abstract": "How many times have you thought of a great idea for a project but were not quite sure how to start coding that project? Using templates can help beginning engineers overcome the overwhelm and fear that can come with starting projects. The goal of this talk is to share with everyone who is self-learning to code that templates and automation are their friends, especially for that tedious work of your initial setup. There is no need to start every project from scratch.",
+    "topics": ["javascript", "templates", "projects", "front-end", "backend", "react", "vite"],
+    "type": "lightning"
   }
 ]
