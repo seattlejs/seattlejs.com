@@ -164,8 +164,8 @@
     "id": "aiden-bai-june-2023",
     "speaker_id": "aiden-bai",
     "event_id": "june-2023",
-    "title": "Speeding up React with Million.js",
-    "abstract": "Up to 70% faster React Components with Million.js.",
+    "title": "Virtual DOM: Back in Block",
+    "abstract": "Is the Virtual DOM pure overhead? In this tech talk, Aiden Bai explores the performance implications of the Virtual DOM in frameworks like React and presents an alternative approach called the \"block virtual DOM.\" Aiden delves into the origins of the Virtual DOM, its purpose in addressing performance issues, and the process of diffing and reconciliation. The talk introduces the Block virtual DOM, which takes a different approach to diffing by using static analysis and dirty checking.",
     "topics": ["reactjs", "millionjs", "nextjs", "performance", "rendering", "javascript", "typescript"],
     "type": "lightning"
   },
