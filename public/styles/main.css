@@ -261,6 +261,119 @@ span.cta {
     color: #112378;
 }
 
+/*  Person components  */
+
+.person-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+  	justify-content: center;
+}
+
+.person-list .person {
+	width: 250px;
+	display:flex;
+	flex-direction: column;
+	margin-right: 8px;
+	margin-bottom: 16px;
+}
+
+.person .person-photo, .person a, .person-photo img {
+    height: 250px;
+    width: 250px;
+}
+
+.person-more {
+    flex: 1;
+}
+
+.page-body .person {
+    padding-bottom: 16px;
+}
+
+.person-list .person-info {
+    flex: 1;
+    text-align: left;
+	padding: 8px;
+	display: flex;
+    flex-direction: column;
+    color: #112378;
+}
+
+.person-list .person:hover .person-info, .person-list .person:hover .person-name, .person-list .person:hover .person-name a, .person-list .person:hover .person-misc {
+	color: #ee3e4a;
+}
+
+.person-list .person-name {
+    font-family: alkaline-caps, sans-serif;
+    font-weight: 500;
+    line-height: 1em;
+    font-size: 28px;
+    margin: 0;
+	color: #112378;
+	flex-grow: 1
+}
+
+.person-name a, .person-name a:visited {
+    color: #112378;
+    text-decoration: none;
+}
+
+.person-list .person-misc, .person-list .person-misc {
+    font-size: 16px;
+	color: #112378;
+}
+
+.person h3 {
+    margin: 8px 0 8px 0;
+}
+
+.person .abstract {
+	margin: 16px 0 16px 0;
+}
+
+.person-links > div {
+    margin-bottom: 8px;
+}
+
+/* Speaker / Talk Overlay styles */
+
+.person-photo {
+    position: relative;
+}
+
+.person-photo .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ee3e4a;
+  }
+  
+.person-photo:hover .overlay {
+    opacity: 1;
+}
+  
+.person-photo .overlay .text {
+    color: white;
+    font-family: alkaline-caps, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.125em;
+    margin: 16px;
+    text-align: left;
+}
+
+.person-photo img {
+    object-fit: cover;
+}
+
+/* end */
+
 @media only screen and (min-width: 768px) {
     nav {
         display: flex;
@@ -307,6 +420,14 @@ span.cta {
     
     .talk .details {
         flex: 1;
+    }
+
+    .diamond view-sponsor img {
+        height: 250px;
+    }
+
+    .platinum view-sponsor img {
+        height: 120px;
     }
 
 }

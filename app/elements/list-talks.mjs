@@ -10,6 +10,7 @@ export default function ListTalks({ html, state = {} }) {
     </p>`
   } else {
     return html`
+      <div class="person-list">
       ${talks
         .map(
           t => html` <view-talk
@@ -18,6 +19,7 @@ export default function ListTalks({ html, state = {} }) {
           ></view-talk>`
         )
         .join('')}
+        </div>
     `
   }
 }

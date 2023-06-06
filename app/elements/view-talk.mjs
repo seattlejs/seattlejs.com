@@ -1,23 +1,33 @@
-import { marked } from 'marked'
+//import { marked } from 'marked'
 
 export default function ViewTalk({ html, state = {} }) {
   const { attrs, store } = state
-  const { events } = store
+  let { events, event } = store
   let { id, event_id } = attrs
-  let event = events.find(e => e.id === event_id)
+  if (!event) {
+    event = events.find(e => e.id === event_id)
+  }
+  
   let talk = event.talks.find(t => t.id === id)
 
-  // find talk/speaker from events
-  let { title, abstract, speaker, type } = talk
-  let { name, twitter, company, photo } = speaker
+  let { title, speaker, type } = talk
+  let { name, company, photo, location } = speaker
   return html`
-    <h4>${type === 'lightning' ? '⚡️ ' : ''}${title}</h4>
-    <p>${marked(abstract)}</p>
-    <view-speaker
-      name="${name}"
-      twitter="${twitter}"
-      company="${company}"
-      photo="${photo}"
-    ></view-speaker>
+    <div class="person">
+      <!--a href="#"-->
+        <div class="person-photo">
+          <img src="/_public/images/speakers/${ photo }" alt="photo of ${ name }"/>
+          <div class="overlay">
+            <div class="text">${ type === "lightning" ? "⚡️" : "" }${ title }</div>
+          </div>
+        </div>
+      <!--/a-->
+      <div class="person-info">
+        <div class="person-name">${ name }</div>
+        <div class="person-misc">
+          ${ company }<br/>${ location }
+        </div>
+      </div>
+    </div>
   `
 }
