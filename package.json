@@ -13,7 +13,7 @@
     "node-fetch": "^2.6.7"
   },
   "devDependencies": {
-    "@architect/sandbox": "^5.4.1",
+    "@architect/sandbox": "^5.6.8",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/plugin-syntax-import-assertions": "^7.20.0",
     "eslint": "latest",
