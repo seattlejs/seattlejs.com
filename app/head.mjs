@@ -26,6 +26,7 @@ export default function Head(state) {
         <link rel="stylesheet" href="/_public/styles/main.css">
         <link rel="icon" href="/_public/favicon.ico">
         <link rel="stylesheet" href="https://use.typekit.net/nln6hzq.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         ${ path === '/conf' 
           ? `
           <script src="https://js.tito.io/v2" async></script>

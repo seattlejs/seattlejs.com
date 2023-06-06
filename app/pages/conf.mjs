@@ -27,9 +27,7 @@ export default function ({ html, state }) {
             ${event.talks
               .sort(() => Math.random() - 0.5) // randomize our array of speakers!
               .map(
-                t => html` <view-talk
-                  id="${ t.id }"
-                ></view-talk>`
+                t => html` <view-talk id="${ t.id }" url="/conf/${ t.id }"></view-talk>`
               )
               .join('')}
             </div>

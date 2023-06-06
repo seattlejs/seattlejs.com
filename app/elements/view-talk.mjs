@@ -3,7 +3,7 @@
 export default function ViewTalk({ html, state = {} }) {
   const { attrs, store } = state
   let { events, event } = store
-  let { id, event_id } = attrs
+  let { id, event_id, url } = attrs
   if (!event) {
     event = events.find(e => e.id === event_id)
   }
@@ -14,14 +14,14 @@ export default function ViewTalk({ html, state = {} }) {
   let { name, company, photo, location } = speaker
   return html`
     <div class="person">
-      <!--a href="#"-->
+      <a href="${ url ? url : `/talks/${ id }` }">
         <div class="person-photo">
           <img src="/_public/images/speakers/${ photo }" alt="photo of ${ name }"/>
           <div class="overlay">
             <div class="text">${ type === "lightning" ? "⚡️" : "" }${ title }</div>
           </div>
         </div>
-      <!--/a-->
+      </a>
       <div class="person-info">
         <div class="person-name">${ name }</div>
         <div class="person-misc">

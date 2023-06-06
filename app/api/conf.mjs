@@ -5,4 +5,4 @@ export async function get() {
   }
 }
 
-export const conf = data
+export const event = data
