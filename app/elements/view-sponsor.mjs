@@ -1,6 +1,6 @@
 export default function ViewSponsor({ html, state = {} }) {
   const { attrs } = state
-  let { url, name, image, copy } = attrs
+  let { url, name, image } = attrs
   return html`
     <div>
       <a href="${url}" target="_new"
