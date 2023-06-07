@@ -149,6 +149,21 @@
                 "pronouns": "he/him",
                 "location": "Mesa, AZ"
             }
+        },
+        {
+            "id": "real-time-multiplayer-reactions-component",
+            "title": "Building a Real-Time Multiplayer Reactions Component",
+            "abstract": "Build a real-time multiplayer video reactions component with slick animations.",
+            "topics": ["react.js", "css", "web sockets"],
+            "speaker": {
+                "id": "john-pham",
+                "name": "John Pham",
+                "twitter": "JohnPhamous",
+                "company": "Vercel",
+                "photo": "john-pham.jpg",
+                "pronouns": "he/him",
+                "location": "Seattle, WA"
+            }
         }
     ],
     "organizers": [],
