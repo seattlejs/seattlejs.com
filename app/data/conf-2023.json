@@ -22,6 +22,7 @@
             "id": "flip-no-more",
             "title": "FLIP no more; Viva View Transitions",
             "abstract": "Transitioning elements across the DOM tree, DOM tree mods, or even dynamic positioning like animating stacked notifications as they pour in.. are all things that require the FLIP (first last invert play) technique. Not anymore, View Transitions have entered the ring, and they're faster, stronger and have rad tricks up their sleeve.",
+            "tweet": "1/ FLIP no more; Viva View Transitions by @argyleink\n\nTransitioning elements across the DOM tree, DOM tree mods, or even dynamic positioning are all things that require the FLIP (first last invert play) technique. Not anymore now that View Transitions have entered the ring 🥊",
             "topics": ["css", "view transitions"],
             "speaker": {
                 "id": "adam-argyle",
@@ -36,6 +37,7 @@
             "id": "deno-2.0",
             "title": "What to Know About Deno 2.0",
             "abstract": "Deno, the new JavaScript and TypeScript runtime built for globally distributed applications, is approaching a 2.0 release. In this talk, we'll cover what's new in 2.0, what's getting better, and why now is the time to consider building your next project on Deno.",
+            "tweet": "3/ What to Know About Deno 2.0 by @kevinwhinnery\n\nDeno, the new JavaScript and TypeScript runtime, is approaching a 2.0 release. In this talk, we'll cover what's new, what's getting better, and why now is the time to consider building your next project on Deno.",
             "topics": ["javascript", "deno"],
             "speaker": {
                 "id": "kevin-whinnery",
@@ -50,6 +52,7 @@
             "id": "dont-fear-the-linter",
             "title": "Static Analysis: Don't Fear the Linter!",
             "abstract": "Static analysis tools scrutinize your code as you write it - giving you blazing fast feedback at development time. We're going to go into how that works, why it's useful, and -best of all- how to enable the best configurations for ESLint, TypeScript, and their associated tooling in your app.",
+            "tweet": "7/ Static Analysis: Don't Fear the Linter! by @JoshuaKGoldberg\n\nStatic analysis tools scrutinize your code as you write it - giving you blazing fast feedback at dev time. Let's go into how that works, why it's useful and how to enable the best configs for ESLint & TypeScript ⚡️",
             "topics": ["static analysis", "linters", "eslint", "typescript"],
             "speaker": {
                 "id": "josh-goldberg",
@@ -64,6 +67,7 @@
             "id": "move-over-passwords",
             "title": "Move over passwords, passkeys are my new best friend!",
             "abstract": "We know all passwords are essential but they also suck. The traditional password-based authentication system is riddled with vulnerabilities and usability challenges. On World Password Day (yes, it's a thing!) 2023, Google rolled out the next step towards a passwordless future: passkeys. In this talk, we will delve into the emerging use of passkeys - what they are, how they work, and where they can be used. We will explore how they are resistant to phishing and how you, as a developer, can use them to make your apps more secure. Worried about losing your password? passkeys are here to save the day!",
+            "tweet": "10/ Move Over Passwords, Passkeys are My New Best Friend by @thebetterdaphne\n\nOn World Password Day (yes, it's a thing!) 2023, Google rolled out passkeys, the next step in passwordless. In this talk, we will delve into what they are, how they work, and where they can be used. 🔑",
             "topics": ["Security", "Web OTP", "Passkeys", "2FA"],
             "speaker": {
                 "id": "daphne-liu",
@@ -79,6 +83,7 @@
             "id": "rebuilding-in-rust",
             "title": "Rebuilding in Rust for Good Reason",
             "abstract": "Diving into Rust can feel daunting, but daunting can be worth it! In this talk, we'll discuss some of the best entry points into the world of Rust and build for performance, interoperability, and fun.",
+            "tweet": "9/ Rebuilding in Rust for Good Reason by @eveporcello\n\nDiving into Rust can feel daunting, but daunting can be worth it! In this talk, we'll discuss some of the best entry points into the world of Rust and build for performance, interoperability, and fun. 📦",
             "topics": ["Rust", "IoT", "API"],
             "speaker": {
                 "id": "eve-porcello",
@@ -94,6 +99,7 @@
             "id": "testing-web-components-with-playwright",
             "title": "Component-Driven Testing: Harnessing Playwright for Web Components Excellence",
             "abstract": "Discover how to achieve web component excellence through component-driven testing with Playwright, empowering developers with robust and efficient testing strategies.",
+            "tweet": "5/ Web Component Testing with Playwright by @luucamay_\n\nDiscover how to achieve web component excellence through component-driven testing with @playwrightweb! 🎭",
             "topics": ["Web Components", "testing", "Playwright"],
             "speaker": {
                 "id": "lupe-canaviri-maydana",
@@ -107,8 +113,9 @@
         },
         {
             "id": "langchain-agents",
-            "title": "Understanding LangChain Agents and Tools with Twilio (or with SMS) ",
+            "title": "Understanding LangChain Agents and Tools with Twilio (or with SMS)",
             "abstract": "With LangChain, developers “chain” together different LLM components to create more advanced use cases around LLMs. Agents use LLMs to decide what actions should be taken. Get introduced to LangChain about what you can do with Agents, Tools, and communication APIs!",
+            "tweet": "4/ Understanding LangChain Agents with @lizziepika\n\nWith LangChain, developers “chain” together different LLM components to create more advanced use cases around LLMs. Get introduced to LangChain and learn what you can do with Agents, Tools, and communication APIs!",
             "topics": ["Machine Learning", "AI", "API"],
             "speaker": {
                 "id": "lizzie-siegle",
@@ -124,6 +131,7 @@
             "id": "creating-a-design-system",
             "title": "Creating a Design System using Design Tokens With Amplify",
             "abstract": "In this talk we will deep dive into design tokens and how they can be used with an overall design system for your organization or website. Every design token is the source of truth to name and store a design decision. We'll explore this idea, and see how in practice we use it in our Amplify UI components library. We'll look at before and after designs, and how branding and theming are affected by it. I'll finish the talk by a look at some tips on design.",
+            "tweet": "2/ Creating a Design System using Design Tokens by @ErikCH\n\nErik will dive deep into design tokens and how they function as the source of truth to name and store a design decisions when you're building websites and applications. 🎨",
             "topics": ["Machine Learning", "AI", "API"],
             "speaker": {
                 "id": "erik-hanchett",
@@ -139,6 +147,7 @@
             "id": "every-process-everywhere-all-at-once",
             "title": "Every Process, Everywhere, All at Once",
             "abstract": "While true decentralized computing in web browsers still isn't quite there yet, recent developments might have you questioning just what on earth that busy browser tab is doing.",
+            "tweet": "8/ Every Process, Everywhere, All at Once by @monteslu\n\nWhile true decentralized computing in web browsers still isn't quite there yet, recent developments might have you questioning just what on earth that busy browser tab is doing. ⌛️",
             "topics": ["dweb", "node.js", "webrtc", "web3", "containerization", "IoT", "browsers", "PWA"],
             "speaker": {
                 "id": "luis-montes",
@@ -154,6 +163,7 @@
             "id": "real-time-multiplayer-reactions-component",
             "title": "Building a Real-Time Multiplayer Reactions Component",
             "abstract": "Build a real-time multiplayer video reactions component with slick animations.",
+            "tweet": "6/ Building a Real-Time Multiplayer Reactions Component by @JohnPhamous\n\nImagine a livestream with thousands (millions?) of viewers and enabling people to react to what they're watching in real-time for everyone to see. John is going to show us how to design and build this!",
             "topics": ["react.js", "css", "web sockets"],
             "speaker": {
                 "id": "john-pham",
