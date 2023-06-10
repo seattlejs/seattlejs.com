@@ -134,20 +134,27 @@
     "id": "dm-liao",
     "name": "DM Liao",
     "company": "n/a",
-    "photo": "dm-liao.jpg"
+    "photo": "dm-liao.jpg",
+    "url": "https://amorphic.space",
+    "pronouns": "they/them/theirs"
+
   },
   {
     "id": "aiden-bai",
     "name": "Aiden Bai",
     "company": "Dimension.dev",
     "photo": "aiden-bai.jpg",
-    "twitter": "aidenybai"
+    "twitter": "aidenybai",
+    "pronouns": "he/him/his",
+    "url": "https://aidenybai.com"
   },
   {
     "id": "cristina-rodriguez",
     "name": "Cristina Rodriguez",
     "company": "Techtonica.org",
     "photo": "cristina-rodriguez.jpg",
-    "twitter": "yosola"
+    "twitter": "yosola",
+    "pronouns": "she/her/ella",
+    "url": "https://www.linkedin.com/in/crissrodriguez/"
   }
 ]
