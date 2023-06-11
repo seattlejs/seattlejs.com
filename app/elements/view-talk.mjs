@@ -13,18 +13,71 @@ export default function ViewTalk({ html, state = {} }) {
   let { title, speaker, type } = talk
   let { name, company, photo, location } = speaker
   return html`
-    <div class="person">
+    <style>
+      .speaker {
+        margin-right: 16px;
+      }
+
+      .photo {
+        position: relative;
+        height: 250px;
+        width: 250px;
+      }
+
+      .photo .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #ee3e4a;
+        }
+        
+      .photo:hover .overlay {
+        opacity: 1;
+      }
+        
+      .photo .overlay .text {
+        color: white;
+        font-family: rift-soft, sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 24px;
+        line-height: 1.125em;
+        margin: 16px;
+        text-align: left;
+      }
+
+      .photo img {
+        object-fit: cover;
+        height: 250px;
+        width: 250px;
+      }
+
+      .info {
+        margin: 8px 0 16px 0;
+      }
+
+      .name {
+        font-family: rift-soft, sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+      }
+    </style>
+    <div class="speaker">
       <a href="${ url ? url : `/talks/${ id }` }">
-        <div class="person-photo">
+        <div class="photo">
           <img src="/_public/images/speakers/${ photo }" alt="photo of ${ name }"/>
           <div class="overlay">
             <div class="text">${ type === "lightning" ? "⚡️" : "" }${ title }</div>
           </div>
         </div>
       </a>
-      <div class="person-info">
-        <div class="person-name">${ name }</div>
-        <div class="person-misc">
+      <div class="info">
+        <div class="name">${ name }</div>
+        <div class="misc">
           ${ company }<br/>${ location }
         </div>
       </div>

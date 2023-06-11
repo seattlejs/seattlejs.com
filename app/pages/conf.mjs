@@ -2,6 +2,24 @@ export default function ({ html, state }) {
   let { store = {} } = state
   let { event } = store
   return html`
+    <style>
+      @media only screen and (min-width: 768px) {
+        #speaker-list {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        #diamond img {
+          height: 200px;
+        }
+
+        #platinum img {
+          height: 120px;
+        }
+      }
+    </style>
     <my-layout>
       <div id="page">
         <!-- no title needed -->
@@ -23,23 +41,21 @@ export default function ({ html, state }) {
             <li>Please use public transportation (bus or light rail) if possible.</li>
           </ul>
           <h2>Speakers</h2>
-            <div class="person-list">
-            ${event.talks
-              .sort(() => Math.random() - 0.5) // randomize our array of speakers!
-              .map(
-                t => html` <view-talk id="${ t.id }" url="/conf/${ t.id }"></view-talk>`
-              )
-              .join('')}
-            </div>
+          <section id="speaker-list">
+          ${event.talks
+            .sort(() => Math.random() - 0.5) // randomize our array of speakers!
+            .map(
+              t => html` <view-talk id="${ t.id }" url="/conf/${ t.id }"></view-talk>`
+            )
+            .join('')}
+          </section>
           <h2>Sponsors</h2>
           <p>Please email info@seattlejs.com if you are interested in learning about sponsoring this event!</p>
-          <div style="display:flex; flex-wrap: wrap">
-            <div class="diamond">
-              <view-sponsor name="AWS" url="https://docs.amplify.aws/" image="aws.png"></view-sponsor>
-            </div>
-            <div class="platinum">
-              <view-sponsor name="Courier" url="http://courier.com?utm_campaign=q2-fy23-conference-seattlejsconf&utm_source=conference&utm_medium=website" image="courier.png"></view-sponsor>
-            </div>
+          <div id="diamond">
+            <view-sponsor name="AWS" url="https://docs.amplify.aws/" image="aws.png"></view-sponsor>
+          </div>
+          <div id="platinum">
+            <view-sponsor name="Courier" url="http://courier.com?utm_campaign=q2-fy23-conference-seattlejsconf&utm_source=conference&utm_medium=website" image="courier.png"></view-sponsor>
           </div>
           <h2>Scholarships</h2>
           <p>We are <a target="_blank" href="https://airtable.com/shrZcxLRhznKQ1sIm">accepting applications</a> for our Scholarship Program! If you are an under-represented minority in tech or need financial aid in order to attend this event, please consider applying. We want everyone to be able to attend this event! And if you are in a position to help fund this program, please consider making a donation below when you buy your ticket ❤️</p>

@@ -1,7 +1,7 @@
 export default function PersonDetail({ html, state = {} }) {
   const { attrs } = state
   let { name, company, twitter, photo, pronouns, location, url } = attrs
-  console.log(attrs)
+  //console.log(attrs)
   return html`
     <style>
       h3 {

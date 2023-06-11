@@ -1,5 +1,28 @@
 export default function MyFooter({ html }) {
   return html`
+    <style>
+      footer {
+        padding: 7.5px;
+        background-color: rgb(140, 170, 29);
+        color: #fff;
+        text-align: center;
+      }
+
+      footer a {
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      footer a:visited {
+          color: #fff;
+      }
+      
+      footer a:hover {
+          text-decoration: underline;
+      }
+    </style>
     <script
       src="https://kit.fontawesome.com/95fd764ad0.js"
       crossorigin="anonymous"
