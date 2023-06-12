@@ -4,9 +4,11 @@ export default function ({ html, state = {} }) {
   const { store = {} } = state
   const { talk } = store
   const { title, abstract, topics, speaker } = talk
-  // override the "photo" property
-  speaker.photo = '/_public/images/speakers/' + speaker.photo
-  const speakerProps = Object.keys(speaker).map(key => `${key}="${speaker[key]}"`).join(' ')
+  // set the "photo" property with an absolute path (so that the <person-detail> element will work)
+  let speakerClone = { ...speaker }
+  speakerClone.photo = '/_public/images/speakers/' + speaker.photo
+  console.log(speakerClone)
+  const speakerProps = Object.keys(speakerClone).map(key => `${key}="${speakerClone[key]}"`).join(' ')
   
   return html`
     <style>
