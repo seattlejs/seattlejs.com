@@ -96,19 +96,18 @@
             }
         },
         {
-            "id": "testing-web-components-with-playwright",
-            "title": "Component-Driven Testing: Harnessing Playwright for Web Components Excellence",
-            "abstract": "Discover how to achieve web component excellence through component-driven testing with Playwright, empowering developers with robust and efficient testing strategies.",
-            "tweet": "5/ Web Component Testing with Playwright by @luucamay_\n\nDiscover how to achieve web component excellence through component-driven testing with @playwrightweb! 🎭",
-            "topics": ["Web Components", "testing", "Playwright"],
+            "id": "react-rendering-with-nextjs",
+            "title": "50 shades of React rendering with Next.js",
+            "abstract": "CSR. SSG. SSR. ISR. These acronyms are different ways that we can render our React apps. Let’s explore all the types of rendering, and which we should choose for pages in our Next.js apps.",
+            "topics": ["React.js", "Next.js", "TypeScript", "Node.js", "JavaScript", "server-side rendering"],
             "speaker": {
-                "id": "lupe-canaviri-maydana",
-                "name": "Lupe Canaviri Maydana",
-                "twitter": "luucamay_",
-                "company": "Recurse Center",
-                "photo": "lupe-canaviri-maydana.jpg",
-                "pronouns": "she/her/they/them",
-                "location": "La Paz, Bolivia"
+                "id": "ben-ilegbodu",
+                "name": "Ben Ilegbodu",
+                "twitter": "benmvp",
+                "company": "StitchFix",
+                "photo": "ben-ilegbodu.jpg",
+                "location": "Houston, TX",
+                "url": "https://www.benmvp.com"
             }
         },
         {
