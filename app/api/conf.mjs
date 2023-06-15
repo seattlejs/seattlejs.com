@@ -5,7 +5,7 @@ export async function get() {
       title: 'SeattleJS Conf',
       description: 'SeattleJS Conf is a very special 1-day conference bringing together ~300 web developers to learn, network and have fun!',
       sharing: {
-        image: '/_public/images/seattlejsconf-share.png'
+        image: '/_public/images/seattlejsconf-sharing.png'
       },
       event 
     }
