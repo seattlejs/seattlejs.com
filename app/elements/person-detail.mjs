@@ -11,6 +11,7 @@ export default function PersonDetail({ html, state = {} }) {
         margin: 8px 0 16px 0;
       }
       .photo img {
+        max-width: none;
         height: 300px;
         width: 300px;
       }
