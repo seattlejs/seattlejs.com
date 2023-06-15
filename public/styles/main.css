@@ -10,13 +10,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: rift-soft
+	font-family: headline-gothic-atf, sans-serif;
 }
 
-h1 { font-size: 200% }
+h1 { font-size: 210% }
 h2 { font-size: 180%; color: #052460 }
-h3 { font-size: 160% }
-h4 { font-size: 140% }
+h3 { font-size: 150% }
+h4 { font-size: 120% }
 
 
 pre {
@@ -48,7 +48,7 @@ a[target="_blank"]:after {
 }
 
 .cta {
-    font-family: alkaline-caps, sans-serif;
+    font-family: headline-gothic-atf, sans-serif;
     background-color: #0033FF;
     border: 4px solid #0033FF;
     font-weight: 500;
