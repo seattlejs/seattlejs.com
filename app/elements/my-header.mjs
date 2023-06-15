@@ -11,7 +11,7 @@ export default function MyHeader({ html }) {
         display: inline-block;
         color: #fff;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 400;
       }
 
       #logo a {

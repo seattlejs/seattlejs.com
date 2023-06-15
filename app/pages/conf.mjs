@@ -11,13 +11,7 @@ export default function ({ html, state }) {
           justify-content: center;
         }
 
-        #diamond img {
-          height: 200px;
-        }
-
-        #platinum img {
-          height: 120px;
-        }
+        #sponsors img { height: 120px }
       }
     </style>
     <my-layout>
@@ -25,7 +19,9 @@ export default function ({ html, state }) {
         <!-- no title needed -->
         <div class="page-body">
           <div style="text-align:center"><img width="500" src="/_public/images/seattlejsconf-2023-logo.png" alt="logo for SeattleJS Conf 2023"/></div>
-          <p class="lead-in">This is the 2nd official SeattleJS conference. We are a 1-day conference for web developers that will feature 12 amazing speakers, covering the latest in web and JS development. The last time we did this was when the CascadiaJS folks took a break in 2017. They're taking another break, so we're back!</p>
+          <p>SeattleJS Conf is a very special 1-day conference bringing together ~300 web developers to learn, network and have fun!</p>
+          <p>The talks, from industry exports, will cover the latest and greatest in web technologies, from CSS View Transitions to Deno 2.0 to AI.</p>
+          <p>The event is being hosted by AWS and will feature a post-conference karaoke party at Optimism Brewing that you won't want to miss!</p>
           <h2>When</h2>
           <ul>
             <li>Tuesday, August 8, 2023</li>
@@ -45,18 +41,39 @@ export default function ({ html, state }) {
           ${event.talks
             .sort(() => Math.random() - 0.5) // randomize our array of speakers!
             .map(
-              t => html` <view-talk id="${ t.id }" url="/conf/${ t.id }"></view-talk>`
+              t => html` <view-talk id="${ t.id }"></view-talk>`
             )
             .join('')}
           </section>
           <h2>Sponsors</h2>
-          <p>Please email info@seattlejs.com if you are interested in learning about sponsoring this event!</p>
-          <div id="diamond">
+          <section id="sponsors">
+            <p>Please email info@seattlejs.com if you are interested in learning about sponsoring this event!</p>
             <view-sponsor name="AWS" url="https://docs.amplify.aws/" image="aws.png"></view-sponsor>
-          </div>
-          <div id="platinum">
             <view-sponsor name="Courier" url="http://courier.com?utm_campaign=q2-fy23-conference-seattlejsconf&utm_source=conference&utm_medium=website" image="courier.png"></view-sponsor>
+            <view-sponsor name="Mux" url="http://mux.com" image="mux.png"></view-sponsor>
+          </section>
+          <h2>Training Workshops</h2>
+          <section id="training">
+            <p>We are hosting Training Workshops before and after the conference. These are full-day workshops and are designed to level up your skills as a web developer.</p>
+            <div style="display:flex">
+              <div style="width:200px;margin-right:24px;">
+                <img src="/_public/images/speakers/eve-porcello.jpg"/>
+              </div>
+              <div style="flex:1">
+                <h3>Title</h3>
+                <p>Description</p>
+              </div>
+            </div>
+            <div style="display:flex">
+            <div style="width:200px;margin-right:24px;">
+              <img src="/_public/images/speakers/josh-goldberg.jpg"/>
+            </div>
+            <div style="flex:1">
+              <h3>Title</h3>
+              <p>Description</p>
+            </div>
           </div>
+          </section>
           <h2>Scholarships</h2>
           <p>We are <a target="_blank" href="https://airtable.com/shrZcxLRhznKQ1sIm">accepting applications</a> for our Scholarship Program! If you are an under-represented minority in tech or need financial aid in order to attend this event, please consider applying. We want everyone to be able to attend this event! And if you are in a position to help fund this program, please consider making a donation below when you buy your ticket ❤️</p>
           <h2>Tickets</h2>

@@ -41,7 +41,7 @@ export default function ViewTalk({ html, state = {} }) {
         
       .photo .overlay .text {
         color: white;
-        font-family: headline-gothic-atf, sans-serif;
+        font-family: headline-gothic-atf-round, sans-serif;
         font-weight: 500;
         font-style: italic;
         font-size: 24px;
@@ -61,7 +61,7 @@ export default function ViewTalk({ html, state = {} }) {
       }
 
       .name {
-        font-family: headline-gothic-atf, sans-serif;
+        font-family: headline-gothic-atf-round, sans-serif;
         font-weight: 700;
         font-size: 24px;
       }
