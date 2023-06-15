@@ -24,7 +24,7 @@ export default function ({ html, state = {} }) {
           padding:8px;
       }
     </style>
-    <page-layout title=${talk.title}>      
+    <page-layout>      
       <h2>${ title }</h2>
       <div class="topics">${ topics.map(t => `<div class=topic>${ t }</div>`).join('') }</div>
       <div class="abstract">${ marked.parse(abstract) }</div>
