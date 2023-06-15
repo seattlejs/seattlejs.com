@@ -25,9 +25,9 @@ function inflateEvent(event) {
 }
 
 function filterFutureEvents() {
-  const ONE_DAY = 1000 * 60 * 60 * 24
+  const TWELVE_HOURS = 1000 * 60 * 60 * 12
   return events.filter(
-    t => new Date(`${t.date}T21:00-08:00`).getTime() + ONE_DAY > Date.now()
+    t => new Date(`${t.date}T21:00-08:00`).getTime() + TWELVE_HOURS > Date.now()
   )
 }
 
