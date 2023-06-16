@@ -3,6 +3,14 @@ export default function ({ html, state }) {
   let { event } = store
   return html`
     <style>
+      .workshop {
+        margin-bottom:16px;
+      }
+
+      .workshop a {
+        color: #000;
+      }
+
       @media only screen and (min-width: 768px) {
         #speaker-list {
           display: flex;
@@ -10,7 +18,13 @@ export default function ({ html, state }) {
           align-items: flex-start;
           justify-content: center;
         }
-
+        .workshop {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .workshop h3 {
+          margin-top: 0;
+        }
         #sponsors img { height: 120px }
       }
     </style>
@@ -56,7 +70,7 @@ export default function ({ html, state }) {
           <section id="training">
             <p>We are hosting Training Workshops before and after the conference. These are full-day workshops and are designed to level up your skills as a web developer.</p>
             ${ event.workshops.map(w => html`
-              <div style="display:flex">
+              <div class="workshop">
                 <div style="width:200px;margin-right:24px;">
                   <img src="/_public/images/speakers/${ w.speaker.photo }"/>
                 </div>
