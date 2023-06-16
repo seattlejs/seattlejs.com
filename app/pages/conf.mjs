@@ -55,25 +55,17 @@ export default function ({ html, state }) {
           <h2>Training Workshops</h2>
           <section id="training">
             <p>We are hosting Training Workshops before and after the conference. These are full-day workshops and are designed to level up your skills as a web developer.</p>
-            <div style="display:flex">
-              <div style="width:200px;margin-right:24px;">
-                <img src="/_public/images/speakers/eve-porcello.jpg"/>
+            ${ event.workshops.map(w => html`
+              <div style="display:flex">
+                <div style="width:200px;margin-right:24px;">
+                  <img src="/_public/images/speakers/${ w.speaker.photo }"/>
+                </div>
+                <div style="flex:1">
+                  <h3><a href="/workshops/${ w.id }">${ w.title }</a></h3>
+                  <p>${ w.short || w.abstract }</p>
+                </div>
               </div>
-              <div style="flex:1">
-                <h3>Managing Data in a React Application (Aug 7)</h3>
-                <p>Fast user experiences are a requirement, and the developer tools for managing data handling have never been better! In this hands-on workshop, Eve Porcello will take a look at some of the preeminent patterns for building amazing user experiences with React. She'll also explore the latest features of React Server Components and how they can be leveraged with modern frameworks.</p>
-                <p>Topics include: Data Loading Overview and Historical Tour, Understanding Streams, Suspense, React Server Components , GraphQL (Relay Fragments and Apollo Client), Exploring Next.js, Remix, and other frameworks</p>
-              </div>
-            </div>
-            <div style="display:flex">
-            <div style="width:200px;margin-right:24px;">
-              <img src="/_public/images/speakers/josh-goldberg.jpg"/>
-            </div>
-            <div style="flex:1">
-              <h3>Introduction to TypeScript (Aug 9)</h3>
-              <p>Join Josh Goldberg in understanding the foundations of TypeScript! He'll cover how its type system works, how it lets you model user code, and -best of all- the benefits it can give you as a developer. And he'll show some great IDE tips & tricks enabled by TypeScript. ⚡</p>
-            </div>
-          </div>
+            `).join('')}
           </section>
           <h2>Scholarships</h2>
           <p>We are <a target="_blank" href="https://airtable.com/shrZcxLRhznKQ1sIm">accepting applications</a> for our Scholarship Program! If you are an under-represented minority in tech or need financial aid in order to attend this event, please consider applying. We want everyone to be able to attend this event! And if you are in a position to help fund this program, please consider making a donation below when you buy your ticket ❤️</p>
