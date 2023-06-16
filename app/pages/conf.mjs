@@ -60,8 +60,9 @@ export default function ({ html, state }) {
                 <img src="/_public/images/speakers/eve-porcello.jpg"/>
               </div>
               <div style="flex:1">
-                <h3>Title</h3>
-                <p>Description</p>
+                <h3>Managing Data in a React Application (Aug 7)</h3>
+                <p>Fast user experiences are a requirement, and the developer tools for managing data handling have never been better! In this hands-on workshop, Eve Porcello will take a look at some of the preeminent patterns for building amazing user experiences with React. She'll also explore the latest features of React Server Components and how they can be leveraged with modern frameworks.</p>
+                <p>Topics include: Data Loading Overview and Historical Tour, Understanding Streams, Suspense, React Server Components , GraphQL (Relay Fragments and Apollo Client), Exploring Next.js, Remix, and other frameworks</p>
               </div>
             </div>
             <div style="display:flex">
@@ -69,8 +70,8 @@ export default function ({ html, state }) {
               <img src="/_public/images/speakers/josh-goldberg.jpg"/>
             </div>
             <div style="flex:1">
-              <h3>Title</h3>
-              <p>Description</p>
+              <h3>Introduction to TypeScript (Aug 9)</h3>
+              <p>Join Josh Goldberg in understanding the foundations of TypeScript! He'll cover how its type system works, how it lets you model user code, and -best of all- the benefits it can give you as a developer. And he'll show some great IDE tips & tricks enabled by TypeScript. ⚡</p>
             </div>
           </div>
           </section>
