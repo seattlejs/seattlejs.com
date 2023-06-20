@@ -80,6 +80,12 @@ export default function MyHeader({ html }) {
         padding: 8px;
       }
 
+      #subheader {
+        background-color: #FFD007;;
+        padding: 7.5px;
+        text-align: center;
+      }
+
       @media only screen and (min-width: 768px) {
         nav {
           display: flex;
@@ -143,7 +149,9 @@ export default function MyHeader({ html }) {
         </ul>
       </nav>
     </header>
-
+    <section id="subheader">
+      🚨 The deadline to register for SeattleJS Conf 2023 and reserve your swag and goodies is Friday, June 30!
+    </section>
     <script type="module">
       class MyHeader extends HTMLElement {
         constructor() {
