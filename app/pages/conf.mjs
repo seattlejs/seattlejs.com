@@ -25,7 +25,6 @@ export default function ({ html, state }) {
         .workshop h3 {
           margin-top: 0;
         }
-        #sponsors img { height: 120px }
       }
     </style>
     <my-layout>
@@ -62,9 +61,9 @@ export default function ({ html, state }) {
           <h2>Sponsors</h2>
           <section id="sponsors">
             <p>Please email info@seattlejs.com if you are interested in learning about sponsoring this event!</p>
-            <view-sponsor name="AWS" url="https://docs.amplify.aws/" image="aws.png"></view-sponsor>
-            <view-sponsor name="Courier" url="http://courier.com?utm_campaign=q2-fy23-conference-seattlejsconf&utm_source=conference&utm_medium=website" image="courier.png"></view-sponsor>
-            <view-sponsor name="Mux" url="http://mux.com" image="mux.png"></view-sponsor>
+            <view-sponsor tier="platinum" name="AWS" url="https://docs.amplify.aws/" image="aws.png"></view-sponsor>
+            <view-sponsor tier="gold" name="Courier" url="http://courier.com?utm_campaign=q2-fy23-conference-seattlejsconf&utm_source=conference&utm_medium=website" image="courier.png"></view-sponsor>
+            <view-sponsor tier="gold" name="Mux" url="http://mux.com" image="mux.png"></view-sponsor>
           </section>
           <h2>Training Workshops</h2>
           <section id="training">
