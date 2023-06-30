@@ -220,6 +220,20 @@
             "photo": "josh-goldberg.jpg",
             "location": "Philadelphia, PA"
           }
+      },
+      {
+        "id": "building-ai-apps-aug-10",
+        "title": "Building AI Apps (Aug 10)",
+        "abstract": "Join Brook Riggio In this hands-on workshop on building AI app! Learn about how to integrate generative AI capabilities into new or existing projects, within your own UI, fully utilizing your own domain knowledge. Whether you want to launch your own AI-powered product, or incorporate cutting-edge functionality into your existing offerings, this workshop will give you the practical details and a vision of what's even possible to inspire your next generation of applications.",
+        "topics": ["AI"],
+        "speaker": {
+            "id": "brook-riggio",
+            "name": "Brook Riggio",
+            "linkedin": "brookr",
+            "company": "Code Fellows",
+            "photo": "brook-riggio.jpg",
+            "location": "Seattle, WA"
+          }
       }
   ],
   "organizers": [],
