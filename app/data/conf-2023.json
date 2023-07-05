@@ -188,6 +188,22 @@
         "pronouns": "he/him",
         "location": "Seattle, WA"
       }
+    },
+    {
+      "id": "es13-and-beyond",
+      "title": "ES13 and Beyond: The Future of JavaScript",
+      "abstract": "Many front-end developers have heard about ES6, but did they know we're already on ES13?! In this talk, I'll speak about the history and evolution of JavaScript, ECMA, and how features get suggested and implemented. I'll go over some of the exciting new features that have been released in ES12 and ES13, such as top-level await, private methods and fields, new operators, and best practices moving forward.",
+      "tweet": "",
+      "topics": ["javascript", "ECMA", "ES13"],
+      "speaker": {
+        "id": "christina-zhu",
+        "name": "Christina Zhu",
+        "twitter": "cszhu",
+        "company": "Ex-Retool",
+        "photo": "christina-zhu.jpg",
+        "pronouns": "she/her",
+        "location": "Cupertino, CA"
+      }
     }
   ],
   "workshops": [
