@@ -1,6 +1,6 @@
 {
   "name": "seattle-js",
-  "version": "3.3.27",
+  "version": "3.3.28",
   "description": "An evergreen website for the SeattleJS meetup and community",
   "engines": {
     "node": ">=16.19.0"
