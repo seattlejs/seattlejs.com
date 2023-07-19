@@ -3,10 +3,16 @@ export default function ListOrganizers({ html, state = {} }) {
   const { organizers } = store
   return html`
     <style>
-        .organizer img {
-          height: 250px;
-          width: 250px;
-        }
+      .organizer img {
+        height: 250px;
+        width: 250px;
+      }
+
+      .name {
+        font-family: headline-gothic-atf-round, sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+      }
       @media only screen and (min-width: 768px) {
         :host {
           display: flex;
@@ -28,7 +34,8 @@ export default function ListOrganizers({ html, state = {} }) {
             />
           </p>
           <p>
-            ${o.full_name}<br />
+            <div class="name">${o.full_name}</div>
+            ${o.role ? `${ o.role } <br />` : ''}
             ${o.twitter
               ? `<a target="_blank" href="https://twitter.com/${o.twitter}">@${o.twitter}</a></p>`
               : ''}

@@ -80,6 +80,10 @@ export default function ({ html, state }) {
               </div>
             `).join('')}
           </section>
+          <h2>Organizers</h2>
+          <section id="organizers">
+              <list-organizers></list-organizer>
+          </section>
           <h2>Scholarships</h2>
           <p>We are <a target="_blank" href="https://airtable.com/shrZcxLRhznKQ1sIm">accepting applications</a> for our Scholarship Program! If you are an under-represented minority in tech or need financial aid in order to attend this event, please consider applying. We want everyone to be able to attend this event! And if you are in a position to help fund this program, please consider making a donation below when you buy your ticket ❤️</p>
           <h2>Tickets</h2>

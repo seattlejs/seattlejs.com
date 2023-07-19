@@ -7,7 +7,8 @@ export async function get() {
       sharing: {
         image: '/_public/images/seattlejsconf-sharing.png'
       },
-      event 
+      event,
+      organizers: event.organizers
     }
   }
 }
