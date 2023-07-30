@@ -17,6 +17,9 @@ export default function ({ html, state }) {
               autoplay="any"
               default-hidden-captions>
           </mux-player>
+          <div class="container">
+            <div id="who_is_here" class="who_is_here"></div>
+          </div>
           <h2>Thanks to our Sponsors!</h2>
           <section id="sponsors">
             <view-sponsor tier="platinum" name="AWS" url="https://docs.amplify.aws/" image="aws.png"></view-sponsor>
