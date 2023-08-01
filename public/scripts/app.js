@@ -5425,17 +5425,74 @@ ${Array.from(traces).join("\n\n")}`
   detectDupes(PKG_NAME2, PKG_VERSION2, PKG_FORMAT2);
 
   // src/app.js
+  function generateRandomId() {
+    return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+  }
+  function removeStaleReactions() {
+    window.reactions.remoteReactions = window.reactions.remoteReactions.filter(
+      (reaction) => {
+        const delta = ((/* @__PURE__ */ new Date()).getTime() - reaction.timestamp) / 1e3;
+        return delta < 2 + 2;
+      }
+    );
+  }
+  var generateRandomCurveForReaction = () => {
+    const randomX1 = `100%`;
+    const randomY1 = `100%`;
+    const randomX2 = `${Math.random() * 5}%`;
+    const randomY2 = `${Math.random() * 50 + 50}%`;
+    return `cubic-bezier(${randomX1}, ${randomY1}, ${randomX2}, ${randomY2})`;
+  };
+  var getStartingAngleForReaction = () => {
+    const direction = Math.random() < 0.5 ? 1 : -1;
+    const startingAngle = Math.floor(Math.random() * 90);
+    return direction * startingAngle;
+  };
   var client = createClient({
     publicApiKey: "pk_prod_nQme4lxwwAyBuCvk2CQP0Tve9kBh1KxeN_FUdQQqrc24qH9qYA2anmqOToNCpFyA"
   });
   function run() {
     const room = client.enter("javascript-todo-app", {
-      initialPresence: { isTyping: false }
+      initialPresence: {}
     });
-    const whoIsHere = document.getElementById("who_is_here");
-    console.log(whoIsHere);
-    room.subscribe("others", (others) => {
-      whoIsHere.innerHTML = `There are ${others.count} other users online`;
+    window.reactions = {
+      react: void 0,
+      remoteReactions: [],
+      getStartingAngleForReaction,
+      generateRandomCurveForReaction
+    };
+    window.reactions.react = (id) => {
+      let emoji = "";
+      switch (id) {
+        case "heart":
+          emoji = "\u2764\uFE0F";
+          break;
+        case "fire":
+          emoji = "\u{1F525}";
+          break;
+        case "octopus":
+          emoji = "\u{1F419}";
+          break;
+        case "rocket":
+          emoji = "\u{1F680}";
+          break;
+      }
+      if (emoji !== "")
+        room.broadcastEvent({ type: "reaction", emoji, emojiId: id });
+    };
+    room.subscribe("event", ({ event }) => {
+      removeStaleReactions();
+      if (event.type === "reaction") {
+        window.reactions.remoteReactions.push({
+          id: generateRandomId(),
+          emojiId: event.emojiId,
+          type: event.emoji,
+          shown: false,
+          timestamp: (/* @__PURE__ */ new Date()).getTime(),
+          curve: generateRandomCurveForReaction(),
+          startingAngle: getStartingAngleForReaction()
+        });
+      }
     });
   }
   run();

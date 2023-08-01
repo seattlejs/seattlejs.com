@@ -4,11 +4,17 @@ export default function ({ html, state }) {
   let playbackId = event.playbackId || 'v69RSHhFelSm4701snP22dYz2jICy4E4FUyk02rW4gxRM'
   return html`
     <style>
+      .video-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+      }
     </style>
     <my-layout>
       <div id="page">
         <div class="page-body">
-          <mux-player
+	  <div class="video-container">
+            <mux-player
               stream-type="live"
               playback-id="${ playbackId }"
               metadata-video-title="SeattleJS Conf 2023 Livestream"
@@ -16,10 +22,9 @@ export default function ({ html, state }) {
               muted="true"
               autoplay="any"
               default-hidden-captions>
-          </mux-player>
-          <div class="container">
-            <div id="who_is_here" class="who_is_here"></div>
-          </div>
+            </mux-player>
+	    <live-reactions />
+	  </div>
           <h2>Thanks to our Sponsors!</h2>
           <section id="sponsors">
             <view-sponsor tier="platinum" name="AWS" url="https://docs.amplify.aws/" image="aws.png"></view-sponsor>
