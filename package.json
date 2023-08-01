@@ -1,6 +1,6 @@
 {
   "name": "seattle-js",
-  "version": "3.3.32",
+  "version": "3.3.33",
   "description": "An evergreen website for the SeattleJS meetup and community",
   "engines": {
     "node": ">=16.19.0"
@@ -29,7 +29,10 @@
       "eslint:recommended",
       "prettier"
     ],
-    "ignorePatterns": ["public/scripts/*", "src/*"],
+    "ignorePatterns": [
+      "public/scripts/*",
+      "src/*"
+    ],
     "parser": "@babel/eslint-parser",
     "parserOptions": {
       "requireConfigFile": false,
