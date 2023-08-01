@@ -150,7 +150,7 @@ export default function MyHeader({ html }) {
       </nav>
     </header>
     <section id="subheader">
-      🚨 The deadline to register for SeattleJS Conf 2023 is July 31!
+      🆕 Grab a last minute "No Frills" ticket to SeattleJS Conf for $49!
     </section>
     <script type="module">
       class MyHeader extends HTMLElement {
