@@ -8,7 +8,12 @@ export default function ViewSponsor({ html, state = {} }) {
        }
 
        .gold img {
-        height: 100px;
+        height: 75px;
+       }
+
+       .gold {
+        display: inline-block;
+        margin: 16px;
        }
     </style>
     <div class="${ tier }">

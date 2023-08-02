@@ -61,9 +61,16 @@ export default function ({ html, state }) {
           <h2>Sponsors</h2>
           <section id="sponsors">
             <p>Please email info@seattlejs.com if you are interested in learning about sponsoring this event!</p>
-            <view-sponsor tier="platinum" name="AWS" url="https://docs.amplify.aws/" image="aws.png"></view-sponsor>
-            <view-sponsor tier="gold" name="Courier" url="http://courier.com?utm_campaign=q2-fy23-conference-seattlejsconf&utm_source=conference&utm_medium=website" image="courier.png"></view-sponsor>
-            <view-sponsor tier="gold" name="Mux" url="http://mux.com" image="mux.svg"></view-sponsor>
+            <div>
+              <view-sponsor tier="platinum" name="AWS" url="https://docs.amplify.aws/" image="aws.png"></view-sponsor>
+            </div>
+            <div>
+              <view-sponsor tier="gold" name="Courier" url="http://courier.com?utm_campaign=q2-fy23-conference-seattlejsconf&utm_source=conference&utm_medium=website" image="courier.png"></view-sponsor>
+              <view-sponsor tier="gold" name="Mux" url="http://mux.com" image="mux.svg"></view-sponsor>
+              <view-sponsor tier="gold" name="Mux" url="http://cloudinary.com" image="cloudinary.png"></view-sponsor>
+              <view-sponsor tier="gold" name="Mux" url="http://runme.dev" image="runme.png"></view-sponsor>
+              <view-sponsor tier="gold" name="Mux" url="http://appwrite.io" image="appwrite.png"></view-sponsor>
+            </div>
           </section>
           <h2>Training Workshops</h2>
           <section id="training">
