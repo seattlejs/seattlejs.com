@@ -45,12 +45,12 @@ i {
     width: 25px;
 }
 
-a[target="_blank"]:after {
+/*a[target="_blank"]:after {
     font-family: 'Font Awesome 5 Pro';
     font-size: 10px;
     margin-right:8px;
-    content: " \f08e";
-}
+    content: "\f35d";
+}*/
 
 #page {
     padding: 8px 24px;

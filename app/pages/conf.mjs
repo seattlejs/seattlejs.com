@@ -1,3 +1,5 @@
+import { marked } from 'marked'
+
 export default function ({ html, state }) {
   let { store = {} } = state
   let { event } = store
@@ -82,7 +84,7 @@ export default function ({ html, state }) {
                 </div>
                 <div style="flex:1">
                   <h3><a href="/workshops/${ w.id }">${ w.title }</a></h3>
-                  <p>${ w.short || w.abstract }</p>
+                  <p>${ marked(w.short || w.abstract) }</p>
                 </div>
               </div>
             `).join('')}
