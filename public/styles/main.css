@@ -45,12 +45,15 @@ i {
     width: 25px;
 }
 
-/*a[target="_blank"]:after {
-    font-family: 'Font Awesome 5 Pro';
+a[target="_blank"]:after {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
     font-size: 10px;
-    margin-right:8px;
+    margin:0 8px;
     content: "\f35d";
-}*/
+}
 
 #page {
     padding: 8px 24px;
