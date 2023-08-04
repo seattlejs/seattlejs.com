@@ -1,9 +1,8 @@
-//import data from '@begin/data'
+import data from '@begin/data'
 import confData from '../data/conf-2023.json' assert { type: 'json' }
 
 export async function get(req) {
-  console.log(req.query.test)
-  let playbackId = undefined // await data.get({ table: "admin", key: "playbackId" })
+  let playbackId = await data.get({ table: "admin", key: "playbackId" })
 
   return {
     json: { 
@@ -14,7 +13,10 @@ export async function get(req) {
       },
       event,
       organizers: event.organizers,
-      playbackId: req.query.playbackId || playbackId || (req.query.test != undefined ? 'v69RSHhFelSm4701snP22dYz2jICy4E4FUyk02rW4gxRM' : undefined)
+      playbackId: 
+        req.query.playbackId // if a playbackId is passed in the query string, it takes precendence
+        || (req.query.test != undefined ? 'v69RSHhFelSm4701snP22dYz2jICy4E4FUyk02rW4gxRM' : undefined) // next if "test" is used
+        || ( playbackId ? playbackId.value : undefined ) // lastly, the value from the database, if it exists
     }
   }
 }
