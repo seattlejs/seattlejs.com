@@ -12,6 +12,27 @@ require('dotenv').config()
  * See: https://docs.mux.com/guides/video/stream-live-to-3rd-party-platforms#2-select-a-simulcast-target-supported-by-mux
  */
 
+async function updatePlaybackId(playbackId) {
+  let env = process.argv[2]
+  let url
+  if (env === 'testing') {
+      url = 'http://localhost:3333'
+  }
+  else  {
+      url = `https://${ env === 'staging' ? 'staging.' : '' }seattlejs.com`
+  }
+  // update the app setting
+  let params = new URLSearchParams()
+  params.append('secret', process.env.ADMIN_SECRET)
+  params.append('playbackId', playbackId)
+  await fetch(`${url}/admin`, {
+      method: 'POST',
+      body:    params,
+      // redirect: 'manual'
+  })
+  console.log('Setting Updated: playbackId: ', playbackId)
+}
+
 
 async function createLivestream() {
     // create a payload for the REST API call that will initialize a livestream and simulcast it to both Twitter and Twitch
@@ -61,7 +82,10 @@ async function createLivestream() {
         body:    JSON.stringify(payload),
     })
     let result = await response.json()
-    console.log(result)
+    console.log("Mux Stream Key: ", result.data.stream_key)
+    let playbackId = result.data.playback_ids[0].id
+    console.log("Mux playbackId: ", playbackId)
+    await updatePlaybackId(playbackId)
 }
 
 createLivestream()
