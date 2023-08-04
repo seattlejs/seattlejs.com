@@ -1,6 +1,10 @@
-import data from '../data/conf-2023.json' assert { type: 'json' }
+//import data from '@begin/data'
+import confData from '../data/conf-2023.json' assert { type: 'json' }
+
 export async function get(req) {
   console.log(req.query.test)
+  let playbackId = undefined // await data.get({ table: "admin", key: "playbackId" })
+
   return {
     json: { 
       title: 'SeattleJS Conf',
@@ -10,9 +14,9 @@ export async function get(req) {
       },
       event,
       organizers: event.organizers,
-      playbackId: req.query.playbackId || /* pull from DB || */ (req.query.test != undefined ? 'v69RSHhFelSm4701snP22dYz2jICy4E4FUyk02rW4gxRM' : undefined)
+      playbackId: req.query.playbackId || playbackId || (req.query.test != undefined ? 'v69RSHhFelSm4701snP22dYz2jICy4E4FUyk02rW4gxRM' : undefined)
     }
   }
 }
 
-export const event = data
+export const event = confData

@@ -33,11 +33,11 @@ async function createLivestream() {
           }
         ],
         simulcast_targets : [
-          /*{
+          {
             url : "rtmps://or.pscp.tv:443/x",
             stream_key : process.env.TWITTER_STREAM_KEY,
             passthrough : "SeattleJS Conf 2023 Livestream on Twitter"
-          },*/
+          },
           {
             url : "rtmp://live.twitch.tv/app/",
             stream_key : process.env.TWITCH_STREAM_KEY,
