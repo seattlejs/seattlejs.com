@@ -138,10 +138,10 @@ export default function MyHeader({ html }) {
           </svg>
         </button>
         <ul id="nav-links">
-          <li><a class="special" href="/conf">SeattleJS Conf 2023</a></li>
+          <li><a href="/conf">SeattleJS Conf 2023</a></li>
+          <li><a class="special" href="/live">📺 Livestream</a></li>
           <li><a href="/about-us">About Us</a></li>
           <li><a href="/join">Join Our Community</a></li>
-          <!--a href="/sponsoring">Sponsor Us</a-->
           <li><a href="/code-of-conduct">Code of Conduct</a></li>
           <li>
             <a target="_blank" href="https://ti.to/event-loop/">Tickets</a>
@@ -150,7 +150,7 @@ export default function MyHeader({ html }) {
       </nav>
     </header>
     <section id="subheader">
-      🆕 Grab a last minute "No Frills" ticket to SeattleJS Conf for $49!
+     Set your alarm ⏰! The livestream will kick-off here on Tuesday, August 8 at 9:00am PT
     </section>
     <script type="module">
       class MyHeader extends HTMLElement {

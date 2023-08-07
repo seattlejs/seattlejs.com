@@ -96,7 +96,9 @@ export default function ({ html, state }) {
             </mux-player>
 	          <live-reactions />
 	        </div>`
-          : ``}
+          : /*html*/`
+            <p><i>Livestream will begin on August 8 at 9:00am PT.</i></p>
+          `}
           <div class="schedule">
             <h2>Schedule</h2>
             <div class="main track">   
