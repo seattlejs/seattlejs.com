@@ -102,7 +102,7 @@ export default function ({ html, state }) {
           <div class="schedule">
             <h2>Schedule</h2>
             <div class="main track">   
-              <h3>Main Track</h3>
+              <h3>Conference</h3>
               <div class="location">Talk Room</div>
               <div class="show-item">       
                   <div class="when">09:00</div>
@@ -138,6 +138,12 @@ export default function ({ html, state }) {
                   <div class="when">17:00</div>
                   <div class="what"><div class="title">Closing Remarks</div></div>
               </div>
+              <h3>After Party</h3>
+              <div class="location">Optimism Brewing - <a target="_blank" href="https://goo.gl/maps/R5CLTTakRga9tAAG7">1158 Broadway</a></div>
+              <div class="show-item">       
+              <div class="when">19:00</div>
+              <div class="what"><div class="title">Karaoke Party 🎤</div></div>
+          </div>
             </div>
           </div>
           <section id="sponsors">
