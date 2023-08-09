@@ -34,6 +34,7 @@ export default function ({ html, state }) {
         <!-- no title needed -->
         <div class="page-body">
           <div style="text-align:center"><img width="500" src="/_public/images/seattlejsconf-2023-logo.png" alt="logo for SeattleJS Conf 2023"/></div>
+          <div style="padding:24px;border-radius:4px;background-color:#eee">SeattleJS Conf 2023 is a wrap! Check-out the <a href="/live">replay of the livestream</a> and see you all next year for CascadiaJS 2024!</div>
           <p>SeattleJS Conf is a very special 1-day conference bringing together ~300 web developers to learn, network and have fun!</p>
           <p>The talks, from industry exports, will cover the latest and greatest in web technologies, from CSS View Transitions to Deno 2.0 to AI.</p>
           <p>The event is being hosted by AWS and will feature a post-conference karaoke party at Optimism Brewing that you won't want to miss!</p>

@@ -86,7 +86,7 @@ export default function ({ html, state }) {
           ${ playbackId ? /*html*/`
           <div class="video-container">
             <mux-player
-              stream-type="live"
+              stream-type="on-demand"
               playback-id="${ playbackId }"
               metadata-video-title="SeattleJS Conf 2023 Livestream"
               metadata-viewer-user-id="embed"
@@ -94,7 +94,7 @@ export default function ({ html, state }) {
               autoplay="any"
               default-hidden-captions>
             </mux-player>
-	          <live-reactions />
+	          <!--live-reactions /-->
 	        </div>`
           : /*html*/`
             <p><i>Livestream will begin on August 8 at 9:00am PT.</i></p>
