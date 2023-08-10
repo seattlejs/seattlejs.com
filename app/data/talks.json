@@ -202,15 +202,6 @@
     "type": "regular"
   },
   {
-    "id": "alan-balasundaram-july-2023",
-    "speaker_id": "alan-balasundaram",
-    "event_id": "july-2023",
-    "title": "Javascript & Generative AI for MVP Development",
-    "abstract": "Leveraging generative AI like ChatGPT and Javascript tooling to quickly create MVPs",
-    "topics": ["AI", " Javascript", " Generative AI"],
-    "type": "lightning"
-  },
-  {
     "id": "chris-griffing-july-2023",
     "speaker_id": "chris-griffing",
     "event_id": "july-2023",
@@ -227,5 +218,23 @@
     "abstract": "Exploring ways to optimize resolving promises in JavasScript. A few slides with concepts and execution of code snippets with barebones performance measurement. Presenting to spark further discussion and generate feedback / input from others, not to lecture as the expert on the matter.",
     "topics": ["javascript", " promises", " performance", " concurrency"],
     "type": "lightning"
+  },
+  {
+    "id": "alan-balasundaram-september-2023",
+    "speaker_id": "alan-balasundaram",
+    "event_id": "september-2023",
+    "title": "Javascript & Generative AI for MVP Development",
+    "abstract": "Leveraging generative AI like ChatGPT and Javascript tooling to quickly create MVPs",
+    "topics": ["AI", " Javascript", " Generative AI"],
+    "type": "lightning"
+  },
+  {
+    "id": "jan-miksovsky-september-2023",
+    "speaker_id": "jan-miksovsky",
+    "event_id": "september-2023",
+    "title": "Graphs All the Way Down",
+    "abstract": "Distinct APIs for objects, files, sites, and resources obscure the fact that they're all just graphs. I'll introduce a research project leveraging recent JS features and a new coding pattern for graphs to let you quickly transform graphs of anything into a site or other artifact in a natural, expressive way.",
+    "topics": ["front-end development", "static site generators", "documentation pipelines"],
+    "type": "regular"
   }
 ]

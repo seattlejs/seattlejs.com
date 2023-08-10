@@ -149,7 +149,7 @@ export default function MyHeader({ html }) {
       </nav>
     </header>
     <section id="subheader">
-     SeattleJS Conf 2023 is wrapped! Subscribe to <a href="https://www.youtube.com/@cascadiajs">our YouTube channel</a> to get notified when talks get published.
+     SeattleJS Conf 2023 is wrapped! Subscribe to <a target="_blank" href="https://www.youtube.com/@cascadiajs">our YouTube channel</a> to get notified when talks get published.
     </section>
     <script type="module">
       class MyHeader extends HTMLElement {

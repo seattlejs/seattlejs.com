@@ -132,5 +132,16 @@
       "geoff-rich-july-2023"
     ],
     "description": ""
+  },
+  {
+    "id": "september-2023",
+    "title": "SeattleJS September 2023",
+    "date": "2023-09-13",
+    "sponsors": ["runme.dev"],
+    "talks": [
+      "alan-balasundaram-september-2023",
+      "jan-miksovsky-september-2023"
+    ],
+    "description": ""
   }
 ]

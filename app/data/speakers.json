@@ -179,5 +179,13 @@
     "twitter": "fitzgerald1337",
     "pronouns": "he/him/his",
     "photo": "michael-fitzgerald.png"
+  },
+  {
+    "id": "jan-miksovsky",
+    "name": "Jan Miksovsky",
+    "company": "Independent",
+    "mastadon": "https://fosstodon.org/@JanMiksovsky",
+    "pronouns": "he/him",
+    "photo": "jan-miksovsky.jpg"
   }
 ]

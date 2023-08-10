@@ -17,6 +17,7 @@ export default function ViewEvent({ html, state = {} }) {
           url="${s.url}"
           copy="${s.copy}"
           name="${s.name}"
+          tier="platinum"
         ></view-sponsor>`
       )
       .join('')}
