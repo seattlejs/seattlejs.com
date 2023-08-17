@@ -264,7 +264,7 @@
         "event_id": "september-2023",
         "title": "DeviceScript - TypeScript for Tiny IoT Devices",
         "abstract": "Bring your TypeScript skillz to embedded (ESP32, RP2040) using DeviceScript.",
-        "topics": "embedded, typescript",
+        "topics": ["embedded", "typescript"],
         "type": "regular"
     },
     {
@@ -273,7 +273,7 @@
         "event_id": "september-2023",
         "title": "Giving LLMs Tools and Ability to do Generative UI",
         "abstract": "I will show how to enable LLMs to take actions using tools defined using JSX components. Additionally, I will show how to give the LLM the ability to create UI dynamically at runtime to move beyond simple text-based chat experiences.",
-        "topics": "AI, LLMs, JavaScript, React, JSX, Awesomeness",
+        "topics": ["AI", "LLM", "JavaScript", "React", "JSX"],
         "type": "lightning"
     }
 ]
