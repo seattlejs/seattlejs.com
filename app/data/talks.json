@@ -266,5 +266,14 @@
         "abstract": "Bring your TypeScript skillz to embedded (ESP32, RP2040) using DeviceScript.",
         "topics": "embedded, typescript",
         "type": "regular"
+    },
+    {
+        "id": "ben-lower-september-2023",
+        "speaker_id": "ben-lower",
+        "event_id": "september-2023",
+        "title": "Giving LLMs Tools and Ability to do Generative UI",
+        "abstract": "I will show how to enable LLMs to take actions using tools defined using JSX components. Additionally, I will show how to give the LLM the ability to create UI dynamically at runtime to move beyond simple text-based chat experiences.",
+        "topics": "AI, LLMs, JavaScript, React, JSX, Awesomeness",
+        "type": "lightning"
     }
 ]

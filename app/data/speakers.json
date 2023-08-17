@@ -195,5 +195,13 @@
         "twitter": "",
         "pronouns": "he/him",
         "photo": "peli-de-halleux.jpg"
+    },
+    {
+        "id": "ben-lower",
+        "name": "ben lower",
+        "company": "Fixie",
+        "twitter": "benlower",
+        "pronouns": "he/him/his",
+        "photo": "ben-lower.jpg"
     }
 ]
