@@ -1,6 +1,7 @@
 export default function PersonDetail({ html, state = {} }) {
   const { attrs } = state
-  let { name, company, twitter, photo, pronouns, location, url, linkedin } = attrs
+  let { name, company, twitter, photo, pronouns, location, url, linkedin } =
+    attrs
   let links = { twitter, url, linkedin }
   return html`
     <style>
@@ -24,21 +25,21 @@ export default function PersonDetail({ html, state = {} }) {
           display: flex;
         }
         .more {
-          margin-left:24px;
+          margin-left: 24px;
         }
       }
     </style>
-    <h2>About ${ name }</h2>
-    <div class="info"> 
-        <div class="photo"><img src="${ photo }" alt="photo of ${ name }"/></div>
-        <div class="more">
-            ${ pronouns && `<h3>Pronouns</h3><p>${ pronouns }</p>` }
-            ${ location && `<h3>Location</h3><p>${ location }</p>` }
-            ${ company && `<h3>Company</h3><p>${ company }</p>` }
-            ${ (twitter || url || linkedin) && html`
-            <h3>Links</h3>
-            <list-links links=${ links }></list-links>` }
-        </div>
+    <h2>About ${name}</h2>
+    <div class="info">
+      <div class="photo"><img src="${photo}" alt="photo of ${name}" /></div>
+      <div class="more">
+        ${pronouns && `<h3>Pronouns</h3><p>${pronouns}</p>`}
+        ${location && `<h3>Location</h3><p>${location}</p>`}
+        ${company && `<h3>Company</h3><p>${company}</p>`}
+        ${(twitter || url || linkedin) &&
+        html` <h3>Links</h3>
+          <list-links links=${links}></list-links>`}
+      </div>
     </div>
   `
 }
