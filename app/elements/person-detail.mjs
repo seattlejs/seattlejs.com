@@ -1,7 +1,7 @@
 export default function PersonDetail({ html, state = {} }) {
   const { attrs } = state
   let { name, company, twitter, photo, pronouns, location, url, linkedin } = attrs
-  //console.log(attrs)
+  let links = { twitter, url, linkedin }
   return html`
     <style>
       h3 {
@@ -35,14 +35,9 @@ export default function PersonDetail({ html, state = {} }) {
             ${ pronouns && `<h3>Pronouns</h3><p>${ pronouns }</p>` }
             ${ location && `<h3>Location</h3><p>${ location }</p>` }
             ${ company && `<h3>Company</h3><p>${ company }</p>` }
-            ${ (twitter || url || linkedin) && `
+            ${ (twitter || url || linkedin) && html`
             <h3>Links</h3>
-            <ul>
-            ${ linkedin ? `<li><i class="fab fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/${ linkedin }">${ linkedin }</a></li>` : '' }
-            ${ twitter ? `<li><i class="fab fa-twitter"></i> <a target="_blank" href="https://twitter.com/${ twitter }">@${ twitter }</a></li>` : '' }
-            ${ url ? `<li><i class="fa fa-globe"></i> <a target="_blank" href="${ url }">${ url.split("://")[1] }</a></li>` : '' }
-            </ul>
-            `}
+            <list-links links=${ links }></list-links>` }
         </div>
     </div>
   `
