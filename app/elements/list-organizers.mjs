@@ -35,12 +35,11 @@ export default function ListOrganizers({ html, state = {} }) {
           </p>
           <p>
             <div class="name">${o.full_name}</div>
-            ${o.role ? `${ o.role } <br />` : ''}
-            ${o.twitter
-              ? `<a target="_blank" href="https://twitter.com/${o.twitter}">@${o.twitter}</a></p>`
-              : ''}
+            ${o.role ? `${o.role} <br />` : ''}
+            <list-links links=${o.links}></list-links>
           </p>
         </div>`
       )
       .join('')}
-`}
+  `
+}
