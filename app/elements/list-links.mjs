@@ -1,7 +1,7 @@
 export default function ListLinks({ html, state = {} }) {
   const { attrs } = state
   const { links } = attrs
-
+  const { linkedin, twitter, url, github } = { ...links }
   return html`
     <style>
       ul {
@@ -11,21 +11,20 @@ export default function ListLinks({ html, state = {} }) {
       }
     </style>
     <ul>
-      ${links?.linkedin
-        ? `<li class="links-list"><i class="fab fa-linkedin" style="width: 20px;"></i><a target="_blank" href="https://www.linkedin.com/in/${links.linkedin}">${links.linkedin}</a></li>`
+      ${linkedin
+        ? `<li class="links-list"><i class="fab fa-linkedin" style="width: 20px;"></i><a target="_blank" href="https://www.linkedin.com/in/${linkedin}">${linkedin}</a></li>`
         : ''}
-      ${links?.twitter
-        ? `<li class="links-list"><i class="fab fa-x-twitter" style="width: 20px;"></i><a target="_blank" href="https://twitter.com/${links.twitter}">@${links.twitter}</a></li>`
+      ${twitter
+        ? `<li class="links-list"><i class="fab fa-x-twitter" style="width: 20px;"></i><a target="_blank" href="https://twitter.com/${twitter}">@${twitter}</a></li>`
         : ''}
-      ${links?.url
+      ${url
         ? `<li class="links-list"><i class="fa fa-globe" style="width: 20px;"></i><a target="_blank" href="${url}">${
             url.split('://')[1]
           }</a></li>`
         : ''}
-      ${links?.github
-        ? `<li class="links-list"><i class="fab fa-github" style="width: 20px;"></i><a target="_blank" href="https://github.com/${links.github}">${links.github}</a></li>`
+      ${github
+        ? `<li class="links-list"><i class="fab fa-github" style="width: 20px;"></i><a target="_blank" href="https://github.com/${github}">${github}</a></li>`
         : ''}
     </ul>
   `
 }
-
