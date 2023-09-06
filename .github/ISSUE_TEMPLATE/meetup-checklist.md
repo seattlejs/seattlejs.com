@@ -13,12 +13,13 @@ assignees: ''
 - [ ] create new event in ti.to
 - [ ] duplicate meetup survey and update speaker info (Google Docs)
 - [ ] send email via Tito to previous month's attendees with link to survey + link to tickets
-- [ ] create "event" and update website
+- [ ] update website with event json
   
 ## (3 weeks out)
 - [ ] confirm sponsor & update website
 - [ ] submit invoice to sponsor
 - [ ] confirm speakers & update website
+- [ ] create calendar event and invite speakers, sponsor, & volunteers
 - [ ] create discord event
 - [ ] click "announce" on meetup.com
 - [ ] post tweet
