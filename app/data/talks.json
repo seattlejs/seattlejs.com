@@ -233,19 +233,6 @@
         "type": "lightning"
     },
     {
-        "id": "alan-balasundaram-september-2023",
-        "speaker_id": "alan-balasundaram",
-        "event_id": "september-2023",
-        "title": "Javascript & Generative AI for MVP Development",
-        "abstract": "Leveraging generative AI like ChatGPT and Javascript tooling to quickly create MVPs",
-        "topics": [
-            "AI",
-            " Javascript",
-            " Generative AI"
-        ],
-        "type": "lightning"
-    },
-    {
         "id": "jan-miksovsky-september-2023",
         "speaker_id": "jan-miksovsky",
         "event_id": "september-2023",
