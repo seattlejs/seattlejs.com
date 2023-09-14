@@ -56,6 +56,10 @@ If there is no Markdown file that matches the path, a 404 error will be returned
 
 If you need to run/test the mailing list subscription action (`POST /signup`) you will need to configure the following environment variables: `CIO_SITE_ID`, `CIO_API_KEY`, `CIO_APP_KEY`
 
+### Begin Setup
+
+Once again this app uses [Begin](https://begin.com) for its deployments.  You will have to install the Begin CLI before running the start script as outlined [here](https://begin.com/docs/getting-started/installing-the-begin-cli).
+
 ## Run dev server
 
 `npm start`
