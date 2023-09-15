@@ -38,7 +38,10 @@ export async function post(req) {
   // Check for the presence of the signature header.
   const signature = req.headers['tito-signature']
   if (!signature || signature === '') {
-    return { json: { ok: false, error: 'missing security signature header' } }
+    return {
+      json: { ok: false, error: 'missing security signature header' },
+      statusCode: 401
+    }
   }
 
   // Create an HMAC with the payload body using our security token, and convert to base64.
@@ -46,7 +49,10 @@ export async function post(req) {
   const digest = hmac.update(req.rawBody).digest('base64')
 
   if (signature !== digest) {
-    return { json: { ok: false, error: 'security signature does not match' } }
+    return {
+      json: { ok: false, error: 'security signature does not match' },
+      statusCode: 401
+    }
   }
 
   let { first_name, last_name, email } = req.body
