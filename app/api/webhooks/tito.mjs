@@ -1,3 +1,4 @@
+import crypto from 'crypto'
 //import { addToCustomerIO } from "../signup.mjs"
 
 /* TODO: this code block (addToCustomerIO) is copied from ../signup.mjs because (for some reason) importing this function
@@ -34,9 +35,21 @@ export async function addToCustomerIO(first_name, last_name, email_address) {
 
 // process webhook requests from Tito.io, the ticketing system for SeattleJS meetups. Add these users to our mailing list.
 export async function post(req) {
+  // Check for the presence of the signature header.
+  const signature = req.headers['tito-signature']
+  if (!signature || signature === '') {
+    return { json: { ok: false, error: 'missing security signature header' } }
+  }
+
+  // Create an HMAC with the payload body using our security token, and convert to base64.
+  const hmac = crypto.createHmac('sha256', process.env.TITO_SECURITY_TOKEN)
+  const digest = hmac.update(req.rawBody).digest('base64')
+
+  if (signature !== digest) {
+    return { json: { ok: false, error: 'security signature does not match' } }
+  }
+
   let { first_name, last_name, email } = req.body
-  //console.log(first_name, last_name, email)
   await addToCustomerIO(first_name, last_name, email)
-  //console.log(foo)
   return { json: { ok: true } }
 }
