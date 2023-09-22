@@ -251,7 +251,10 @@
         "event_id": "september-2023",
         "title": "DeviceScript - TypeScript for Tiny IoT Devices",
         "abstract": "Bring your TypeScript skillz to embedded (ESP32, RP2040) using DeviceScript.",
-        "topics": ["embedded", "typescript"],
+        "topics": [
+            "embedded",
+            "typescript"
+        ],
         "type": "regular"
     },
     {
@@ -260,7 +263,40 @@
         "event_id": "september-2023",
         "title": "Giving LLMs Tools and Ability to do Generative UI",
         "abstract": "I will show how to enable LLMs to take actions using tools defined using JSX components. Additionally, I will show how to give the LLM the ability to create UI dynamically at runtime to move beyond simple text-based chat experiences.",
-        "topics": ["AI", "LLM", "JavaScript", "React", "JSX"],
+        "topics": [
+            "AI",
+            "LLM",
+            "JavaScript",
+            "React",
+            "JSX"
+        ],
+        "type": "lightning"
+    },
+    {
+        "id": "caleb-diehl-october-2023",
+        "speaker_id": "caleb-diehl",
+        "event_id": "october-2023",
+        "title": "Tracking Wildfires for The Associated Press with Maplibre and the ESRI API",
+        "abstract": "Millions of readers rely on the Associated Press's wildfire tracker to get live information about large wildfires across the United States. I am a data visualization developer at the AP and will go over some design, architecture, and data viz decisions we made during a major UI overhaul (which goes live at the end of June). I'll discuss how attendees can build similar interactive maps in React / TypeScript using the same free, open-source mapping libraries and APIs. ",
+        "topics": [
+            "Data visualization",
+            "interactive mapping"
+        ],
+        "type": "lightning"
+    },
+    {
+        "id": "alan-gonzalez-october-2023",
+        "speaker_id": "alan-gonzalez",
+        "event_id": "october-2023",
+        "title": "A new type of coding interviews",
+        "abstract": "Technical interviews are either inapplicable leet-code questions or time-consuming take-home projects. This talk presents a new approach that brings the best of both worlds, allowing people to showcase applicable skills. Software Engineering interviews in the browser!",
+        "topics": [
+            "hiring",
+            "coding interviews",
+            "leet-code",
+            "take-homes",
+            "webassembly"
+        ],
         "type": "lightning"
     }
 ]
