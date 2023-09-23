@@ -189,5 +189,16 @@
             "ben-lower-september-2023"
         ],
         "description": ""
+    },
+    {
+        "id": "october-2023",
+        "title": "SeattleJS October 2023",
+        "date": "2023-10-11",
+        "sponsors": [],
+        "talks": [
+            "caleb-diehl-october-2023",
+            "alan-gonzalez-october-2023"
+        ],
+        "description": "Thanks to [Gearhouse](https://joingearhouse.com) for hosting us this month. We will be at their Capitol Hill location for October.\n\n 📍 [800 E Thomas St, Seattle, WA 98102](https://maps.app.goo.gl/LRVEp4yudBrHHRue7)\n\n Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!"
     }
 ]

@@ -203,5 +203,21 @@
         "twitter": "benlower",
         "pronouns": "he/him/his",
         "photo": "ben-lower.jpg"
+    },
+    {
+        "id": "caleb-diehl",
+        "name": "Caleb Diehl",
+        "company": "The Associated Press",
+        "twitter": "",
+        "pronouns": "he/him",
+        "photo": "caleb-diehl.jpg"
+    },
+    {
+        "id": "alan-gonzalez",
+        "name": "Alan Gonzalez",
+        "company": "DevMatch",
+        "twitter": "_alanboy",
+        "pronouns": "he/him",
+        "photo": "alan-gonzalez.jpg"
     }
 ]
