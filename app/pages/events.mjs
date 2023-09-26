@@ -1,15 +1,11 @@
-export default function ({ html, state = {} }) {
-  let { store = {} } = state
-  let { events } = store
-  //console.log(events)
+export default function events({ html }) {
+
   return html`
     <my-layout>
       <div id="page">
-        <div class="page-title"><h1>Our Events</h1></div>
+        <div class="page-title"><h1>Our Past Events</h1></div>
         <div class="page-body">
-          <ul>
-            ${events.map(e => /*html*/ `<li>${e.title}</li>`).join('')}
-          </ul>
+          <events-list></events-list>
         </div>
       </div>
     </my-layout>
