@@ -2,6 +2,7 @@ import { marked } from 'marked'
 
 export default function ViewEvent({ html, state = {} }) {
   const { attrs, store } = state
+
   let { events } = store
   let { id } = attrs
   let event = events.find(e => e.id === id)
