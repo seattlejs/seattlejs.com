@@ -22,8 +22,10 @@ export default function EventsList({ html, state }) {
         ${events.sort((a,b) => new Date(b.date) - new Date(a.date))
           .map(
             e => `
-            <li class=>
-              ${e.title}
+            <li >
+              <a target="_self" href="/events/${e.id}">
+                ${e.title}
+              </a>
             </li>`
           )
           .join('')}
