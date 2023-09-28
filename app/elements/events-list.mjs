@@ -10,8 +10,11 @@ export default function EventsList({ html, state }) {
           display: flex;
           flex-wrap: wrap;
           align-items: flex-start;
-  	      justify-content: center;
         }
+      }
+      ul {
+        margin: 0;
+        padding: 0;
       }
       li {
         list-style-type: none;
