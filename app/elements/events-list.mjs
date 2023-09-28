@@ -1,8 +1,10 @@
 export default function EventsList({ html, state }) {
     const { store } = state
-    const events  = store.data
 
-    if (events.length > 0) {
+    // The last item in the array is the current event
+    let pastEvents  = store.data.slice(0, -1).sort((a,b) => new Date(b.date) - new Date(a.date))
+
+    if (pastEvents.length > 0) {
       return html`
       <style>
       @media only screen and (min-width: 768px) {
@@ -22,8 +24,7 @@ export default function EventsList({ html, state }) {
     </style>
     <ul>
 
-        ${events.sort((a,b) => new Date(b.date) - new Date(a.date))
-          .map(
+        ${pastEvents.map(
             e => `
             <li >
               <a target="_self" href="/events/${e.id}">
