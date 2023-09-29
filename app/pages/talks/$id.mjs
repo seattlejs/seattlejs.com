@@ -20,7 +20,7 @@ export default function ({ html, state = {} }) {
       </div>
       `
   }
-  else {  
+  else {
     // set the "photo" property with an absolute path (so that the <person-detail> element will work)
     let speakerClone = { ...speaker }
     speakerClone.photo = '/_public/images/speakers/' + speaker.photo
@@ -40,9 +40,9 @@ export default function ({ html, state = {} }) {
             padding:8px;
         }
       </style>
-      <page-layout title=${talk.title}>      
+      <page-layout title=${talk.title}>
         <h2>${ title }</h2>
-        <div class="topics">${ topics.map(t => `<div class=topic>${ t }</div>`).join('') }</div>
+        ${topics ? html`<div class="topics">${ topics.map(t => `<div class=topic>${ t }</div>`).join('') }</div>` : null }
         <div class="abstract">${ marked.parse(abstract) }</div>
         <person-detail ${ speakerProps }></person-detail>
       </page-layout>
