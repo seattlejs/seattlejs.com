@@ -27,12 +27,13 @@ export default function EventsList({ html, state }) {
         ${pastEvents.map(
             e => `
             <li >
-              <a target="_self" href="/events/${e.id}">
+              <a href="/events/${e.id}">
                 ${e.title}
               </a>
             </li>`
           )
           .join('')}
+    </ul>
       `
     }else {
         return `
