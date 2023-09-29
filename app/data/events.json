@@ -27,7 +27,8 @@
         "date": "2022-07-13",
         "sponsors": [
             "collective-seattle"
-        ]
+        ],
+        "talks": []
     },
     {
         "id": "august-2022",
@@ -35,7 +36,8 @@
         "date": "2022-08-10",
         "sponsors": [
             "collective-seattle"
-        ]
+        ],
+        "talks": []
     },
     {
         "id": "september-2022",
@@ -44,9 +46,7 @@
         "sponsors": [
             "collective-seattle"
         ],
-        "talks": [
-            "rachel-lee-nabors"
-        ]
+        "talks": []
     },
     {
         "id": "october-2022",
@@ -85,7 +85,7 @@
         "title": "SeattleJS January 2023",
         "date": "2023-01-11",
         "sponsors": [
-            "aws-skills-center"
+            "aws-skills-center-seattle"
         ],
         "talks": [
             "calvin-kipperman-january-2023",
