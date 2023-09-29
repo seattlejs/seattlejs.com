@@ -21,7 +21,7 @@ export default function ListSponsors({ html, state = {} }) {
       ${sponsors
         .map(
           s => html` <div>
-            <a target="_sponsor" href="${s.url}"
+            <a target="_blank" href="${s.url}"
               ><img src="/_public/images/sponsors/${s.image}"
             /></a>
           </div>`

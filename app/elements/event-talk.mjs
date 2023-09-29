@@ -3,8 +3,8 @@ export default function EventTalk({ html, state = {} }) {
   let { eventTalks, eventSpeakers } = store
   let { talkid, speakerid } = attrs
 
-  let talk = eventTalks.filter(t => t.id === talkid)[0]
-  let speaker = eventSpeakers.filter(s => s.id === speakerid)[0]
+  let talk = eventTalks.find(t => t.id === talkid)
+  let speaker = eventSpeakers.find(s => s.id === speakerid)
 
   let { title, type } = talk
   let { name, company, photo, location } = speaker
