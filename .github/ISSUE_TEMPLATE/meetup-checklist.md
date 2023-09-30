@@ -22,15 +22,14 @@ assignees: ''
 - [ ] create calendar event and invite speakers, sponsor, & volunteers
 - [ ] create discord event
 - [ ] click "announce" on meetup.com
-- [ ] post tweet
+- [ ] post tweet & paste in discord #annoucements channel
 
 ## (2 weeks out)
 - [ ] send email to mailing list (customer.io)
-- [ ] announce in discord
 
 ## (1 week out)
 - [ ] send email to meetup.com
-- [ ] post tweet
+- [ ] post tweet & paste in discrod #annoucements channel
 
 ## (1-2 days before)
 - [ ] send info to speakers on where/when/what
@@ -38,6 +37,7 @@ assignees: ''
 - [ ] prepare MC slide deck, get sign-off
   
 ## (day of)
+- [ ] If new location, tweet image of building facade so people know where to go
 - [ ] bring nametags, stickers (pronouns, job status), sharpies & drink tickets
 - [ ] send ti.to check-in link to volunteers in discord
 - [ ] set up stage (speakers, tv, podium)
