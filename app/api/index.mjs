@@ -1,28 +1,6 @@
-import { events } from './events.mjs'
-import { talks } from './talks.mjs'
-import { speakers } from './speakers.mjs'
+import { events, inflateEvent } from './events.mjs'
 import { organizers } from './organizers.mjs'
 import { sponsors } from './sponsors.mjs'
-
-function inflateTalk(talk_id) {
-  let talk = talks.find(t => t.id === talk_id)
-  if (talk.speaker_id) {
-    talk.speaker = speakers.find(s => s.id === talk.speaker_id)
-  }
-  return talk
-}
-
-function inflateSponsors(sponsor_id) {
-  return sponsors.find(s => s.id === sponsor_id)
-}
-
-function inflateEvent(event) {
-  if (event.talks) {
-    event.talks = event.talks.map(inflateTalk)
-    event.sponsors = event.sponsors.map(inflateSponsors)
-  }
-  return event
-}
 
 function filterFutureEvents() {
   const TWELVE_HOURS = 1000 * 60 * 60 * 12

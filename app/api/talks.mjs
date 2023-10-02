@@ -18,3 +18,11 @@ export async function get() {
 }
 
 export const talks = data
+
+export function inflateTalk(talk_id) {
+  let talk = talks.find(t => t.id === talk_id)
+  if (talk.speaker_id) {
+    talk.speaker = speakers.find(s => s.id === talk.speaker_id)
+  }
+  return talk
+}
