@@ -2,6 +2,7 @@ import { marked } from 'marked'
 
 export default function ViewEvent({ html, state = {} }) {
   const { attrs, store } = state
+
   let { events } = store
   let { id } = attrs
   let event = events.find(e => e.id === id)
@@ -27,5 +28,10 @@ export default function ViewEvent({ html, state = {} }) {
       ></a>
     </div>
     <list-talks event_id="${event.id}"></list-talks>
+    <div class="">
+      <a target="_self" href="/events">
+        See all past events <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
   `
 }

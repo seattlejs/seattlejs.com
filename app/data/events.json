@@ -2,7 +2,7 @@
     {
         "id": "may-2022",
         "title": "SeattleJS May 2022",
-        "date": "2022-10-12",
+        "date": "2022-05-11",
         "sponsors": [
             "collective-seattle"
         ],
@@ -13,7 +13,7 @@
     {
         "id": "june-2022",
         "title": "SeattleJS June 2022",
-        "date": "2022-10-12",
+        "date": "2022-06-08",
         "sponsors": [
             "collective-seattle"
         ],
@@ -24,29 +24,29 @@
     {
         "id": "july-2022",
         "title": "SeattleJS July 2022",
-        "date": "2022-10-12",
+        "date": "2022-07-13",
         "sponsors": [
             "collective-seattle"
-        ]
+        ],
+        "talks": []
     },
     {
         "id": "august-2022",
         "title": "SeattleJS August 2022",
-        "date": "2022-10-12",
+        "date": "2022-08-10",
         "sponsors": [
             "collective-seattle"
-        ]
+        ],
+        "talks": []
     },
     {
         "id": "september-2022",
         "title": "SeattleJS September 2022",
-        "date": "2022-10-12",
+        "date": "2022-09-14",
         "sponsors": [
             "collective-seattle"
         ],
-        "talks": [
-            "rachel-lee-nabors"
-        ]
+        "talks": []
     },
     {
         "id": "october-2022",
@@ -85,7 +85,7 @@
         "title": "SeattleJS January 2023",
         "date": "2023-01-11",
         "sponsors": [
-            "aws-skills-center"
+            "aws-skills-center-seattle"
         ],
         "talks": [
             "calvin-kipperman-january-2023",

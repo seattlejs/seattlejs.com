@@ -6,3 +6,8 @@ export async function get() {
 }
 
 export const sponsors = data
+
+export
+function inflateSponsors(sponsor_id) {
+  return sponsors.find(s => s.id === sponsor_id)
+}
