@@ -14,6 +14,7 @@ export async function get(req) {
       }
     }
   } else {
+  // We have to convert event from an object to an array to inflate it
   let inflatedEvent = [event].map(inflateEvent)
   let eventSponsors = event.sponsors
   let eventTalks = event.talks
