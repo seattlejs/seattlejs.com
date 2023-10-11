@@ -47,5 +47,5 @@ assignees: ''
 - [ ] clean up venue
 
 ## (day after)
-- [ ] ask speakers to post links to slides to `#meetup-chat` channel
+- [ ] ask speakers to post links to slides to `#seattlejs-meetups` channel
 - [ ] create next meetup checklist
