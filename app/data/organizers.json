@@ -1,5 +1,12 @@
 [
   {
+    "id": "andre-wiggins",
+    "full_name": "Andre Wiggins",
+    "links": {
+      "twitter": "andre_wiggins"
+    }
+  },
+  {
     "id": "carter-rabasa",
     "full_name": "Carter Rabasa",
     "links": {
@@ -11,13 +18,6 @@
     "full_name": "Justin Oliver Lee",
     "links": {
       "twitter": "JustinOliverLee"
-    }
-  },
-  {
-    "id": "andre-wiggins",
-    "full_name": "Andre Wiggins",
-    "links": {
-      "twitter": "andre_wiggins"
     }
   },
   {

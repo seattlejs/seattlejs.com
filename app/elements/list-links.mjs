@@ -15,7 +15,7 @@ export default function ListLinks({ html, state = {} }) {
         ? `<li class="links-list"><i class="fab fa-linkedin" style="width: 20px;"></i><a target="_blank" href="https://www.linkedin.com/in/${linkedin}">${linkedin}</a></li>`
         : ''}
       ${twitter
-        ? `<li class="links-list"><i class="fab fa-x-twitter" style="width: 20px;"></i><a target="_blank" href="https://twitter.com/${twitter}">@${twitter}</a></li>`
+        ? `<li class="links-list"><i class="fab fa-twitter" style="width: 20px;"></i><a target="_blank" href="https://twitter.com/${twitter}">@${twitter}</a></li>`
         : ''}
       ${url
         ? `<li class="links-list"><i class="fa fa-globe" style="width: 20px;"></i><a target="_blank" href="${url}">${
