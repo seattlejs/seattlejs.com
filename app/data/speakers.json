@@ -219,5 +219,13 @@
         "twitter": "_alanboy",
         "pronouns": "he/him",
         "photo": "alan-gonzalez.jpg"
+    },
+    {
+        "id": "mike-ryan",
+        "name": "Mike Ryan",
+        "company": "Polaris",
+        "twitter": "mikeryandev",
+        "pronouns": "he/him",
+        "photo": "mike-ryan.jpg"
     }
 ]

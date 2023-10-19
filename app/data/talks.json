@@ -298,5 +298,18 @@
             "webassembly"
         ],
         "type": "lightning"
+    },
+    {
+        "id": "mike-ryan-november-2023",
+        "speaker_id": "mike-ryan",
+        "event_id": "november-2023",
+        "title": "The User Experience of Site Reliability",
+        "abstract": "From CPU-pegged servers to misconfigured load balancers, outages in our systems all result in the same thing: degraded user experience. Let's explore strategies for measuring, managing, and improving reliability in our applications from the perspective of end users.",
+        "topics": [
+            "site reliability",
+            "observability",
+            "user experience"
+        ],
+        "type": "regular"
     }
 ]
