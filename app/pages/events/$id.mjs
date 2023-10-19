@@ -6,7 +6,6 @@ export default function ({ html, state = {} }) {
   let display = store.display
   let { id, title, sponsors, talks, description, date } = event
   let hasTalks = talks && talks.length > 0
-  console.log({hasTalks})
   let hasSponsors = sponsors && sponsors.length > 0
   if (display === "email") {
     let eventDate = new Date(date)
