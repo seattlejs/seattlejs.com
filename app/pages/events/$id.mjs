@@ -10,8 +10,6 @@ export default function ({ html, state = {} }) {
   let hasSponsors = sponsors && sponsors.length > 0
   if (display === "email") {
     let eventDate = new Date(date)
-    // this xmp tag is a hack, detailed in this stackoverflow answer:
-    // https://stackoverflow.com/a/16785992
     let htmlContents = `
       <p>GREETING TEXT</p>
       <!-- sponsor -->
@@ -45,7 +43,6 @@ export default function ({ html, state = {} }) {
       </style>
       <div class="container">
         <button id="copy-html-btn">Copy HTML to clipboard</button>
-
         ${htmlContents}
         <script>
          const copyHTML = async () => {
