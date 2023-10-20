@@ -10,28 +10,6 @@ export default function ({ html, state = {} }) {
   if (display === "email") {
     let eventDate = new Date(date)
     let htmlContents = `
-      <p>GREETING TEXT</p>
-      <!-- sponsor -->
-      ${hasSponsors ? sponsors.map(s => `
-        <p>
-          <a href="${s.url}"><img width="200" alt="${s.name} logo" src="https://seattlejs.com/_public/images/sponsors/${s.image}" title="${s.name} logo"></a>
-        </p>
-        <p>Special thanks to our friends at <a href="URL">${s.name}</a> for sponsoring snacks for this month's event! 😎</p>
-      `).join('') : null}
-      <ul>
-        <li>🗓 ${eventDate.toLocaleDateString(undefined, {weekday: "long", month: "long", day: "numeric"})}</li>
-        <li>⏰ 5:30pm - 8:30pm</li>
-        <li>📍 LOCATION</li>
-        <li>🎟 <a href="https://ti.to/event-loop/">Buy Tickets</a></li>
-      </ul>
-      <! -- loop through talks -->
-      ${hasTalks ? talks.map(t => `
-          <h4 style="font-family: headline-gothic-atf-round, sans-serif; font-weight: 700; font-size: 24px;">${t.title} by ${t.speaker.name}</h4>
-          <p><img width="200" alt="${t.name}" src="https://seattlejs.com/_public/images/speakers/${t.speaker.photo}" title="${t.speaker.name}"></p>
-          ${description && `<p>${marked(description)}</p>` }
-        `).join('') : null }
-      <!-- end loop -->
-      <p>See you all on ${eventDate.toLocaleDateString(undefined, {month: "long", day: "numeric"})}</p>
     `
     return html`
       <style>
@@ -42,15 +20,38 @@ export default function ({ html, state = {} }) {
       </style>
       <div class="container">
         <button id="copy-html-btn">Copy HTML to clipboard</button>
-        ${htmlContents}
+        <div id="html-contents">
+          <p>GREETING TEXT</p>
+          <!-- sponsor -->
+          ${hasSponsors ? sponsors.map(s => `
+            <p>
+              <a href="${s.url}"><img width="200" alt="${s.name} logo" src="https://seattlejs.com/_public/images/sponsors/${s.image}" title="${s.name} logo"></a>
+            </p>
+            <p>Special thanks to our friends at <a href="URL">${s.name}</a> for sponsoring snacks for this month's event! 😎</p>
+          `).join('') : null}
+          <ul>
+            <li>🗓 ${eventDate.toLocaleDateString(undefined, {weekday: "long", month: "long", day: "numeric"})}</li>
+            <li>⏰ 5:30pm - 8:30pm</li>
+            <li>📍 LOCATION</li>
+            <li>🎟 <a href="https://ti.to/event-loop/">Buy Tickets</a></li>
+          </ul>
+          <! -- loop through talks -->
+          ${hasTalks ? talks.map(t => `
+              <h4 style="font-family: headline-gothic-atf-round, sans-serif; font-weight: 700; font-size: 24px;">${t.title} by ${t.speaker.name}</h4>
+              <p><img width="200" alt="${t.name}" src="https://seattlejs.com/_public/images/speakers/${t.speaker.photo}" title="${t.speaker.name}"></p>
+              ${description && `<p>${marked(description)}</p>` }
+            `).join('') : null }
+          <!-- end loop -->
+          <p>See you all on ${eventDate.toLocaleDateString(undefined, {month: "long", day: "numeric"})}</p>
+        </div>
         <script>
-         const copyHTML = async () => {
-          console.log(\`${htmlContents}\`)
-          await navigator.clipboard.writeText(\`${htmlContents}\`);
+        const copyHTML = async () => {
+          const holder = document.getElementById("html-contents")
+          await navigator.clipboard.writeText(holder.innerHTML)
         }
         window.addEventListener("DOMContentLoaded", () => {
           const htmlButton = document.getElementById("copy-html-btn")
-          htmlButton.addEventListener("click", copyHTML)
+          htmlButton.addEventListener("click", copyHTML2)
         })
         </script>
       </div>
