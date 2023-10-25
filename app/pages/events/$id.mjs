@@ -9,8 +9,6 @@ export default function ({ html, state = {} }) {
   let hasSponsors = sponsors && sponsors.length > 0
   if (display === "email") {
     let eventDate = new Date(date)
-    let htmlContents = `
-    `
     return html`
       <style>
         .container {
@@ -51,7 +49,7 @@ export default function ({ html, state = {} }) {
         }
         window.addEventListener("DOMContentLoaded", () => {
           const htmlButton = document.getElementById("copy-html-btn")
-          htmlButton.addEventListener("click", copyHTML2)
+          htmlButton.addEventListener("click", copyHTML)
         })
         </script>
       </div>
@@ -72,4 +70,3 @@ export default function ({ html, state = {} }) {
     </page-layout>
   `
 }
-
