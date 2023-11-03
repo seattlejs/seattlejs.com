@@ -227,5 +227,13 @@
         "twitter": "mikeryandev",
         "pronouns": "he/him",
         "photo": "mike-ryan.jpg"
+    },
+    {
+        "id": "doug-wade",
+        "name": "Doug Wade",
+        "company": "Skilljar",
+        "twitter": "",
+        "pronouns": "he/him",
+        "photo": "doug-wade.jpg"
     }
 ]

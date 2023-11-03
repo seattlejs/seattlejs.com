@@ -311,5 +311,19 @@
             "user experience"
         ],
         "type": "regular"
+    },
+    {
+        "id": "doug-wade-november-2023",
+        "speaker_id": "doug-wade",
+        "event_id": "november-2023",
+        "title": "Dual publishing JavaScript packages to deno and node",
+        "abstract": "Learn how take a JavaScript module written for deno and build, test, type check, and publish it for both deno and nodejs using dnt, the Deno to Node Transform build tool",
+        "topics": [
+            "Deno",
+            "nodejs",
+            "npm",
+            "package management"
+        ],
+        "type": "regular"
     }
 ]
