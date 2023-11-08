@@ -4,7 +4,17 @@ export default function ({ html, state = {} }) {
   let { store = {} } = state
   let event = store.events[0]
   let display = store.display
-  let { id, title, sponsors, talks, description, date } = event
+  let DEFAULT_LOCATION = "The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109"
+  let {
+    id,
+    title,
+    sponsors,
+    talks,
+    description,
+    date,
+    location=DEFAULT_LOCATION
+  } = event
+
   let hasTalks = talks && talks.length > 0
   let hasSponsors = sponsors && sponsors.length > 0
   if (display === "email") {
@@ -30,7 +40,7 @@ export default function ({ html, state = {} }) {
           <ul>
             <li>🗓 ${eventDate.toLocaleDateString(undefined, {weekday: "long", month: "long", day: "numeric"})}</li>
             <li>⏰ 5:30pm - 8:30pm</li>
-            <li>📍 LOCATION</li>
+            <li>📍 ${location}</li>
             <li>🎟 <a href="https://ti.to/event-loop/">Buy Tickets</a></li>
           </ul>
           <! -- loop through talks -->
