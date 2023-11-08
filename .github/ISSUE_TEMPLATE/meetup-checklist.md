@@ -13,6 +13,7 @@ assignees: ''
 - [ ] create new event in ti.to
 - [ ] send email via Tito to previous month's attendees with link to survey + link to tickets
 - [ ] update website with event json
+- [ ] update TITO_SECURITY_TOKEN on Begin to match ti.to event security token (go to ti.to event > Settings > Webhook endpoints to view)
   
 ## (3 weeks out)
 - [ ] confirm sponsor & update website
