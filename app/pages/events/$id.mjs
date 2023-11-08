@@ -25,7 +25,7 @@ export default function ({ html, state = {} }) {
             <p>
               <a href="${s.url}"><img width="200" alt="${s.name} logo" src="https://seattlejs.com/_public/images/sponsors/${s.image}" title="${s.name} logo"></a>
             </p>
-            <p>Special thanks to our friends at <a href="URL">${s.name}</a> for sponsoring snacks for this month's event! 😎</p>
+            <p>Special thanks to our friends at <a href="${s.url}">${s.name}</a> for sponsoring snacks for this month's event! 😎</p>
           `).join('') : null}
           <ul>
             <li>🗓 ${eventDate.toLocaleDateString(undefined, {weekday: "long", month: "long", day: "numeric"})}</li>
@@ -36,7 +36,7 @@ export default function ({ html, state = {} }) {
           <! -- loop through talks -->
           ${hasTalks ? talks.map(t => `
               <h4 style="font-family: headline-gothic-atf-round, sans-serif; font-weight: 700; font-size: 24px;">${t.title} by ${t.speaker.name}</h4>
-              <p><img width="200" alt="${t.name}" src="https://seattlejs.com/_public/images/speakers/${t.speaker.photo}" title="${t.speaker.name}"></p>
+              <p><img width="200" alt="${t.title}" src="https://seattlejs.com/_public/images/speakers/${t.speaker.photo}" title="${t.speaker.name}"></p>
               ${description && `<p>${marked(description)}</p>` }
             `).join('') : null }
           <!-- end loop -->
