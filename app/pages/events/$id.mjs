@@ -46,7 +46,7 @@ export default function ({ html, state = {} }) {
           <! -- loop through talks -->
           ${hasTalks ? talks.map(t => `
               <h4 style="font-family: headline-gothic-atf-round, sans-serif; font-weight: 700; font-size: 24px;">${t.title} by ${t.speaker.name}</h4>
-              <p><img width="200" alt="${t.title}" src="https://seattlejs.com/_public/images/speakers/${t.speaker.photo}" title="${t.speaker.name}"></p>
+              <p><img width="200" alt="photo of ${t.speaker.name}" src="https://seattlejs.com/_public/images/speakers/${t.speaker.photo}" title="${t.speaker.name}"></p>
               ${description && `<p>${marked(description)}</p>` }
             `).join('') : null }
           <!-- end loop -->
