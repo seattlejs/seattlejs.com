@@ -38,8 +38,12 @@ export async function get() {
 export async function post(req) {
   let { first_name, last_name, email_address } = req.body
   if (email_address && validator.validate(email_address)) {
-    await addToCustomerIO(first_name, last_name, email_address)
-    return { location: '/signup-next-steps' }
+    if (email_address === first_name) {
+      return { status: 500, text: 'No thank you, bot' }
+    } else {
+      await addToCustomerIO(first_name, last_name, email_address)
+      return { location: '/signup-next-steps' }
+    }
   } else {
     return { status: 500, text: 'You must provide an email address' }
   }
