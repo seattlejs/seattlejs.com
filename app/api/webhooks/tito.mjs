@@ -35,8 +35,13 @@ export async function addToCustomerIO(first_name, last_name, email_address) {
 // process webhook requests from Tito.io, the ticketing system for SeattleJS meetups. Add these users to our mailing list.
 export async function post(req) {
   let { first_name, last_name, email } = req.body
+  let { secret } = req.query
   //console.log(first_name, last_name, email)
-  await addToCustomerIO(first_name, last_name, email)
-  //console.log(foo)
-  return { json: { ok: true } }
+  console.log(secret, process.env.TITO_WEBHOOK_SECRET)
+  if (secret && secret === process.env.TITO_WEBHOOK_SECRET) {
+    await addToCustomerIO(first_name, last_name, email)
+    return { json: { ok: true } }
+  } else {
+    return { status: 400, text: 'Go away, bot' }
+  }
 }

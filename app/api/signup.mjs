@@ -1,8 +1,8 @@
 import fetch from 'node-fetch'
-import validator from 'email-validator'
+//import validator from 'email-validator'
 
 export async function addToCustomerIO(first_name, last_name, email_address) {
-  // set customer.io REST API headers
+  // set customer.io REST API header
   let headers = {
     Authorization: `Basic ${Buffer.from(
       process.env.CIO_SITE_ID + ':' + process.env.CIO_API_KEY
@@ -35,16 +35,20 @@ export async function get() {
   }
 }
 
-export async function post(req) {
+export async function post(/*req*/) {
+  // For the time being, we are disabling this capability until we can protect it from bots better
+  /*
   let { first_name, last_name, email_address } = req.body
   if (email_address && validator.validate(email_address)) {
     if (email_address === first_name) {
-      return { status: 500, text: 'No thank you, bot' }
+      return { status: 400, text: 'No thank you, bot' }
     } else {
       await addToCustomerIO(first_name, last_name, email_address)
       return { location: '/signup-next-steps' }
     }
   } else {
-    return { status: 500, text: 'You must provide an email address' }
+    return { status: 400, text: 'You must provide an email address' }
   }
+  */
+  return { status: 501, text: 'This endpoint is disabled' }
 }
