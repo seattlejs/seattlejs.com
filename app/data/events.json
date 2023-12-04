@@ -220,8 +220,10 @@
         "id": "holiday-party-2023",
         "title": "SeattleJS Holiday Party 2023",
         "date": "2023-12-13",
-        "sponsors": [],
+        "sponsors": [
+            "seekout"
+        ],
         "talks": [],
-        "description": ""
+        "description": "Join us for our annual SeattleJS Holiday Party! Come hang out with your fellow web developers and celebrate the holidays in style at The Collective. Consider bringing a plus one, the more the merrier!\n Tickets are $5 and go up to $10 the day of, so don't delay!"
     }
 ]

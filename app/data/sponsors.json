@@ -76,5 +76,12 @@
         "url": "https://getpolaris.ai",
         "copy": "Polaris is an AI-powered site reliability tool that helps you detect incidents in real-time. Its tiny JavaScript SDK lets you instrument key user workflows to create indicators of reliability and latency. Apply thresholds to your indicators to define performance objectives and be alerted when your app begins to experience degradations.",
         "image": "polaris.png"
+    },
+    {
+        "id": "seekout",
+        "name": "SeekOut",
+        "url": "https://www.seekout.com/",
+        "copy": "Grow the talent you have.\nFind the talent you need.\nSeekOut empowers great people and companies to grow together—with actionable insights at every step of your talent journey. ",
+        "image": "seekout.png"
     }
 ]
