@@ -39,6 +39,7 @@ export async function post(req) {
   let { first_name, last_name, email } = req.body
   // authenticate the token passed in the header
   let titoSig = req.headers['Tito-Signature'] || req.headers['tito-signature']
+  console.log(req.headers)
   let hash = crypto
     .createHmac('sha256', process.env.TITO_WEBHOOK_KEY)
     .update(req.rawBody)
