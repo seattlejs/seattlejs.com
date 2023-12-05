@@ -41,7 +41,7 @@ export async function post(req) {
   let titoSig = req.headers['Tito-Signature'] || req.headers['tito-signature']
   let hash = crypto
     .createHmac('sha256', process.env.TITO_WEBHOOK_KEY)
-    .update(req.body)
+    .update(req.rawBody)
     .digest('base64')
   // the hash of the POST body and the value of tito sig don't match, this is a bad request
   if (hash !== titoSig) {
