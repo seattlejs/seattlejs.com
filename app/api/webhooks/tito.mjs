@@ -1,5 +1,7 @@
 //import { addToCustomerIO } from "../signup.mjs"
 
+import * as crypto from 'crypto'
+
 /* TODO: this code block (addToCustomerIO) is copied from ../signup.mjs because (for some reason) importing this function
 from that module threw an error */
 import fetch from 'node-fetch'
@@ -35,13 +37,28 @@ export async function addToCustomerIO(first_name, last_name, email_address) {
 // process webhook requests from Tito.io, the ticketing system for SeattleJS meetups. Add these users to our mailing list.
 export async function post(req) {
   let { first_name, last_name, email } = req.body
-  let { secret } = req.query
-  //console.log(first_name, last_name, email)
-  console.log(secret, process.env.TITO_WEBHOOK_SECRET)
-  if (secret && secret === process.env.TITO_WEBHOOK_SECRET) {
+  // authenticate the token passed in the header
+  let titoSig = req.headers['Tito-Signature'] || req.headers['tito-signature']
+  let hash = crypto
+    .createHmac('sha256', process.env.TITO_WEBHOOK_KEY)
+    .update(req.body)
+    .digest('base64')
+  // the hash of the POST body and the value of tito sig don't match, this is a bad request
+  if (hash !== titoSig) {
+    console.log(
+      'ERROR!!! the Tito sig and the calculated hash value did not match ',
+      process.env.TITO_WEBHOOK_KEY,
+      titoSig,
+      hash
+    )
+    return {
+      statusCode: 401,
+      body: JSON.stringify({ message: 'not authorized' })
+    }
+  }
+  // else, let's process the webhook!
+  else {
     await addToCustomerIO(first_name, last_name, email)
     return { json: { ok: true } }
-  } else {
-    return { status: 400, text: 'Go away, bot' }
   }
 }
