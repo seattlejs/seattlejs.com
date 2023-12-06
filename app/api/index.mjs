@@ -13,8 +13,8 @@ function filterFutureEvents() {
  * Load upcoming events + all organizers + all sponsors
  */
 export async function get() {
-  let events = filterFutureEvents().map(inflateEvent)
+  let filteredEvents = filterFutureEvents().map(inflateEvent)
   return {
-    json: { events, organizers, sponsors }
+    json: { events: filteredEvents, organizers, sponsors }
   }
 }
