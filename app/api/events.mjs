@@ -10,9 +10,12 @@ export async function get() {
 export const events = data
 
 export function inflateEvent(event) {
-  if (event.talks) {
-    event.talks = event.talks.map(inflateTalk)
-    event.sponsors = event.sponsors.map(inflateSponsors)
+  let inflatedEvent = { ...event }
+  if (inflatedEvent.talks) {
+    inflatedEvent.talks = inflatedEvent.talks.map(inflateTalk)
+    console.log('Before:', inflatedEvent.sponsor)
+    inflatedEvent.sponsors = inflatedEvent.sponsors.map(inflateSponsors)
+    console.log('After:', inflatedEvent.sponsor)
   }
-  return event
+  return inflatedEvent
 }
