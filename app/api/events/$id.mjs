@@ -14,19 +14,13 @@ export async function get(req) {
         notFound: true
       }
     }
-  } else {
-  // We have to convert event from an object to an array to inflate it
-  let inflatedEvent = [event].map(inflateEvent)
-  let eventSponsors = event.sponsors
-  let eventTalks = event.talks
-
-  // In event/$id we are reusing the element <list-talks> which expects a list of events
-  return {
-    json: {
-      events: inflatedEvent,
-      sponsors: eventSponsors,
-      talks: eventTalks,
-      display
+  } 
+  else {
+    return {
+      json: {
+        event: inflateEvent(event),
+        display
+      }
     }
-  }}
+  }
 }

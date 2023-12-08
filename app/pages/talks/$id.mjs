@@ -24,7 +24,6 @@ export default function ({ html, state = {} }) {
     // set the "photo" property with an absolute path (so that the <person-detail> element will work)
     let speakerClone = { ...speaker }
     speakerClone.photo = '/_public/images/speakers/' + speaker.photo
-    //console.log(speakerClone)
     const speakerProps = Object.keys(speakerClone).map(key => `${key}="${speakerClone[key]}"`).join(' ')
     return html`
       <style>

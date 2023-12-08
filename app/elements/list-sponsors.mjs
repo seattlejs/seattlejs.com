@@ -1,6 +1,9 @@
 export default function ListSponsors({ html, state = {} }) {
   const { store = {} } = state
-  const { sponsors } = store
+  let { event, sponsors } = store
+  if (event) {
+    sponsors = event.sponsors
+  }
   if (sponsors.length > 0) {
     return html`
       <style>

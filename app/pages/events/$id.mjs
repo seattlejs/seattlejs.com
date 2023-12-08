@@ -2,8 +2,7 @@ import { marked } from "marked"
 
 export default function ({ html, state = {} }) {
   let { store = {} } = state
-  let event = store.events[0]
-  let display = store.display
+  let { event, display } = store
   let DEFAULT_LOCATION = "The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109"
   let {
     id,

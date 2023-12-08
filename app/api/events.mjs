@@ -11,11 +11,11 @@ export const events = data
 
 export function inflateEvent(event) {
   let inflatedEvent = { ...event }
-  if (inflatedEvent.talks) {
-    inflatedEvent.talks = inflatedEvent.talks.map(inflateTalk)
-    console.log('Before:', inflatedEvent.sponsor)
-    inflatedEvent.sponsors = inflatedEvent.sponsors.map(inflateSponsors)
-    console.log('After:', inflatedEvent.sponsor)
+  if (event.talks) {
+    inflatedEvent.talks = event.talks.map(inflateTalk)
+  }
+  if (event.sponsors) {
+    inflatedEvent.sponsors = event.sponsors.map(inflateSponsors)
   }
   return inflatedEvent
 }

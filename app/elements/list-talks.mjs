@@ -1,8 +1,10 @@
 export default function ListTalks({ html, state = {} }) {
   const { store, attrs } = state
-  const { events } = store
+  let { events, event } = store
   let { event_id } = attrs
-  let event = events.find(e => e.id === event_id)
+  if (event_id && events) {
+    event = events.find(e => e.id === event_id)
+  }
   let { talks } = event
   return html`
     <style>

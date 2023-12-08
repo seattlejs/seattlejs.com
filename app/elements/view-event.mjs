@@ -3,11 +3,8 @@ import { marked } from 'marked'
 export default function ViewEvent({ html, state = {} }) {
   const { attrs, store } = state
   let { events } = store
-  console.log(events)
   let { id } = attrs
-  console.log(id)
   let event = events.find(e => e.id === id)
-  console.log(event)
   return html`
     <h3>${event.title}</h3>
     <p>${marked(event.description)}</p>
