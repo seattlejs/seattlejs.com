@@ -149,7 +149,7 @@ export default function MyHeader({ html }) {
       </nav>
     </header>
     <section id="subheader">
-     SeattleJS Conf 2023 is wrapped! Subscribe to <a target="_blank" href="https://www.youtube.com/@cascadiajs">our YouTube channel</a> to get notified when talks get published.
+    <a target="_blank" href="https://cascadiajs.com/2024">CascadiaJS</a> is coming BACK in 2024! The CFP is currently OPEN, and Early Bird tickets will go on sale SHARP on Dec 16!  
     </section>
     <script type="module">
       class MyHeader extends HTMLElement {
