@@ -225,5 +225,13 @@
         ],
         "talks": [],
         "description": "Join us for our annual SeattleJS Holiday Party! Come hang out with your fellow web developers and celebrate the holidays in style at The Collective. Consider bringing a plus one, the more the merrier!\n Tickets are $5 and go up to $10 the day of, so don't delay!"
+    },
+    {
+        "id": "january-2024",
+        "title": "SeattleJS January 2024",
+        "date": "2024-01-10",
+        "sponsors": [],
+        "talks": [],
+        "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
     }
 ]
