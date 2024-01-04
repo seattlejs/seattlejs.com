@@ -235,5 +235,13 @@
         "twitter": "",
         "pronouns": "he/him",
         "photo": "doug-wade.jpg"
+    },
+    {
+        "id": "fx-wood",
+        "name": "FX Wood",
+        "company": "Looking for Opportunities",
+        "twitter": "",
+        "pronouns": "he/him",
+        "photo": "fx-wood.jpg"
     }
 ]

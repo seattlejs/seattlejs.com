@@ -325,5 +325,18 @@
             "package management"
         ],
         "type": "regular"
+    },
+    {
+        "id": "fx-wood-january-2024",
+        "speaker_id": "fx-wood",
+        "event_id": "january-2024",
+        "title": "Why You Should Use A DateTime Library (Maybe)",
+        "abstract": "There are some interesting complexities when it comes to working with time. Also some fun stuff about timestamps.",
+        "topics": [
+            "luxon",
+            "datetime",
+            "DateTimeFormat"
+        ],
+        "type": "lightning"
     }
 ]
