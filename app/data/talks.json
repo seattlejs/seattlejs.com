@@ -338,5 +338,32 @@
             "DateTimeFormat"
         ],
         "type": "lightning"
+    },
+    {
+        "id": "dm-liao-feburary-2024",
+        "speaker_id": "dm-liao",
+        "event_id": "feburary-2024",
+        "title": "Making a static site generator for fun and absolutely no profit",
+        "abstract": "There are lots of static site generators out there to help simplify making a website, but I decided that wasn't complicated enough so I decided to write my own. From as close to scratch as I could, with as few dependencies as possible. This talk will go through the generator I made, its goals and design decisions, and maybe even how you can make one that is not nearly so complicated (...maybe.)",
+        "topics": [
+            "static site generators",
+            "image processing",
+            "JS templating",
+            "plugin architecture"
+        ],
+        "type": "regular"
+    },
+    {
+        "id": "fx-wood-feburary-2024",
+        "speaker_id": "fx-wood",
+        "event_id": "feburary-2024",
+        "title": "Why You Should Use A DateTime Library (Maybe)",
+        "abstract": "There are some interesting complexities when it comes to working with time. Also some fun stuff about timestamps.",
+        "topics": [
+            "luxon",
+            "datetime",
+            "DateTimeFormat"
+        ],
+        "type": "lightning"
     }
 ]
