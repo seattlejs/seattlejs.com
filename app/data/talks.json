@@ -343,10 +343,10 @@
         "id": "dm-liao-february-2024",
         "speaker_id": "dm-liao",
         "event_id": "february-2024",
-        "title": "Using ReactJS with the Godot game engine",
-        "abstract": "(coming soon..)",
+        "title": "Using React with the Godot game engine",
+        "abstract": "Godot is a game engine and editor that is written in C++ and allows you to script games using its custom GDScript language, or C#. So, naturally, I decided that I wanted to make game UI in Javascript using React, and it turns out that that's not that uncommon of an idea! And also not that terrible of an idea! This talk will go through some of the nitty gritty of getting C# and JS to talk to each other, and then creating a custom React renderer to render Godot UI elements.",
         "topics": [
-            "ReactJS",
+            "React",
             "Godot",
             "game engine"
         ],
