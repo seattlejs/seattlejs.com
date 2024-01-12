@@ -9,9 +9,10 @@ assignees: ''
   
 ## (Immediately following previous event)
 - [ ] confirm location
-- [ ] update meetup.com auto-created event with location info (if not Collective)
 - [ ] create new event in ti.to
-- [ ] send email via Tito to previous month's attendees with link to survey + link to tickets
+- [ ] update meetup.com auto-created event with location info (if not Collective)
+- [ ] update discord event with location info (if not Collective)
+- [ ] send email via Tito to previous month's attendees with link to tickets + link to survey (if we create one)
 - [ ] update website with event json
   
 ## (3 weeks out)
