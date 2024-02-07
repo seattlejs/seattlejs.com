@@ -34,7 +34,7 @@ assignees: ''
 ## (1-2 days before)
 - [ ] send info to speakers on where/when/what
 - [ ] send message to volunteers
-- [ ] prepare MC slide deck, get sign-off
+- [ ] prepare MC slide deck
   
 ## (day of)
 - [ ] If new location, tweet image of building facade so people know where to go
