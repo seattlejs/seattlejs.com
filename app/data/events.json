@@ -238,7 +238,7 @@
         "id": "february-2024",
         "title": "SeattleJS February 2024",
         "date": "2024-02-14",
-        "sponsors": [],
+        "sponsors": ["datastax"],
         "talks": [
             "dm-liao-february-2024",
             "fx-wood-february-2024"

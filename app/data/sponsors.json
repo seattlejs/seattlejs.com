@@ -83,5 +83,12 @@
         "url": "https://www.seekout.com/",
         "copy": "Grow the talent you have.\nFind the talent you need.\nSeekOut empowers great people and companies to grow together—with actionable insights at every step of your talent journey. ",
         "image": "seekout.png"
+    },
+    {
+        "id": "datastax",
+        "name": "DataStax",
+        "url": "https://www.datastax.com/",
+        "copy": "DataStax is your one-stop shop for building on GenAI.",
+        "image": "datastax.png"
     }
 ]
