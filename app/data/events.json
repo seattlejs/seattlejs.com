@@ -238,10 +238,25 @@
         "id": "february-2024",
         "title": "SeattleJS February 2024",
         "date": "2024-02-14",
-        "sponsors": ["datastax"],
+        "sponsors": [
+            "datastax"
+        ],
         "talks": [
             "dm-liao-february-2024",
             "fx-wood-february-2024"
+        ],
+        "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
+    },
+    {
+        "id": "march-2024",
+        "title": "SeattleJS March 2024",
+        "date": "2024-03-13",
+        "sponsors": [
+            "fireproof"
+        ],
+        "talks": [
+            "shruti-kapoor-march-2024",
+            "j-chris-anderson-march-2024"
         ],
         "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
     }

@@ -243,5 +243,21 @@
         "twitter": "",
         "pronouns": "he/him",
         "photo": "fx-wood.jpg"
+    },
+    {
+        "id": "shruti-kapoor",
+        "name": "Shruti Kapoor",
+        "company": "Slack",
+        "twitter": "shrutikapoor08",
+        "pronouns": "she/her",
+        "photo": "shruti-kapoor.jpg"
+    },
+    {
+        "id": "j-chris-anderson",
+        "name": "J Chris Anderson",
+        "company": "Fireproof",
+        "twitter": "jchris",
+        "pronouns": "he/him",
+        "photo": "j-chris-anderson.jpg"
     }
 ]

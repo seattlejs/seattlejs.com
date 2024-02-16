@@ -351,5 +351,33 @@
             "game engine"
         ],
         "type": "regular"
+    },
+    {
+        "id": "shruti-kapoor-march-2024",
+        "speaker_id": "shruti-kapoor",
+        "event_id": "march-2024",
+        "title": "Building an AI Web App with LangChain and OpenAI",
+        "abstract": "Learn how to build a web app with LangChain and OpenAI. Build the front-end, back-end and create an AI service that integrates with OpenAI to power a web app. ",
+        "topics": [
+            "front-end",
+            "back-end",
+            "AI "
+        ],
+        "type": "regular"
+    },
+    {
+        "id": "j-chris-anderson-march-2024",
+        "speaker_id": "j-chris-anderson",
+        "event_id": "march-2024",
+        "title": "Local-first database application starter kits",
+        "abstract": "I'm building a browser-database based on what I learned from CouchDB. It empowers front-end devs to ship data-driven features without getting tied to a backend. Later you can connect almost any cloud for multi-user live collaboration.",
+        "topics": [
+            "database",
+            "react",
+            "sync",
+            "crdt",
+            "local-first"
+        ],
+        "type": "regular"
     }
 ]
