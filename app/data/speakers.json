@@ -259,5 +259,13 @@
         "twitter": "jchris",
         "pronouns": "he/him",
         "photo": "j-chris-anderson.jpg"
+    },
+    {
+        "id": "eric-jensen",
+        "name": "Eric Jensen",
+        "company": "Fireproof ",
+        "twitter": "",
+        "pronouns": "he/him",
+        "photo": "eric-jensen.jpg"
     }
 ]

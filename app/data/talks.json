@@ -379,5 +379,18 @@
             "local-first"
         ],
         "type": "regular"
+    },
+    {
+        "id": "eric-jensen-march-2024",
+        "speaker_id": "eric-jensen",
+        "event_id": "march-2024",
+        "title": "Fireproof: A JavaScript database for web applications",
+        "abstract": "Fireproof is a pure JS database with zero setup. Build without constraints, plug in and launch in one step. Come learn about the newest way to create web apps!",
+        "topics": [
+            "database",
+            "sync",
+            "local-first"
+        ],
+        "type": "regular"
     }
 ]
