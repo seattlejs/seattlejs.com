@@ -392,5 +392,29 @@
             "local-first"
         ],
         "type": "regular"
+    },
+    {
+        "id": "herrington-darkholme-april-2024",
+        "speaker_id": "herrington-darkholme",
+        "event_id": "april-2024",
+        "title": "Benchmark Rusty Parsers: demystify native tooling performance in JavaScript",
+        "abstract": "Native parsers used in JavaScript are not always faster due to extra work across languages. This talk will review several parsers written in JS/Rust and demonstrate the perf characteristics of native programs in NodeJS.\nAvoiding Rust overhead and using multi-core are crucial for performance.\n\nhttps://rs-perf-talk.vercel.app/",
+        "topics": [
+            "javascript",
+            "napi",
+            "rust"
+        ],
+        "type": "regular"
+    },
+    {
+        "id": "john-pham-april-2024",
+        "speaker_id": "john-pham",
+        "event_id": "april-2024",
+        "title": "Delightful Design",
+        "abstract": "In this talk, we'll explore how to craft delightful experiences that enhance user engagement, focusing on performance, accessibility, and impressing the user, as seen in products like Vercel, Linear, and Raycast. You'll learn that anyone, regardless of design expertise, can achieve such delightful design.",
+        "topics": [
+            "design"
+        ],
+        "type": "regular"
     }
 ]

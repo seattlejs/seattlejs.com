@@ -267,5 +267,21 @@
         "twitter": "",
         "pronouns": "he/him",
         "photo": "eric-jensen.jpg"
+    },
+    {
+        "id": "herrington-darkholme",
+        "name": "Herrington Darkholme",
+        "company": "Freelance",
+        "twitter": "hd_nvim",
+        "pronouns": "he/him/his",
+        "photo": "herrington-darkholme.jpg"
+    },
+    {
+        "id": "john-pham",
+        "name": "John Pham",
+        "company": "Vercel",
+        "twitter": "johnphamous",
+        "pronouns": "he/him/his",
+        "photo": "john-pham.jpg"
     }
 ]
