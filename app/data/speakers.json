@@ -283,5 +283,21 @@
         "twitter": "johnphamous",
         "pronouns": "he/him/his",
         "photo": "john-pham.jpg"
+    },
+    {
+        "id": "allan-deutsch",
+        "name": "Allan Deutsch",
+        "company": "The Startup",
+        "twitter": "allandeutsch",
+        "pronouns": "he/him",
+        "photo": "allan-deutsch.png"
+    },
+    {
+        "id": "sarah-guthals-phd",
+        "name": "Sarah Guthals, PhD",
+        "company": "Sentry",
+        "twitter": "drguthals",
+        "pronouns": "she/her/hers",
+        "photo": "sarah-guthals-phd.png"
     }
 ]

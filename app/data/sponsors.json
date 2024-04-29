@@ -97,5 +97,12 @@
         "url": "https://fireproof.storage/",
         "copy": "Fireproof is an [embedded database for collaborative applications](https://use-fireproof.com/). Install it in your front-end app, or use it in any serverless cloud or edge function. Fireproof’s document API includes live updates, flexible queries, binary attachments, encrypted block replication, and multi-user sync. Fireproof enables developers to ship interactive features faster in any deployment environment.\n\nDeploy your app however you like. Install the Fireproof module into your browser or server app code and sync using remixable open-source adapters. Experience live updates across peers so everyone can collaborate together, with any backend. Render dynamic HTML and interact with APIs from the edge. Connect with the community to add support for more backends.",
         "image": "fireproof.png"
+    },
+    {
+        "id": "sentry",
+        "name": "Sentry",
+        "url": "https://sentry.io/welcome/",
+        "copy": "Sentry is the application monitoring platform for development teams to holistically monitor their code health from the frontend to the backend to see clearer, solve quicker, and learn continuously.",
+        "image": "sentry.png"
     }
 ]

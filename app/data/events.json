@@ -270,5 +270,18 @@
             "john-pham-april-2024"
         ],
         "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below. Drink tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
+    },
+    {
+        "id": "may-2024",
+        "title": "SeattleJS May 2024",
+        "date": "2024-05-08",
+        "sponsors": [
+            "sentry"
+        ],
+        "talks": [
+            "allan-deutsch-may-2024",
+            "sarah-guthals-phd-may-2024"
+        ],
+        "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below. Drink tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
     }
 ]

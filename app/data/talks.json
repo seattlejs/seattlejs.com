@@ -416,5 +416,31 @@
             "design"
         ],
         "type": "regular"
+    },
+    {
+        "id": "allan-deutsch-may-2024",
+        "speaker_id": "allan-deutsch",
+        "event_id": "may-2024",
+        "title": "Adding nominal type safety to your TS code using branded types",
+        "abstract": "Typescript and JavaScript are *structurally* typed - objects of the same shape are assignable. Nominal types can only be assigned to other objects of the same *named type*. Type branding is a technique that brings the safety of nominal typing to typescript.",
+        "topics": [
+            "Typescript",
+            "type safety",
+            "validation"
+        ],
+        "type": "lightning"
+    },
+    {
+        "id": "sarah-guthals-phd-may-2024",
+        "speaker_id": "sarah-guthals-phd",
+        "event_id": "may-2024",
+        "title": "Deconstructing Distributed Tracing",
+        "abstract": "Distributed Tracing is a powerful and modern debugging technique that allows you to track the flow and timing of requests as they navigate through every part of your system. Learn the reason why Distributed Tracing exists and how to leverage it.",
+        "topics": [
+            "performance",
+            "tracing",
+            "monitoring"
+        ],
+        "type": "regular"
     }
 ]
