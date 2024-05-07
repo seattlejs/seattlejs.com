@@ -149,7 +149,7 @@ export default function MyHeader({ html }) {
       </nav>
     </header>
     <section id="subheader">
-    <a target="_blank" href="https://cascadiajs.com/2024">CascadiaJS</a> is coming BACK in 2024! The CFP is currently OPEN, and Early Bird tickets will go on sale SHARP on Dec 16!  
+      <a target="_blank" href="https://cascadiajs.com/2024">CascadiaJS</a> is coming up June 20-21, 2024! Tickets on sale now!
     </section>
     <script type="module">
       class MyHeader extends HTMLElement {
