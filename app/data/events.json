@@ -283,5 +283,14 @@
             "sarah-guthals-phd-may-2024"
         ],
         "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below. Drink tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
+    },
+    {
+        "id": "july-2024",
+        "link": "https://lu.ma/0ouxs9r2",
+        "title": "SeattleJS July 2024",
+        "date": "2024-07-10",
+        "sponsors": [],
+        "talks": [],
+        "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below. Drink tickets are only $5 but go up to $10 the day of, so don't delay!\n\n"
     }
 ]

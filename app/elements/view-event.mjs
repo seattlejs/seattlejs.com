@@ -5,6 +5,9 @@ export default function ViewEvent({ html, state = {} }) {
   let { events } = store
   let { id } = attrs
   let event = events.find(e => e.id === id)
+
+  let link = event.link ?? `https://ti.to/event-loop/seattlejs-${event.id}`
+
   return html`
     <h3>${event.title}</h3>
     <p>${marked(event.description)}</p>
@@ -22,7 +25,7 @@ export default function ViewEvent({ html, state = {} }) {
       )
       .join('')}
     <div class="cta">
-      <a target="_blank" href="https://ti.to/event-loop/seattlejs-${event.id}"
+      <a target="_blank" href="${link}"
         >More Info & Tickets <i class="fa-solid fa-ticket"></i
       ></a>
     </div>
