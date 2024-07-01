@@ -50,7 +50,7 @@ export default function ({ html, state = {} }) {
             <li>🗓 ${eventDate.toLocaleDateString(undefined, {weekday: "long", month: "long", day: "numeric"})}</li>
             <li>⏰ 5:30pm - 8:30pm</li>
             <li>📍 ${location}</li>
-            <li>🎟 <a href="https://lu.ma/seattlejs/">RSVP</a></li>
+            <li>🎟 <a href="${event.link}">RSVP</a></li>
           </ul>
           <! -- loop through talks -->
           ${hasTalks ? talks.map(t => `
