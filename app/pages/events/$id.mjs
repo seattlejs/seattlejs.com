@@ -3,7 +3,7 @@ import { marked } from "marked"
 export default function ({ html, state = {} }) {
   let { store = {} } = state
   let { event, display } = store
-  let DEFAULT_LOCATION = "The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109"
+
   let {
     id,
     title,
@@ -11,13 +11,23 @@ export default function ({ html, state = {} }) {
     talks,
     description,
     date,
-    location=DEFAULT_LOCATION
+    location
   } = event
 
   let hasTalks = talks && talks.length > 0
   let hasSponsors = sponsors && sponsors.length > 0
   if (display === "email") {
     let eventDate = new Date(date)
+    let eventDateStr = `${eventDate.getFullYear()}-${eventDate.getMonth() + 1}`
+
+    if (!location) {
+      if (eventDateStr < "2024-07") {
+        location = "The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109"
+      } else {
+        location = "Silicon Valley Bank, 920 5th Ave Suite 300, Seattle, WA 98104";
+      }
+    }
+
     return html`
       <style>
         .container {
@@ -40,7 +50,7 @@ export default function ({ html, state = {} }) {
             <li>🗓 ${eventDate.toLocaleDateString(undefined, {weekday: "long", month: "long", day: "numeric"})}</li>
             <li>⏰ 5:30pm - 8:30pm</li>
             <li>📍 ${location}</li>
-            <li>🎟 <a href="https://ti.to/event-loop/">Buy Tickets</a></li>
+            <li>🎟 <a href="https://lu.ma/seattlejs/">RSVP</a></li>
           </ul>
           <! -- loop through talks -->
           ${hasTalks ? talks.map(t => `

@@ -143,7 +143,7 @@ export default function MyHeader({ html }) {
           <li><a href="/conf">SeattleJS Conf 2023</a></li>
           <li><a href="/code-of-conduct">Code of Conduct</a></li>
           <li>
-            <a target="_blank" href="https://ti.to/event-loop/">Tickets</a>
+            <a target="_blank" href="https://lu.ma/seattlejs/">Tickets</a>
           </li>
         </ul>
       </nav>

@@ -9,7 +9,7 @@ assignees: ''
   
 ## (Immediately following previous event)
 - [ ] confirm location
-- [ ] create new event in ti.to
+- [ ] create new event on lu.ma
 - [ ] update meetup.com auto-created event with location info (if not Collective)
 - [ ] update discord event with location info (if not Collective)
 - [ ] send email via Tito to previous month's attendees with link to tickets + link to survey (if we create one)
@@ -39,7 +39,7 @@ assignees: ''
 ## (day of)
 - [ ] If new location, tweet image of building facade so people know where to go
 - [ ] bring nametags, stickers (pronouns, job status), sharpies & drink tickets
-- [ ] send ti.to check-in link to volunteers in discord
+- [ ] send lu.ma check-in link to volunteers in discord
 - [ ] set up stage (speakers, tv, podium)
 - [ ] set up chairs
 - [ ] check A/V with speakers (slide/video/audio output, mic volume check, wifi connection)
