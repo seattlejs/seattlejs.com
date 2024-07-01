@@ -69,7 +69,6 @@ a[target="_blank"]:after {
 
 div.cta {
 	font-size: 120%;
-    padding: 8px 16px;
     margin: 16px 0;
     display: inline-block;
 }
@@ -80,6 +79,8 @@ span.cta {
 }
 
 .cta a, .cta a:visited {
+    display: inline-block;
+    padding: 8px 16px;
     color: #fff5cc;
   	text-decoration: none;
 }
