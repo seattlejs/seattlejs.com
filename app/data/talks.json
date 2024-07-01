@@ -442,5 +442,18 @@
             "monitoring"
         ],
         "type": "regular"
+    },
+    {
+        "id": "josh-franklin-july-2024",
+        "speaker_id": "josh-franklin",
+        "event_id": "july-2024",
+        "title": "\"Efficiently\" Sharing Data Through URLs",
+        "abstract": "What is the most efficient way to store data in a URL? Let's deep dive into how URLs work and write some custom encoding algorithms to find out how much data can be stored in them. Knowing this may allow you to replace your database entirely for some use cases.",
+        "topics": [
+            "How URLs work",
+            "encoding/decoding algorithms",
+            "when to store data in URLs vs. a backend"
+        ],
+        "type": "regular"
     }
 ]

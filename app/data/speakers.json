@@ -299,5 +299,13 @@
         "twitter": "drguthals",
         "pronouns": "she/her/hers",
         "photo": "sarah-guthals-phd.png"
+    },
+    {
+        "id": "josh-franklin",
+        "name": "Josh Franklin",
+        "company": "N/A",
+        "twitter": "joshfranklin26",
+        "pronouns": "he/him/his",
+        "photo": "josh-franklin.jpg"
     }
 ]

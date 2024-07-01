@@ -290,7 +290,9 @@
         "title": "SeattleJS July 2024",
         "date": "2024-07-10",
         "sponsors": [],
-        "talks": [],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below. Drink tickets are only $5 but go up to $10 the day of, so don't delay!\n\n"
+        "talks": [
+            "josh-franklin-july-2024"
+        ],
+        "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/r9LsbFzCxuMpRzbXA'>Silicon Valley Bank</a> this time, NOT our previous location!\n\n"
     }
 ]
