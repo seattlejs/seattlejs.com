@@ -1,6 +1,7 @@
 [
     {
         "id": "may-2022",
+        "link": "https://ti.to/event-loop/seattlejs-may-2022",
         "title": "SeattleJS May 2022",
         "date": "2022-05-11",
         "sponsors": [
@@ -12,6 +13,7 @@
     },
     {
         "id": "june-2022",
+        "link": "https://ti.to/event-loop/seattlejs-june-2022",
         "title": "SeattleJS June 2022",
         "date": "2022-06-08",
         "sponsors": [
@@ -23,6 +25,7 @@
     },
     {
         "id": "july-2022",
+        "link": "https://ti.to/event-loop/seattlejs-july-2022",
         "title": "SeattleJS July 2022",
         "date": "2022-07-13",
         "sponsors": [
@@ -32,6 +35,7 @@
     },
     {
         "id": "august-2022",
+        "link": "https://ti.to/event-loop/seattlejs-august-2022",
         "title": "SeattleJS August 2022",
         "date": "2022-08-10",
         "sponsors": [
@@ -41,6 +45,7 @@
     },
     {
         "id": "september-2022",
+        "link": "https://ti.to/event-loop/seattlejs-september-2022",
         "title": "SeattleJS September 2022",
         "date": "2022-09-14",
         "sponsors": [
@@ -50,6 +55,7 @@
     },
     {
         "id": "october-2022",
+        "link": "https://ti.to/event-loop/seattlejs-october-2022",
         "title": "SeattleJS October 2022",
         "date": "2022-10-12",
         "sponsors": [
@@ -61,6 +67,7 @@
     },
     {
         "id": "november-2022",
+        "link": "https://ti.to/event-loop/seattlejs-november-2022",
         "title": "SeattleJS November 2022",
         "date": "2022-11-09",
         "sponsors": [
@@ -73,6 +80,7 @@
     },
     {
         "id": "december-2022",
+        "link": "https://ti.to/event-loop/seattlejs-december-2022",
         "title": "SeattleJS December 2022 - Holiday Party Edition",
         "date": "2022-12-14",
         "sponsors": [
@@ -82,6 +90,7 @@
     },
     {
         "id": "january-2023",
+        "link": "https://ti.to/event-loop/seattlejs-january-2023",
         "title": "SeattleJS January 2023",
         "date": "2023-01-11",
         "sponsors": [
@@ -96,6 +105,7 @@
     },
     {
         "id": "february-2023",
+        "link": "https://ti.to/event-loop/seattlejs-february-2023",
         "title": "SeattleJS February 2023",
         "date": "2023-02-08",
         "sponsors": [
@@ -111,6 +121,7 @@
     },
     {
         "id": "march-2023",
+        "link": "https://ti.to/event-loop/seattlejs-march-2023",
         "title": "SeattleJS March 2023",
         "date": "2023-03-08",
         "sponsors": [
@@ -125,6 +136,7 @@
     },
     {
         "id": "april-2023",
+        "link": "https://ti.to/event-loop/seattlejs-april-2023",
         "title": "SeattleJS April 2023",
         "date": "2023-04-12",
         "sponsors": [
@@ -139,6 +151,7 @@
     },
     {
         "id": "may-2023",
+        "link": "https://ti.to/event-loop/seattlejs-may-2023",
         "title": "SeattleJS May 2023",
         "date": "2023-05-10",
         "sponsors": [],
@@ -150,6 +163,7 @@
     },
     {
         "id": "june-2023",
+        "link": "https://ti.to/event-loop/seattlejs-june-2023",
         "title": "SeattleJS June 2023",
         "date": "2023-06-14",
         "sponsors": [
@@ -164,6 +178,7 @@
     },
     {
         "id": "july-2023",
+        "link": "https://ti.to/event-loop/seattlejs-july-2023",
         "title": "SeattleJS July 2023",
         "date": "2023-07-12",
         "sponsors": [
@@ -178,6 +193,7 @@
     },
     {
         "id": "september-2023",
+        "link": "https://ti.to/event-loop/seattlejs-september-2023",
         "title": "SeattleJS September 2023",
         "date": "2023-09-13",
         "sponsors": [
@@ -192,6 +208,7 @@
     },
     {
         "id": "october-2023",
+        "link": "https://ti.to/event-loop/seattlejs-october-2023",
         "title": "SeattleJS October 2023",
         "date": "2023-10-11",
         "sponsors": [
@@ -205,6 +222,7 @@
     },
     {
         "id": "november-2023",
+        "link": "https://ti.to/event-loop/seattlejs-november-2023",
         "title": "SeattleJS November 2023",
         "date": "2023-11-08",
         "sponsors": [
@@ -218,6 +236,7 @@
     },
     {
         "id": "holiday-party-2023",
+        "link": "https://ti.to/event-loop/seattlejs-holiday-party-2023",
         "title": "SeattleJS Holiday Party 2023",
         "date": "2023-12-13",
         "sponsors": [
@@ -228,6 +247,7 @@
     },
     {
         "id": "january-2024",
+        "link": "https://ti.to/event-loop/seattlejs-january-2024",
         "title": "SeattleJS January 2024",
         "date": "2024-01-10",
         "sponsors": [],
@@ -236,6 +256,7 @@
     },
     {
         "id": "february-2024",
+        "link": "https://ti.to/event-loop/seattlejs-february-2024",
         "title": "SeattleJS February 2024",
         "date": "2024-02-14",
         "sponsors": [
@@ -249,6 +270,7 @@
     },
     {
         "id": "march-2024",
+        "link": "https://ti.to/event-loop/seattlejs-march-2024",
         "title": "SeattleJS March 2024",
         "date": "2024-03-13",
         "sponsors": [
@@ -262,6 +284,7 @@
     },
     {
         "id": "april-2024",
+        "link": "https://ti.to/event-loop/seattlejs-april-2024",
         "title": "SeattleJS April 2024",
         "date": "2024-04-10",
         "sponsors": [],
@@ -273,6 +296,7 @@
     },
     {
         "id": "may-2024",
+        "link": "https://ti.to/event-loop/seattlejs-may-2024",
         "title": "SeattleJS May 2024",
         "date": "2024-05-08",
         "sponsors": [
