@@ -455,5 +455,19 @@
             "when to store data in URLs vs. a backend"
         ],
         "type": "regular"
+    },
+    {
+        "id": "chris-griffing-july-2024",
+        "speaker_id": "chris-griffing",
+        "event_id": "july-2024",
+        "title": "A Different Kind of Serverless: A History of WASM and case study for SQLite and Whisper.cpp running purely in the browser with no server-side logic",
+        "abstract": "You can build applications with a local-first focus. We will cover what WASM is, how it came to be and some of its history, as well as a case study focused on an app I made for myself. In the case study, we dig into how you might use WASM to run Whisper.cpp for Speech-to-text and also use WASM to host a local SQLite database. The only reason we need a network connection at all for this application is to get the initial JS payload and to download the Whisper models from a remote store since they can get quite large.",
+        "topics": [
+            "WASM",
+            "JS",
+            "SQLite",
+            "Speech-to-text"
+        ],
+        "type": "regular"
     }
 ]
