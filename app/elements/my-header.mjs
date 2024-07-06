@@ -148,9 +148,6 @@ export default function MyHeader({ html }) {
         </ul>
       </nav>
     </header>
-    <section id="subheader">
-      <a target="_blank" href="https://cascadiajs.com/2024">CascadiaJS</a> is coming up June 20-21, 2024! Tickets on sale now!
-    </section>
     <script type="module">
       class MyHeader extends HTMLElement {
         constructor() {
