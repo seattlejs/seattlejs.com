@@ -469,5 +469,20 @@
             "Speech-to-text"
         ],
         "type": "regular"
+    },
+    {
+        "id": "ben-van-citters-august-2024",
+        "speaker_id": "ben-van-citters",
+        "event_id": "august-2024",
+        "title": "Undo/Redo a postmortem",
+        "abstract": "Some thoughts about distributed undo/redo architecture. I did it and you can too!",
+        "topics": [
+            "JavaScript",
+            "undo",
+            "patterns",
+            "rest",
+            "crud"
+        ],
+        "type": "regular"
     }
 ]

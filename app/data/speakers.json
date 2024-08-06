@@ -307,5 +307,13 @@
         "twitter": "joshfranklin26",
         "pronouns": "he/him/his",
         "photo": "josh-franklin.jpg"
+    },
+    {
+        "id": "ben-van-citters",
+        "name": "Ben van citters",
+        "company": "Algorithms & Beauty",
+        "twitter": "",
+        "pronouns": "He/him",
+        "photo": "ben-van-citters.jpg"
     }
 ]
