@@ -13,7 +13,7 @@ export default function ListTalks({ html, state = {} }) {
           display: flex;
           flex-wrap: wrap;
           align-items: flex-start;
-  	      justify-content: center;
+  	      justify-content: start;
         }
       }
     </style>

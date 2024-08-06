@@ -9,7 +9,7 @@ export default function ViewEvent({ html, state = {} }) {
   return html`
     <h3>${event.title}</h3>
     <p>${marked(event.description)}</p>
-    <h4>Thanks to our Sponsors ❤️</h4>
+    ${event.sponsors.length > 0 ? html`<h4>Thanks to our Sponsors ❤️</h4>` : ''}
     ${event.sponsors
       .map(
         s =>
