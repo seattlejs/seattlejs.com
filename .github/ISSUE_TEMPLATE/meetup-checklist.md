@@ -26,6 +26,7 @@ assignees: ''
 
 ## (2 weeks out)
 - [ ] send email to mailing list (customer.io)
+- [ ] Post on LinkedIn & repost using [SeattleJS account](https://www.linkedin.com/company/seattlejs)
 
 ## (1 week out)
 - [ ] send email to meetup.com
