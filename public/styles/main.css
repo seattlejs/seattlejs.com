@@ -60,6 +60,10 @@ a[target="_blank"]:after {
     padding: 8px 24px;
 }
 
+.hero-image {
+    height: auto;
+}
+
 .cta {
     font-family: headline-gothic-atf-round, sans-serif;
     background-color: #0033FF;
