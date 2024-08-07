@@ -484,5 +484,22 @@
             "crud"
         ],
         "type": "regular"
+    },
+    {
+        "id": "allan-deutsch-august-2024",
+        "speaker_id": "allan-deutsch",
+        "event_id": "august-2024",
+        "title": "Classy coding: JavaScript OOP through the ages",
+        "abstract": "Embark on a journey through the history of JavaScript to learn how a variety of OOP challenges were overcome in the past. We will conclude our journey with clean modern syntax and a deeper understanding of classes, objects, and the chain of changes that helped us get here.",
+        "topics": [
+            "javascript",
+            "inheritance",
+            "prototype chains",
+            "JS runtime",
+            "classes",
+            "OOP",
+            "object-oriented programming"
+        ],
+        "type": "lightning"
     }
 ]
