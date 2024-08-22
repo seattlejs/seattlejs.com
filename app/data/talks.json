@@ -501,5 +501,19 @@
             "object-oriented programming"
         ],
         "type": "lightning"
+    },
+    {
+        "id": "nicholas-patti-september-2024",
+        "speaker_id": "nicholas-patti",
+        "event_id": "september-2024",
+        "title": "Planning the ultimate Limp Bizkit experience with Playwright",
+        "abstract": "How can my friend and I get on stage to perform guitar and bass with Limp Bizkit? The answer lies in the data, and Playwright can help us grab it!",
+        "topics": [
+            "Playwright",
+            "NodeJS",
+            "data scraping",
+            "data analysis"
+        ],
+        "type": "lightning"
     }
 ]

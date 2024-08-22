@@ -315,5 +315,13 @@
         "twitter": "",
         "pronouns": "He/him",
         "photo": "ben-van-citters.jpg"
+    },
+    {
+        "id": "nicholas-patti",
+        "name": "Nicholas Patti",
+        "company": "Freelance",
+        "twitter": "nickspatties",
+        "pronouns": "he/him/his",
+        "photo": "nicholas-patti.jpg"
     }
 ]

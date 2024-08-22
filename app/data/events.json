@@ -330,5 +330,15 @@
             "allan-deutsch-august-2024"
         ],
         "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/r9LsbFzCxuMpRzbXA'>Silicon Valley Bank</a> this month!\n\n"
+    },
+    {
+        "id": "september-2024",
+        "title": "SeattleJS September 2024",
+        "date": "2024-09-11",
+        "sponsors": [],
+        "talks": [
+            "nicholas-patti-september-2024"
+        ],
+        "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/fbEUjw2mGvvTDsVR6'>Startup Hall on UW campus</a> this month!\n\n"
     }
 ]
