@@ -515,18 +515,5 @@
             "data analysis"
         ],
         "type": "lightning"
-    },
-    {
-        "id": "stacy-davis1-october-2024",
-        "speaker_id": "stacy-davis1",
-        "event_id": "october-2024",
-        "title": "Translation: Tokens of Clarity",
-        "abstract": "How does someone even get started with translating? What are some of the details involved? Join me to learn more about translation and localization in a React app, and insights taken from experience leading a translation initiative.",
-        "topics": [
-            "Translation",
-            "localization",
-            "React"
-        ],
-        "type": "regular"
     }
 ]
