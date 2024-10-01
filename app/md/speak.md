@@ -6,7 +6,7 @@ excerpt: SeattleJS is a safe and inclusive event for everyone building on the we
 
 ## Submitting an Idea
 
-Whether you new to web development or a seasoned pro, you can give a talk at SeattleJS. 
+Whether you are new to web development or a seasoned pro, you can give a talk at SeattleJS. 
 
 Don't let the name SeattleJS fool you - we welcome people and presentations regardless of which technologies you are excited about using to build on the web. Talks about technologies like the browser platform, CSS, NodeJS, and other languages and frameworks like Ruby on Rails, Django, and PHP are all welcome here!
 
