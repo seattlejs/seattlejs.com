@@ -331,5 +331,13 @@
         "twitter": "",
         "pronouns": "she/her/hers",
         "photo": "stacy-davis1.jpg"
+    },
+    {
+        "id": "erik-marks",
+        "name": "Erik Marks",
+        "company": "Consensys / MetaMask",
+        "twitter": "rekmarks",
+        "pronouns": "he/they",
+        "photo": "erik-marks.jpg"
     }
 ]

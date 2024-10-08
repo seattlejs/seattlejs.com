@@ -528,5 +528,22 @@
             "React"
         ],
         "type": "regular"
+    },
+    {
+        "id": "erik-marks-october-2024",
+        "speaker_id": "erik-marks",
+        "event_id": "october-2024",
+        "title": "How to use eval() in production (and remain gainfully employed)",
+        "abstract": "If you know anything about eval(), it's probably that you should avoid using it at all costs. However, what if using eval() could make your JavaScript program more secure? This is what Hardened JavaScript does, and in this talk we will explore how.",
+        "topics": [
+            "JavaScript",
+            "security",
+            "extensibility",
+            "plugins",
+            "Hardened JavaScript",
+            "Secure EcmaScript",
+            "SES"
+        ],
+        "type": "lightning"
     }
 ]
