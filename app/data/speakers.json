@@ -339,5 +339,13 @@
         "twitter": "rekmarks",
         "pronouns": "he/they",
         "photo": "erik-marks.jpg"
+    },
+    {
+        "id": "cat-johnson",
+        "name": "Cat Johnson",
+        "company": "Khan Academy",
+        "twitter": "cat_themachines",
+        "pronouns": "she/her",
+        "photo": "cat-johnson.jpg"
     }
 ]
