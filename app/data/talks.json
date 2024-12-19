@@ -571,5 +571,51 @@
             "React"
         ],
         "type": "lightning"
+    },
+    {
+        "id": "justin-castilla-january-2025",
+        "speaker_id": "justin-castilla",
+        "event_id": "january-2025",
+        "title": "Observability now: Open Telemetry is here and we should know about it.",
+        "abstract": "Observability provides a wrangling of logs, traces, and metrics from your application into an organized analytics engine. We need to understand the basics and opportunities it provides. With open source software, we can get it up and running in no time!",
+        "topics": [
+            "observability",
+            "data collection",
+            "analytics",
+            "performance",
+            "AI",
+            "data storage",
+            "machine learning"
+        ],
+        "type": "lightning"
+    },
+    {
+        "id": "peli-de-halleux-january-2025",
+        "speaker_id": "peli-de-halleux",
+        "event_id": "january-2025",
+        "title": "GenAIScript - Generative AI Scripting",
+        "abstract": "GenAIScript is a JavaScript-ish environment with convenient tooling for file ingestion, prompt development and structured data extraction. We will be building LLM scripts of all sorts during the talk. https://microsoft.github.io/genaiscript ",
+        "topics": [
+            "genai",
+            "llm"
+        ],
+        "type": "lightning"
+    },
+    {
+        "id": "andrew-enyeart-january-2025",
+        "speaker_id": "andrew-enyeart",
+        "event_id": "january-2025",
+        "title": "Hard Things & Magical Incantations of Overcoming",
+        "abstract": "We all face hard things. Wielding simple, powerful phrases—magical incantations, if you will—can help us take action in the face of discomfort and fear. Learn how to harness identity and habit to tackle your own unique challenges with courage.",
+        "topics": [
+            "job hunting",
+            "courage",
+            "mindset",
+            "identity",
+            "discomfort",
+            "personal growth",
+            "persistence"
+        ],
+        "type": "lightning"
     }
 ]

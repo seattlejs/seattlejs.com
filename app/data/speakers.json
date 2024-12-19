@@ -347,5 +347,21 @@
         "twitter": "cat_themachines",
         "pronouns": "she/her",
         "photo": "cat-johnson.jpg"
+    },
+    {
+        "id": "justin-castilla",
+        "name": "Justin Castilla",
+        "company": "Elastic",
+        "twitter": "CastillaCodes",
+        "pronouns": "He/Him/His",
+        "photo": "justin-castilla.png"
+    },
+    {
+        "id": "andrew-enyeart",
+        "name": "Andrew Enyeart",
+        "company": "22days",
+        "twitter": "andrew_enyeart",
+        "pronouns": "he/him",
+        "photo": "andrew-enyeart.png"
     }
 ]
