@@ -2,6 +2,8 @@ Hello {name},
 
 Congratulations! You are now confirmed to present about {topic} at the SeattleJS meetup on {date}. We're excited to have you join us!
 
+As a reminder, please arrive at the venue, {venue}, by 5:00PM for a tech check.
+
 Before we publish the event details, we'd like to confirm your information. Here's the details from your submission - is there anything you'd like to change or are you happy with it as is?
 
 - **Name**: {name}
