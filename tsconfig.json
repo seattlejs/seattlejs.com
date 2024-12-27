@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "noEmit": true,
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "esModuleInterop": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
