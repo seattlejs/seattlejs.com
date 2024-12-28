@@ -208,50 +208,50 @@
   ],
   "workshops": [
     {
-        "id": "managing-data-in-a-react-application-aug-7",
-        "title": "Managing Data in a React Application (Aug 7)",
-        "abstract": "Fast user experiences are a requirement, and the developer tools for managing data handling have never been better! In this hands-on workshop, Eve Porcello will take a look at some of the preeminent patterns for building amazing user experiences with React. She'll also explore the latest features of React Server Components and how they can be leveraged with modern frameworks.\n\nTopics include: Data Loading Overview and Historical Tour, Understanding Streams, Suspense, React Server Components , GraphQL (Relay Fragments and Apollo Client), Exploring Next.js, Remix, and other frameworks",
-        "short": "In this hands-on workshop, Eve Porcello will take a look at some of the preeminent patterns for building amazing user experiences with React. She'll also explore the latest features of React Server Components and how they can be leveraged with modern frameworks",
-        "topics": ["react.js", "next.js", "remix", "react server components"],
-        "speaker": {
-            "id": "eve-porcello",
-            "name": "Eve Porcello",
-            "twitter": "EvePorcello",
-            "company": "Moon Highway",
-            "photo": "eve-porcello.jpg",
-            "pronouns": "she/her",
-            "location": "Bend, OR"
-          }
-      },
-      {
-        "id": "introduction-to-typescript-aug-9",
-        "title": "Introduction to TypeScript (Aug 9)",
-        "abstract": "Join Josh Goldberg in understanding the foundations of TypeScript! He'll cover how its type system works, how it lets you model user code, and -best of all- the benefits it can give you as a developer. And he'll show some great IDE tips & tricks enabled by TypeScript. ⚡",
-        "topics": ["typescript"],
-        "speaker": {
-            "id": "josh-goldberg",
-            "name": "Josh Goldberg",
-            "twitter": "JoshuaKGoldberg",
-            "company": "typescript-eslint",
-            "photo": "josh-goldberg.jpg",
-            "location": "Philadelphia, PA"
-          }
-      },
-      {
-        "id": "building-ai-apps-aug-10",
-        "title": "Building AI Apps (Aug 10)",
-        "short": "Join Brook Riggio In this hands-on workshop on building AI app! Learn about how to integrate generative AI capabilities into new or existing projects, within your own UI, fully utilizing your own domain knowledge. Whether you want to launch your own AI-powered product, or incorporate cutting-edge functionality into your existing offerings, this workshop will give you the practical details and a vision of what's even possible to inspire your next generation of applications.",
-        "abstract": "The power of Large Language Models (LLMs) is reshaping what our apps are capable of, 🤖 and how we build them. Get hands-on experience in this workshop, where you will build 2 distinct apps that leverage AI's strengths... and we'll see how to use AI tools to help us code more effectively!\n\nWe will leverage open source and best-of-breed options to:\n\n- Create an interactive customer service chat agent for your website, equipped to respond with your deep domain knowledge to boost conversions.\n- Deploy open models to AWS, for even more control over the data flow, and system prompts. 🌩\n\nWhether you're looking to launch 🚀 a new AI-driven product or elevate your current offerings, this workshop equips you with both practical experience and a vision for the future to inspire your next generation of applications. 🏗",
-        "topics": ["AI"],
-        "speaker": {
-            "id": "brook-riggio",
-            "name": "Brook Riggio",
-            "linkedin": "brookr",
-            "company": "Code Fellows",
-            "photo": "brook-riggio.jpg",
-            "location": "Seattle, WA"
-          }
+      "id": "managing-data-in-a-react-application-aug-7",
+      "title": "Managing Data in a React Application (Aug 7)",
+      "abstract": "Fast user experiences are a requirement, and the developer tools for managing data handling have never been better! In this hands-on workshop, Eve Porcello will take a look at some of the preeminent patterns for building amazing user experiences with React. She'll also explore the latest features of React Server Components and how they can be leveraged with modern frameworks.\n\nTopics include: Data Loading Overview and Historical Tour, Understanding Streams, Suspense, React Server Components , GraphQL (Relay Fragments and Apollo Client), Exploring Next.js, Remix, and other frameworks",
+      "short": "In this hands-on workshop, Eve Porcello will take a look at some of the preeminent patterns for building amazing user experiences with React. She'll also explore the latest features of React Server Components and how they can be leveraged with modern frameworks",
+      "topics": ["react.js", "next.js", "remix", "react server components"],
+      "speaker": {
+        "id": "eve-porcello",
+        "name": "Eve Porcello",
+        "twitter": "EvePorcello",
+        "company": "Moon Highway",
+        "photo": "eve-porcello.jpg",
+        "pronouns": "she/her",
+        "location": "Bend, OR"
       }
+    },
+    {
+      "id": "introduction-to-typescript-aug-9",
+      "title": "Introduction to TypeScript (Aug 9)",
+      "abstract": "Join Josh Goldberg in understanding the foundations of TypeScript! He'll cover how its type system works, how it lets you model user code, and -best of all- the benefits it can give you as a developer. And he'll show some great IDE tips & tricks enabled by TypeScript. ⚡",
+      "topics": ["typescript"],
+      "speaker": {
+        "id": "josh-goldberg",
+        "name": "Josh Goldberg",
+        "twitter": "JoshuaKGoldberg",
+        "company": "typescript-eslint",
+        "photo": "josh-goldberg.jpg",
+        "location": "Philadelphia, PA"
+      }
+    },
+    {
+      "id": "building-ai-apps-aug-10",
+      "title": "Building AI Apps (Aug 10)",
+      "short": "Join Brook Riggio In this hands-on workshop on building AI app! Learn about how to integrate generative AI capabilities into new or existing projects, within your own UI, fully utilizing your own domain knowledge. Whether you want to launch your own AI-powered product, or incorporate cutting-edge functionality into your existing offerings, this workshop will give you the practical details and a vision of what's even possible to inspire your next generation of applications.",
+      "abstract": "The power of Large Language Models (LLMs) is reshaping what our apps are capable of, 🤖 and how we build them. Get hands-on experience in this workshop, where you will build 2 distinct apps that leverage AI's strengths... and we'll see how to use AI tools to help us code more effectively!\n\nWe will leverage open source and best-of-breed options to:\n\n- Create an interactive customer service chat agent for your website, equipped to respond with your deep domain knowledge to boost conversions.\n- Deploy open models to AWS, for even more control over the data flow, and system prompts. 🌩\n\nWhether you're looking to launch 🚀 a new AI-driven product or elevate your current offerings, this workshop equips you with both practical experience and a vision for the future to inspire your next generation of applications. 🏗",
+      "topics": ["AI"],
+      "speaker": {
+        "id": "brook-riggio",
+        "name": "Brook Riggio",
+        "linkedin": "brookr",
+        "company": "Code Fellows",
+        "photo": "brook-riggio.jpg",
+        "location": "Seattle, WA"
+      }
+    }
   ],
   "organizers": [
     {

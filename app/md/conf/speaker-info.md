@@ -1,6 +1,7 @@
 ---
 title: Speaker Information
 ---
+
 Here is a high-level To Do list for speakers at SeattleJS Conf:
 
 <ul style="list-style: none">

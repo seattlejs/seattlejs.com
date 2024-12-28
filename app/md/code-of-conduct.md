@@ -2,6 +2,7 @@
 title: Code of Conduct
 excerpt: SeattleJS is a safe and inclusive event for everyone
 ---
+
 SeattleJS is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity, gender expression, sexual orientation, disability, physical appearance, body size, race, ability, ethnicity, socioeconomic status, or religion (or lack thereof). SeattleJS does not tolerate harassment of conference participants or staff at any time nor in any form.
 
 Anyone violating these guidelines may be removed from the event and/or our platforms at our sole sole discretion.
@@ -10,7 +11,7 @@ Thank you for helping make SeattleJS a welcoming, friendly event for all.
 
 ## Expected Behavior
 
-All communication at our events (in-person or virtual) or on our platforms (Discord, Meetup, etc) should be appropriate for a professional audience including people of many different backgrounds. Please be kind to others. 
+All communication at our events (in-person or virtual) or on our platforms (Discord, Meetup, etc) should be appropriate for a professional audience including people of many different backgrounds. Please be kind to others.
 
 Participate in an authentic and active way. In doing so, you contribute to the health and longevity of this community.
 
@@ -35,7 +36,7 @@ If an attendee or other participant engages in unacceptable behavior, the commun
 
 ## If You Witness or Are Subject to Unacceptable Behavior
 
-If you are subject to or witness unacceptable behavior, or have any other concerns, please notify an Organizer immediately. 
+If you are subject to or witness unacceptable behavior, or have any other concerns, please notify an Organizer immediately.
 
 If you are experiencing a life threatening emergency, dial 9-1-1.
 

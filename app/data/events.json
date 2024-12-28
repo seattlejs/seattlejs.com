@@ -1,378 +1,280 @@
 [
-    {
-        "id": "may-2022",
-        "link": "https://ti.to/event-loop/seattlejs-may-2022",
-        "title": "SeattleJS May 2022",
-        "date": "2022-05-11",
-        "sponsors": [
-            "collective-seattle"
-        ],
-        "talks": [
-            "amber-hoak-may-2022"
-        ]
-    },
-    {
-        "id": "june-2022",
-        "link": "https://ti.to/event-loop/seattlejs-june-2022",
-        "title": "SeattleJS June 2022",
-        "date": "2022-06-08",
-        "sponsors": [
-            "collective-seattle"
-        ],
-        "talks": [
-            "jamund-ferguson-june-2022"
-        ]
-    },
-    {
-        "id": "july-2022",
-        "link": "https://ti.to/event-loop/seattlejs-july-2022",
-        "title": "SeattleJS July 2022",
-        "date": "2022-07-13",
-        "sponsors": [
-            "collective-seattle"
-        ],
-        "talks": []
-    },
-    {
-        "id": "august-2022",
-        "link": "https://ti.to/event-loop/seattlejs-august-2022",
-        "title": "SeattleJS August 2022",
-        "date": "2022-08-10",
-        "sponsors": [
-            "collective-seattle"
-        ],
-        "talks": []
-    },
-    {
-        "id": "september-2022",
-        "link": "https://ti.to/event-loop/seattlejs-september-2022",
-        "title": "SeattleJS September 2022",
-        "date": "2022-09-14",
-        "sponsors": [
-            "collective-seattle"
-        ],
-        "talks": []
-    },
-    {
-        "id": "october-2022",
-        "link": "https://ti.to/event-loop/seattlejs-october-2022",
-        "title": "SeattleJS October 2022",
-        "date": "2022-10-12",
-        "sponsors": [
-            "svb"
-        ],
-        "talks": [
-            "rachel-lee-nabors-october-2022"
-        ]
-    },
-    {
-        "id": "november-2022",
-        "link": "https://ti.to/event-loop/seattlejs-november-2022",
-        "title": "SeattleJS November 2022",
-        "date": "2022-11-09",
-        "sponsors": [
-            "collective-seattle"
-        ],
-        "talks": [
-            "matthew-bauer-november-2022",
-            "brian-gershon-november-2022"
-        ]
-    },
-    {
-        "id": "december-2022",
-        "link": "https://ti.to/event-loop/seattlejs-december-2022",
-        "title": "SeattleJS December 2022 - Holiday Party Edition",
-        "date": "2022-12-14",
-        "sponsors": [
-            "collective-seattle"
-        ],
-        "talks": []
-    },
-    {
-        "id": "january-2023",
-        "link": "https://ti.to/event-loop/seattlejs-january-2023",
-        "title": "SeattleJS January 2023",
-        "date": "2023-01-11",
-        "sponsors": [
-            "aws-skills-center-seattle"
-        ],
-        "talks": [
-            "calvin-kipperman-january-2023",
-            "josh-scotland-january-2023",
-            "tim-obrien-january-2023"
-        ],
-        "description": "Join us and celebrate a great start to 2023 with your fellow web devs!\n\nTHANK YOU to the folks at AWS Skills Center Seattle for sponsoring this month! ❤️\n\nTickets are $5 and go up to $10 the day of, so don't delay!"
-    },
-    {
-        "id": "february-2023",
-        "link": "https://ti.to/event-loop/seattlejs-february-2023",
-        "title": "SeattleJS February 2023",
-        "date": "2023-02-08",
-        "sponsors": [
-            "collective-seattle",
-            "remix"
-        ],
-        "talks": [
-            "brian-tran-february-2023",
-            "lupe-canaviri-maydana-februrary-2023",
-            "jacob-ebey-february-2023"
-        ],
-        "description": "Join us and celebrate a great start to 2023 with your fellow web devs!\n\nTickets are $5 and go up to $10 the day of, so don't delay!"
-    },
-    {
-        "id": "march-2023",
-        "link": "https://ti.to/event-loop/seattlejs-march-2023",
-        "title": "SeattleJS March 2023",
-        "date": "2023-03-08",
-        "sponsors": [
-            "appwrite"
-        ],
-        "talks": [
-            "aaroh-mankad-march-2023",
-            "mason-lynass-march-2023",
-            "chris-griffing-march-2023"
-        ],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!"
-    },
-    {
-        "id": "april-2023",
-        "link": "https://ti.to/event-loop/seattlejs-april-2023",
-        "title": "SeattleJS April 2023",
-        "date": "2023-04-12",
-        "sponsors": [
-            "amplication"
-        ],
-        "talks": [
-            "michael-solati-april-2023",
-            "philip-swan-april-2023",
-            "catherine-johnson-april-2023"
-        ],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!"
-    },
-    {
-        "id": "may-2023",
-        "link": "https://ti.to/event-loop/seattlejs-may-2023",
-        "title": "SeattleJS May 2023",
-        "date": "2023-05-10",
-        "sponsors": [],
-        "talks": [
-            "spenser-solys-may-2023",
-            "tiger-oakes-may-2023"
-        ],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!"
-    },
-    {
-        "id": "june-2023",
-        "link": "https://ti.to/event-loop/seattlejs-june-2023",
-        "title": "SeattleJS June 2023",
-        "date": "2023-06-14",
-        "sponsors": [
-            "courier"
-        ],
-        "talks": [
-            "cristina-rodriguez-june-2023",
-            "aiden-bai-june-2023",
-            "dm-liao-june-2023"
-        ],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!"
-    },
-    {
-        "id": "july-2023",
-        "link": "https://ti.to/event-loop/seattlejs-july-2023",
-        "title": "SeattleJS July 2023",
-        "date": "2023-07-12",
-        "sponsors": [
-            "twilio"
-        ],
-        "talks": [
-            "chris-griffing-july-2023",
-            "michael-fitzgerald-july-2023",
-            "geoff-rich-july-2023"
-        ],
-        "description": ""
-    },
-    {
-        "id": "september-2023",
-        "link": "https://ti.to/event-loop/seattlejs-september-2023",
-        "title": "SeattleJS September 2023",
-        "date": "2023-09-13",
-        "sponsors": [
-            "runme.dev"
-        ],
-        "talks": [
-            "jan-miksovsky-september-2023",
-            "peli-de-halleux-september-2023",
-            "ben-lower-september-2023"
-        ],
-        "description": ""
-    },
-    {
-        "id": "october-2023",
-        "link": "https://ti.to/event-loop/seattlejs-october-2023",
-        "title": "SeattleJS October 2023",
-        "date": "2023-10-11",
-        "sponsors": [
-            "courier"
-        ],
-        "talks": [
-            "caleb-diehl-october-2023",
-            "alan-gonzalez-october-2023"
-        ],
-        "description": "Thanks to [Gearhouse](https://joingearhouse.com) for hosting us this month. We will be at their Capitol Hill location for October.\n\n 📍 [800 E Thomas St, Seattle, WA 98102](https://maps.app.goo.gl/LRVEp4yudBrHHRue7)\n\n Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!"
-    },
-    {
-        "id": "november-2023",
-        "link": "https://ti.to/event-loop/seattlejs-november-2023",
-        "title": "SeattleJS November 2023",
-        "date": "2023-11-08",
-        "sponsors": [
-            "polaris"
-        ],
-        "talks": [
-            "mike-ryan-november-2023",
-            "doug-wade-november-2023"
-        ],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
-    },
-    {
-        "id": "holiday-party-2023",
-        "link": "https://ti.to/event-loop/seattlejs-holiday-party-2023",
-        "title": "SeattleJS Holiday Party 2023",
-        "date": "2023-12-13",
-        "sponsors": [
-            "seekout"
-        ],
-        "talks": [],
-        "description": "Join us for our annual SeattleJS Holiday Party! Come hang out with your fellow web developers and celebrate the holidays in style at The Collective. Consider bringing a plus one, the more the merrier!\n Tickets are $5 and go up to $10 the day of, so don't delay!"
-    },
-    {
-        "id": "january-2024",
-        "link": "https://ti.to/event-loop/seattlejs-january-2024",
-        "title": "SeattleJS January 2024",
-        "date": "2024-01-10",
-        "sponsors": [],
-        "talks": [],
-        "description": "Join your fellow web devs for an evening of networking and fun!\n\n📅 Wednesday, January 10\n\n🕠 5:30pm - 8pm\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
-    },
-    {
-        "id": "february-2024",
-        "link": "https://ti.to/event-loop/seattlejs-february-2024",
-        "title": "SeattleJS February 2024",
-        "date": "2024-02-14",
-        "sponsors": [
-            "datastax"
-        ],
-        "talks": [
-            "dm-liao-february-2024",
-            "fx-wood-february-2024"
-        ],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
-    },
-    {
-        "id": "march-2024",
-        "link": "https://ti.to/event-loop/seattlejs-march-2024",
-        "title": "SeattleJS March 2024",
-        "date": "2024-03-13",
-        "sponsors": [
-            "fireproof"
-        ],
-        "talks": [
-            "shruti-kapoor-march-2024",
-            "eric-jensen-march-2024"
-        ],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
-    },
-    {
-        "id": "april-2024",
-        "link": "https://ti.to/event-loop/seattlejs-april-2024",
-        "title": "SeattleJS April 2024",
-        "date": "2024-04-10",
-        "sponsors": [],
-        "talks": [
-            "herrington-darkholme-april-2024",
-            "john-pham-april-2024"
-        ],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below. Drink tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
-    },
-    {
-        "id": "may-2024",
-        "link": "https://ti.to/event-loop/seattlejs-may-2024",
-        "title": "SeattleJS May 2024",
-        "date": "2024-05-08",
-        "sponsors": [
-            "sentry"
-        ],
-        "talks": [
-            "allan-deutsch-may-2024",
-            "sarah-guthals-phd-may-2024"
-        ],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below. Drink tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
-    },
-    {
-        "id": "july-2024",
-        "link": "https://lu.ma/0ouxs9r2",
-        "title": "SeattleJS July 2024",
-        "date": "2024-07-10",
-        "sponsors": [],
-        "talks": [
-            "chris-griffing-july-2024"
-        ],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/r9LsbFzCxuMpRzbXA'>Silicon Valley Bank</a> this time, NOT our previous location!\n\n"
-    },
-    {
-        "id": "august-2024",
-        "link": "https://lu.ma/510fwjo4",
-        "title": "SeattleJS August 2024",
-        "date": "2024-08-14",
-        "sponsors": [],
-        "talks": [
-            "ben-van-citters-august-2024",
-            "allan-deutsch-august-2024"
-        ],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/r9LsbFzCxuMpRzbXA'>Silicon Valley Bank</a> this month!\n\n"
-    },
-    {
-        "id": "september-2024",
-        "title": "SeattleJS September 2024",
-        "date": "2024-09-11",
-        "sponsors": [],
-        "talks": [
-            "nicholas-patti-september-2024"
-        ],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/fbEUjw2mGvvTDsVR6'>Startup Hall on UW campus</a> this month!\n\n"
-    },
-    {
-        "id": "october-2024",
-        "title": "SeattleJS October 2024",
-        "date": "2024-10-09",
-        "sponsors": [],
-        "talks": [
-            "erik-marks-october-2024"
-        ],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/r9LsbFzCxuMpRzbXA'>Silicon Valley Bank</a> this month!\n\n"
-    },
-    {
-        "id": "november-2024",
-        "title": "SeattleJS November 2024",
-        "date": "2024-11-13",
-        "sponsors": [],
-        "talks": [
-            "cat-johnson-november-2024",
-            "stacy-davis1-november-2024"
-        ],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/fbEUjw2mGvvTDsVR6'>Startup Hall on UW campus</a> this month!\n\n"
-    },
-    {
-        "id": "january-2025",
-        "link": "https://lu.ma/s4s4mqxy",
-        "title": "SeattleJS January 2025",
-        "date": "2025-01-08",
-        "sponsors": [],
-        "talks": [
-            "justin-castilla-january-2025",
-            "peli-de-halleux-january-2025",
-            "andrew-enyeart-january-2025"
-        ],
-        "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/PwCs9NTjPsUi6Ar5A'>Just The Tap</a> in Belltown this month!\n\n"
-    }
+  {
+    "id": "may-2022",
+    "link": "https://ti.to/event-loop/seattlejs-may-2022",
+    "title": "SeattleJS May 2022",
+    "date": "2022-05-11",
+    "sponsors": ["collective-seattle"],
+    "talks": ["amber-hoak-may-2022"]
+  },
+  {
+    "id": "june-2022",
+    "link": "https://ti.to/event-loop/seattlejs-june-2022",
+    "title": "SeattleJS June 2022",
+    "date": "2022-06-08",
+    "sponsors": ["collective-seattle"],
+    "talks": ["jamund-ferguson-june-2022"]
+  },
+  {
+    "id": "july-2022",
+    "link": "https://ti.to/event-loop/seattlejs-july-2022",
+    "title": "SeattleJS July 2022",
+    "date": "2022-07-13",
+    "sponsors": ["collective-seattle"],
+    "talks": []
+  },
+  {
+    "id": "august-2022",
+    "link": "https://ti.to/event-loop/seattlejs-august-2022",
+    "title": "SeattleJS August 2022",
+    "date": "2022-08-10",
+    "sponsors": ["collective-seattle"],
+    "talks": []
+  },
+  {
+    "id": "september-2022",
+    "link": "https://ti.to/event-loop/seattlejs-september-2022",
+    "title": "SeattleJS September 2022",
+    "date": "2022-09-14",
+    "sponsors": ["collective-seattle"],
+    "talks": []
+  },
+  {
+    "id": "october-2022",
+    "link": "https://ti.to/event-loop/seattlejs-october-2022",
+    "title": "SeattleJS October 2022",
+    "date": "2022-10-12",
+    "sponsors": ["svb"],
+    "talks": ["rachel-lee-nabors-october-2022"]
+  },
+  {
+    "id": "november-2022",
+    "link": "https://ti.to/event-loop/seattlejs-november-2022",
+    "title": "SeattleJS November 2022",
+    "date": "2022-11-09",
+    "sponsors": ["collective-seattle"],
+    "talks": ["matthew-bauer-november-2022", "brian-gershon-november-2022"]
+  },
+  {
+    "id": "december-2022",
+    "link": "https://ti.to/event-loop/seattlejs-december-2022",
+    "title": "SeattleJS December 2022 - Holiday Party Edition",
+    "date": "2022-12-14",
+    "sponsors": ["collective-seattle"],
+    "talks": []
+  },
+  {
+    "id": "january-2023",
+    "link": "https://ti.to/event-loop/seattlejs-january-2023",
+    "title": "SeattleJS January 2023",
+    "date": "2023-01-11",
+    "sponsors": ["aws-skills-center-seattle"],
+    "talks": [
+      "calvin-kipperman-january-2023",
+      "josh-scotland-january-2023",
+      "tim-obrien-january-2023"
+    ],
+    "description": "Join us and celebrate a great start to 2023 with your fellow web devs!\n\nTHANK YOU to the folks at AWS Skills Center Seattle for sponsoring this month! ❤️\n\nTickets are $5 and go up to $10 the day of, so don't delay!"
+  },
+  {
+    "id": "february-2023",
+    "link": "https://ti.to/event-loop/seattlejs-february-2023",
+    "title": "SeattleJS February 2023",
+    "date": "2023-02-08",
+    "sponsors": ["collective-seattle", "remix"],
+    "talks": [
+      "brian-tran-february-2023",
+      "lupe-canaviri-maydana-februrary-2023",
+      "jacob-ebey-february-2023"
+    ],
+    "description": "Join us and celebrate a great start to 2023 with your fellow web devs!\n\nTickets are $5 and go up to $10 the day of, so don't delay!"
+  },
+  {
+    "id": "march-2023",
+    "link": "https://ti.to/event-loop/seattlejs-march-2023",
+    "title": "SeattleJS March 2023",
+    "date": "2023-03-08",
+    "sponsors": ["appwrite"],
+    "talks": [
+      "aaroh-mankad-march-2023",
+      "mason-lynass-march-2023",
+      "chris-griffing-march-2023"
+    ],
+    "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!"
+  },
+  {
+    "id": "april-2023",
+    "link": "https://ti.to/event-loop/seattlejs-april-2023",
+    "title": "SeattleJS April 2023",
+    "date": "2023-04-12",
+    "sponsors": ["amplication"],
+    "talks": [
+      "michael-solati-april-2023",
+      "philip-swan-april-2023",
+      "catherine-johnson-april-2023"
+    ],
+    "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!"
+  },
+  {
+    "id": "may-2023",
+    "link": "https://ti.to/event-loop/seattlejs-may-2023",
+    "title": "SeattleJS May 2023",
+    "date": "2023-05-10",
+    "sponsors": [],
+    "talks": ["spenser-solys-may-2023", "tiger-oakes-may-2023"],
+    "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!"
+  },
+  {
+    "id": "june-2023",
+    "link": "https://ti.to/event-loop/seattlejs-june-2023",
+    "title": "SeattleJS June 2023",
+    "date": "2023-06-14",
+    "sponsors": ["courier"],
+    "talks": [
+      "cristina-rodriguez-june-2023",
+      "aiden-bai-june-2023",
+      "dm-liao-june-2023"
+    ],
+    "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!"
+  },
+  {
+    "id": "july-2023",
+    "link": "https://ti.to/event-loop/seattlejs-july-2023",
+    "title": "SeattleJS July 2023",
+    "date": "2023-07-12",
+    "sponsors": ["twilio"],
+    "talks": [
+      "chris-griffing-july-2023",
+      "michael-fitzgerald-july-2023",
+      "geoff-rich-july-2023"
+    ],
+    "description": ""
+  },
+  {
+    "id": "september-2023",
+    "link": "https://ti.to/event-loop/seattlejs-september-2023",
+    "title": "SeattleJS September 2023",
+    "date": "2023-09-13",
+    "sponsors": ["runme.dev"],
+    "talks": [
+      "jan-miksovsky-september-2023",
+      "peli-de-halleux-september-2023",
+      "ben-lower-september-2023"
+    ],
+    "description": ""
+  },
+  {
+    "id": "october-2023",
+    "link": "https://ti.to/event-loop/seattlejs-october-2023",
+    "title": "SeattleJS October 2023",
+    "date": "2023-10-11",
+    "sponsors": ["courier"],
+    "talks": ["caleb-diehl-october-2023", "alan-gonzalez-october-2023"],
+    "description": "Thanks to [Gearhouse](https://joingearhouse.com) for hosting us this month. We will be at their Capitol Hill location for October.\n\n 📍 [800 E Thomas St, Seattle, WA 98102](https://maps.app.goo.gl/LRVEp4yudBrHHRue7)\n\n Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!"
+  },
+  {
+    "id": "november-2023",
+    "link": "https://ti.to/event-loop/seattlejs-november-2023",
+    "title": "SeattleJS November 2023",
+    "date": "2023-11-08",
+    "sponsors": ["polaris"],
+    "talks": ["mike-ryan-november-2023", "doug-wade-november-2023"],
+    "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
+  },
+  {
+    "id": "holiday-party-2023",
+    "link": "https://ti.to/event-loop/seattlejs-holiday-party-2023",
+    "title": "SeattleJS Holiday Party 2023",
+    "date": "2023-12-13",
+    "sponsors": ["seekout"],
+    "talks": [],
+    "description": "Join us for our annual SeattleJS Holiday Party! Come hang out with your fellow web developers and celebrate the holidays in style at The Collective. Consider bringing a plus one, the more the merrier!\n Tickets are $5 and go up to $10 the day of, so don't delay!"
+  },
+  {
+    "id": "january-2024",
+    "link": "https://ti.to/event-loop/seattlejs-january-2024",
+    "title": "SeattleJS January 2024",
+    "date": "2024-01-10",
+    "sponsors": [],
+    "talks": [],
+    "description": "Join your fellow web devs for an evening of networking and fun!\n\n📅 Wednesday, January 10\n\n🕠 5:30pm - 8pm\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
+  },
+  {
+    "id": "february-2024",
+    "link": "https://ti.to/event-loop/seattlejs-february-2024",
+    "title": "SeattleJS February 2024",
+    "date": "2024-02-14",
+    "sponsors": ["datastax"],
+    "talks": ["dm-liao-february-2024", "fx-wood-february-2024"],
+    "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
+  },
+  {
+    "id": "march-2024",
+    "link": "https://ti.to/event-loop/seattlejs-march-2024",
+    "title": "SeattleJS March 2024",
+    "date": "2024-03-13",
+    "sponsors": ["fireproof"],
+    "talks": ["shruti-kapoor-march-2024", "eric-jensen-march-2024"],
+    "description": "Join your fellow web devs for an evening of talks, networking and fun! Tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
+  },
+  {
+    "id": "april-2024",
+    "link": "https://ti.to/event-loop/seattlejs-april-2024",
+    "title": "SeattleJS April 2024",
+    "date": "2024-04-10",
+    "sponsors": [],
+    "talks": ["herrington-darkholme-april-2024", "john-pham-april-2024"],
+    "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below. Drink tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
+  },
+  {
+    "id": "may-2024",
+    "link": "https://ti.to/event-loop/seattlejs-may-2024",
+    "title": "SeattleJS May 2024",
+    "date": "2024-05-08",
+    "sponsors": ["sentry"],
+    "talks": ["allan-deutsch-may-2024", "sarah-guthals-phd-may-2024"],
+    "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below. Drink tickets are only $5 but go up to $10 the day of, so don't delay!\n\n📍 [The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109](https://maps.app.goo.gl/iFCSeqBsv7gFKEQ78)"
+  },
+  {
+    "id": "july-2024",
+    "link": "https://lu.ma/0ouxs9r2",
+    "title": "SeattleJS July 2024",
+    "date": "2024-07-10",
+    "sponsors": [],
+    "talks": ["chris-griffing-july-2024"],
+    "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/r9LsbFzCxuMpRzbXA'>Silicon Valley Bank</a> this time, NOT our previous location!\n\n"
+  },
+  {
+    "id": "august-2024",
+    "link": "https://lu.ma/510fwjo4",
+    "title": "SeattleJS August 2024",
+    "date": "2024-08-14",
+    "sponsors": [],
+    "talks": ["ben-van-citters-august-2024", "allan-deutsch-august-2024"],
+    "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/r9LsbFzCxuMpRzbXA'>Silicon Valley Bank</a> this month!\n\n"
+  },
+  {
+    "id": "september-2024",
+    "title": "SeattleJS September 2024",
+    "date": "2024-09-11",
+    "sponsors": [],
+    "talks": ["nicholas-patti-september-2024"],
+    "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/fbEUjw2mGvvTDsVR6'>Startup Hall on UW campus</a> this month!\n\n"
+  },
+  {
+    "id": "october-2024",
+    "title": "SeattleJS October 2024",
+    "date": "2024-10-09",
+    "sponsors": [],
+    "talks": ["erik-marks-october-2024"],
+    "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/r9LsbFzCxuMpRzbXA'>Silicon Valley Bank</a> this month!\n\n"
+  },
+  {
+    "id": "november-2024",
+    "title": "SeattleJS November 2024",
+    "date": "2024-11-13",
+    "sponsors": [],
+    "talks": ["cat-johnson-november-2024", "stacy-davis1-november-2024"],
+    "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/fbEUjw2mGvvTDsVR6'>Startup Hall on UW campus</a> this month!\n\n"
+  }
 ]
