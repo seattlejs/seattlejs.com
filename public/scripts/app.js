@@ -37,7 +37,7 @@
         '',
         'Conflicts:',
         `- ${pkgName} ${g[pkgId]} (already loaded)`,
-        `- ${pkgName} ${pkgBuildInfo} (trying to load this now)`
+        `- ${pkgName} ${pkgBuildInfo} (trying to load this now)`,
       ].join('\n')
       error(msg)
     }
@@ -52,7 +52,7 @@
           `- ${PKG_NAME} is at ${PKG_VERSION}`,
           `- ${pkgName} is at ${pkgVersion}`,
           '',
-          'Always upgrade all Liveblocks packages to the same version number.'
+          'Always upgrade all Liveblocks packages to the same version number.',
         ].join('\n')
       )
     }
@@ -124,8 +124,8 @@
       observable: {
         subscribe,
         subscribeOnce,
-        waitUntil
-      }
+        waitUntil,
+      },
     }
   }
   var _bridgeActive = false
@@ -138,7 +138,7 @@
     }
     const fullMsg = {
       ...message,
-      source: 'liveblocks-devtools-client'
+      source: 'liveblocks-devtools-client',
     }
     if (!(options?.force || _bridgeActive)) {
       return
@@ -176,7 +176,7 @@
             sendToPanel({
               msg: 'room::available',
               roomId,
-              clientVersion: VERSION
+              clientVersion: VERSION,
             })
           }
           break
@@ -205,14 +205,14 @@
       room.events.storage.subscribe(() => partialSyncStorage(room)),
       // Any time "me" or "others" updates, send the new values accordingly
       room.events.self.subscribe(() => partialSyncMe(room)),
-      room.events.others.subscribe(() => partialSyncOthers(room))
+      room.events.others.subscribe(() => partialSyncOthers(room)),
     ])
   }
   function partialSyncConnection(room) {
     sendToPanel({
       msg: 'room::sync::partial',
       roomId: room.id,
-      status: room.getStatus()
+      status: room.getStatus(),
     })
   }
   function partialSyncStorage(room) {
@@ -221,7 +221,7 @@
       sendToPanel({
         msg: 'room::sync::partial',
         roomId: room.id,
-        storage: root.toTreeNode('root').payload
+        storage: root.toTreeNode('root').payload,
       })
     }
   }
@@ -231,7 +231,7 @@
       sendToPanel({
         msg: 'room::sync::partial',
         roomId: room.id,
-        me
+        me,
       })
     }
   }
@@ -241,7 +241,7 @@
       sendToPanel({
         msg: 'room::sync::partial',
         roomId: room.id,
-        others
+        others,
       })
     }
   }
@@ -255,7 +255,7 @@
       status: room.getStatus(),
       storage: root?.toTreeNode('root').payload ?? null,
       me,
-      others
+      others,
     })
   }
   var roomChannelListeners = /* @__PURE__ */ new Map()
@@ -302,7 +302,7 @@
     stopRoomChannelListener(roomId)
     sendToPanel({
       msg: 'room::unavailable',
-      roomId
+      roomId,
     })
   }
   var badge =
@@ -428,7 +428,7 @@
           } else {
             throw new Error('Can no longer patch stale context')
           }
-        }
+        },
       }
       callback(patchableContext)
       allowed = false
@@ -498,14 +498,14 @@
         willTransition: makeEventSource(),
         didIgnoreEvent: makeEventSource(),
         willExitState: makeEventSource(),
-        didEnterState: makeEventSource()
+        didEnterState: makeEventSource(),
       }
       this.events = {
         didReceiveEvent: this.eventHub.didReceiveEvent.observable,
         willTransition: this.eventHub.willTransition.observable,
         didIgnoreEvent: this.eventHub.didIgnoreEvent.observable,
         willExitState: this.eventHub.willExitState.observable,
-        didEnterState: this.eventHub.didEnterState.observable
+        didEnterState: this.eventHub.didEnterState.observable,
       }
     }
     get context() {
@@ -872,7 +872,7 @@
   }
   function increaseBackoffDelayAggressively(context) {
     context.patch({
-      backoffDelay: nextBackoffDelay(context.backoffDelay, BACKOFF_DELAYS_SLOW)
+      backoffDelay: nextBackoffDelay(context.backoffDelay, BACKOFF_DELAYS_SLOW),
     })
   }
   function resetSuccessCount(context) {
@@ -880,12 +880,7 @@
   }
   function log(level, message) {
     const logger =
-      level === 2
-        ? error2
-        : level === 1
-        ? warn
-        : /* black hole */
-          () => {}
+      level === 2 ? error2 : level === 1 ? warn : /* black hole */ () => {}
     return () => {
       logger(message)
     }
@@ -925,7 +920,7 @@
     const start = /* @__PURE__ */ new Date().getTime()
     function log2(...args) {
       warn(
-        `${((/* @__PURE__ */ new Date().getTime() - start) / 1e3).toFixed(
+        `${(/* @__PURE__ */ (new Date().getTime() - start) / 1e3).toFixed(
           2
         )} [FSM #${machine.id}]`,
         ...args
@@ -938,7 +933,7 @@
       ),
       machine.events.didIgnoreEvent.subscribe(e =>
         log2('Ignored event', e.type, e, "(current state won't handle it)")
-      )
+      ),
       // machine.events.willExitState.subscribe((s) => log("Exiting state", s)),
       // machine.events.didEnterState.subscribe((s) => log("Entering state", s)),
     ]
@@ -969,7 +964,7 @@
       statusDidChange: statusDidChange.observable,
       didConnect: didConnect.observable,
       didDisconnect: didDisconnect.observable,
-      unsubscribe
+      unsubscribe,
     }
   }
   var assign = patch => ctx => ctx.patch(patch)
@@ -981,7 +976,7 @@
       successCount: 0,
       token: null,
       socket: null,
-      backoffDelay: RESET_DELAY
+      backoffDelay: RESET_DELAY,
     }
     const machine = new FSM(initialContext)
       .addState('@idle.initial')
@@ -995,22 +990,22 @@
     machine.addTransitions('*', {
       RECONNECT: {
         target: '@auth.backoff',
-        effect: [increaseBackoffDelay, resetSuccessCount]
+        effect: [increaseBackoffDelay, resetSuccessCount],
       },
-      DISCONNECT: '@idle.initial'
+      DISCONNECT: '@idle.initial',
     })
     machine.onEnter('@idle.*', resetSuccessCount).addTransitions('@idle.*', {
       CONNECT: (_, ctx) =>
         // If we still have a known token, try to reconnect to the socket directly,
         // otherwise, try to obtain a new token
-        ctx.token !== null ? '@connecting.busy' : '@auth.busy'
+        ctx.token !== null ? '@connecting.busy' : '@auth.busy',
     })
     machine
       .addTransitions('@auth.backoff', {
         NAVIGATOR_ONLINE: {
           target: '@auth.busy',
-          effect: assign({ backoffDelay: RESET_DELAY })
-        }
+          effect: assign({ backoffDelay: RESET_DELAY }),
+        },
       })
       .addTimedTransition(
         '@auth.backoff',
@@ -1025,15 +1020,15 @@
           target: '@connecting.busy',
           effect: assign({
             token: okEvent.data,
-            backoffDelay: RESET_DELAY
-          })
+            backoffDelay: RESET_DELAY,
+          }),
         }),
         // Auth failed
         failedEvent => {
           if (failedEvent.reason instanceof StopRetrying) {
             return {
               target: '@idle.failed',
-              effect: log(2, failedEvent.reason.message)
+              effect: log(2, failedEvent.reason.message),
             }
           }
           return {
@@ -1047,8 +1042,8 @@
                     ? failedEvent.reason.message
                     : String(failedEvent.reason)
                 }`
-              )
-            ]
+              ),
+            ],
           }
         }
       )
@@ -1072,8 +1067,8 @@
       .addTransitions('@connecting.backoff', {
         NAVIGATOR_ONLINE: {
           target: '@connecting.busy',
-          effect: assign({ backoffDelay: RESET_DELAY })
-        }
+          effect: assign({ backoffDelay: RESET_DELAY }),
+        },
       })
       .addTimedTransition(
         '@connecting.backoff',
@@ -1144,8 +1139,8 @@
           target: '@ok.connected',
           effect: assign({
             socket: okEvent.data,
-            backoffDelay: RESET_DELAY
-          })
+            backoffDelay: RESET_DELAY,
+          }),
         }),
         // If the WebSocket connection cannot be established
         failure => {
@@ -1153,13 +1148,13 @@
           if (err instanceof StopRetrying) {
             return {
               target: '@idle.failed',
-              effect: log(2, err.message)
+              effect: log(2, err.message),
             }
           }
           if (isCloseEvent(err) && err.code === 4999) {
             return {
               target: '@idle.failed',
-              effect: log(2, err.reason)
+              effect: log(2, err.reason),
             }
           }
           if (isCustomCloseEvent(err) && err.code !== 4001) {
@@ -1167,13 +1162,13 @@
               target: '@connecting.backoff',
               effect: [
                 increaseBackoffDelayAggressively,
-                logPrematureErrorOrCloseEvent(err)
-              ]
+                logPrematureErrorOrCloseEvent(err),
+              ],
             }
           }
           return {
             target: '@auth.backoff',
-            effect: [increaseBackoffDelay, logPrematureErrorOrCloseEvent(err)]
+            effect: [increaseBackoffDelay, logPrematureErrorOrCloseEvent(err)],
           }
         }
       )
@@ -1181,14 +1176,14 @@
       target: '@ok.awaiting-pong',
       effect: ctx => {
         ctx.socket?.send('ping')
-      }
+      },
     }
     machine
       .addTimedTransition('@ok.connected', HEARTBEAT_INTERVAL, sendHeartbeat)
       .addTransitions('@ok.connected', {
         NAVIGATOR_OFFLINE: sendHeartbeat,
         // Don't take the browser's word for it when it says it's offline. Do a ping/pong to make sure.
-        WINDOW_GOT_FOCUS: sendHeartbeat
+        WINDOW_GOT_FOCUS: sendHeartbeat,
       })
     machine
       .onEnter('@ok.*', ctx => {
@@ -1214,7 +1209,7 @@
         effect: log(
           1,
           'Received no pong from server, assume implicit connection loss.'
-        )
+        ),
       })
       .addTransitions('@ok.*', {
         // When a socket receives an error, this can cause the closing of the
@@ -1226,20 +1221,20 @@
           }
           return {
             target: '@connecting.backoff',
-            effect: increaseBackoffDelay
+            effect: increaseBackoffDelay,
           }
         },
         EXPLICIT_SOCKET_CLOSE: e => {
           if (e.event.code === 4999) {
             return {
               target: '@idle.failed',
-              effect: logPermanentClose
+              effect: logPermanentClose,
             }
           }
           if (e.event.code === 4001) {
             return {
               target: '@auth.backoff',
-              effect: [increaseBackoffDelay, logCloseEvent(e.event)]
+              effect: [increaseBackoffDelay, logCloseEvent(e.event)],
             }
           }
           if (isCustomCloseEvent(e.event)) {
@@ -1251,15 +1246,15 @@
                 () => {
                   const err = new LiveblocksError(e.event.reason, e.event.code)
                   onLiveblocksError.notify(err)
-                }
-              ]
+                },
+              ],
             }
           }
           return {
             target: '@connecting.backoff',
-            effect: [increaseBackoffDelay, logCloseEvent(e.event)]
+            effect: [increaseBackoffDelay, logCloseEvent(e.event)],
           }
-        }
+        },
       })
     if (typeof document !== 'undefined') {
       const doc = typeof document !== 'undefined' ? document : void 0
@@ -1305,8 +1300,8 @@
         didConnect,
         didDisconnect,
         onMessage: onMessage.observable,
-        onLiveblocksError: onLiveblocksError.observable
-      }
+        onLiveblocksError: onLiveblocksError.observable,
+      },
     }
   }
   var ManagedSocket = class {
@@ -1726,8 +1721,8 @@
           id: this._id,
           parentId,
           parentKey,
-          data: this.data
-        }
+          data: this.data,
+        },
       ]
     }
     /** @internal */
@@ -1739,7 +1734,7 @@
         type: 3,
         parentId: nn(this.parent.node._id, 'Parent node expected to have ID'),
         parentKey: this.parent.key,
-        data: this.data
+        data: this.data,
       }
     }
     /** @internal */
@@ -1760,7 +1755,7 @@
         type: 'Json',
         id: this._id ?? nanoid(),
         key,
-        payload: this._data
+        payload: this._data,
       }
     }
     /** @internal */
@@ -1814,7 +1809,7 @@
         opId: pool?.generateOpId(),
         type: 2,
         parentId,
-        parentKey
+        parentKey,
       }
       ops.push(op)
       for (const item of this._items) {
@@ -1874,9 +1869,9 @@
           this._items[indexOfItemWithSamePosition] = child
           return {
             modified: makeUpdate(this, [
-              setDelta(indexOfItemWithSamePosition, child)
+              setDelta(indexOfItemWithSamePosition, child),
             ]),
-            reverse: []
+            reverse: [],
           }
         } else {
           this._implicitlyDeletedItems.add(itemWithSamePosition)
@@ -1890,7 +1885,7 @@
           }
           return {
             modified: makeUpdate(this, delta),
-            reverse: []
+            reverse: [],
           }
         }
       } else {
@@ -1905,7 +1900,7 @@
         updates.push(insertDelta(this._indexOfPosition(key), child))
         return {
           reverse: [],
-          modified: makeUpdate(this, updates)
+          modified: makeUpdate(this, updates),
         }
       }
     }
@@ -1937,7 +1932,7 @@
         if (existingItem._parentKey === op.parentKey) {
           return {
             modified: delta.length > 0 ? makeUpdate(this, delta) : false,
-            reverse: []
+            reverse: [],
           }
         }
         if (indexOfItemWithSamePosition !== -1) {
@@ -1956,7 +1951,7 @@
         }
         return {
           modified: delta.length > 0 ? makeUpdate(this, delta) : false,
-          reverse: []
+          reverse: [],
         }
       } else {
         const orphan = this._pool.getNode(op.id)
@@ -1971,9 +1966,9 @@
               indexOfItemWithSamePosition === -1
                 ? insertDelta(recreatedItemIndex, orphan)
                 : setDelta(recreatedItemIndex, orphan),
-              ...delta
+              ...delta,
             ]),
-            reverse: []
+            reverse: [],
           }
         } else {
           if (indexOfItemWithSamePosition !== -1) {
@@ -1989,9 +1984,9 @@
               indexOfItemWithSamePosition === -1
                 ? insertDelta(newIndex, newItem)
                 : setDelta(newIndex, newItem),
-              ...delta
+              ...delta,
             ]),
-            reverse: []
+            reverse: [],
           }
         }
       }
@@ -2027,7 +2022,7 @@
       const { newItem, newIndex } = this._createAttachItemAndSort(op, key)
       return {
         modified: makeUpdate(this, [insertDelta(newIndex, newItem)]),
-        reverse: []
+        reverse: [],
       }
     }
     /** @internal */
@@ -2038,7 +2033,7 @@
       if (existingItem) {
         if (existingItem._parentKey === key) {
           return {
-            modified: false
+            modified: false,
           }
         } else {
           const oldPositionIndex = this._items.indexOf(existingItem)
@@ -2053,9 +2048,9 @@
           }
           return {
             modified: makeUpdate(this, [
-              moveDelta(oldPositionIndex, newIndex, existingItem)
+              moveDelta(oldPositionIndex, newIndex, existingItem),
             ]),
-            reverse: []
+            reverse: [],
           }
         }
       } else {
@@ -2067,7 +2062,7 @@
           const newIndex = this._indexOfPosition(key)
           return {
             modified: makeUpdate(this, [insertDelta(newIndex, orphan)]),
-            reverse: []
+            reverse: [],
           }
         } else {
           if (itemIndexAtPosition !== -1) {
@@ -2076,7 +2071,7 @@
           const { newItem, newIndex } = this._createAttachItemAndSort(op, key)
           return {
             modified: makeUpdate(this, [insertDelta(newIndex, newItem)]),
-            reverse: []
+            reverse: [],
           }
         }
       }
@@ -2102,7 +2097,7 @@
       const newIndex = this._indexOfPosition(newKey)
       return {
         modified: makeUpdate(this, [insertDelta(newIndex, child)]),
-        reverse: [{ type: 5, id }]
+        reverse: [{ type: 5, id }],
       }
     }
     /** @internal */
@@ -2134,7 +2129,7 @@
         }
         return {
           modified: makeUpdate(this, delta),
-          reverse
+          reverse,
         }
       } else {
         this._insertAndSort(child)
@@ -2142,7 +2137,7 @@
         const newIndex = this._indexOfPosition(newKey)
         return {
           reverse: [{ type: 5, id }],
-          modified: makeUpdate(this, [insertDelta(newIndex, child)])
+          modified: makeUpdate(this, [insertDelta(newIndex, child)]),
         }
       }
     }
@@ -2182,7 +2177,7 @@
         const indexToDelete = this._items.indexOf(child)
         if (indexToDelete === -1) {
           return {
-            modified: false
+            modified: false,
           }
         }
         this._items.splice(indexToDelete, 1)
@@ -2190,7 +2185,7 @@
         child._detach()
         return {
           modified: makeUpdate(this, [deleteDelta(indexToDelete)]),
-          reverse
+          reverse,
         }
       }
       return { modified: false }
@@ -2204,13 +2199,13 @@
         const newIndex = this._items.indexOf(child)
         return {
           modified: makeUpdate(this, [insertDelta(newIndex, child)]),
-          reverse: []
+          reverse: [],
         }
       }
       const previousKey = child._parentKey
       if (newKey === previousKey) {
         return {
-          modified: false
+          modified: false,
         }
       }
       const existingItemIndex = this._indexOfPosition(newKey)
@@ -2221,14 +2216,14 @@
         const newIndex = this._items.indexOf(child)
         if (newIndex === previousIndex) {
           return {
-            modified: false
+            modified: false,
           }
         }
         return {
           modified: makeUpdate(this, [
-            moveDelta(previousIndex, newIndex, child)
+            moveDelta(previousIndex, newIndex, child),
           ]),
-          reverse: []
+          reverse: [],
         }
       } else {
         this._items[existingItemIndex]._setParentLink(
@@ -2241,14 +2236,14 @@
         const newIndex = this._items.indexOf(child)
         if (newIndex === previousIndex) {
           return {
-            modified: false
+            modified: false,
           }
         }
         return {
           modified: makeUpdate(this, [
-            moveDelta(previousIndex, newIndex, child)
+            moveDelta(previousIndex, newIndex, child),
           ]),
-          reverse: []
+          reverse: [],
         }
       }
     }
@@ -2267,12 +2262,12 @@
         child._setParentLink(this, newKey)
         this._insertAndSort(child)
         return {
-          modified: false
+          modified: false,
         }
       } else {
         if (newKey === previousKey) {
           return {
-            modified: false
+            modified: false,
           }
         }
         const previousIndex = this._items.indexOf(child)
@@ -2288,14 +2283,14 @@
         const newIndex = this._items.indexOf(child)
         if (previousIndex === newIndex) {
           return {
-            modified: false
+            modified: false,
           }
         } else {
           return {
             modified: makeUpdate(this, [
-              moveDelta(previousIndex, newIndex, child)
+              moveDelta(previousIndex, newIndex, child),
             ]),
-            reverse: []
+            reverse: [],
           }
         }
       }
@@ -2316,7 +2311,7 @@
       const newIndex = this._items.indexOf(child)
       if (previousIndex === newIndex) {
         return {
-          modified: false
+          modified: false,
         }
       }
       return {
@@ -2325,9 +2320,9 @@
           {
             type: 1,
             id: nn(child._id),
-            parentKey: previousKey
-          }
-        ]
+            parentKey: previousKey,
+          },
+        ],
       }
     }
     /** @internal */
@@ -2352,7 +2347,7 @@
       return {
         type: 1,
         parentId: nn(this.parent.node._id, 'Parent node expected to have ID'),
-        parentKey: this.parent.key
+        parentKey: this.parent.key,
       }
     }
     /**
@@ -2396,7 +2391,7 @@
           value._toOps(this._id, position, this._pool),
           [{ type: 5, id }],
           /* @__PURE__ */ new Map([
-            [this._id, makeUpdate(this, [insertDelta(index, value)])]
+            [this._id, makeUpdate(this, [insertDelta(index, value)])],
           ])
         )
       }
@@ -2442,7 +2437,7 @@
       this._sortItems()
       if (this._pool && this._id) {
         const storageUpdates = /* @__PURE__ */ new Map([
-          [this._id, makeUpdate(this, [moveDelta(index, targetIndex, item)])]
+          [this._id, makeUpdate(this, [moveDelta(index, targetIndex, item)])],
         ])
         this._pool.dispatch(
           [
@@ -2450,15 +2445,15 @@
               type: 1,
               id: nn(item._id),
               opId: this._pool.generateOpId(),
-              parentKey: position
-            }
+              parentKey: position,
+            },
           ],
           [
             {
               type: 1,
               id: nn(item._id),
-              parentKey: previousPosition
-            }
+              parentKey: previousPosition,
+            },
           ],
           storageUpdates
         )
@@ -2494,9 +2489,9 @@
               {
                 id: childRecordId,
                 opId: this._pool.generateOpId(),
-                type: 5
+                type: 5,
                 /* DELETE_CRDT */
-              }
+              },
             ],
             item._toOps(nn(this._id), item._getParentKeyOrThrow()),
             storageUpdates
@@ -2517,7 +2512,7 @@
             ops.push({
               type: 5,
               id: childId,
-              opId: this._pool.generateOpId()
+              opId: this._pool.generateOpId(),
             })
             reverseOps.push(
               ...item._toOps(nn(this._id), item._getParentKeyOrThrow())
@@ -2703,7 +2698,7 @@
         key,
         payload: this._items.map((item, index) =>
           item.toTreeNode(index.toString())
-        )
+        ),
       }
     }
     toImmutable() {
@@ -2727,7 +2722,7 @@
       if (result.done) {
         return {
           done: true,
-          value: void 0
+          value: void 0,
         }
       }
       const value = liveNodeToLson(result.value)
@@ -2738,27 +2733,27 @@
     return {
       node: liveList,
       type: 'LiveList',
-      updates: deltaUpdates
+      updates: deltaUpdates,
     }
   }
   function setDelta(index, item) {
     return {
       index,
       type: 'set',
-      item: item instanceof LiveRegister ? item.data : item
+      item: item instanceof LiveRegister ? item.data : item,
     }
   }
   function deleteDelta(index) {
     return {
       index,
-      type: 'delete'
+      type: 'delete',
     }
   }
   function insertDelta(index, item) {
     return {
       index,
       type: 'insert',
-      item: item instanceof LiveRegister ? item.data : item
+      item: item instanceof LiveRegister ? item.data : item,
     }
   }
   function moveDelta(previousIndex, index, item) {
@@ -2766,7 +2761,7 @@
       index,
       type: 'move',
       previousIndex,
-      item: item instanceof LiveRegister ? item.data : item
+      item: item instanceof LiveRegister ? item.data : item,
     }
   }
   function HACK_addIntentAndDeletedIdToOperation(ops, deletedId) {
@@ -2776,17 +2771,14 @@
         return {
           ...firstOp,
           intent: 'set',
-          deletedId
+          deletedId,
         }
       } else {
         return op
       }
     })
   }
-  var freeze = false
-    ? /* istanbul ignore next */
-      x => x
-    : Object.freeze
+  var freeze = false ? /* istanbul ignore next */ x => x : Object.freeze
   var LiveMap = class _LiveMap extends AbstractCrdt {
     constructor(entries2) {
       super()
@@ -2816,7 +2808,7 @@
         opId: pool?.generateOpId(),
         type: 7,
         parentId,
-        parentKey
+        parentKey,
       }
       ops.push(op)
       for (const [key, value] of this._map) {
@@ -2894,9 +2886,9 @@
         modified: {
           node: this,
           type: 'LiveMap',
-          updates: { [key]: { type: 'update' } }
+          updates: { [key]: { type: 'update' } },
         },
-        reverse
+        reverse,
       }
     }
     /**
@@ -2925,7 +2917,7 @@
       const storageUpdate = {
         node: this,
         type: 'LiveMap',
-        updates: { [parentKey]: { type: 'delete' } }
+        updates: { [parentKey]: { type: 'delete' } },
       }
       return { modified: storageUpdate, reverse }
     }
@@ -2939,7 +2931,7 @@
       return {
         type: 2,
         parentId: nn(this.parent.node._id, 'Parent node expected to have ID'),
-        parentKey: this.parent.key
+        parentKey: this.parent.key,
       }
     }
     /**
@@ -2976,7 +2968,7 @@
         storageUpdates.set(this._id, {
           node: this,
           type: 'LiveMap',
-          updates: { [key]: { type: 'update' } }
+          updates: { [key]: { type: 'update' } },
         })
         const ops = item._toOps(this._id, key, this._pool)
         this.unacknowledgedSet.set(key, nn(ops[0].opId))
@@ -3020,15 +3012,15 @@
         storageUpdates.set(thisId, {
           node: this,
           type: 'LiveMap',
-          updates: { [key]: { type: 'delete' } }
+          updates: { [key]: { type: 'delete' } },
         })
         this._pool.dispatch(
           [
             {
               type: 5,
               id: item._id,
-              opId: this._pool.generateOpId()
-            }
+              opId: this._pool.generateOpId(),
+            },
           ],
           item._toOps(thisId, key),
           storageUpdates
@@ -3050,16 +3042,16 @@
           if (iteratorValue.done) {
             return {
               done: true,
-              value: void 0
+              value: void 0,
             }
           }
           const entry = iteratorValue.value
           const key = entry[0]
           const value = liveNodeToLson(iteratorValue.value[1])
           return {
-            value: [key, value]
+            value: [key, value],
           }
-        }
+        },
       }
     }
     /**
@@ -3088,12 +3080,12 @@
           if (iteratorValue.done) {
             return {
               done: true,
-              value: void 0
+              value: void 0,
             }
           }
           const value = liveNodeToLson(iteratorValue.value)
           return { value }
-        }
+        },
       }
     }
     /**
@@ -3113,7 +3105,7 @@
         key,
         payload: Array.from(this._map.entries()).map(([key2, val]) =>
           val.toTreeNode(key2)
-        )
+        ),
       }
     }
     toImmutable() {
@@ -3185,7 +3177,7 @@
               opId,
               parentId,
               parentKey,
-              data: {}
+              data: {},
             }
           : // Root object
             { type: 4, id: this._id, opId, data: {} }
@@ -3265,8 +3257,8 @@
           {
             type: 3,
             id: thisId,
-            data: { [key]: previousValue }
-          }
+            data: { [key]: previousValue },
+          },
         ]
       }
       this._map.set(key, child)
@@ -3280,8 +3272,8 @@
         modified: {
           node: this,
           type: 'LiveObject',
-          updates: { [key]: { type: 'update' } }
-        }
+          updates: { [key]: { type: 'update' } },
+        },
       }
     }
     /** @internal */
@@ -3301,8 +3293,8 @@
           node: this,
           type: 'LiveObject',
           updates: {
-            [parentKey]: { type: 'delete' }
-          }
+            [parentKey]: { type: 'delete' },
+          },
         }
         return { modified: storageUpdate, reverse }
       }
@@ -3343,12 +3335,12 @@
           type: 0,
           parentId: this.parent.node._id,
           parentKey: this.parent.key,
-          data
+          data,
         }
       } else {
         return {
           type: 0,
-          data
+          data,
         }
       }
     }
@@ -3360,7 +3352,7 @@
       const reverseUpdate = {
         type: 3,
         id,
-        data: {}
+        data: {},
       }
       for (const key in op.data) {
         const oldValue = this._map.get(key)
@@ -3406,9 +3398,9 @@
             modified: {
               node: this,
               type: 'LiveObject',
-              updates: updateDelta
+              updates: updateDelta,
             },
-            reverse
+            reverse,
           }
         : { modified: false }
     }
@@ -3432,8 +3424,8 @@
           {
             type: 3,
             id,
-            data: { [key]: oldValue }
-          }
+            data: { [key]: oldValue },
+          },
         ]
       }
       this._map.delete(key)
@@ -3442,9 +3434,9 @@
         modified: {
           node: this,
           type: 'LiveObject',
-          updates: { [op.key]: { type: 'delete' } }
+          updates: { [op.key]: { type: 'delete' } },
         },
-        reverse
+        reverse,
       }
     }
     /**
@@ -3497,8 +3489,8 @@
           {
             type: 3,
             data: { [keyAsString]: oldValue },
-            id: this._id
-          }
+            id: this._id,
+          },
         ]
       }
       this._map.delete(keyAsString)
@@ -3507,7 +3499,7 @@
       storageUpdates.set(this._id, {
         node: this,
         type: 'LiveObject',
-        updates: { [key]: { type: 'delete' } }
+        updates: { [key]: { type: 'delete' } },
       })
       this._pool.dispatch(
         [
@@ -3515,8 +3507,8 @@
             type: 6,
             key: keyAsString,
             id: this._id,
-            opId: this._pool.generateOpId()
-          }
+            opId: this._pool.generateOpId(),
+          },
         ],
         reverse,
         storageUpdates
@@ -3553,7 +3545,7 @@
       const reverseUpdateOp = {
         id: this._id,
         type: 3,
-        data: {}
+        data: {},
       }
       const updateDelta = {}
       for (const key in patch) {
@@ -3597,14 +3589,14 @@
           opId,
           id: this._id,
           type: 3,
-          data: updatedProps
+          data: updatedProps,
         })
       }
       const storageUpdates = /* @__PURE__ */ new Map()
       storageUpdates.set(this._id, {
         node: this,
         type: 'LiveObject',
-        updates: updateDelta
+        updates: updateDelta,
       })
       this._pool.dispatch(ops, reverseOps, storageUpdates)
     }
@@ -3629,9 +3621,9 @@
                 type: 'Json',
                 id: `${nodeId}:${key2}`,
                 key: key2,
-                payload: value
+                payload: value,
               }
-        )
+        ),
       }
     }
     /** @internal */
@@ -3755,7 +3747,7 @@
       if (!newItems.get(id)) {
         ops.push({
           type: 5,
-          id
+          id,
         })
       }
     })
@@ -3770,7 +3762,7 @@
             ops.push({
               type: 3,
               id,
-              data: crdt.data
+              data: crdt.data,
             })
           }
         }
@@ -3778,7 +3770,7 @@
           ops.push({
             type: 1,
             id,
-            parentKey: nn(crdt.parentKey, 'Parent key must not be missing')
+            parentKey: nn(crdt.parentKey, 'Parent key must not be missing'),
           })
         }
       } else {
@@ -3789,7 +3781,7 @@
               id,
               parentId: crdt.parentId,
               parentKey: crdt.parentKey,
-              data: crdt.data
+              data: crdt.data,
             })
             break
           case 1:
@@ -3797,7 +3789,7 @@
               type: 2,
               id,
               parentId: crdt.parentId,
-              parentKey: crdt.parentKey
+              parentKey: crdt.parentKey,
             })
             break
           case 0:
@@ -3808,7 +3800,7 @@
                     id,
                     parentId: crdt.parentId,
                     parentKey: crdt.parentKey,
-                    data: crdt.data
+                    data: crdt.data,
                   }
                 : // Root object
                   { type: 4, id, data: crdt.data }
@@ -3819,7 +3811,7 @@
               type: 7,
               id,
               parentId: crdt.parentId,
-              parentKey: crdt.parentKey
+              parentKey: crdt.parentKey,
             })
             break
         }
@@ -3834,7 +3826,7 @@
     }
     return {
       ...second,
-      updates
+      updates,
     }
   }
   function mergeMapStorageUpdates(first, second) {
@@ -3844,14 +3836,14 @@
     }
     return {
       ...second,
-      updates
+      updates,
     }
   }
   function mergeListStorageUpdates(first, second) {
     const updates = first.updates
     return {
       ...second,
-      updates: updates.concat(second.updates)
+      updates: updates.concat(second.updates),
     }
   }
   function mergeStorageUpdates(first, second) {
@@ -3914,17 +3906,17 @@
     }
     return {
       raw: rawTokenString,
-      parsed: payload
+      parsed: payload,
     }
   }
   function asArrayWithLegacyMethods(arr) {
     Object.defineProperty(arr, 'count', {
       value: arr.length,
-      enumerable: false
+      enumerable: false,
     })
     Object.defineProperty(arr, 'toArray', {
       value: () => arr,
-      enumerable: false
+      enumerable: false,
     })
     return freeze(arr)
   }
@@ -4027,7 +4019,7 @@
         connectionId,
         id: metaUserId,
         info: metaUserInfo,
-        isReadOnly: metaIsReadonly
+        isReadOnly: metaIsReadonly,
       })
       if (this._presences[connectionId] !== void 0) {
         this._invalidateUser(connectionId)
@@ -4130,7 +4122,7 @@
       type: 'User',
       id: `${user.connectionId}`,
       key,
-      payload: user
+      payload: user,
     }
   }
   function createRoom(options, config) {
@@ -4151,7 +4143,7 @@
       createSocket: makeCreateSocketDelegateForRoom(
         config.liveblocksServer,
         config.polyfills?.WebSocket
-      )
+      ),
     }
     const managedSocket = new ManagedSocket(
       delegates,
@@ -4165,10 +4157,10 @@
           // Queue up the initial presence message as a Full Presence™ update
           {
             type: 'full',
-            data: initialPresence
+            data: initialPresence,
           },
         messages: [],
-        storageOperations: []
+        storageOperations: [],
       },
       sessionInfo: new ValueRef(null),
       me: new PatchableRef(initialPresence),
@@ -4186,7 +4178,7 @@
       activeBatch: null,
       unacknowledgedOps: /* @__PURE__ */ new Map(),
       // Debug
-      opStackTraces: true ? /* @__PURE__ */ new Map() : void 0
+      opStackTraces: true ? /* @__PURE__ */ new Map() : void 0,
     }
     const doNotBatchUpdates = cb => cb()
     const batchUpdates = config.unstable_batchedUpdates ?? doNotBatchUpdates
@@ -4199,7 +4191,7 @@
           userId: token.id,
           // NOTE: In the future, these fields will get assigned in the connection phase
           actor: token.actor,
-          isReadOnly: isStorageReadOnly(token.scopes)
+          isReadOnly: isStorageReadOnly(token.scopes),
         })
         lastToken = token
       }
@@ -4248,7 +4240,7 @@
           // Because context.me.current is a readonly object, we'll have to
           // make a copy here. Otherwise, type errors happen later when
           // "patching" my presence.
-          { ...context.me.current }
+          { ...context.me.current },
       }
       context.idFactory = makeIdFactory(sessionInfo.actor)
       if (_getStorage$ !== null) {
@@ -4323,7 +4315,7 @@
             'Cannot write to storage with a read only user, please ensure the user has write permissions'
           )
         }
-      }
+      },
     }
     const eventHub = {
       connection: makeEventSource(),
@@ -4340,7 +4332,7 @@
       history: makeEventSource(),
       storageDidLoad: makeEventSource(),
       storageStatus: makeEventSource(),
-      ydoc: makeEventSource()
+      ydoc: makeEventSource(),
     }
     function sendMessages(messageOrMessages) {
       const message = JSON.stringify(messageOrMessages)
@@ -4376,7 +4368,7 @@
             id: info.userId,
             info: info.userInfo,
             presence: me,
-            isReadOnly: info.isReadOnly
+            isReadOnly: info.isReadOnly,
           }
         : null
     })
@@ -4438,7 +4430,7 @@
       {
         storageUpdates = /* @__PURE__ */ new Map(),
         presence = false,
-        others: otherEvents = []
+        others: otherEvents = [],
       },
       batchedUpdatesWrapper
     ) {
@@ -4473,7 +4465,7 @@
       const output = {
         reverse: [],
         storageUpdates: /* @__PURE__ */ new Map(),
-        presence: false
+        presence: false,
       }
       const createdNodeIds = /* @__PURE__ */ new Set()
       const ops = rawOps.map(op => {
@@ -4487,7 +4479,7 @@
         if (op.type === 'presence') {
           const reverse = {
             type: 'presence',
-            data: {}
+            data: {},
           }
           for (const key in op.data) {
             reverse.data[key] = context.me.current[key]
@@ -4540,8 +4532,8 @@
         reverse: output.reverse,
         updates: {
           storageUpdates: output.storageUpdates,
-          presence: output.presence
-        }
+          presence: output.presence,
+        },
       }
     }
     function applyOp(op, source) {
@@ -4599,7 +4591,7 @@
       if (context.buffer.presenceUpdates === null) {
         context.buffer.presenceUpdates = {
           type: 'partial',
-          data: {}
+          data: {},
         }
       }
       for (const key in patch) {
@@ -4615,7 +4607,7 @@
         if (options2?.addToHistory) {
           context.activeBatch.reverseOps.unshift({
             type: 'presence',
-            data: oldValues
+            data: oldValues,
           })
         }
         context.activeBatch.updates.presence = true
@@ -4664,7 +4656,7 @@
         return {
           type: 'update',
           updates: message.data,
-          user
+          user,
         }
       } else {
         return void 0
@@ -4718,7 +4710,7 @@
       context.buffer.messages.push({
         type: 100,
         data: context.me.current,
-        targetActor: message.actor
+        targetActor: message.actor,
       })
       flushNowOrSoon()
       const user = context.others.getUser(message.actor)
@@ -4749,7 +4741,7 @@
       const result = applyOps(ops, true)
       messages.push({
         type: 201,
-        ops: result.ops
+        ops: result.ops,
       })
       notify(result.updates, batchedUpdatesWrapper)
       sendMessages(messages)
@@ -4764,7 +4756,7 @@
       }
       const updates = {
         storageUpdates: /* @__PURE__ */ new Map(),
-        others: []
+        others: [],
       }
       batchUpdates(() => {
         for (const message of messages) {
@@ -4786,7 +4778,7 @@
             case 103: {
               eventHub.customEvent.notify({
                 connectionId: message.actor,
-                event: message.event
+                event: message.event,
               })
               break
             }
@@ -4878,7 +4870,7 @@ ${Array.from(traces).join('\n\n')}`
           lastFlushedAt: now,
           messages: [],
           storageOperations: [],
-          presenceUpdates: null
+          presenceUpdates: null,
         }
       } else {
         clearTimeout(context.buffer.flushTimerID)
@@ -4899,11 +4891,11 @@ ${Array.from(traces).join('\n\n')}`
                 // a Full Presence™ update message (not a patch), which will get
                 // interpreted by other clients as such.
                 targetActor: -1,
-                data: context.buffer.presenceUpdates.data
+                data: context.buffer.presenceUpdates.data,
               }
             : {
                 type: 100,
-                data: context.buffer.presenceUpdates.data
+                data: context.buffer.presenceUpdates.data,
               }
         )
       }
@@ -4913,7 +4905,7 @@ ${Array.from(traces).join('\n\n')}`
       if (context.buffer.storageOperations.length > 0) {
         messages.push({
           type: 201,
-          ops: context.buffer.storageOperations
+          ops: context.buffer.storageOperations,
         })
       }
       return messages
@@ -4921,14 +4913,14 @@ ${Array.from(traces).join('\n\n')}`
     function updateYDoc(update) {
       context.buffer.messages.push({
         type: 301,
-        update
+        update,
       })
       flushNowOrSoon()
     }
     function broadcastEvent(
       event,
       options2 = {
-        shouldQueueEventIfNotReady: false
+        shouldQueueEventIfNotReady: false,
       }
     ) {
       if (
@@ -4939,7 +4931,7 @@ ${Array.from(traces).join('\n\n')}`
       }
       context.buffer.messages.push({
         type: 103,
-        event
+        event,
       })
       flushNowOrSoon()
     }
@@ -4958,7 +4950,7 @@ ${Array.from(traces).join('\n\n')}`
         )
       ) {
         messages.push({
-          type: 200
+          type: 200,
           /* FETCH_STORAGE */
         })
       }
@@ -4988,18 +4980,18 @@ ${Array.from(traces).join('\n\n')}`
     async function getStorage() {
       if (context.root !== void 0) {
         return Promise.resolve({
-          root: context.root
+          root: context.root,
         })
       }
       await startLoadingStorage()
       return {
-        root: nn(context.root)
+        root: nn(context.root),
       }
     }
     function fetchYDoc(vector) {
       context.buffer.messages.push({
         type: 300,
-        vector
+        vector,
       })
       flushNowOrSoon()
     }
@@ -5058,9 +5050,9 @@ ${Array.from(traces).join('\n\n')}`
           updates: {
             storageUpdates: /* @__PURE__ */ new Map(),
             presence: false,
-            others: []
+            others: [],
           },
-          reverseOps: []
+          reverseOps: [],
         }
         try {
           returnValue = callback()
@@ -5127,7 +5119,7 @@ ${Array.from(traces).join('\n\n')}`
       history: eventHub.history.observable,
       storageDidLoad: eventHub.storageDidLoad.observable,
       storageStatus: eventHub.storageStatus.observable,
-      ydoc: eventHub.ydoc.observable
+      ydoc: eventHub.ydoc.observable,
     }
     return Object.defineProperty(
       {
@@ -5153,7 +5145,7 @@ ${Array.from(traces).join('\n\n')}`
             // These exist only for our E2E testing app
             explicitClose: (event) => managedSocket._privateSendMachineEvent({ type: "EXPLICIT_SOCKET_CLOSE", event }),
             implicitClose: () => managedSocket._privateSendMachineEvent({ type: "NAVIGATOR_OFFLINE" })
-          }
+          },
         },
         id: config.roomId,
         subscribe: makeClassicSubscribeFn(events),
@@ -5173,7 +5165,7 @@ ${Array.from(traces).join('\n\n')}`
           canUndo,
           canRedo,
           pause: pauseHistory,
-          resume: resumeHistory
+          resume: resumeHistory,
         },
         fetchYDoc,
         getStorage,
@@ -5187,7 +5179,7 @@ ${Array.from(traces).join('\n\n')}`
         getSelf: () => self.current,
         // Presence
         getPresence: () => context.me.current,
-        getOthers: () => context.others.current
+        getOthers: () => context.others.current,
       },
       // Explictly make the __internal field non-enumerable, to avoid aggressive
       // freezing when used with Immer
@@ -5308,9 +5300,9 @@ ${Array.from(traces).join('\n\n')}`
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${token}`
+        Authorization: `Bearer ${token}`,
       },
-      body: message
+      body: message,
     })
   }
   function makeAuthDelegateForRoom(roomId, authentication, fetchPolyfill) {
@@ -5325,7 +5317,7 @@ ${Array.from(traces).join('\n\n')}`
         }
         return fetchAuthEndpoint(fetcher, authentication.url, {
           room: roomId,
-          publicApiKey: authentication.publicApiKey
+          publicApiKey: authentication.publicApiKey,
         }).then(({ token }) => parseAuthToken(token))
       }
     } else if (authentication.type === 'private') {
@@ -5336,7 +5328,7 @@ ${Array.from(traces).join('\n\n')}`
           )
         }
         return fetchAuthEndpoint(fetcher, authentication.url, {
-          room: roomId
+          room: roomId,
         }).then(({ token }) => parseAuthToken(token))
       }
     } else if (authentication.type === 'custom') {
@@ -5374,11 +5366,11 @@ ${Array.from(traces).join('\n\n')}`
     const res = await fetch2(endpoint, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
       // Credentials are needed to support authentication with cookies
       credentials: 'include',
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     })
     if (!res.ok) {
       const reason = `${
@@ -5449,7 +5441,7 @@ ${Array.from(traces).join('\n\n')}`
       const newRoom = createRoom(
         {
           initialPresence: options2.initialPresence ?? {},
-          initialStorage: options2.initialStorage
+          initialStorage: options2.initialStorage,
         },
         {
           roomId,
@@ -5465,7 +5457,7 @@ ${Array.from(traces).join('\n\n')}`
             clientOptions,
             roomId
           ),
-          unstable_fallbackToHTTP: !!clientOptions.unstable_fallbackToHTTP
+          unstable_fallbackToHTTP: !!clientOptions.unstable_fallbackToHTTP,
         }
       )
       rooms.set(roomId, newRoom)
@@ -5496,7 +5488,7 @@ ${Array.from(traces).join('\n\n')}`
     return {
       getRoom,
       enter,
-      leave
+      leave,
     }
   }
   function checkBounds(option, value, min, max, recommendedMin) {
@@ -5541,18 +5533,18 @@ ${Array.from(traces).join('\n\n')}`
       return {
         type: 'public',
         publicApiKey,
-        url: buildLiveblocksPublicAuthorizeEndpoint(clientOptions, roomId)
+        url: buildLiveblocksPublicAuthorizeEndpoint(clientOptions, roomId),
       }
     }
     if (typeof authEndpoint === 'string') {
       return {
         type: 'private',
-        url: authEndpoint
+        url: authEndpoint,
       }
     } else if (typeof authEndpoint === 'function') {
       return {
         type: 'custom',
-        callback: authEndpoint
+        callback: authEndpoint,
       }
     } else if (authEndpoint !== void 0) {
       throw new Error(
@@ -5598,7 +5590,7 @@ ${Array.from(traces).join('\n\n')}`
     window.reactions.remoteReactions = window.reactions.remoteReactions.filter(
       reaction => {
         const delta =
-          (/* @__PURE__ */ new Date().getTime() - reaction.timestamp) / 1e3
+          /* @__PURE__ */ (new Date().getTime() - reaction.timestamp) / 1e3
         return delta < 2 + 2
       }
     )
@@ -5617,17 +5609,17 @@ ${Array.from(traces).join('\n\n')}`
   }
   var client = createClient({
     publicApiKey:
-      'pk_prod_nQme4lxwwAyBuCvk2CQP0Tve9kBh1KxeN_FUdQQqrc24qH9qYA2anmqOToNCpFyA'
+      'pk_prod_nQme4lxwwAyBuCvk2CQP0Tve9kBh1KxeN_FUdQQqrc24qH9qYA2anmqOToNCpFyA',
   })
   function run() {
     const room = client.enter('javascript-todo-app', {
-      initialPresence: {}
+      initialPresence: {},
     })
     window.reactions = {
       react: void 0,
       remoteReactions: [],
       getStartingAngleForReaction,
-      generateRandomCurveForReaction
+      generateRandomCurveForReaction,
     }
     window.reactions.react = id => {
       let emoji = ''
@@ -5658,7 +5650,7 @@ ${Array.from(traces).join('\n\n')}`
           shown: false,
           timestamp: /* @__PURE__ */ new Date().getTime(),
           curve: generateRandomCurveForReaction(),
-          startingAngle: getStartingAngleForReaction()
+          startingAngle: getStartingAngleForReaction(),
         })
       }
     })

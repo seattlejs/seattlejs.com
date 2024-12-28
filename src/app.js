@@ -37,19 +37,19 @@ const getStartingAngleForReaction = () => {
 
 const client = createClient({
   publicApiKey:
-    'pk_prod_nQme4lxwwAyBuCvk2CQP0Tve9kBh1KxeN_FUdQQqrc24qH9qYA2anmqOToNCpFyA'
+    'pk_prod_nQme4lxwwAyBuCvk2CQP0Tve9kBh1KxeN_FUdQQqrc24qH9qYA2anmqOToNCpFyA',
 })
 
 function run() {
   const room = client.enter('javascript-todo-app', {
-    initialPresence: {}
+    initialPresence: {},
   })
 
   window.reactions = {
     react: undefined,
     remoteReactions: [],
     getStartingAngleForReaction,
-    generateRandomCurveForReaction
+    generateRandomCurveForReaction,
   }
 
   window.reactions.react = id => {
@@ -85,7 +85,7 @@ function run() {
         shown: false,
         timestamp: new Date().getTime(),
         curve: generateRandomCurveForReaction(),
-        startingAngle: getStartingAngleForReaction()
+        startingAngle: getStartingAngleForReaction(),
       })
     }
   })
