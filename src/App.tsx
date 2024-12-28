@@ -18,48 +18,48 @@ import volunteerGuidePath from './routes/volunteer-guide.md'
 import volunteerPath from './routes/volunteer.md'
 import welcomePath from './routes/welcome.md'
 
-import { renderMarkdownRoute } from './utils/renderMarkdownRoute'
+import { createMarkdownRoute } from './utils/createMarkdownRoute'
 
 const routes = [
   {
     url: '/about-us',
-    component: lazy(() => renderMarkdownRoute(aboutUsPath)),
+    component: lazy(() => createMarkdownRoute(aboutUsPath)),
   },
   {
     url: './conf/promo-info',
-    component: lazy(() => renderMarkdownRoute(confPromoInfoPath)),
+    component: lazy(() => createMarkdownRoute(confPromoInfoPath)),
   },
   {
     url: '/conf/speaker-info',
-    component: lazy(() => renderMarkdownRoute(confSpeakerInfoPath)),
+    component: lazy(() => createMarkdownRoute(confSpeakerInfoPath)),
   },
   {
     url: '/code-of-conduct',
-    component: lazy(() => renderMarkdownRoute(codeOfConductPath)),
+    component: lazy(() => createMarkdownRoute(codeOfConductPath)),
   },
   {
     url: '/join',
-    component: lazy(() => renderMarkdownRoute(joinPath)),
+    component: lazy(() => createMarkdownRoute(joinPath)),
   },
   {
     url: '/signup-next-steps',
-    component: lazy(() => renderMarkdownRoute(signupNextStepsPath)),
+    component: lazy(() => createMarkdownRoute(signupNextStepsPath)),
   },
   {
     url: '/speak',
-    component: lazy(() => renderMarkdownRoute(speakPath)),
+    component: lazy(() => createMarkdownRoute(speakPath)),
   },
   {
     url: '/volunteer-guide',
-    component: lazy(() => renderMarkdownRoute(volunteerGuidePath)),
+    component: lazy(() => createMarkdownRoute(volunteerGuidePath)),
   },
   {
     url: '/volunteer',
-    component: lazy(() => renderMarkdownRoute(volunteerPath)),
+    component: lazy(() => createMarkdownRoute(volunteerPath)),
   },
   {
     url: '/welcome',
-    component: lazy(() => renderMarkdownRoute(welcomePath)),
+    component: lazy(() => createMarkdownRoute(welcomePath)),
   },
 ]
 
