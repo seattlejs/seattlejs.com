@@ -22,59 +22,61 @@ header a {
   border: 1px solid #fff;
 }
 
-nav {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-}
+header {
+  nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+  }
 
-nav > .nav-toggler {
-  grid-column: -2;
-  padding: 4px 12px;
-  background-color: transparent;
-  border: 1px solid #fff;
-  border-radius: 6px;
-  cursor: pointer;
-}
+  nav > .nav-toggler {
+    grid-column: -2;
+    padding: 4px 12px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+  }
 
-.nav-toggler > svg {
-  display: block;
-  height: 24px;
-}
+  .nav-toggler > svg {
+    display: block;
+    height: 24px;
+  }
 
-ul {
-  grid-row: 2;
-  grid-column: 1 / -1;
-  display: none;
-  margin-top: 8px;
-}
+  ul {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    display: none;
+    margin-top: 8px;
+  }
 
-.nav-toggler[aria-expanded='true'] + #nav-links {
-  display: block;
-}
+  .nav-toggler[aria-expanded='true'] + #nav-links {
+    display: block;
+  }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 8px 0 0 0;
-}
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+  }
 
-a {
-  padding: 8px;
-}
+  a {
+    padding: 8px;
+  }
 
-nav a:visited {
-  color: #fff;
-}
+  nav a:visited {
+    color: #fff;
+  }
 
-a:hover {
-  text-decoration: underline;
-}
+  a:hover {
+    text-decoration: underline;
+  }
 
-a.special {
-  display: inline-block;
-  background-color: #f26c57;
-  border-radius: 4px;
-  padding: 8px;
+  a.special {
+    display: inline-block;
+    background-color: #f26c57;
+    border-radius: 4px;
+    padding: 8px;
+  }
 }
 
 #subheader {
@@ -84,24 +86,26 @@ a.special {
 }
 
 @media only screen and (min-width: 768px) {
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80vw;
-    margin: 0 auto;
-  }
+  header {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80vw;
+      margin: 0 auto;
+    }
 
-  nav .nav-toggler {
-    display: none;
-  }
+    nav .nav-toggler {
+      display: none;
+    }
 
-  /* Always show the nav menu on desktop */
-  .nav-toggler[aria-expanded='true'] + #nav-links,
-  .nav-toggler[aria-expanded='false'] + #nav-links,
-  #nav-links {
-    display: flex;
-    gap: 24px;
-    margin: 0;
+    /* Always show the nav menu on desktop */
+    .nav-toggler[aria-expanded='true'] + #nav-links,
+    .nav-toggler[aria-expanded='false'] + #nav-links,
+    #nav-links {
+      display: flex;
+      gap: 24px;
+      margin: 0;
+    }
   }
 }

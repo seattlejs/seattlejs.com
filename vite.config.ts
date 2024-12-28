@@ -6,4 +6,7 @@ export default defineConfig({
   publicDir: 'public',
   plugins: [preact()],
   assetsInclude: ['**/*.md'],
+  server: {
+    port: 3333,
+  },
 })

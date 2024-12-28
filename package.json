@@ -23,7 +23,7 @@
   },
   "scripts": {
     "build": "vite build",
-    "serve": "vite preview",
+    "serve": "vite preview --port 3333",
     "start": "vite",
     "lint": "npm run tsc && npm run check-format",
     "eslint": "eslint src/**/*.{js,jsx,ts,tsx}",

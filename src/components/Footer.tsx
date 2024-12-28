@@ -1,14 +1,6 @@
 import { memo } from '../utils/memo'
 import './Footer.css'
 
-{
-  /* <script
-  src="https://kit.fontawesome.com/95fd764ad0.js"
-  crossorigin="anonymous"
-  async
-></script> */
-}
-
 const Footer = memo(() => {
   return (
     <footer>
