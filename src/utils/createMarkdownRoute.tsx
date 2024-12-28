@@ -2,7 +2,7 @@ import { memo } from './memo'
 import PageLayout from '../components/PageLayout'
 
 export async function createMarkdownRoute(
-  markdownPath: string
+  markdownPath: string,
 ): Promise<preact.ComponentType> {
   const [frontMatter, marked] = await Promise.all([
     import('front-matter'),

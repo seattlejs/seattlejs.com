@@ -7,10 +7,10 @@
     typeof globalThis !== 'undefined'
       ? globalThis
       : typeof window !== 'undefined'
-      ? window
-      : typeof global !== 'undefined'
-      ? global
-      : {}
+        ? window
+        : typeof global !== 'undefined'
+          ? global
+          : {}
   var crossLinkedDocs = 'https://liveblocks.io/docs/errors/cross-linked'
   var dupesDocs = 'https://liveblocks.io/docs/errors/dupes'
   var SPACE = ' '
@@ -53,7 +53,7 @@
           `- ${pkgName} is at ${pkgVersion}`,
           '',
           'Always upgrade all Liveblocks packages to the same version number.',
-        ].join('\n')
+        ].join('\n'),
       )
     }
   }
@@ -291,7 +291,7 @@
             break
           }
         }
-      })
+      }),
     )
   }
   function unlinkDevTools(roomId) {
@@ -327,7 +327,7 @@
             badge,
             bold,
             message,
-            ...args
+            ...args,
           )
   }
   var warnWithTitle = wrapWithTitle('warn')
@@ -529,7 +529,7 @@
           // TODO We _currently_ don't support multiple .onEnters() for the same
           // state, but this is not a fundamental limitation. Just not
           // implemented yet. If we wanted to, we could make this an array.
-          `enter/exit function for ${nameOrPattern} already exists`
+          `enter/exit function for ${nameOrPattern} already exists`,
         )
       }
       this.enterFns.set(nameOrPattern, enterFn)
@@ -550,7 +550,7 @@
             if (!cancelled) {
               this.transition({ type: 'ASYNC_ERROR', reason }, onError)
             }
-          }
+          },
         )
         return () => {
           cancelled = true
@@ -606,7 +606,7 @@
         for (const [type, target_] of Object.entries(mapping)) {
           if (map.has(type)) {
             throw new Error(
-              `Trying to set transition "${type}" on "${srcState}" (via "${nameOrPattern}"), but a transition already exists there.`
+              `Trying to set transition "${type}" on "${srcState}" (via "${nameOrPattern}"), but a transition already exists there.`,
             )
           }
           const target = target_
@@ -673,7 +673,7 @@
     enter(levels) {
       const enterPatterns = patterns(
         this.currentState,
-        levels ?? this.currentState.split('.').length + 1
+        levels ?? this.currentState.split('.').length + 1,
       )
       this.currentContext.allowPatching(patchableContext => {
         for (const pattern of enterPatterns) {
@@ -780,7 +780,7 @@
           .map(function (c) {
             return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)
           })
-          .join('')
+          .join(''),
       )
       return decodedValue
     } catch (err) {
@@ -894,7 +894,7 @@
         warn(
           isCloseEvent(e)
             ? `${conn} closed prematurely (code: ${e.code}). Retrying in ${ctx.backoffDelay}ms.`
-            : `${conn} could not be established.`
+            : `${conn} could not be established.`,
         )
       }
     }
@@ -902,13 +902,13 @@
   function logCloseEvent(event) {
     return ctx => {
       warn(
-        `Connection to Liveblocks websocket server closed (code: ${event.code}). Retrying in ${ctx.backoffDelay}ms.`
+        `Connection to Liveblocks websocket server closed (code: ${event.code}). Retrying in ${ctx.backoffDelay}ms.`,
       )
     }
   }
   var logPermanentClose = log(
     1,
-    "Connection to WebSocket closed permanently. Won't retry."
+    "Connection to WebSocket closed permanently. Won't retry.",
   )
   function isCloseEvent(error3) {
     return !(error3 instanceof Error) && error3.type === 'close'
@@ -923,16 +923,16 @@
         `${
           /* @__PURE__ */ ((new Date().getTime() - start) / 1e3).toFixed(2)
         } [FSM #${machine.id}]`,
-        ...args
+        ...args,
       )
     }
     const unsubs = [
       machine.events.didReceiveEvent.subscribe(e => log2(`Event ${e.type}`)),
       machine.events.willTransition.subscribe(({ from, to }) =>
-        log2('Transitioning', from, '\u2192', to)
+        log2('Transitioning', from, '\u2192', to),
       ),
       machine.events.didIgnoreEvent.subscribe(e =>
-        log2('Ignored event', e.type, e, "(current state won't handle it)")
+        log2('Ignored event', e.type, e, "(current state won't handle it)"),
       ),
       // machine.events.willExitState.subscribe((s) => log("Exiting state", s)),
       // machine.events.didEnterState.subscribe((s) => log("Entering state", s)),
@@ -1010,7 +1010,7 @@
       .addTimedTransition(
         '@auth.backoff',
         ctx => ctx.backoffDelay,
-        '@auth.busy'
+        '@auth.busy',
       )
       .onEnterAsync(
         '@auth.busy',
@@ -1041,11 +1041,11 @@
                   failedEvent.reason instanceof Error
                     ? failedEvent.reason.message
                     : String(failedEvent.reason)
-                }`
+                }`,
               ),
             ],
           }
-        }
+        },
       )
     const onSocketError = event =>
       machine.send({ type: 'EXPLICIT_SOCKET_ERROR', event })
@@ -1073,7 +1073,7 @@
       .addTimedTransition(
         '@connecting.backoff',
         ctx => ctx.backoffDelay,
-        '@connecting.busy'
+        '@connecting.busy',
       )
       .onEnterAsync(
         '@connecting.busy',
@@ -1131,7 +1131,7 @@
                 throw capturedPrematureEvent
               }
               return socket
-            }
+            },
           )
         },
         // Only transition to OK state after a successfully opened WebSocket connection
@@ -1170,7 +1170,7 @@
             target: '@auth.backoff',
             effect: [increaseBackoffDelay, logPrematureErrorOrCloseEvent(err)],
           }
-        }
+        },
       )
     const sendHeartbeat = {
       target: '@ok.awaiting-pong',
@@ -1193,7 +1193,7 @@
           // been received, and continue synchronous delivery of all future
           // incoming messages.
           onMessage.unpause,
-          0
+          0,
         )
         return ctx2 => {
           teardownSocket(ctx2.socket)
@@ -1208,7 +1208,7 @@
         // Log implicit connection loss and drop the current open socket
         effect: log(
           1,
-          'Received no pong from server, assume implicit connection loss.'
+          'Received no pong from server, assume implicit connection loss.',
         ),
       })
       .addTransitions('@ok.*', {
@@ -1308,7 +1308,7 @@
     constructor(delegates, enableDebugLogging = false) {
       const { machine, events, cleanups } = createConnectionStateMachine(
         delegates,
-        enableDebugLogging
+        enableDebugLogging,
       )
       this.machine = machine
       this.events = events
@@ -1690,7 +1690,7 @@
       'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,./;[]~!@#$%&*()_+=-'
     const len = alphabet.length
     return Array.from({ length }, () =>
-      alphabet.charAt(Math.floor(Math.random() * len))
+      alphabet.charAt(Math.floor(Math.random() * len)),
     ).join('')
   }
   var LiveRegister = class _LiveRegister extends AbstractCrdt {
@@ -1711,7 +1711,7 @@
     _toOps(parentId, parentKey, pool) {
       if (this._id === void 0) {
         throw new Error(
-          'Cannot serialize register if parentId or parentKey is undefined'
+          'Cannot serialize register if parentId or parentKey is undefined',
         )
       }
       return [
@@ -1834,7 +1834,7 @@
     /** @internal */
     _indexOfPosition(position) {
       return this._items.findIndex(
-        item => item._getParentKeyOrThrow() === position
+        item => item._getParentKeyOrThrow() === position,
       )
     }
     /** @internal */
@@ -1878,7 +1878,7 @@
           this._items[indexOfItemWithSamePosition] = child
           const delta = [setDelta(indexOfItemWithSamePosition, child)]
           const deleteDelta2 = this._detachItemAssociatedToSetOperation(
-            op.deletedId
+            op.deletedId,
           )
           if (deleteDelta2) {
             delta.push(deleteDelta2)
@@ -1891,7 +1891,7 @@
       } else {
         const updates = []
         const deleteDelta2 = this._detachItemAssociatedToSetOperation(
-          op.deletedId
+          op.deletedId,
         )
         if (deleteDelta2) {
           updates.push(deleteDelta2)
@@ -1911,7 +1911,7 @@
       }
       const delta = []
       const deletedDelta = this._detachItemAssociatedToSetOperation(
-        op.deletedId
+        op.deletedId,
       )
       if (deletedDelta) {
         delta.push(deletedDelta)
@@ -1937,7 +1937,7 @@
         }
         if (indexOfItemWithSamePosition !== -1) {
           this._implicitlyDeletedItems.add(
-            this._items[indexOfItemWithSamePosition]
+            this._items[indexOfItemWithSamePosition],
           )
           this._items.splice(indexOfItemWithSamePosition, 1)
           delta.push(deleteDelta(indexOfItemWithSamePosition))
@@ -1976,7 +1976,7 @@
           }
           const { newItem, newIndex } = this._createAttachItemAndSort(
             op,
-            op.parentKey
+            op.parentKey,
           )
           return {
             modified: makeUpdate(this, [
@@ -2118,11 +2118,11 @@
         this._items[indexOfItemWithSameKey] = child
         const reverse = HACK_addIntentAndDeletedIdToOperation(
           existingItem._toOps(nn(this._id), key, this._pool),
-          op.id
+          op.id,
         )
         const delta = [setDelta(indexOfItemWithSameKey, child)]
         const deletedDelta = this._detachItemAssociatedToSetOperation(
-          op.deletedId
+          op.deletedId,
         )
         if (deletedDelta) {
           delta.push(deletedDelta)
@@ -2228,7 +2228,7 @@
       } else {
         this._items[existingItemIndex]._setParentLink(
           this,
-          makePosition(newKey, this._items[existingItemIndex + 1]?._parentPos)
+          makePosition(newKey, this._items[existingItemIndex + 1]?._parentPos),
         )
         const previousIndex = this._items.indexOf(child)
         child._setParentLink(this, newKey)
@@ -2256,7 +2256,10 @@
         if (existingItemIndex !== -1) {
           this._items[existingItemIndex]._setParentLink(
             this,
-            makePosition(newKey, this._items[existingItemIndex + 1]?._parentPos)
+            makePosition(
+              newKey,
+              this._items[existingItemIndex + 1]?._parentPos,
+            ),
           )
         }
         child._setParentLink(this, newKey)
@@ -2275,7 +2278,10 @@
         if (existingItemIndex !== -1) {
           this._items[existingItemIndex]._setParentLink(
             this,
-            makePosition(newKey, this._items[existingItemIndex + 1]?._parentPos)
+            makePosition(
+              newKey,
+              this._items[existingItemIndex + 1]?._parentPos,
+            ),
           )
         }
         child._setParentLink(this, newKey)
@@ -2303,7 +2309,7 @@
       if (existingItemIndex !== -1) {
         this._items[existingItemIndex]._setParentLink(
           this,
-          makePosition(newKey, this._items[existingItemIndex + 1]?._parentPos)
+          makePosition(newKey, this._items[existingItemIndex + 1]?._parentPos),
         )
       }
       child._setParentLink(this, newKey)
@@ -2373,7 +2379,7 @@
       this._pool?.assertStorageIsWritable()
       if (index < 0 || index > this._items.length) {
         throw new Error(
-          `Cannot insert list item at index "${index}". index should be between 0 and ${this._items.length}`
+          `Cannot insert list item at index "${index}". index should be between 0 and ${this._items.length}`,
         )
       }
       const before2 = this._items[index - 1]
@@ -2392,7 +2398,7 @@
           [{ type: 5, id }],
           /* @__PURE__ */ new Map([
             [this._id, makeUpdate(this, [insertDelta(index, value)])],
-          ])
+          ]),
         )
       }
     }
@@ -2408,7 +2414,7 @@
       }
       if (targetIndex >= this._items.length) {
         throw new Error(
-          'targetIndex cannot be greater or equal than the list length'
+          'targetIndex cannot be greater or equal than the list length',
         )
       }
       if (index < 0) {
@@ -2455,7 +2461,7 @@
               parentKey: previousPosition,
             },
           ],
-          storageUpdates
+          storageUpdates,
         )
       }
     }
@@ -2469,7 +2475,7 @@
         throw new Error(
           `Cannot delete list item at index "${index}". index should be between 0 and ${
             this._items.length - 1
-          }`
+          }`,
         )
       }
       const item = this._items[index]
@@ -2482,7 +2488,7 @@
           const storageUpdates = /* @__PURE__ */ new Map()
           storageUpdates.set(
             nn(this._id),
-            makeUpdate(this, [deleteDelta(index)])
+            makeUpdate(this, [deleteDelta(index)]),
           )
           this._pool.dispatch(
             [
@@ -2494,7 +2500,7 @@
               },
             ],
             item._toOps(nn(this._id), item._getParentKeyOrThrow()),
-            storageUpdates
+            storageUpdates,
           )
         }
       }
@@ -2515,7 +2521,7 @@
               opId: this._pool.generateOpId(),
             })
             reverseOps.push(
-              ...item._toOps(nn(this._id), item._getParentKeyOrThrow())
+              ...item._toOps(nn(this._id), item._getParentKeyOrThrow()),
             )
             updateDelta.push(deleteDelta(0))
           }
@@ -2539,7 +2545,7 @@
         throw new Error(
           `Cannot set list item at index "${index}". index should be between 0 and ${
             this._items.length - 1
-          }`
+          }`,
         )
       }
       const existingItem = this._items[index]
@@ -2557,12 +2563,12 @@
         storageUpdates.set(this._id, makeUpdate(this, [setDelta(index, value)]))
         const ops = HACK_addIntentAndDeletedIdToOperation(
           value._toOps(this._id, position, this._pool),
-          existingId
+          existingId,
         )
         this._unacknowledgedSets.set(position, nn(ops[0].opId))
         const reverseOps = HACK_addIntentAndDeletedIdToOperation(
           existingItem._toOps(this._id, position, void 0),
-          id
+          id,
         )
         this._pool.dispatch(ops, reverseOps, storageUpdates)
       }
@@ -2572,7 +2578,7 @@
      */
     toArray() {
       return this._items.map(
-        entry => liveNodeToLson(entry)
+        entry => liveNodeToLson(entry),
         //                               ^^^^^^^^
         //                               FIXME! This isn't safe.
       )
@@ -2656,8 +2662,8 @@
           liveNodeToLson(entry),
           //                    ^^^^^^^^
           //                    FIXME! This isn't safe.
-          i
-        )
+          i,
+        ),
       )
     }
     /**
@@ -2686,7 +2692,7 @@
         key,
         this._items.length > index + 1
           ? this._items[index + 1]?._parentPos
-          : void 0
+          : void 0,
       )
       this._items[index]._setParentLink(this, shiftedPosition)
     }
@@ -2697,7 +2703,7 @@
         id: this._id ?? nanoid(),
         key,
         payload: this._items.map((item, index) =>
-          item.toTreeNode(index.toString())
+          item.toTreeNode(index.toString()),
         ),
       }
     }
@@ -2975,7 +2981,7 @@
         this._pool.dispatch(
           item._toOps(this._id, key, this._pool),
           oldValue ? oldValue._toOps(this._id, key) : [{ type: 5, id }],
-          storageUpdates
+          storageUpdates,
         )
       }
     }
@@ -3023,7 +3029,7 @@
             },
           ],
           item._toOps(thisId, key),
-          storageUpdates
+          storageUpdates,
         )
       }
       return true
@@ -3104,7 +3110,7 @@
         id: this._id ?? nanoid(),
         key,
         payload: Array.from(this._map.entries()).map(([key2, val]) =>
-          val.toTreeNode(key2)
+          val.toTreeNode(key2),
         ),
       }
     }
@@ -3511,7 +3517,7 @@
           },
         ],
         reverse,
-        storageUpdates
+        storageUpdates,
       )
     }
     /**
@@ -3567,7 +3573,7 @@
           newValue._attach(this._pool.generateId(), this._pool)
           const newAttachChildOps = newValue._toOps(this._id, key, this._pool)
           const createCrdtOp = newAttachChildOps.find(
-            op => op.parentId === this._id
+            op => op.parentId === this._id,
           )
           if (createCrdtOp) {
             this._propToLastUpdate.set(key, nn(createCrdtOp.opId))
@@ -3622,7 +3628,7 @@
                 id: `${nodeId}:${key2}`,
                 key: key2,
                 payload: value,
-              }
+              },
         ),
       }
     }
@@ -3803,7 +3809,7 @@
                     data: crdt.data,
                   }
                 : // Root object
-                  { type: 4, id, data: crdt.data }
+                  { type: 4, id, data: crdt.data },
             )
             break
           case 2:
@@ -3901,7 +3907,7 @@
     const payload = tryParseJson(b64decode(tokenParts[1]))
     if (!(payload && isMinimalTokenPayload(payload))) {
       throw new Error(
-        'Authentication error: we expected a room token but did not get one. Hint: if you are using a callback, ensure the room is passed when creating the token. For more information: https://liveblocks.io/docs/api-reference/liveblocks-client#createClientCallback'
+        'Authentication error: we expected a room token but did not get one. Hint: if you are using a callback, ensure the room is passed when creating the token. For more information: https://liveblocks.io/docs/api-reference/liveblocks-client#createClientCallback',
       )
     }
     return {
@@ -3971,8 +3977,8 @@
     _toImmutable() {
       const users = compact(
         Object.keys(this._presences).map(connectionId =>
-          this.getUser(Number(connectionId))
-        )
+          this.getUser(Number(connectionId)),
+        ),
       )
       return asArrayWithLegacyMethods(users)
     }
@@ -4138,16 +4144,16 @@
       authenticate: makeAuthDelegateForRoom(
         config.roomId,
         config.authentication,
-        config.polyfills?.fetch
+        config.polyfills?.fetch,
       ),
       createSocket: makeCreateSocketDelegateForRoom(
         config.liveblocksServer,
-        config.polyfills?.WebSocket
+        config.polyfills?.WebSocket,
       ),
     }
     const managedSocket = new ManagedSocket(
       delegates,
-      config.enableDebugLogging
+      config.enableDebugLogging,
     )
     const context = {
       buffer: {
@@ -4260,7 +4266,7 @@
       batchUpdates(() => {
         if (true) {
           error2(
-            `Connection to websocket server closed. Reason: ${err.message} (code: ${err.code}).`
+            `Connection to websocket server closed. Reason: ${err.message} (code: ${err.code}).`,
           )
         }
         eventHub.error.notify(err)
@@ -4278,7 +4284,7 @@
         if (true) {
           const stackTrace = captureStackTrace(
             'Storage mutation',
-            this.dispatch
+            this.dispatch,
           )
           if (stackTrace) {
             for (const op of ops) {
@@ -4295,8 +4301,8 @@
               key,
               mergeStorageUpdates(
                 activeBatch.updates.storageUpdates.get(key),
-                value
-              )
+                value,
+              ),
             )
           }
           activeBatch.reverseOps.unshift(...reverse)
@@ -4312,7 +4318,7 @@
       assertStorageIsWritable: () => {
         if (context.sessionInfo.current?.isReadOnly) {
           throw new Error(
-            'Cannot write to storage with a read only user, please ensure the user has write permissions'
+            'Cannot write to storage with a read only user, please ensure the user has write permissions',
           )
         }
       },
@@ -4347,14 +4353,14 @@
             message,
             managedSocket.token.raw,
             config.httpSendEndpoint,
-            config.polyfills?.fetch
+            config.polyfills?.fetch,
           ).then(resp => {
             if (!resp.ok && resp.status === 403) {
               managedSocket.reconnect()
             }
           })
           warn(
-            'Message was too large for websockets and sent over HTTP instead'
+            'Message was too large for websockets and sent over HTTP instead',
           )
           return
         }
@@ -4383,7 +4389,7 @@
       }
     }
     const selfAsTreeNode = new DerivedRef(self, me =>
-      me !== null ? userToTreeNode('Me', me) : null
+      me !== null ? userToTreeNode('Me', me) : null,
     )
     function createOrUpdateRootFromMessage(message, batchedUpdatesWrapper) {
       if (message.items.length === 0) {
@@ -4432,7 +4438,7 @@
         presence = false,
         others: otherEvents = [],
       },
-      batchedUpdatesWrapper
+      batchedUpdatesWrapper,
     ) {
       batchedUpdatesWrapper(() => {
         if (otherEvents.length > 0) {
@@ -4458,7 +4464,7 @@
         return info.actor
       }
       throw new Error(
-        'Internal. Tried to get connection id but connection was never open'
+        'Internal. Tried to get connection id but connection was never open',
       )
     }
     function applyOps(rawOps, isLocal) {
@@ -4514,10 +4520,10 @@
                 nn(applyOpResult.modified.node._id),
                 mergeStorageUpdates(
                   output.storageUpdates.get(
-                    nn(applyOpResult.modified.node._id)
+                    nn(applyOpResult.modified.node._id),
                   ),
-                  applyOpResult.modified
-                )
+                  applyOpResult.modified,
+                ),
               )
               output.reverse.unshift(...applyOpResult.reverse)
             }
@@ -4550,7 +4556,7 @@
           }
           return node._apply(
             op,
-            source === 0
+            source === 0,
             /* UNDOREDO_RECONNECT */
           )
         }
@@ -4566,7 +4572,7 @@
             return node.parent.node._setChildKey(
               asPos(op.parentKey),
               node,
-              source
+              source,
             )
           }
           return { modified: false }
@@ -4617,7 +4623,7 @@
           if (options2?.addToHistory) {
             addToUndoStack(
               [{ type: 'presence', data: oldValues }],
-              doNotBatchUpdates
+              doNotBatchUpdates,
             )
           }
           notify({ presence: true }, doNotBatchUpdates)
@@ -4627,15 +4633,15 @@
     function isStorageReadOnly(scopes) {
       return (
         scopes.includes(
-          'room:read'
+          'room:read',
           /* Read */
         ) &&
         scopes.includes(
-          'room:presence:write'
+          'room:presence:write',
           /* PresenceWrite */
         ) &&
         !scopes.includes(
-          'room:write'
+          'room:write',
           /* Write */
         )
       )
@@ -4684,7 +4690,7 @@
           connectionId,
           user.id,
           user.info,
-          isStorageReadOnly(user.scopes)
+          isStorageReadOnly(user.scopes),
         )
       }
       return { type: 'reset' }
@@ -4705,7 +4711,7 @@
         message.actor,
         message.id,
         message.info,
-        isStorageReadOnly(message.scopes)
+        isStorageReadOnly(message.scopes),
       )
       context.buffer.messages.push({
         type: 100,
@@ -4811,7 +4817,7 @@
               for (const [key, value] of applyResult.updates.storageUpdates) {
                 updates.storageUpdates.set(
                   key,
-                  mergeStorageUpdates(updates.storageUpdates.get(key), value)
+                  mergeStorageUpdates(updates.storageUpdates.get(key), value),
                 )
               }
               break
@@ -4831,11 +4837,11 @@
                     'The following function calls caused the rejected storage mutations:',
                     `
 
-${Array.from(traces).join('\n\n')}`
+${Array.from(traces).join('\n\n')}`,
                   )
                 }
                 throw new Error(
-                  `Storage mutations rejected by server: ${message.reason}`
+                  `Storage mutations rejected by server: ${message.reason}`,
                 )
               }
               break
@@ -4876,7 +4882,7 @@ ${Array.from(traces).join('\n\n')}`
         clearTimeout(context.buffer.flushTimerID)
         context.buffer.flushTimerID = setTimeout(
           flushNowOrSoon,
-          config.throttleDelay - elapsedMillis
+          config.throttleDelay - elapsedMillis,
         )
       }
     }
@@ -4896,7 +4902,7 @@ ${Array.from(traces).join('\n\n')}`
             : {
                 type: 100,
                 data: context.buffer.presenceUpdates.data,
-              }
+              },
         )
       }
       for (const event of context.buffer.messages) {
@@ -4921,7 +4927,7 @@ ${Array.from(traces).join('\n\n')}`
       event,
       options2 = {
         shouldQueueEventIfNotReady: false,
-      }
+      },
     ) {
       if (
         managedSocket.getStatus() !== 'connected' &&
@@ -4945,7 +4951,7 @@ ${Array.from(traces).join('\n\n')}`
       const messages = context.buffer.messages
       if (
         !messages.some(
-          msg => msg.type === 200
+          msg => msg.type === 200,
           /* FETCH_STORAGE */
         )
       ) {
@@ -5102,7 +5108,7 @@ ${Array.from(traces).join('\n\n')}`
       }
     }
     const others_forDevTools = new DerivedRef(context.others, others =>
-      others.map((other, index) => userToTreeNode(`Other ${index}`, other))
+      others.map((other, index) => userToTreeNode(`Other ${index}`, other)),
     )
     const events = {
       connection: eventHub.connection.observable,
@@ -5184,14 +5190,14 @@ ${Array.from(traces).join('\n\n')}`
       // Explictly make the __internal field non-enumerable, to avoid aggressive
       // freezing when used with Immer
       '__internal',
-      { enumerable: false }
+      { enumerable: false },
     )
   }
   function makeClassicSubscribeFn(events) {
     function subscribeToLiveStructureDeeply(node, callback) {
       return events.storage.subscribe(updates => {
         const relatedUpdates = updates.filter(update =>
-          isSameNodeOrChildOf(update.node, node)
+          isSameNodeOrChildOf(update.node, node),
         )
         if (relatedUpdates.length > 0) {
           callback(relatedUpdates)
@@ -5221,7 +5227,7 @@ ${Array.from(traces).join('\n\n')}`
           case 'others': {
             const cb = callback
             return events.others.subscribe(({ others, event }) =>
-              cb(others, event)
+              cb(others, event),
             )
           }
           case 'error':
@@ -5277,7 +5283,7 @@ ${Array.from(traces).join('\n\n')}`
   }
   function makeCreateSocketDelegateForRoom(
     liveblocksServer,
-    WebSocketPolyfill
+    WebSocketPolyfill,
   ) {
     return richToken => {
       const ws =
@@ -5285,12 +5291,12 @@ ${Array.from(traces).join('\n\n')}`
         (typeof WebSocket === 'undefined' ? void 0 : WebSocket)
       if (ws === void 0) {
         throw new StopRetrying(
-          'To use Liveblocks client in a non-dom environment, you need to provide a WebSocket polyfill.'
+          'To use Liveblocks client in a non-dom environment, you need to provide a WebSocket polyfill.',
         )
       }
       const token = richToken.raw
       return new ws(
-        `${liveblocksServer}/?token=${token}&version=${PKG_VERSION || 'dev'}`
+        `${liveblocksServer}/?token=${token}&version=${PKG_VERSION || 'dev'}`,
       )
     }
   }
@@ -5312,7 +5318,7 @@ ${Array.from(traces).join('\n\n')}`
       return async () => {
         if (fetcher === void 0) {
           throw new StopRetrying(
-            'To use Liveblocks client in a non-dom environment with a publicApiKey, you need to provide a fetch polyfill.'
+            'To use Liveblocks client in a non-dom environment with a publicApiKey, you need to provide a fetch polyfill.',
           )
         }
         return fetchAuthEndpoint(fetcher, authentication.url, {
@@ -5324,7 +5330,7 @@ ${Array.from(traces).join('\n\n')}`
       return async () => {
         if (fetcher === void 0) {
           throw new StopRetrying(
-            'To use Liveblocks client in a non-dom environment with a url as auth endpoint, you need to provide a fetch polyfill.'
+            'To use Liveblocks client in a non-dom environment with a url as auth endpoint, you need to provide a fetch polyfill.',
           )
         }
         return fetchAuthEndpoint(fetcher, authentication.url, {
@@ -5336,7 +5342,7 @@ ${Array.from(traces).join('\n\n')}`
         const response = await authentication.callback(roomId)
         if (!response || typeof response !== 'object') {
           throw new Error(
-            'We expect the authentication callback to return a token, but it does not. Hint: the return value should look like: { token: "..." }'
+            'We expect the authentication callback to return a token, but it does not. Hint: the return value should look like: { token: "..." }',
           )
         }
         if (typeof response.token === 'string') {
@@ -5354,7 +5360,7 @@ ${Array.from(traces).join('\n\n')}`
           }
         } else {
           throw new Error(
-            'We expect the authentication callback to return a token, but it does not. Hint: the return value should look like: { token: "..." }'
+            'We expect the authentication callback to return a token, but it does not. Hint: the return value should look like: { token: "..." }',
           )
         }
       }
@@ -5388,15 +5394,15 @@ ${Array.from(traces).join('\n\n')}`
     } catch (er) {
       throw new Error(
         `Expected a JSON response when doing a POST request on "${endpoint}". ${String(
-          er
-        )}`
+          er,
+        )}`,
       )
     }
     if (!isPlainObject(data) || typeof data.token !== 'string') {
       throw new Error(
         `Expected a JSON response of the form \`{ token: "..." }\` when doing a POST request on "${endpoint}", but got ${JSON.stringify(
-          data
-        )}`
+          data,
+        )}`,
       )
     }
     const { token } = data
@@ -5418,10 +5424,10 @@ ${Array.from(traces).join('\n\n')}`
   function createClient(options) {
     const clientOptions = options
     const throttleDelay = getThrottle(
-      clientOptions.throttle ?? DEFAULT_THROTTLE
+      clientOptions.throttle ?? DEFAULT_THROTTLE,
     )
     const lostConnectionTimeout = getLostConnectionTimeout(
-      clientOptions.lostConnectionTimeout ?? DEFAULT_LOST_CONNECTION_TIMEOUT
+      clientOptions.lostConnectionTimeout ?? DEFAULT_LOST_CONNECTION_TIMEOUT,
     )
     const rooms = /* @__PURE__ */ new Map()
     function getRoom(roomId) {
@@ -5436,7 +5442,7 @@ ${Array.from(traces).join('\n\n')}`
       deprecateIf(
         options2.initialPresence === null ||
           options2.initialPresence === void 0,
-        'Please provide an initial presence value for the current user when entering the room.'
+        'Please provide an initial presence value for the current user when entering the room.',
       )
       const newRoom = createRoom(
         {
@@ -5455,10 +5461,10 @@ ${Array.from(traces).join('\n\n')}`
           authentication: prepareAuthentication(clientOptions, roomId),
           httpSendEndpoint: buildLiveblocksHttpSendEndpoint(
             clientOptions,
-            roomId
+            roomId,
           ),
           unstable_fallbackToHTTP: !!clientOptions.unstable_fallbackToHTTP,
-        }
+        },
       )
       rooms.set(roomId, newRoom)
       setupDevTools(() => Array.from(rooms.keys()))
@@ -5468,7 +5474,7 @@ ${Array.from(traces).join('\n\n')}`
         if (typeof atob === 'undefined') {
           if (clientOptions.polyfills?.atob === void 0) {
             throw new Error(
-              'You need to polyfill atob to use the client in your environment. Please follow the instructions at https://liveblocks.io/docs/errors/liveblocks-client/atob-polyfill'
+              'You need to polyfill atob to use the client in your environment. Please follow the instructions at https://liveblocks.io/docs/errors/liveblocks-client/atob-polyfill',
             )
           }
           global.atob = clientOptions.polyfills.atob
@@ -5496,7 +5502,7 @@ ${Array.from(traces).join('\n\n')}`
       throw new Error(
         `${option} should be a number between ${
           recommendedMin ?? min
-        } and ${max}.`
+        } and ${max}.`,
       )
     }
     return value
@@ -5510,24 +5516,24 @@ ${Array.from(traces).join('\n\n')}`
       value,
       MIN_LOST_CONNECTION_TIMEOUT,
       MAX_LOST_CONNECTION_TIMEOUT,
-      RECOMMENDED_MIN_LOST_CONNECTION_TIMEOUT
+      RECOMMENDED_MIN_LOST_CONNECTION_TIMEOUT,
     )
   }
   function prepareAuthentication(clientOptions, roomId) {
     const { publicApiKey, authEndpoint } = clientOptions
     if (authEndpoint !== void 0 && publicApiKey !== void 0) {
       throw new Error(
-        'You cannot use both publicApiKey and authEndpoint. Please use either publicApiKey or authEndpoint, but not both. For more information: https://liveblocks.io/docs/api-reference/liveblocks-client#createClient'
+        'You cannot use both publicApiKey and authEndpoint. Please use either publicApiKey or authEndpoint, but not both. For more information: https://liveblocks.io/docs/api-reference/liveblocks-client#createClient',
       )
     }
     if (typeof publicApiKey === 'string') {
       if (publicApiKey.startsWith('sk_')) {
         throw new Error(
-          'Invalid publicApiKey. You are using the secret key which is not supported. Please use the public key instead. For more information: https://liveblocks.io/docs/api-reference/liveblocks-client#createClientPublicKey'
+          'Invalid publicApiKey. You are using the secret key which is not supported. Please use the public key instead. For more information: https://liveblocks.io/docs/api-reference/liveblocks-client#createClientPublicKey',
         )
       } else if (!publicApiKey.startsWith('pk_')) {
         throw new Error(
-          'Invalid key. Please use the public key format: pk_<public key>. For more information: https://liveblocks.io/docs/api-reference/liveblocks-client#createClientPublicKey'
+          'Invalid key. Please use the public key format: pk_<public key>. For more information: https://liveblocks.io/docs/api-reference/liveblocks-client#createClientPublicKey',
         )
       }
       return {
@@ -5548,11 +5554,11 @@ ${Array.from(traces).join('\n\n')}`
       }
     } else if (authEndpoint !== void 0) {
       throw new Error(
-        'authEndpoint must be a string or a function. For more information: https://liveblocks.io/docs/api-reference/liveblocks-client#createClientAuthEndpoint'
+        'authEndpoint must be a string or a function. For more information: https://liveblocks.io/docs/api-reference/liveblocks-client#createClientAuthEndpoint',
       )
     }
     throw new Error(
-      'Invalid Liveblocks client options. For more information: https://liveblocks.io/docs/api-reference/liveblocks-client#createClient'
+      'Invalid Liveblocks client options. For more information: https://liveblocks.io/docs/api-reference/liveblocks-client#createClient',
     )
   }
   function buildLiveblocksHttpSendEndpoint(options, roomId) {
@@ -5560,7 +5566,7 @@ ${Array.from(traces).join('\n\n')}`
       return options.httpSendEndpoint.replace('{roomId}', roomId)
     }
     return `https://api.liveblocks.io/v2/rooms/${encodeURIComponent(
-      roomId
+      roomId,
     )}/send-message`
   }
   function buildLiveblocksPublicAuthorizeEndpoint(options, roomId) {
@@ -5568,7 +5574,7 @@ ${Array.from(traces).join('\n\n')}`
       return options.publicAuthorizeEndpoint.replace('{roomId}', roomId)
     }
     return `https://api.liveblocks.io/v2/rooms/${encodeURIComponent(
-      roomId
+      roomId,
     )}/public/authorize`
   }
   detectDupes(PKG_NAME, PKG_VERSION, PKG_FORMAT)
@@ -5592,7 +5598,7 @@ ${Array.from(traces).join('\n\n')}`
         const delta =
           /* @__PURE__ */ (new Date().getTime() - reaction.timestamp) / 1e3
         return delta < 2 + 2
-      }
+      },
     )
   }
   var generateRandomCurveForReaction = () => {

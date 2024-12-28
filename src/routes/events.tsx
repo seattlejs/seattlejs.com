@@ -4,7 +4,7 @@ import events from '../data/events.json'
 
 export default function Events({ id }: { id?: string }) {
   const sortedEvents = events.sort(
-    (a, b) => +new Date(b.date) - +new Date(a.date)
+    (a, b) => +new Date(b.date) - +new Date(a.date),
   )
 
   const display = new URLSearchParams(location.search).has('email')
