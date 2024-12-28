@@ -1,6 +1,5 @@
-import { useEffect } from 'preact/hooks'
-import Layout from '../components/Layout'
 import { memo } from './memo'
+import PageLayout from '../components/PageLayout'
 
 export async function createMarkdownRoute(
   markdownPath: string
@@ -17,24 +16,13 @@ export async function createMarkdownRoute(
   const html = await marked.marked(body)
 
   function MarkdownRoute() {
-    useEffect(() => {
-      document.title = `${attributes.title} | SeattleJS`
-    }, [])
-
     return (
-      <Layout>
-        <div id="page">
-          <div class="page-title">
-            <div>
-              <h1>{attributes.title}</h1>
-            </div>
-          </div>
-          <div
-            class="page-body"
-            dangerouslySetInnerHTML={{ __html: html }}
-          ></div>
-        </div>
-      </Layout>
+      <PageLayout title={attributes.title}>
+        <div
+          class="markdown-content"
+          dangerouslySetInnerHTML={{ __html: html }}
+        ></div>
+      </PageLayout>
     )
   }
 
