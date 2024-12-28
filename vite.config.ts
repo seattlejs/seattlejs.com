@@ -3,7 +3,8 @@ import preact from '@preact/preset-vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/preact-starter/',
+  // base: '/seattlejs.com/',
   publicDir: 'public',
   plugins: [preact()],
+  assetsInclude: ['**/*.md'],
 })
