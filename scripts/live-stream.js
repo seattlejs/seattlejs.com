@@ -26,7 +26,7 @@ async function updatePlaybackId(playbackId) {
   params.append('playbackId', playbackId)
   await fetch(`${url}/admin`, {
     method: 'POST',
-    body: params
+    body: params,
     // redirect: 'manual'
   })
   console.log('Setting Updated: playbackId: ', playbackId)
@@ -37,33 +37,33 @@ async function createLivestream() {
   let payload = {
     playback_policy: ['public'],
     new_asset_settings: {
-      playback_policy: ['public']
+      playback_policy: ['public'],
     },
     generated_subtitles: [
       {
         name: 'English CC (auto)',
         passthrough: 'English closed captions (auto-generated)',
         language_code: 'en-US',
-        transcription_vocabulary_ids: []
-      }
+        transcription_vocabulary_ids: [],
+      },
     ],
     simulcast_targets: [
       {
         url: 'rtmps://or.pscp.tv:443/x',
         stream_key: process.env.TWITTER_STREAM_KEY,
-        passthrough: 'SeattleJS Conf 2023 Livestream on Twitter'
+        passthrough: 'SeattleJS Conf 2023 Livestream on Twitter',
       },
       {
         url: 'rtmp://live.twitch.tv/app/',
         stream_key: process.env.TWITCH_STREAM_KEY,
-        passthrough: 'SeattleJS Conf 2023 Livestream on Twitch'
+        passthrough: 'SeattleJS Conf 2023 Livestream on Twitch',
       },
       {
         url: 'rtmp://a.rtmp.youtube.com/live2',
         stream_key: process.env.YOUTUBE_STREAM_KEY,
-        passthrough: 'SeattleJS Conf 2023 Livestream on YouTube'
-      }
-    ]
+        passthrough: 'SeattleJS Conf 2023 Livestream on YouTube',
+      },
+    ],
   }
 
   // call MUX API
@@ -76,9 +76,9 @@ async function createLivestream() {
         Buffer.from(
           `${process.env.MUX_TOKEN_ID}:${process.env.MUX_TOKEN_SECRET}`,
           'binary'
-        ).toString('base64')
+        ).toString('base64'),
     },
-    body: JSON.stringify(payload)
+    body: JSON.stringify(payload),
   })
   let result = await response.json()
   console.log('Mux Stream Key: ', result.data.stream_key)
