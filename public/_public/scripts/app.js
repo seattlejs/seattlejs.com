@@ -920,9 +920,9 @@
     const start = /* @__PURE__ */ new Date().getTime()
     function log2(...args) {
       warn(
-        `${(/* @__PURE__ */ (new Date().getTime() - start) / 1e3).toFixed(
-          2
-        )} [FSM #${machine.id}]`,
+        `${
+          /* @__PURE__ */ ((new Date().getTime() - start) / 1e3).toFixed(2)
+        } [FSM #${machine.id}]`,
         ...args
       )
     }

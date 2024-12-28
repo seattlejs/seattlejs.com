@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.9.3",
-    "eslint": "latest",
+    "eslint": "^8.46.0",
     "eslint-config-prettier": "^8.6.0",
     "prettier": "^2.8.8",
     "typescript": "^5.7.2",
@@ -25,6 +25,7 @@
     "serve": "vite preview",
     "start": "vite",
     "lint": "npm run tsc && npm run check-format",
+    "eslint": "eslint src/**/*.{js,jsx,ts,tsx}",
     "tsc": "tsc -p tsconfig.json",
     "check-format": "prettier --no-error-on-unmatched-pattern --check **/*.{js,jsx,ts,tsx,css,md,html,yml,yaml,json}",
     "format": "prettier --no-error-on-unmatched-pattern --write **/*.{js,jsx,ts,tsx,css,md,html,yml,yaml,json}"
@@ -41,26 +42,20 @@
   "homepage": "https://github.com/seattlejs/seattlejs.com#readme",
   "eslintConfig": {
     "env": {
+      "browser": true,
       "node": true
     },
     "extends": [
       "eslint:recommended",
       "prettier"
     ],
-    "ignorePatterns": [
-      "public/scripts/*",
-      "src/*"
-    ],
-    "parser": "@babel/eslint-parser",
     "parserOptions": {
       "requireConfigFile": false,
-      "babelOptions": {
-        "plugins": [
-          "@babel/plugin-syntax-import-assertions"
-        ]
-      },
       "sourceType": "module",
-      "ecmaVersion": 2022
+      "ecmaVersion": 2022,
+      "ecmaFeatures": {
+        "jsx": true
+      }
     }
   }
 }
