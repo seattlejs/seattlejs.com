@@ -2,11 +2,12 @@
 title: About Us
 excerpt: SeattleJS is a safe and inclusive event for everyone
 ---
+
 ![SeattleJS at the Collective](/_public/images/seattlejs-march-2022.jpg)
 
-SeattleJS is the largest JavaScript and web developer meetup in Seattle. 
+SeattleJS is the largest JavaScript and web developer meetup in Seattle.
 
-We are an inclusive community and welcome everyone, including folks who are just getting started in tech. 
+We are an inclusive community and welcome everyone, including folks who are just getting started in tech.
 
 Our mission is to help folks:
 

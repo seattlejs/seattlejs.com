@@ -1,7 +1,8 @@
 ---
 title: Welcome to SeattleJS!
 ---
-Your email address is confirmed, welcome to our community! 
+
+Your email address is confirmed, welcome to our community!
 
 Here are some other ways you can connect with us:
 

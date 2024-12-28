@@ -1,351 +1,351 @@
 [
-    {
-        "id": "amber-hoak",
-        "name": "Amber Hoak",
-        "company": "Microsoft Research",
-        "twitter": "amber_hoak",
-        "photo": "amber-hoak.jpg"
-    },
-    {
-        "id": "jamund-ferguson",
-        "name": "Jamund Ferguson",
-        "company": "PayPal",
-        "twitter": "xjamundx",
-        "photo": "jamund-ferguson.jpg"
-    },
-    {
-        "id": "rachel-lee-nabors",
-        "name": "Rachel Lee Nabors",
-        "company": "AWS Amplify",
-        "twitter": "rachelnabors",
-        "photo": "rachel-lee-nabors.jpg"
-    },
-    {
-        "id": "matthew-bauer",
-        "name": "Matthew Bauer",
-        "company": "WebPinata",
-        "twitter": "LotusBladeStorm",
-        "photo": "matthew-bauer.jpg"
-    },
-    {
-        "id": "brian-gershon",
-        "name": "Brian Gershon",
-        "company": "Freelance",
-        "twitter": "brianfive",
-        "photo": "brian-gershon.jpg"
-    },
-    {
-        "id": "calvin-kipperman",
-        "name": "Calvin Kipperman",
-        "company": "Lyft",
-        "twitter": "emnudge",
-        "photo": "calvin-kipperman.jpg"
-    },
-    {
-        "id": "tim-obrien",
-        "name": "Tim O\"Brien",
-        "company": "Wagner Custom Skis",
-        "twitter": "tobrien",
-        "photo": "tim-obrien.jpg"
-    },
-    {
-        "id": "josh-scotland",
-        "name": "Josh Scotland",
-        "company": "Startup",
-        "photo": "josh-scotland.jpg"
-    },
-    {
-        "id": "brian-tran",
-        "name": "Brian Tran",
-        "company": "REMAX",
-        "photo": "brian-tran.jpg",
-        "twitter": "_briantran_"
-    },
-    {
-        "id": "lupe-canaviri-maydana",
-        "name": "Lupe Canaviri Maydana",
-        "company": "Microsoft",
-        "photo": "lupe-canaviri-maydana.png",
-        "twitter": "luucamay_"
-    },
-    {
-        "id": "jacob-ebey",
-        "name": "Jacob Ebey",
-        "company": "Remix / Shopify",
-        "photo": "jacob-ebey.jpg",
-        "twitter": "ebey_jacob"
-    },
-    {
-        "id": "aaroh-mankad",
-        "name": "Aaroh Mankad",
-        "company": "Plaid",
-        "photo": "aaroh-mankad.jpg",
-        "twitter": "aarohmankad"
-    },
-    {
-        "id": "chris-griffing",
-        "name": "Chris Griffing",
-        "company": "GitKraken",
-        "photo": "chris-griffing.jpg",
-        "twitter": "cmgriffing"
-    },
-    {
-        "id": "mason-lynass",
-        "name": "Mason Lynass",
-        "company": "Freelance",
-        "photo": "mason-lynass.jpg"
-    },
-    {
-        "id": "catherine-johnson",
-        "name": "Catherine Johnson",
-        "company": "Microsoft",
-        "photo": "catherine-johnson.jpg",
-        "twitter": ""
-    },
-    {
-        "id": "philip-swan",
-        "name": "Philip Swan",
-        "company": "The Atlantis Project",
-        "photo": "philip-swan.png",
-        "twitter": "tetheredring"
-    },
-    {
-        "id": "michael-solati",
-        "name": "Michael Solati",
-        "company": "Amplication",
-        "photo": "michael-solati.jpg",
-        "twitter": "michaelsolati"
-    },
-    {
-        "id": "spenser-solys",
-        "name": "Spenser Solys",
-        "company": "Project Archer",
-        "photo": "spenser-solys.jpg",
-        "twitter": "scub3d"
-    },
-    {
-        "id": "tiger-oakes",
-        "name": "Tiger Oakes",
-        "company": "Microsoft",
-        "photo": "tiger-oakes.jpg",
-        "twitter": "Not_Woods"
-    },
-    {
-        "id": "dm-liao",
-        "name": "DM Liao",
-        "company": "n/a",
-        "photo": "dm-liao.jpg",
-        "url": "https://amorphic.space",
-        "pronouns": "they/them/theirs"
-    },
-    {
-        "id": "aiden-bai",
-        "name": "Aiden Bai",
-        "company": "Dimension.dev",
-        "photo": "aiden-bai.jpg",
-        "twitter": "aidenybai",
-        "pronouns": "he/him/his",
-        "url": "https://aidenybai.com"
-    },
-    {
-        "id": "cristina-rodriguez",
-        "name": "Cristina Rodriguez",
-        "company": "Techtonica.org",
-        "photo": "cristina-rodriguez.jpg",
-        "twitter": "yosola",
-        "pronouns": "she/her/ella",
-        "url": "https://www.linkedin.com/in/crissrodriguez/"
-    },
-    {
-        "id": "geoff-rich",
-        "name": "Geoff Rich",
-        "company": "Ordergroove",
-        "twitter": "geoffrich_",
-        "pronouns": "he/him",
-        "photo": "geoff-rich.jpg"
-    },
-    {
-        "id": "alan-balasundaram",
-        "name": "Alan Balasundaram",
-        "company": "Expert Opinion MD",
-        "twitter": "",
-        "pronouns": "he/him",
-        "photo": "alan-balasundaram.jpg"
-    },
-    {
-        "id": "michael-fitzgerald",
-        "name": "Michael Fitzgerald",
-        "company": "Fresh Consulting",
-        "twitter": "fitzgerald1337",
-        "pronouns": "he/him/his",
-        "photo": "michael-fitzgerald.png"
-    },
-    {
-        "id": "jan-miksovsky",
-        "name": "Jan Miksovsky",
-        "company": "Independent",
-        "mastadon": "https://fosstodon.org/@JanMiksovsky",
-        "pronouns": "he/him",
-        "photo": "jan-miksovsky.jpg"
-    },
-    {
-        "id": "peli-de-halleux",
-        "name": "Peli de Halleux",
-        "company": "Microsoft",
-        "twitter": "",
-        "pronouns": "he/him",
-        "photo": "peli-de-halleux.jpg"
-    },
-    {
-        "id": "ben-lower",
-        "name": "ben lower",
-        "company": "Fixie",
-        "twitter": "benlower",
-        "pronouns": "he/him/his",
-        "photo": "ben-lower.jpg"
-    },
-    {
-        "id": "caleb-diehl",
-        "name": "Caleb Diehl",
-        "company": "The Associated Press",
-        "twitter": "",
-        "pronouns": "he/him",
-        "photo": "caleb-diehl.jpg"
-    },
-    {
-        "id": "alan-gonzalez",
-        "name": "Alan Gonzalez",
-        "company": "DevMatch",
-        "twitter": "_alanboy",
-        "pronouns": "he/him",
-        "photo": "alan-gonzalez.jpg"
-    },
-    {
-        "id": "mike-ryan",
-        "name": "Mike Ryan",
-        "company": "Polaris",
-        "twitter": "mikeryandev",
-        "pronouns": "he/him",
-        "photo": "mike-ryan.jpg"
-    },
-    {
-        "id": "doug-wade",
-        "name": "Doug Wade",
-        "company": "Skilljar",
-        "twitter": "",
-        "pronouns": "he/him",
-        "photo": "doug-wade.jpg"
-    },
-    {
-        "id": "fx-wood",
-        "name": "FX Wood",
-        "company": "Looking for Opportunities",
-        "twitter": "",
-        "pronouns": "he/him",
-        "photo": "fx-wood.jpg"
-    },
-    {
-        "id": "shruti-kapoor",
-        "name": "Shruti Kapoor",
-        "company": "Slack",
-        "twitter": "shrutikapoor08",
-        "pronouns": "she/her",
-        "photo": "shruti-kapoor.jpg"
-    },
-    {
-        "id": "j-chris-anderson",
-        "name": "J Chris Anderson",
-        "company": "Fireproof",
-        "twitter": "jchris",
-        "pronouns": "he/him",
-        "photo": "j-chris-anderson.jpg"
-    },
-    {
-        "id": "eric-jensen",
-        "name": "Eric Jensen",
-        "company": "Fireproof ",
-        "twitter": "",
-        "pronouns": "he/him",
-        "photo": "eric-jensen.jpg"
-    },
-    {
-        "id": "herrington-darkholme",
-        "name": "Herrington Darkholme",
-        "company": "Freelance",
-        "twitter": "hd_nvim",
-        "pronouns": "he/him/his",
-        "photo": "herrington-darkholme.jpg"
-    },
-    {
-        "id": "john-pham",
-        "name": "John Pham",
-        "company": "Vercel",
-        "twitter": "johnphamous",
-        "pronouns": "he/him/his",
-        "photo": "john-pham.jpg"
-    },
-    {
-        "id": "allan-deutsch",
-        "name": "Allan Deutsch",
-        "company": "The Startup",
-        "twitter": "allandeutsch",
-        "pronouns": "he/him",
-        "photo": "allan-deutsch.png"
-    },
-    {
-        "id": "sarah-guthals-phd",
-        "name": "Sarah Guthals, PhD",
-        "company": "Sentry",
-        "twitter": "drguthals",
-        "pronouns": "she/her/hers",
-        "photo": "sarah-guthals-phd.png"
-    },
-    {
-        "id": "josh-franklin",
-        "name": "Josh Franklin",
-        "company": "N/A",
-        "twitter": "joshfranklin26",
-        "pronouns": "he/him/his",
-        "photo": "josh-franklin.jpg"
-    },
-    {
-        "id": "ben-van-citters",
-        "name": "Ben Van Citters",
-        "company": "Algorithms & Beauty",
-        "twitter": "",
-        "pronouns": "He/him",
-        "photo": "ben-van-citters.jpg"
-    },
-    {
-        "id": "nicholas-patti",
-        "name": "Nicholas Patti",
-        "company": "Freelance",
-        "twitter": "nickspatties",
-        "pronouns": "he/him/his",
-        "photo": "nicholas-patti.jpg"
-    },
-    {
-        "id": "stacy-davis1",
-        "name": "Stacy Davis",
-        "company": "Species360",
-        "twitter": "",
-        "pronouns": "she/her/hers",
-        "photo": "stacy-davis1.jpg"
-    },
-    {
-        "id": "erik-marks",
-        "name": "Erik Marks",
-        "company": "Consensys / MetaMask",
-        "twitter": "rekmarks",
-        "pronouns": "he/they",
-        "photo": "erik-marks.jpg"
-    },
-    {
-        "id": "cat-johnson",
-        "name": "Cat Johnson",
-        "company": "Khan Academy",
-        "twitter": "cat_themachines",
-        "pronouns": "she/her",
-        "photo": "cat-johnson.jpg"
-    }
+  {
+    "id": "amber-hoak",
+    "name": "Amber Hoak",
+    "company": "Microsoft Research",
+    "twitter": "amber_hoak",
+    "photo": "amber-hoak.jpg"
+  },
+  {
+    "id": "jamund-ferguson",
+    "name": "Jamund Ferguson",
+    "company": "PayPal",
+    "twitter": "xjamundx",
+    "photo": "jamund-ferguson.jpg"
+  },
+  {
+    "id": "rachel-lee-nabors",
+    "name": "Rachel Lee Nabors",
+    "company": "AWS Amplify",
+    "twitter": "rachelnabors",
+    "photo": "rachel-lee-nabors.jpg"
+  },
+  {
+    "id": "matthew-bauer",
+    "name": "Matthew Bauer",
+    "company": "WebPinata",
+    "twitter": "LotusBladeStorm",
+    "photo": "matthew-bauer.jpg"
+  },
+  {
+    "id": "brian-gershon",
+    "name": "Brian Gershon",
+    "company": "Freelance",
+    "twitter": "brianfive",
+    "photo": "brian-gershon.jpg"
+  },
+  {
+    "id": "calvin-kipperman",
+    "name": "Calvin Kipperman",
+    "company": "Lyft",
+    "twitter": "emnudge",
+    "photo": "calvin-kipperman.jpg"
+  },
+  {
+    "id": "tim-obrien",
+    "name": "Tim O\"Brien",
+    "company": "Wagner Custom Skis",
+    "twitter": "tobrien",
+    "photo": "tim-obrien.jpg"
+  },
+  {
+    "id": "josh-scotland",
+    "name": "Josh Scotland",
+    "company": "Startup",
+    "photo": "josh-scotland.jpg"
+  },
+  {
+    "id": "brian-tran",
+    "name": "Brian Tran",
+    "company": "REMAX",
+    "photo": "brian-tran.jpg",
+    "twitter": "_briantran_"
+  },
+  {
+    "id": "lupe-canaviri-maydana",
+    "name": "Lupe Canaviri Maydana",
+    "company": "Microsoft",
+    "photo": "lupe-canaviri-maydana.png",
+    "twitter": "luucamay_"
+  },
+  {
+    "id": "jacob-ebey",
+    "name": "Jacob Ebey",
+    "company": "Remix / Shopify",
+    "photo": "jacob-ebey.jpg",
+    "twitter": "ebey_jacob"
+  },
+  {
+    "id": "aaroh-mankad",
+    "name": "Aaroh Mankad",
+    "company": "Plaid",
+    "photo": "aaroh-mankad.jpg",
+    "twitter": "aarohmankad"
+  },
+  {
+    "id": "chris-griffing",
+    "name": "Chris Griffing",
+    "company": "GitKraken",
+    "photo": "chris-griffing.jpg",
+    "twitter": "cmgriffing"
+  },
+  {
+    "id": "mason-lynass",
+    "name": "Mason Lynass",
+    "company": "Freelance",
+    "photo": "mason-lynass.jpg"
+  },
+  {
+    "id": "catherine-johnson",
+    "name": "Catherine Johnson",
+    "company": "Microsoft",
+    "photo": "catherine-johnson.jpg",
+    "twitter": ""
+  },
+  {
+    "id": "philip-swan",
+    "name": "Philip Swan",
+    "company": "The Atlantis Project",
+    "photo": "philip-swan.png",
+    "twitter": "tetheredring"
+  },
+  {
+    "id": "michael-solati",
+    "name": "Michael Solati",
+    "company": "Amplication",
+    "photo": "michael-solati.jpg",
+    "twitter": "michaelsolati"
+  },
+  {
+    "id": "spenser-solys",
+    "name": "Spenser Solys",
+    "company": "Project Archer",
+    "photo": "spenser-solys.jpg",
+    "twitter": "scub3d"
+  },
+  {
+    "id": "tiger-oakes",
+    "name": "Tiger Oakes",
+    "company": "Microsoft",
+    "photo": "tiger-oakes.jpg",
+    "twitter": "Not_Woods"
+  },
+  {
+    "id": "dm-liao",
+    "name": "DM Liao",
+    "company": "n/a",
+    "photo": "dm-liao.jpg",
+    "url": "https://amorphic.space",
+    "pronouns": "they/them/theirs"
+  },
+  {
+    "id": "aiden-bai",
+    "name": "Aiden Bai",
+    "company": "Dimension.dev",
+    "photo": "aiden-bai.jpg",
+    "twitter": "aidenybai",
+    "pronouns": "he/him/his",
+    "url": "https://aidenybai.com"
+  },
+  {
+    "id": "cristina-rodriguez",
+    "name": "Cristina Rodriguez",
+    "company": "Techtonica.org",
+    "photo": "cristina-rodriguez.jpg",
+    "twitter": "yosola",
+    "pronouns": "she/her/ella",
+    "url": "https://www.linkedin.com/in/crissrodriguez/"
+  },
+  {
+    "id": "geoff-rich",
+    "name": "Geoff Rich",
+    "company": "Ordergroove",
+    "twitter": "geoffrich_",
+    "pronouns": "he/him",
+    "photo": "geoff-rich.jpg"
+  },
+  {
+    "id": "alan-balasundaram",
+    "name": "Alan Balasundaram",
+    "company": "Expert Opinion MD",
+    "twitter": "",
+    "pronouns": "he/him",
+    "photo": "alan-balasundaram.jpg"
+  },
+  {
+    "id": "michael-fitzgerald",
+    "name": "Michael Fitzgerald",
+    "company": "Fresh Consulting",
+    "twitter": "fitzgerald1337",
+    "pronouns": "he/him/his",
+    "photo": "michael-fitzgerald.png"
+  },
+  {
+    "id": "jan-miksovsky",
+    "name": "Jan Miksovsky",
+    "company": "Independent",
+    "mastadon": "https://fosstodon.org/@JanMiksovsky",
+    "pronouns": "he/him",
+    "photo": "jan-miksovsky.jpg"
+  },
+  {
+    "id": "peli-de-halleux",
+    "name": "Peli de Halleux",
+    "company": "Microsoft",
+    "twitter": "",
+    "pronouns": "he/him",
+    "photo": "peli-de-halleux.jpg"
+  },
+  {
+    "id": "ben-lower",
+    "name": "ben lower",
+    "company": "Fixie",
+    "twitter": "benlower",
+    "pronouns": "he/him/his",
+    "photo": "ben-lower.jpg"
+  },
+  {
+    "id": "caleb-diehl",
+    "name": "Caleb Diehl",
+    "company": "The Associated Press",
+    "twitter": "",
+    "pronouns": "he/him",
+    "photo": "caleb-diehl.jpg"
+  },
+  {
+    "id": "alan-gonzalez",
+    "name": "Alan Gonzalez",
+    "company": "DevMatch",
+    "twitter": "_alanboy",
+    "pronouns": "he/him",
+    "photo": "alan-gonzalez.jpg"
+  },
+  {
+    "id": "mike-ryan",
+    "name": "Mike Ryan",
+    "company": "Polaris",
+    "twitter": "mikeryandev",
+    "pronouns": "he/him",
+    "photo": "mike-ryan.jpg"
+  },
+  {
+    "id": "doug-wade",
+    "name": "Doug Wade",
+    "company": "Skilljar",
+    "twitter": "",
+    "pronouns": "he/him",
+    "photo": "doug-wade.jpg"
+  },
+  {
+    "id": "fx-wood",
+    "name": "FX Wood",
+    "company": "Looking for Opportunities",
+    "twitter": "",
+    "pronouns": "he/him",
+    "photo": "fx-wood.jpg"
+  },
+  {
+    "id": "shruti-kapoor",
+    "name": "Shruti Kapoor",
+    "company": "Slack",
+    "twitter": "shrutikapoor08",
+    "pronouns": "she/her",
+    "photo": "shruti-kapoor.jpg"
+  },
+  {
+    "id": "j-chris-anderson",
+    "name": "J Chris Anderson",
+    "company": "Fireproof",
+    "twitter": "jchris",
+    "pronouns": "he/him",
+    "photo": "j-chris-anderson.jpg"
+  },
+  {
+    "id": "eric-jensen",
+    "name": "Eric Jensen",
+    "company": "Fireproof ",
+    "twitter": "",
+    "pronouns": "he/him",
+    "photo": "eric-jensen.jpg"
+  },
+  {
+    "id": "herrington-darkholme",
+    "name": "Herrington Darkholme",
+    "company": "Freelance",
+    "twitter": "hd_nvim",
+    "pronouns": "he/him/his",
+    "photo": "herrington-darkholme.jpg"
+  },
+  {
+    "id": "john-pham",
+    "name": "John Pham",
+    "company": "Vercel",
+    "twitter": "johnphamous",
+    "pronouns": "he/him/his",
+    "photo": "john-pham.jpg"
+  },
+  {
+    "id": "allan-deutsch",
+    "name": "Allan Deutsch",
+    "company": "The Startup",
+    "twitter": "allandeutsch",
+    "pronouns": "he/him",
+    "photo": "allan-deutsch.png"
+  },
+  {
+    "id": "sarah-guthals-phd",
+    "name": "Sarah Guthals, PhD",
+    "company": "Sentry",
+    "twitter": "drguthals",
+    "pronouns": "she/her/hers",
+    "photo": "sarah-guthals-phd.png"
+  },
+  {
+    "id": "josh-franklin",
+    "name": "Josh Franklin",
+    "company": "N/A",
+    "twitter": "joshfranklin26",
+    "pronouns": "he/him/his",
+    "photo": "josh-franklin.jpg"
+  },
+  {
+    "id": "ben-van-citters",
+    "name": "Ben Van Citters",
+    "company": "Algorithms & Beauty",
+    "twitter": "",
+    "pronouns": "He/him",
+    "photo": "ben-van-citters.jpg"
+  },
+  {
+    "id": "nicholas-patti",
+    "name": "Nicholas Patti",
+    "company": "Freelance",
+    "twitter": "nickspatties",
+    "pronouns": "he/him/his",
+    "photo": "nicholas-patti.jpg"
+  },
+  {
+    "id": "stacy-davis1",
+    "name": "Stacy Davis",
+    "company": "Species360",
+    "twitter": "",
+    "pronouns": "she/her/hers",
+    "photo": "stacy-davis1.jpg"
+  },
+  {
+    "id": "erik-marks",
+    "name": "Erik Marks",
+    "company": "Consensys / MetaMask",
+    "twitter": "rekmarks",
+    "pronouns": "he/they",
+    "photo": "erik-marks.jpg"
+  },
+  {
+    "id": "cat-johnson",
+    "name": "Cat Johnson",
+    "company": "Khan Academy",
+    "twitter": "cat_themachines",
+    "pronouns": "she/her",
+    "photo": "cat-johnson.jpg"
+  }
 ]
