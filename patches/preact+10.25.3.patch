@@ -1,0 +1,46 @@
+diff --git a/node_modules/preact/compat/package.json b/node_modules/preact/compat/package.json
+index bb80a0f..a3cce5b 100644
+--- a/node_modules/preact/compat/package.json
++++ b/node_modules/preact/compat/package.json
+@@ -46,6 +46,7 @@
+       "import": "./scheduler.mjs",
+       "require": "./scheduler.js"
+     },
++    "./memo": "./src/memo.js",
+     "./package.json": "./package.json"
+   }
+ }
+diff --git a/node_modules/preact/compat/src/memo.d.ts b/node_modules/preact/compat/src/memo.d.ts
+new file mode 100644
+index 0000000..7d4ca0a
+--- /dev/null
++++ b/node_modules/preact/compat/src/memo.d.ts
+@@ -0,0 +1,13 @@
++
++import type { FunctionComponent } from 'preact'
++
++/**
++ * Memoize a component, so that it only updates when the props actually have
++ * changed. This was previously known as `React.pure`.
++ * @param c functional component
++ * @param comparer Custom equality function
++ */
++export function memo<P>(
++  c: FunctionComponent<P>,
++  comparer?: (prev: P, next: P) => boolean
++): FunctionComponent<P> ;
+diff --git a/node_modules/preact/package.json b/node_modules/preact/package.json
+index 9a8c293..4fdc438 100644
+--- a/node_modules/preact/package.json
++++ b/node_modules/preact/package.json
+@@ -25,6 +25,10 @@
+       "import": "./dist/preact.mjs",
+       "require": "./dist/preact.js"
+     },
++    "./compat/memo": {
++      "types": "./compat/src/memo.d.ts",
++      "import": "./compat/src/memo.js"
++    },
+     "./compat": {
+       "types": "./compat/src/index.d.ts",
+       "browser": "./compat/dist/compat.module.js",

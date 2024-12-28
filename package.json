@@ -16,6 +16,7 @@
     "@preact/preset-vite": "^2.9.3",
     "eslint": "^8.46.0",
     "eslint-config-prettier": "^8.6.0",
+    "patch-package": "^8.0.0",
     "prettier": "^2.8.8",
     "typescript": "^5.7.2",
     "vite": "^6.0.6"
@@ -28,7 +29,8 @@
     "eslint": "eslint src/**/*.{js,jsx,ts,tsx}",
     "tsc": "tsc -p tsconfig.json",
     "check-format": "prettier --no-error-on-unmatched-pattern --check **/*.{js,jsx,ts,tsx,css,md,html,yml,yaml,json}",
-    "format": "prettier --no-error-on-unmatched-pattern --write **/*.{js,jsx,ts,tsx,css,md,html,yml,yaml,json}"
+    "format": "prettier --no-error-on-unmatched-pattern --write **/*.{js,jsx,ts,tsx,css,md,html,yml,yaml,json}",
+    "postinstall": "patch-package"
   },
   "repository": {
     "type": "git",

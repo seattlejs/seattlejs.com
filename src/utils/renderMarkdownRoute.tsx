@@ -1,3 +1,6 @@
+import Layout from '../components/Layout'
+import { memo } from './memo'
+
 export async function renderMarkdownRoute(
   markdownPath: string
 ): Promise<preact.ComponentType> {
@@ -9,8 +12,19 @@ export async function renderMarkdownRoute(
   const res = await fetch(markdownPath)
   const text = await res.text()
 
-  const { attributes, body } = frontMatter.default(text)
+  const { attributes, body } = frontMatter.default<Record<string, any>>(text)
   const html = await marked.marked(body)
 
-  return () => <div dangerouslySetInnerHTML={{ __html: html }}></div>
+  return memo(() => (
+    <Layout>
+      <div id="page">
+        <div class="page-title">
+          <div>
+            <h1>{attributes.title}</h1>
+          </div>
+        </div>
+        <div class="page-body" dangerouslySetInnerHTML={{ __html: html }}></div>
+      </div>
+    </Layout>
+  ))
 }
