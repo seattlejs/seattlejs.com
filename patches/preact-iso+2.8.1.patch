@@ -1,0 +1,20 @@
+diff --git a/node_modules/preact-iso/src/router.d.ts b/node_modules/preact-iso/src/router.d.ts
+index 7958546..87715c7 100644
+--- a/node_modules/preact-iso/src/router.d.ts
++++ b/node_modules/preact-iso/src/router.d.ts
+@@ -40,9 +40,9 @@ export interface RouteProps<Props> extends RoutableProps {
+ 
+ export function Route<Props>(props: RouteProps<Props> & Partial<Props>): VNode;
+ 
+-declare module 'preact' {
+-	namespace JSX {
+-		interface IntrinsicAttributes extends RoutableProps {}
+-	}
+-	interface Attributes extends RoutableProps {}
+-}
++// declare module 'preact' {
++// 	namespace JSX {
++// 		interface IntrinsicAttributes extends RoutableProps {}
++// 	}
++// 	interface Attributes extends RoutableProps {}
++// }

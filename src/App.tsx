@@ -6,6 +6,7 @@ import {
   Route,
 } from 'preact-iso'
 
+import { NotFound } from './components/NotFound'
 import aboutUsUrl from './routes/about-us.md'
 import { renderMarkdownRoute } from './utils/renderMarkdownRoute'
 
@@ -17,7 +18,7 @@ export default function App() {
       <ErrorBoundary>
         <Router>
           <Route path="/about-us" component={AboutUs} />
-          <Route default component={() => 'Not found'} />
+          <Route default component={NotFound} />
         </Router>
       </ErrorBoundary>
     </LocationProvider>
