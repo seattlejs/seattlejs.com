@@ -10,7 +10,7 @@ const Header = memo(() => {
   }, [])
 
   return (
-    <header>
+    <header id="site-header">
       <nav>
         <div id="logo">
           <a href="/">

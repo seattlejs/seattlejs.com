@@ -20,7 +20,12 @@ import welcomePath from './routes/welcome.md'
 
 import { createMarkdownRoute } from './utils/createMarkdownRoute'
 
-const routes = [
+interface Route {
+  url: string
+  component: preact.AnyComponent<any>
+}
+
+const routes: Route[] = [
   {
     url: '/about-us',
     component: lazy(() => createMarkdownRoute(aboutUsPath)),
@@ -36,6 +41,10 @@ const routes = [
   {
     url: '/code-of-conduct',
     component: lazy(() => createMarkdownRoute(codeOfConductPath)),
+  },
+  {
+    url: '/events/:id?',
+    component: lazy(() => import('./routes/events')),
   },
   {
     url: '/join',
