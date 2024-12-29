@@ -25,6 +25,7 @@ export interface Speaker {
   twitter?: string
   pronouns?: string
   photo: string
+  location?: string
 }
 
 export interface Talk {

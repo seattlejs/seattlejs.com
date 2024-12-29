@@ -1,0 +1,43 @@
+---
+import { marked } from 'marked'
+import Sponsor from '@/components/Sponsor.astro'
+import TalkCard from '@/components/TalkCard.astro'
+import { inflateEvent, type SJSEvent } from '@/utils/data'
+
+const { event: baseEvent } = Astro.props as { event: SJSEvent }
+const event = inflateEvent(baseEvent)
+---
+
+<h3>{event.title}</h3>
+{event.description && <p>{marked(event.description)}</p>}
+{event.sponsors.length > 0 && <h4>Thanks to our Sponsors ❤️</h4>}
+{event.sponsors.map(sponsor => <Sponsor sponsor={sponsor} />)}
+<div class="cta">
+  <a target="_blank" href={event.link}
+    >More Info & Tickets <i class="fa-solid fa-ticket"></i></a
+  >
+</div>
+
+<div class="talks">
+  {
+    event.talks.length === 0 ? (
+      <p>
+        There are no talks at the moment, maybe <a href="/speak">propose one</a>
+        ?
+      </p>
+    ) : (
+      event.talks.map(t => <TalkCard id={t.id} />)
+    )
+  }
+</div>
+
+<style>
+  @media only screen and (min-width: 768px) {
+    .talks {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: start;
+    }
+  }
+</style>

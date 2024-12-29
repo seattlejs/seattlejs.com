@@ -9,10 +9,8 @@
   "dependencies": {
     "@astrojs/preact": "^4.0.1",
     "astro": "^5.1.1",
-    "front-matter": "^4.0.2",
     "marked": "^15.0.4",
-    "preact": "^10.25.3",
-    "preact-iso": "^2.8.1"
+    "preact": "^10.25.3"
   },
   "devDependencies": {
     "eslint": "^8.46.0",

@@ -1,0 +1,47 @@
+---
+import organizers from '@/data/organizers.json'
+import SocialLinks from './SocialLinks.astro'
+---
+
+<div class="organizers">
+  {
+    organizers.map(o => (
+      <div class="organizer">
+        <p>
+          <img
+            src={`/_public/images/organizers/${o.id}.jpg`}
+            alt={`photo of ${o.full_name}`}
+          />
+        </p>
+        <p>
+          <div class="name">{o.full_name}</div>
+          {/* {o.role ? `${o.role} <br />` : ''} */}
+          <SocialLinks links={o.links} />
+        </p>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .organizer img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .name {
+    font-family: headline-gothic-atf-round, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  @media only screen and (min-width: 768px) {
+    .organizers {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .organizer {
+      margin: 8px;
+    }
+  }
+</style>

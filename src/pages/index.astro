@@ -1,0 +1,85 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import { Image } from 'astro:assets'
+import Event from '@/components/Event.astro'
+import Organizers from '@/components/Organizers.astro'
+import Sponsor from '@/components/Sponsor.astro'
+import events from '@/data/events.json'
+import sponsors from '@/data/sponsors.json'
+import heroImgSrc from '@/images/blank-seattlejs-header.png'
+
+const TWELVE_HOURS = 1000 * 60 * 60 * 12
+// const futureEvents = events.filter(
+//   t => new Date(`${t.date}T21:00-08:00`).getTime() + TWELVE_HOURS > Date.now()
+// )
+const futureEvents = [events.at(-1)]
+---
+
+<Layout pageTitle="SeattleJS">
+  <!-- <img
+    class="hero-image"
+    src="/_public/images/blank-seattlejs-header.png"
+    alt="SeattleJS header image"
+    width="2535"
+    height="912"
+  /> -->
+  <Image
+    src={heroImgSrc}
+    alt="SeattleJS header image"
+    class="hero-image"
+    loading="eager"
+  />
+  <div id="page">
+    <h2>Upcoming Meetups</h2>
+    <iframe
+      src="https://lu.ma/embed/calendar/cal-OAaQXLTEG8qM3rg/events?lt=light"
+      height="450"
+      frameborder="0"
+      style="border: 1px solid #bfcbda88; border-radius: 4px; width: 100%"
+      allowfullscreen=""
+      aria-hidden="false"></iframe>
+
+    {futureEvents.map(event => <Event event={event} />)}
+
+    <div>
+      <a target="_self" href="/events">
+        See all past events <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <h2>Speaking at the SeattleJS Meetup</h2>
+    <p>
+      No matter who you are and what your experience level is, you can give a
+      talk at SeattleJS. Please consider submitting an idea to our
+      <a href="/speak">Call for Presenters</a>!
+    </p>
+    <h2>Sponsors</h2>
+    <div class="sponsors">
+      {sponsors.map(s => <Sponsor sponsor={s} />)}
+    </div>
+    <p>
+      If your company would like to sponsor an upcoming meetup, please email us
+      at <a href="mailto:info@cascadiajs.com">info@seattlejs.com</a>.
+    </p>
+
+    <h2>Organizers</h2>
+    <Organizers />
+  </div>
+</Layout>
+
+<style>
+  .sponsors :global(div) {
+    padding: 16px;
+  }
+
+  .sponsors :global(img) {
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .sponsors {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+</style>
