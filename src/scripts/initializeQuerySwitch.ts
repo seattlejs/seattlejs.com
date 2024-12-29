@@ -10,7 +10,7 @@
  *
  * @param cases - A mapping of query parameter values to element selectors.
  */
-export function initializeSwitch(
+export function initializeQuerySwitch(
   cases: Array<[queryKey: string, selector: string]>,
 ): void {
   const searchParams = new URLSearchParams(location.search)

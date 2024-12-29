@@ -187,7 +187,7 @@ let location = event.location ?? null
 </BaseLayout>
 
 <script>
-  import { initializeSwitch } from '@/scripts/queryParamSwitch'
+  import { initializeQuerySwitch } from '@/scripts/initializeQuerySwitch'
 
   document
     .getElementById('copy-html-btn')
@@ -197,7 +197,7 @@ let location = event.location ?? null
       await navigator.clipboard.writeText(holder.innerHTML)
     })
 
-  initializeSwitch([
+  initializeQuerySwitch([
     ['email', '#email-container'],
     ['', '#main'],
   ])
