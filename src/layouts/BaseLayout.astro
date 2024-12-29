@@ -1,7 +1,18 @@
 ---
 import '../styles/main.css'
 
-let { pageTitle } = Astro.props
+let { pageTitle, sharing } = Astro.props as {
+  pageTitle: string
+  sharing?: {
+    image: string
+  }
+}
+
+let imageUrl
+if (sharing) {
+  imageUrl = new URL(sharing.image, Astro.url.origin).toString()
+}
+
 if (pageTitle) {
   if (!pageTitle.endsWith('SeattleJS')) {
     pageTitle = `${pageTitle} | SeattleJS`
@@ -30,21 +41,21 @@ if (pageTitle) {
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     /> -->
-    <!-- ${ sharing ? `
-    <meta
-      name="image"
-      property="og:image"
-      content="${ baseUrl }${ sharing.image }"
-    />
-    <meta name="url" property="og:url" content="${ baseUrl }${ path }" />
-    <meta name="type" property="og:type" content="website" />
-    <meta name="author" content="Carter Rabasa" />
-    <meta property="og:title" content="${ title }" />
-    <meta name="twitter:image" content="${ baseUrl }${ sharing.image }" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@seattlejs" />
-    <meta name="twitter:title" content="${ title }" />
-    `: '' } -->
+    {
+      sharing && imageUrl && (
+        <>
+          <meta name="image" property="og:image" content={imageUrl} />
+          <meta name="url" property="og:url" content={Astro.url.toString()} />
+          <meta name="type" property="og:type" content="website" />
+          <meta name="author" content="Carter Rabasa" />
+          <meta property="og:title" content={`${pageTitle}`} />
+          <meta name="twitter:image" content={imageUrl} />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@seattlejs" />
+          <meta name="twitter:title" content={`${pageTitle}`} />
+        </>
+      )
+    }
     <!-- ${ path === '/conf' ? `
     <script src="https://js.tito.io/v2" async></script>
     ` : `` } -->

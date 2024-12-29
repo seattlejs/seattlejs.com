@@ -3,7 +3,7 @@ import PageContainer from '@/components/PageContainer.astro'
 import Layout from '@/layouts/BaseLayout.astro'
 ---
 
-<Layout pageTitle={Astro.props.pageTitle}>
+<Layout pageTitle={Astro.props.pageTitle} sharing={Astro.props.sharing}>
   <PageContainer pageTitle={Astro.props.pageTitle}>
     <slot />
   </PageContainer>

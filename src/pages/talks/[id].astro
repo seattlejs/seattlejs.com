@@ -58,7 +58,7 @@ const { name, photo: photoFile } = speaker
 const photo = `/_public/images/speakers/${photoFile}`
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} sharing={sharing}>
   {
     type === 'conf-2023' && (
       <div
