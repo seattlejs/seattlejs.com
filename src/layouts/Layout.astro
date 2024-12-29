@@ -1,15 +1,29 @@
-<!doctype html>
+---
+import Footer from '@/components/Footer.astro'
+import Header from '@/components/Header.astro'
+import '../styles/main.css'
+
+let { pageTitle } = Astro.props
+if (pageTitle) {
+  if (!pageTitle.endsWith('SeattleJS')) {
+    pageTitle = `${pageTitle} | SeattleJS`
+  }
+} else {
+  pageTitle = 'SeattleJS'
+}
+---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/_public/favicon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SeattleJS</title>
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
     <meta
       name="description"
       content="SeattleJS is the largest JavaScript and web developer meetup in Seattle. Our meetings are the 2nd Wednesday of each month. We are an inclusive community and welcome everyone, including folks who are just getting started in tech."
     />
-    <link rel="stylesheet" href="/_public/styles/main.css" />
-    <link rel="shortcut icon" href="/_public/favicon.jpg" />
     <link rel="stylesheet" href="https://use.typekit.net/smc6vzy.css" />
     <!-- <link
       rel="stylesheet"
@@ -38,13 +52,24 @@
     ` : `` } -->
   </head>
   <body>
-    <div id="root"></div>
-    <script src="./src/index.tsx" type="module"></script>
+    <!-- Figure out if this styling for main and it's wrapper is necessary -->
+    <!-- <style>
+      :host {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      #main {
+        flex: 1;
+      }
+    </style> -->
+    <Header />
+    <div id="main"><slot /></div>
+    <Footer />
     <script
       src="https://kit.fontawesome.com/95fd764ad0.js"
       crossorigin="anonymous"
-      async
-    ></script>
+      async></script>
     <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"
       integrity="sha512-rdhY3cbXURo13l/WU9VlaRyaIYeJ/KBakckXIvJNAQde8DgpOmE+eZf7ha4vdqVjTtwQt69bD2wH2LXob/LB7Q=="

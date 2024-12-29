@@ -1,0 +1,6 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro'
+const { frontmatter } = Astro.props
+---
+
+<PageLayout pageTitle={frontmatter.title}><slot /></PageLayout>

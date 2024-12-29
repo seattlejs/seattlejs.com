@@ -1,6 +1,6 @@
-import speakers from '../data/speakers.json'
-import talks from '../data/talks.json'
-import sponsors from '../data/sponsors.json'
+import speakers from '@/data/speakers.json'
+import talks from '@/data/talks.json'
+import sponsors from '@/data/sponsors.json'
 
 export interface SJSEvent {
   id: string
