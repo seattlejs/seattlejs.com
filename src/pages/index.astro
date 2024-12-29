@@ -1,5 +1,5 @@
 ---
-import Layout from '@/layouts/Layout.astro'
+import PageLayout from '@/layouts/PageLayout.astro'
 import { Image } from 'astro:assets'
 import Event from '@/components/Event.astro'
 import Organizers from '@/components/Organizers.astro'
@@ -15,7 +15,7 @@ const TWELVE_HOURS = 1000 * 60 * 60 * 12
 const futureEvents = [events.at(-1)]
 ---
 
-<Layout pageTitle="SeattleJS">
+<PageLayout pageTitle="SeattleJS">
   <!-- <img
     class="hero-image"
     src="/_public/images/blank-seattlejs-header.png"
@@ -65,7 +65,7 @@ const futureEvents = [events.at(-1)]
     <h2>Organizers</h2>
     <Organizers />
   </div>
-</Layout>
+</PageLayout>
 
 <style>
   .sponsors :global(div) {

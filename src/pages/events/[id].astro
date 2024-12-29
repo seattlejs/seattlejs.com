@@ -3,8 +3,9 @@ import type { InferGetStaticPropsType, GetStaticPaths } from 'astro'
 import { marked } from 'marked'
 
 import { inflateEvent } from '@/utils/data'
-import PageLayout from '@/layouts/PageLayout.astro'
 import events from '@/data/events.json'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import PageContainer from '@/components/PageContainer.astro'
 
 export const getStaticPaths = (async () => {
   return events.map(event => ({ params: { id: event.id }, props: { event } }))
@@ -38,7 +39,7 @@ let location = event.location ?? null
 // }
 ---
 
-<PageLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle}>
   <div id="email-container" class="container" hidden style={{ margin: '20px' }}>
     <button id="copy-html-btn" type="button"> Copy HTML to clipboard </button>
     <div id="html-contents">
@@ -118,7 +119,7 @@ let location = event.location ?? null
     </div>
   </div>
 
-  <div id="event-page-container">
+  <PageContainer pageTitle={pageTitle}>
     {description && <p set:html={toHTML(description)} />}
     {location && <p>{location}</p>}
     {
@@ -184,8 +185,8 @@ let location = event.location ?? null
           </div>
         ))
     }
-  </div>
-</PageLayout>
+  </PageContainer>
+</BaseLayout>
 
 <script>
   import { initializeSwitch } from '@/scripts/queryParamSwitch'
@@ -200,6 +201,6 @@ let location = event.location ?? null
 
   initializeSwitch([
     ['email', '#email-container'],
-    ['', '#event-page-container'],
+    ['', '#main'],
   ])
 </script>

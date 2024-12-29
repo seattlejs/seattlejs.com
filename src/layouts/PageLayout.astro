@@ -1,13 +1,10 @@
 ---
-import Layout from '@/layouts/Layout.astro'
-const { pageTitle } = Astro.props
+import PageContainer from '@/components/PageContainer.astro'
+import Layout from '@/layouts/BaseLayout.astro'
 ---
 
-<Layout pageTitle={pageTitle}>
-  <div id="page">
-    <div class="page-title">
-      <h1>{pageTitle}</h1>
-    </div>
-    <div class="page-body"><slot /></div>
-  </div>
+<Layout pageTitle={Astro.props.pageTitle}>
+  <PageContainer pageTitle={Astro.props.pageTitle}>
+    <slot />
+  </PageContainer>
 </Layout>

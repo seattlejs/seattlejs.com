@@ -1,0 +1,15 @@
+---
+import Footer from './Footer.astro'
+import Header from './Header.astro'
+---
+
+<div id="main">
+  <Header />
+  <div id="page">
+    <div class="page-title">
+      <h1>{Astro.props.pageTitle}</h1>
+    </div>
+    <div class="page-body"><slot /></div>
+  </div>
+  <Footer />
+</div>

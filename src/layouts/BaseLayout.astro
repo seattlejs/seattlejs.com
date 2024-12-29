@@ -1,6 +1,4 @@
 ---
-import Footer from '@/components/Footer.astro'
-import Header from '@/components/Header.astro'
 import '../styles/main.css'
 
 let { pageTitle } = Astro.props
@@ -52,20 +50,7 @@ if (pageTitle) {
     ` : `` } -->
   </head>
   <body>
-    <!-- Figure out if this styling for main and it's wrapper is necessary -->
-    <!-- <style>
-      :host {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-      #main {
-        flex: 1;
-      }
-    </style> -->
-    <Header />
-    <div id="main"><slot /></div>
-    <Footer />
+    <slot />
     <script
       src="https://kit.fontawesome.com/95fd764ad0.js"
       crossorigin="anonymous"
