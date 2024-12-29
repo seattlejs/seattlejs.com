@@ -72,6 +72,10 @@ a[target='_blank']:after {
   content: '\f35d';
 }
 
+[hidden] {
+  display: none;
+}
+
 #page {
   padding: 8px 24px;
 }

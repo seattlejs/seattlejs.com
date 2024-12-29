@@ -187,16 +187,8 @@ let location = event.location ?? null
   </div>
 </PageLayout>
 
-<style>
-  [hidden] {
-    display: none;
-  }
-</style>
-
 <script>
-  const display = new URLSearchParams(location.search).has('email')
-    ? 'email'
-    : 'page'
+  import { initializeSwitch } from '@/scripts/queryParamSwitch'
 
   document
     .getElementById('copy-html-btn')
@@ -206,10 +198,8 @@ let location = event.location ?? null
       await navigator.clipboard.writeText(holder.innerHTML)
     })
 
-  const pageContainer = document.getElementById('event-page-container')
-  const emailContainer = document.getElementById('email-container')
-  if (display == 'email') {
-    pageContainer?.setAttribute('hidden', '')
-    emailContainer?.removeAttribute('hidden')
-  }
+  initializeSwitch([
+    ['email', '#email-container'],
+    ['', '#event-page-container'],
+  ])
 </script>
