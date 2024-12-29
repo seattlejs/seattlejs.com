@@ -22,7 +22,7 @@ export function initializeSwitch(
     for (const element of elements) {
       if (key === queryKey) {
         element.removeAttribute('hidden')
-        element.style.display = 'block'
+        element.style.display = ''
       } else {
         element.setAttribute('hidden', '')
         element.style.display = 'none'

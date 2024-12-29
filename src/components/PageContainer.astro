@@ -3,6 +3,18 @@ import Footer from './Footer.astro'
 import Header from './Header.astro'
 ---
 
+<style>
+  #main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  #page {
+    flex: 1;
+  }
+</style>
+
 <div id="main">
   <Header />
   <div id="page">

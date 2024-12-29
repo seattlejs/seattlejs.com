@@ -1,0 +1,29 @@
+---
+import baseTalks from '@/data/talks.json'
+import PageLayout from '@/layouts/PageLayout.astro'
+import { inflateTalk } from '@/utils/data'
+
+const talks = baseTalks.map(t => inflateTalk(t.id))
+---
+
+<style>
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    padding-bottom: 0.5em;
+  }
+</style>
+
+<PageLayout pageTitle="Past talks">
+  <ul>
+    {
+      talks.map(t => (
+        <li>
+          <a href={`/talks/${t.id}`}>{t.title}</a> - Speaker: {t.speaker.name}
+        </li>
+      ))
+    }
+  </ul>
+</PageLayout>

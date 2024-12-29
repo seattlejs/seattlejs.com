@@ -1,6 +1,6 @@
 ---
 import type { InferGetStaticPropsType, GetStaticPaths } from 'astro'
-import { marked } from 'marked'
+import { toHTML } from '@/utils/markdown'
 
 import { inflateEvent } from '@/utils/data'
 import events from '@/data/events.json'
@@ -10,8 +10,6 @@ import PageContainer from '@/components/PageContainer.astro'
 export const getStaticPaths = (async () => {
   return events.map(event => ({ params: { id: event.id }, props: { event } }))
 }) satisfies GetStaticPaths
-
-const toHTML = (markdown: string): string => marked(markdown, { async: false })
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>
 

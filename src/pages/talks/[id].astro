@@ -1,0 +1,123 @@
+---
+import conf from '@/data/conf-2023.json'
+import talks from '@/data/talks.json'
+import speakers from '@/data/speakers.json'
+import { toHTML } from '@/utils/markdown'
+import type { GetStaticPaths, InferGetStaticPropsType } from 'astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import PageContainer from '@/components/PageContainer.astro'
+import Speaker from '@/components/Speaker.astro'
+
+export const getStaticPaths = (async () => {
+  const meetupTalks = talks.map(talk => {
+    const speaker = speakers.find(s => s.id === talk.speaker_id)
+    if (!speaker) {
+      throw new Error(`Speaker not found for talk ${talk.id}`)
+    }
+
+    return {
+      params: { id: talk.id },
+      props: {
+        type: 'meetup',
+        talk,
+        speaker,
+      },
+    }
+  })
+
+  const confTalks = conf.talks.map(talk => {
+    return {
+      params: { id: talk.id },
+      props: {
+        type: 'conf-2023',
+        talk,
+        speaker: talk.speaker,
+      },
+    }
+  })
+
+  return [...meetupTalks, ...confTalks]
+}) satisfies GetStaticPaths
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>
+
+const { type, talk, speaker } = Astro.props as Props
+
+const pageTitle =
+  type === 'conf-2023' ? `SeattleJS Conf 2023 - ${talk.title}` : talk.title
+
+let sharing = null
+if (type === 'conf-2023') {
+  sharing = {
+    image: `/_public/images/social/${talk.id}.png`,
+  }
+}
+
+const { title, abstract, topics } = talk
+const { name, photo: photoFile } = speaker
+const photo = `/_public/images/speakers/${photoFile}`
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  {
+    type === 'conf-2023' && (
+      <div
+        id="social-card"
+        hidden
+        style="background-image: url('/_public/images/social-sharing-card-conf.png'); height: 628px; width: 1200px"
+      >
+        <div style="position: absolute; top: 230px; left: 152px">
+          <img src={photo} alt={`photo of ${name}`} width="278" height="278" />
+        </div>
+        <div style="position: absolute; top: 530px; left: 152px; font-size: 27px">
+          {name}
+        </div>
+        <div style="position: absolute; top: 40px; left: 600px; width: 550px">
+          <span style="font-family: 'headline-gothic-atf-rough-n1'; font-size: 85px; color:#052460; font-weight: 400; line-height: 1em">
+            {title}
+          </span>
+        </div>
+      </div>
+    )
+  }
+
+  <PageContainer pageTitle={talk.title}>
+    {
+      topics ? (
+        <div class="topics">
+          {topics.map(t => (
+            <div class="topic">{t}</div>
+          ))}
+        </div>
+      ) : null
+    }
+    <div class="abstract" set:html={toHTML(abstract)} />
+    <Speaker speaker={speaker} />
+  </PageContainer>
+</BaseLayout>
+
+<style>
+  .topics {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .topic {
+    display: inline-block;
+    background-color: #cfd3e4;
+    text-decoration: none;
+    margin: 3px;
+    padding: 8px;
+  }
+</style>
+
+<script>
+  import { initializeSwitch } from '@/scripts/queryParamSwitch'
+
+  if (document.getElementById('social-card')) {
+    initializeSwitch([
+      ['social', '#social-card'],
+      ['', '#main'],
+    ])
+  }
+</script>

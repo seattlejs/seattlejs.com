@@ -1,0 +1,80 @@
+---
+import SocialLinks from './SocialLinks.astro'
+
+let {
+  name,
+  company,
+  twitter,
+  photo: photoFile,
+  pronouns,
+  location,
+  url,
+  linkedin,
+} = Astro.props.speaker
+let links = { twitter, url, linkedin }
+const photo = `/_public/images/speakers/${photoFile}`
+---
+
+<style>
+  h3 {
+    margin: 0;
+  }
+  p {
+    margin: 8px 0 16px 0;
+  }
+  .photo img {
+    height: 300px;
+    width: 300px;
+  }
+  ul {
+    list-style: none;
+    margin: 8px 0 0 0;
+    padding: 0;
+  }
+  @media only screen and (min-width: 768px) {
+    .info {
+      display: flex;
+    }
+    .more {
+      margin-left: 24px;
+    }
+  }
+</style>
+<h2>About {name}</h2>
+<div class="info">
+  <div class="photo"><img src={photo} alt={`photo of ${name}`} /></div>
+  <div class="more">
+    {
+      pronouns && (
+        <>
+          <h3>Pronouns</h3>
+          <p>{pronouns}</p>
+        </>
+      )
+    }
+    {
+      location && (
+        <>
+          <h3>Location</h3>
+          <p>{location}</p>
+        </>
+      )
+    }
+    {
+      company && (
+        <>
+          <h3>Company</h3>
+          <p>{company}</p>
+        </>
+      )
+    }
+    {
+      (twitter || url || linkedin) && (
+        <>
+          <h3>Links</h3>
+          <SocialLinks links={links} />
+        </>
+      )
+    }
+  </div>
+</div>
