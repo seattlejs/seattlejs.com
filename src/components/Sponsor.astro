@@ -1,7 +1,14 @@
 ---
-let {
-  sponsor: { url, name, image, tier },
-} = Astro.props
+import type { Sponsor } from '@/utils/data'
+
+const props = Astro.props as { sponsor?: Sponsor } & Partial<Sponsor>
+
+let sponsor = {
+  ...(props.sponsor ?? {}),
+  ...props,
+} as Sponsor
+
+const { tier, name, url, image } = sponsor
 ---
 
 <style>
@@ -18,6 +25,7 @@ let {
     margin: 16px;
   }
 </style>
+
 <div class={tier}>
   <a href={url} target="_new"
     ><img

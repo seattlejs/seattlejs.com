@@ -5,6 +5,7 @@ import Event from '@/components/Event.astro'
 import Organizers from '@/components/Organizers.astro'
 import Sponsor from '@/components/Sponsor.astro'
 import events from '@/data/events.json'
+import organizers from '@/data/organizers.json'
 import sponsors from '@/data/sponsors.json'
 import heroImgSrc from '@/images/blank-seattlejs-header.png'
 
@@ -63,7 +64,7 @@ const futureEvents = [events.at(-1)]
     </p>
 
     <h2>Organizers</h2>
-    <Organizers />
+    <Organizers organizers={organizers} />
   </div>
 </PageLayout>
 

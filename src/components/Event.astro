@@ -26,7 +26,7 @@ const event = inflateEvent(baseEvent)
         ?
       </p>
     ) : (
-      event.talks.map(t => <TalkCard id={t.id} />)
+      event.talks.map(t => <TalkCard talk={t} />)
     )
   }
 </div>

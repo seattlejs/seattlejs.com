@@ -1,6 +1,15 @@
 ---
-import organizers from '@/data/organizers.json'
+import type { Links } from '@/utils/data'
 import SocialLinks from './SocialLinks.astro'
+
+interface Organizer {
+  id: string
+  full_name: string
+  role?: string
+  links: Links
+}
+
+const organizers = Astro.props.organizers as Organizer[]
 ---
 
 <div class="organizers">
@@ -15,7 +24,11 @@ import SocialLinks from './SocialLinks.astro'
         </p>
         <p>
           <div class="name">{o.full_name}</div>
-          {/* {o.role ? `${o.role} <br />` : ''} */}
+          {o.role && (
+            <>
+              {o.role} <br />
+            </>
+          )}
           <SocialLinks links={o.links} />
         </p>
       </div>

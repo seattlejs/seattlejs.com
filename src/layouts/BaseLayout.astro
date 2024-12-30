@@ -20,6 +20,10 @@ if (pageTitle) {
 } else {
   pageTitle = 'SeattleJS'
 }
+
+const description =
+  Astro.props.description ??
+  'SeattleJS is the largest JavaScript and web developer meetup in Seattle. Our meetings are the 2nd Wednesday of each month. We are an inclusive community and welcome everyone, including folks who are just getting started in tech.'
 ---
 
 <html lang="en">
@@ -29,10 +33,7 @@ if (pageTitle) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
-    <meta
-      name="description"
-      content="SeattleJS is the largest JavaScript and web developer meetup in Seattle. Our meetings are the 2nd Wednesday of each month. We are an inclusive community and welcome everyone, including folks who are just getting started in tech."
-    />
+    <meta name="description" content={description} />
     <link rel="stylesheet" href="https://use.typekit.net/smc6vzy.css" />
     <!-- <link
       rel="stylesheet"
@@ -56,9 +57,6 @@ if (pageTitle) {
         </>
       )
     }
-    <!-- ${ path === '/conf' ? `
-    <script src="https://js.tito.io/v2" async></script>
-    ` : `` } -->
   </head>
   <body>
     <slot />

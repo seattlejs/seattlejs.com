@@ -22,20 +22,27 @@ export interface Speaker {
   id: string
   name: string
   company: string
+  photo: string
   twitter?: string
   pronouns?: string
-  photo: string
   location?: string
 }
 
-export interface Talk {
+interface Talk {
   id: string
-  speaker_id: string
   event_id: string
   title: string
   abstract: string
-  type?: string
   topics?: string[]
+  type?: string
+}
+
+export interface MeetupTalk extends Talk {
+  speaker_id: string
+}
+
+export interface ConfTalk extends Talk {
+  speaker: Speaker
 }
 
 export interface InflatedTalk extends Talk {
@@ -43,11 +50,19 @@ export interface InflatedTalk extends Talk {
 }
 
 export interface Sponsor {
+  tier?: string
   id: string
   url: string
   image: string
   name?: string
   copy?: string
+}
+
+export interface Links {
+  linkedin?: string
+  twitter?: string
+  url?: string
+  github?: string
 }
 
 export function inflateEvent(event: SJSEvent): InflatedEvent {

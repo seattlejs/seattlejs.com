@@ -91,6 +91,7 @@ let location = event.location ?? null
                   fontSize: '24px',
                 }}
               >
+                {t.type === 'lightning' ? '⚡️ ' : ''}
                 {t.title} by {t.speaker.name}
               </h4>
               <p>
@@ -169,6 +170,7 @@ let location = event.location ?? null
                 fontSize: '24px',
               }}
             >
+              {t.type === 'lightning' ? '⚡️ ' : ''}
               {t.title} by {t.speaker.name}
             </h4>
             <p>

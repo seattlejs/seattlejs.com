@@ -47,6 +47,11 @@ const { type, talk, speaker } = Astro.props as Props
 const pageTitle =
   type === 'conf-2023' ? `SeattleJS Conf 2023 - ${talk.title}` : talk.title
 
+const bodyTitle =
+  'type' in talk
+    ? (talk.type === 'lightning' ? '⚡️ ' : '') + talk.title
+    : talk.title
+
 let sharing = null
 if (type === 'conf-2023') {
   sharing = {
@@ -71,7 +76,7 @@ const speakerPhoto = `/_public/images/speakers/${speaker.photo}`
     )
   }
 
-  <PageContainer pageTitle={talk.title}>
+  <PageContainer pageTitle={bodyTitle}>
     {
       topics ? (
         <div class="topics">
