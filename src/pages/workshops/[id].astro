@@ -1,61 +1,55 @@
 ---
-import conf from '@/data/conf-2023.json'
-import talks from '@/data/talks.json'
-import speakers from '@/data/speakers.json'
-import { toHTML } from '@/utils/markdown'
-import type { GetStaticPaths, InferGetStaticPropsType } from 'astro'
-import BaseLayout from '@/layouts/BaseLayout.astro'
+import TalkSocialCard from '@/components/conf/TalkSocialCard.astro'
 import PageContainer from '@/components/PageContainer.astro'
 import Speaker from '@/components/Speaker.astro'
-import TalkSocialCard from '@/components/conf/TalkSocialCard.astro'
+import conf from '@/data/conf-2023.json'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { toHTML } from '@/utils/markdown'
+import type { GetStaticPaths, InferGetStaticPropsType } from 'astro'
 
 export const getStaticPaths = (async () => {
-  const meetupTalks = talks.map(talk => {
-    const speaker = speakers.find(s => s.id === talk.speaker_id)
-    if (!speaker) {
-      throw new Error(`Speaker not found for talk ${talk.id}`)
-    }
+  // TODO: Add meetup workshop data
+  //
+  // const meetupTalks = talks.map(talk => {
+  //   const speaker = speakers.find(s => s.id === talk.speaker_id)
+  //   if (!speaker) {
+  //     throw new Error(`Speaker not found for talk ${talk.id}`)
+  //   }
+  //
+  //   return {
+  //     params: { id: talk.id },
+  //     props: {
+  //       type: 'meetup',
+  //       talk,
+  //       speaker,
+  //     },
+  //   }
+  // })
 
+  const confTalks = conf.workshops.map(workshop => {
     return {
-      params: { id: talk.id },
-      props: {
-        type: 'meetup',
-        talk,
-        speaker,
-      },
-    }
-  })
-
-  const confTalks = conf.talks.map(talk => {
-    return {
-      params: { id: talk.id },
+      params: { id: workshop.id },
       props: {
         type: 'conf-2023',
-        talk,
-        speaker: talk.speaker,
+        workshop,
+        speaker: workshop.speaker,
       },
     }
   })
 
-  return [...meetupTalks, ...confTalks]
+  return [...confTalks]
 }) satisfies GetStaticPaths
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>
 
-const { type, talk, speaker } = Astro.props as Props
-
-const pageTitle =
-  type === 'conf-2023' ? `SeattleJS Conf 2023 - ${talk.title}` : talk.title
-
-let sharing = null
-if (type === 'conf-2023') {
-  sharing = {
-    image: `/_public/images/social/${talk.id}.png`,
-  }
-}
-
-const { title, abstract, topics } = talk
+const { type, workshop } = Astro.props as Props
+const { topics, abstract, speaker } = workshop
 const speakerPhoto = `/_public/images/speakers/${speaker.photo}`
+
+const pageTitle = `SeattleJS Conf 2023 - ${workshop.title}`
+const sharing = {
+  image: `/_public/images/social/${workshop.id}.png`,
+}
 ---
 
 <BaseLayout pageTitle={pageTitle} sharing={sharing}>
@@ -65,13 +59,13 @@ const speakerPhoto = `/_public/images/speakers/${speaker.photo}`
         <TalkSocialCard
           name={speaker.name}
           photo={speakerPhoto}
-          title={title}
+          title={workshop.title}
         />
       </div>
     )
   }
 
-  <PageContainer pageTitle={talk.title}>
+  <PageContainer pageTitle={workshop.title}>
     {
       topics ? (
         <div class="topics">
@@ -82,6 +76,11 @@ const speakerPhoto = `/_public/images/speakers/${speaker.photo}`
       ) : null
     }
     <div class="abstract" set:html={toHTML(abstract)} />
+    <div class="cta">
+      <a target="_blank" href="https://ti.to/event-loop/seattlejs-conf-2023/"
+        >Register</a
+      >
+    </div>
     <Speaker speaker={speaker} />
   </PageContainer>
 </BaseLayout>
