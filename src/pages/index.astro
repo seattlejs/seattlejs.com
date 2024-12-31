@@ -1,5 +1,5 @@
 ---
-import PageLayout from '@/layouts/PageLayout.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
 import { Image } from 'astro:assets'
 import Event from '@/components/Event.astro'
 import Organizers from '@/components/Organizers.astro'
@@ -8,6 +8,8 @@ import events from '@/data/events.json'
 import organizers from '@/data/organizers.json'
 import sponsors from '@/data/sponsors.json'
 import heroImgSrc from '@/images/blank-seattlejs-header.png'
+import Footer from '@/components/Footer.astro'
+import Header from '@/components/Header.astro'
 
 const TWELVE_HOURS = 1000 * 60 * 60 * 12
 // const futureEvents = events.filter(
@@ -16,7 +18,8 @@ const TWELVE_HOURS = 1000 * 60 * 60 * 12
 const futureEvents = [events.at(-1)]
 ---
 
-<PageLayout pageTitle="SeattleJS">
+<BaseLayout pageTitle="SeattleJS">
+  <Header />
   <!-- <img
     class="hero-image"
     src="/_public/images/blank-seattlejs-header.png"
@@ -66,7 +69,8 @@ const futureEvents = [events.at(-1)]
     <h2>Organizers</h2>
     <Organizers organizers={organizers} />
   </div>
-</PageLayout>
+  <Footer />
+</BaseLayout>
 
 <style>
   .sponsors :global(div) {
