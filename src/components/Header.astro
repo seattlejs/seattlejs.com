@@ -1,12 +1,18 @@
+---
+import { Image } from 'astro:assets'
+import logoSrc from '@/images/logo.png'
+---
+
 <header id="site-header">
   <nav>
     <div id="logo">
       <a href="/">
-        <img
-          src="/_public/images/logo.png"
+        <Image
+          src={logoSrc}
           alt="SeattleJS logo"
           width="32"
           height="32"
+          loading="eager"
         />
       </a>
     </div>

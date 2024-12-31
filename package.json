@@ -29,7 +29,7 @@
     "astro": "astro",
     "lint": "npm run tsc && npm run check-format",
     "eslint": "eslint src/**/*.{js,jsx,ts,tsx}",
-    "tsc": "astro check",
+    "check": "astro check",
     "check-format": "prettier --no-error-on-unmatched-pattern --check **/*.{astro,js,jsx,ts,tsx,css,md,html,yml,yaml,json}",
     "format": "prettier --no-error-on-unmatched-pattern --write **/*.{astro,js,jsx,ts,tsx,css,md,html,yml,yaml,json}",
     "postinstall": "patch-package"
