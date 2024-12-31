@@ -1,6 +1,12 @@
 ---
 import Footer from './Footer.astro'
 import Header from './Header.astro'
+
+export interface Props {
+  pageTitle?: string
+}
+
+const { pageTitle } = Astro.props
 ---
 
 <style>
@@ -18,9 +24,13 @@ import Header from './Header.astro'
 <div id="main">
   <Header />
   <div id="page">
-    <div class="page-title">
-      <h1>{Astro.props.pageTitle}</h1>
-    </div>
+    {
+      pageTitle && (
+        <div class="page-title">
+          <h1>{pageTitle}</h1>
+        </div>
+      )
+    }
     <div class="page-body"><slot /></div>
   </div>
   <Footer />

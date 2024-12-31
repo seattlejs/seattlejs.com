@@ -1,0 +1,163 @@
+---
+import ShowItem from '@/components/conf/ShowItem.astro'
+import SpeakerShowItem from '@/components/conf/SpeakerShowItem.astro'
+import Sponsor from '@/components/Sponsor.astro'
+import PageLayout from '@/layouts/PageLayout.astro'
+---
+
+<style>
+  .video-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .schedule {
+    margin: 32px 0;
+  }
+
+  .location {
+    background: rgba(255, 207, 7, 0.3);
+    font-family: headline-gothic-atf-round;
+    font-size: 140%;
+    font-weight: 500;
+    line-height: 1em;
+    padding: 16px;
+  }
+
+  .track h3 {
+    font-size: 160%;
+    font-weight: 700;
+    margin: 0;
+    padding: 16px;
+  }
+
+  .main.track h3 {
+    background: #ffcf07;
+  }
+</style>
+
+<PageLayout
+  pageTitle="SeattleJS Conf"
+  description="SeattleJS Conf is a very special 1-day conference bringing together ~300 web developers to learn, network and have fun!"
+  sharing={{
+    image: '/_public/images/seattlejsconf-sharing.png',
+  }}
+>
+  <p>Thanks for joining us! Check out all the talks on YouTube below.</p>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube-nocookie.com/embed/videoseries?si=3tJMrUPL4OGEqIDZ&list=PLLiioAbFTbKMJMlJnhkiKy7IfsnsCVAb5"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe>
+  {
+    // playbackId ? (
+    //   <div class="video-container">
+    //     <mux-player
+    //       stream-type="on-demand"
+    //       playback-id={playbackId}
+    //       metadata-video-title="SeattleJS Conf 2023 Livestream"
+    //       metadata-viewer-user-id="embed"
+    //       muted="true"
+    //       autoplay="any"
+    //       default-hidden-captions
+    //     />
+    //     {/* <!--live-reactions /--> */}
+    //   </div>
+    // ) : (
+    //   <p>
+    //     <i>Livestream will begin on August 8 at 9:00am PT.</i>
+    //   </p>
+    // )
+  }
+  <div class="schedule">
+    <h2>Schedule</h2>
+    <div class="main track">
+      <h3>Conference</h3>
+      <div class="location">Talk Room</div>
+      <ShowItem when="09:00" title="Opening Remarks" />
+      <SpeakerShowItem when="09:30" speakerId="kevin-whinnery" />
+      <SpeakerShowItem when="" speakerId="eve-porcello" />
+      <SpeakerShowItem when="" speakerId="ben-ilegbodu" />
+      <ShowItem when="10:40">
+        <Fragment slot="title">
+          <i class="fas fa-coffee"></i> Break
+        </Fragment>
+      </ShowItem>
+      <SpeakerShowItem when="11:15" speakerId="adam-argyle" />
+      <SpeakerShowItem when="" speakerId="erik-hanchett" />
+      <SpeakerShowItem when="" speakerId="daphne-liu" />
+      <div class="location">Lunch Room</div>
+      <ShowItem when="12:40">
+        <Fragment slot="title">
+          <i class="fas fa-taco"></i> Lunch by <img
+            src="/_public/images/sponsors/courier.png"
+          />
+        </Fragment>
+      </ShowItem>
+      <div class="location">Talk Room</div>
+      <SpeakerShowItem when="13:45" speakerId="lizzie-siegle" />
+      <SpeakerShowItem when="" speakerId="john-pham" />
+      <SpeakerShowItem when="" speakerId="luis-montes" />
+      <ShowItem when="15:05">
+        <Fragment slot="title">
+          <i class="fas fa-donut"></i> Break
+        </Fragment>
+      </ShowItem>
+      <SpeakerShowItem when="15:35" speakerId="christina-zhu" />
+      <SpeakerShowItem when="" speakerId="josh-goldberg" />
+      <SpeakerShowItem when="" speakerId="jason-lengstorf" />
+      <ShowItem when="17:00" title="Closing Remarks" />
+      <h3>After Party</h3>
+      <div class="location">
+        Optimism Brewing - <a
+          target="_blank"
+          href="https://goo.gl/maps/R5CLTTakRga9tAAG7">1158 Broadway</a
+        >
+      </div>
+      <ShowItem when="19:00" title="Karaoke Party 🎤" />
+    </div>
+  </div>
+  <section id="sponsors">
+    <h2>Thank you to our Sponsors! ❤️</h2>
+    <div>
+      <Sponsor
+        tier="platinum"
+        name="AWS"
+        url="https://docs.amplify.aws/"
+        image="aws.png"
+      />
+    </div>
+    <div>
+      <Sponsor
+        tier="gold"
+        name="Courier"
+        url="http://courier.com?utm_campaign=q2-fy23-conference-seattlejsconf&utm_source=conference&utm_medium=website"
+        image="courier.png"
+      />
+      <Sponsor tier="gold" name="Mux" url="http://mux.com" image="mux.svg" />
+      <Sponsor
+        tier="gold"
+        name="Mux"
+        url="http://cloudinary.com"
+        image="cloudinary.png"
+      />
+      <Sponsor
+        tier="gold"
+        name="Mux"
+        url="http://runme.dev"
+        image="runme.png"
+      />
+      <Sponsor
+        tier="gold"
+        name="Mux"
+        url="http://appwrite.io"
+        image="appwrite.png"
+      />
+    </div>
+  </section>
+</PageLayout>

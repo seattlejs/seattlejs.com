@@ -1,0 +1,26 @@
+---
+import ShowItem from './ShowItem.astro'
+import confData from '@/data/conf-2023.json'
+
+export interface Props {
+  when: string
+  speakerId: string
+}
+
+const { when, speakerId } = Astro.props
+const talk = confData.talks.find(t => t.speaker.id === speakerId)
+if (!talk) {
+  throw new Error(`Could not find talk with speaker id ${speakerId}`)
+}
+---
+
+<style>
+  a:hover {
+    text-decoration: underline;
+    color: #0033ff;
+  }
+</style>
+<ShowItem when={when}>
+  <div slot="title"><a href={`/talks/${talk.id}`}>{talk.title}</a></div>
+  <div class="speaker">{talk.speaker.name}</div>
+</ShowItem>
