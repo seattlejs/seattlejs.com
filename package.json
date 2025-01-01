@@ -10,6 +10,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/preact": "^4.0.1",
     "@astrojs/ts-plugin": "^1.10.4",
+    "@liveblocks/client": "^2.15.1",
     "astro": "^5.1.1",
     "marked": "^15.0.4",
     "preact": "^10.25.3"
