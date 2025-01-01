@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets'
 import type { Sponsor } from '@/data/types'
+import { parseFileName } from '@/utils/data'
 
 const props = Astro.props as { sponsor?: Sponsor } & Partial<Sponsor>
 
@@ -9,14 +11,32 @@ let sponsor = {
 } as Sponsor
 
 const { tier, name, url, image } = sponsor
+
+const sponsorId = image.replace(/\.\w+$/, '')
+const imageGlob = import.meta.glob<{ default: ImageMetadata }>(
+  '@/images/sponsors/*.{jpeg,jpg,png,gif,webp,svg}'
+)
+
+let imageMetadata: ImageMetadata | null = null
+for (const [key, value] of Object.entries(imageGlob)) {
+  if (parseFileName(key) === sponsorId) {
+    imageMetadata = (await value()).default
+  }
+}
+
+if (!imageMetadata) {
+  throw new Error(`Image not found for sponsor ${name}`)
+}
 ---
 
 <style>
   .platinum img {
+    width: auto;
     height: 200px;
   }
 
   .gold img {
+    width: auto;
     height: 75px;
   }
 
@@ -27,10 +47,7 @@ const { tier, name, url, image } = sponsor
 </style>
 
 <div class={tier}>
-  <a href={url} target="_new"
-    ><img
-      src={`/_public/images/sponsors/${image}`}
-      alt={`logo for ${name}`}
-    /></a
-  >
+  <a href={url} target="_new">
+    <Image layout="responsive" src={imageMetadata} alt={`logo for ${name}`} />
+  </a>
 </div>

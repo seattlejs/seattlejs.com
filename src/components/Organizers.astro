@@ -1,38 +1,70 @@
 ---
+import { Image } from 'astro:assets'
 import type { Links } from '@/data/types'
+import { parseFileName } from '@/utils/data'
 import SocialLinks from './SocialLinks.astro'
+import type { ImageMetadata } from 'astro'
+
+interface Props {
+  organizers: Organizer[]
+}
 
 interface Organizer {
   id: string
   full_name: string
   role?: string
-  links: Links
+  links?: Links
 }
 
-const organizers = Astro.props.organizers as Organizer[]
+const organizers = Astro.props.organizers
+const imageGlob = await import.meta.glob<{ default: ImageMetadata }>(
+  '@/images/organizers/*.jpg',
+  {
+    eager: true,
+  }
+)
+
+const organizerImages = new Map<string, ImageMetadata>()
+for (const [key, value] of Object.entries(imageGlob)) {
+  const filename = parseFileName(key)
+  if (!filename) throw new Error(`Invalid filename: ${key}`)
+  organizerImages.set(filename, value.default)
+}
 ---
 
 <div class="organizers">
   {
-    organizers.map(o => (
-      <div class="organizer">
-        <p>
-          <img
-            src={`/_public/images/organizers/${o.id}.jpg`}
-            alt={`photo of ${o.full_name}`}
-          />
-        </p>
-        <p>
-          <div class="name">{o.full_name}</div>
-          {o.role && (
-            <>
-              {o.role} <br />
-            </>
+    organizers.map(o => {
+      const imgData = organizerImages.get(o.id)
+      return (
+        <div class="organizer">
+          {imgData && (
+            <p>
+              <Image src={imgData} alt={`head shot of ${o.full_name}`} />
+            </p>
           )}
-          <SocialLinks links={o.links} />
-        </p>
-      </div>
-    ))
+          {!imgData && (
+            <p>
+              <Image
+                src={`/_public/images/organizers/${o.id}.jpg`}
+                alt={`head shot of ${o.full_name}`}
+                width={500}
+                height={500}
+              />
+            </p>
+          )}
+          <p>
+            <div class="name">{o.full_name}</div>
+            {o.role && (
+              <>
+                {o.role} <br />
+              </>
+            )}
+            {o.links && <SocialLinks links={o.links} />}
+          </p>
+        </div>
+      )
+    })
   }
 </div>
 

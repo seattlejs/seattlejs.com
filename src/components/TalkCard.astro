@@ -79,7 +79,10 @@ let { name, company, photo } = speaker
 <div class="speaker">
   <a href={url ? url : `/talks/${id}`}>
     <div class="photo">
-      <img src={`/_public/images/speakers/${photo}`} alt={`photo of ${name}`} />
+      <img
+        src={`/_public/images/speakers/${photo}`}
+        alt={`head shot of ${name}`}
+      />
       <div class="overlay">
         <div class="text">{type === 'lightning' ? '⚡️ ' : ''}{title}</div>
       </div>

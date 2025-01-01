@@ -14,9 +14,9 @@ const event = inflateEvent(baseEvent)
 {event.sponsors.length > 0 && <h4>Thanks to our Sponsors ❤️</h4>}
 {event.sponsors.map(sponsor => <Sponsor sponsor={sponsor} />)}
 <div class="cta">
-  <a target="_blank" href={event.link}
-    >More Info & Tickets <i class="fa-solid fa-ticket"></i></a
-  >
+  <a target="_blank" href={event.link ?? 'https://lu.ma/seattlejs'}>
+    More Info & Tickets <i class="fa-solid fa-ticket"></i>
+  </a>
 </div>
 
 <div class="talks">
