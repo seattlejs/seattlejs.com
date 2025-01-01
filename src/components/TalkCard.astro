@@ -1,6 +1,6 @@
 ---
 import speakers from '@/data/speakers.json'
-import { type MeetupTalk, type ConfTalk } from '@/utils/data'
+import type { MeetupTalk, ConfTalk } from '@/data/types'
 
 let { talk, url } = Astro.props as {
   talk: MeetupTalk | ConfTalk

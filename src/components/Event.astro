@@ -2,7 +2,8 @@
 import { toHTML } from '@/utils/markdown'
 import Sponsor from '@/components/Sponsor.astro'
 import TalkCard from '@/components/TalkCard.astro'
-import { inflateEvent, type SJSEvent } from '@/utils/data'
+import { inflateEvent } from '@/utils/data'
+import type { SJSEvent } from '@/data/types'
 
 const { event: baseEvent } = Astro.props as { event: SJSEvent }
 const event = inflateEvent(baseEvent)
