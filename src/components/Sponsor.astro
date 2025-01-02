@@ -14,7 +14,7 @@ const { tier, name, url, image } = sponsor
 
 const sponsorId = image.replace(/\.\w+$/, '')
 const imageGlob = import.meta.glob<{ default: ImageMetadata }>(
-  '@/images/sponsors/*.{jpeg,jpg,png,gif,webp,svg}'
+  '@/images/sponsors/*.{jpeg,jpg,png,gif,webp,svg}',
 )
 
 let imageMetadata: ImageMetadata | null = null

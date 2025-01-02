@@ -13,7 +13,7 @@ import Header from '@/components/Header.astro'
 
 const TWELVE_HOURS = 1000 * 60 * 60 * 12
 const futureEvents = events.filter(
-  t => new Date(`${t.date}T21:00-08:00`).getTime() + TWELVE_HOURS > Date.now()
+  t => new Date(`${t.date}T21:00-08:00`).getTime() + TWELVE_HOURS > Date.now(),
 )
 
 // const futureEvents = [events.at(-1)]

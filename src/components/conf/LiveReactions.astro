@@ -257,7 +257,7 @@
       const id = button.id
 
       const reactionsContainer = document.querySelector(
-        '#' + id + ' .reactions'
+        '#' + id + ' .reactions',
       )
       const newDOMElements = document.createDocumentFragment()
 
@@ -279,7 +279,7 @@
             div.style.animationTimingFunction = reaction.curve
             div.style.setProperty(
               '--starting-angle',
-              reaction.startingAngle + 'deg'
+              reaction.startingAngle + 'deg',
             )
             div.style.setProperty('--animation-duration', '2s')
             div.style.setProperty('--travel-distance', -80 + 'px')
@@ -308,7 +308,7 @@
               div.style.animationTimingFunction = reaction.curve
               div.style.setProperty(
                 '--starting-angle',
-                reaction.startingAngle + 'deg'
+                reaction.startingAngle + 'deg',
               )
               div.style.setProperty('--animation-duration', '2s')
               div.style.setProperty('--travel-distance', -80 + 'px')
@@ -322,7 +322,7 @@
       if (reactionsContainer) {
         reactionsContainer.appendChild(newDOMElements)
         const announcementContainer = document.querySelector(
-          '#' + id + ' .visually-hidden'
+          '#' + id + ' .visually-hidden',
         )
 
         if (!announcementContainer) return
