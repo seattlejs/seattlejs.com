@@ -347,9 +347,32 @@
         "date": "2024-10-09",
         "sponsors": [],
         "talks": [
-            "stacy-davis1-october-2024",
             "erik-marks-october-2024"
         ],
         "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/r9LsbFzCxuMpRzbXA'>Silicon Valley Bank</a> this month!\n\n"
+    },
+    {
+        "id": "november-2024",
+        "title": "SeattleJS November 2024",
+        "date": "2024-11-13",
+        "sponsors": [],
+        "talks": [
+            "cat-johnson-november-2024",
+            "stacy-davis1-november-2024"
+        ],
+        "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/fbEUjw2mGvvTDsVR6'>Startup Hall on UW campus</a> this month!\n\n"
+    },
+    {
+        "id": "january-2025",
+        "link": "https://lu.ma/s4s4mqxy",
+        "title": "SeattleJS January 2025",
+        "date": "2025-01-08",
+        "sponsors": [],
+        "talks": [
+            "justin-castilla-january-2025",
+            "peli-de-halleux-january-2025",
+            "andrew-enyeart-january-2025"
+        ],
+        "description": "Join your fellow web devs for an evening of talks, networking and fun! Register ahead of time at the link below.\n\nNOTE: We are at <a target='_blank' href='https://maps.app.goo.gl/PwCs9NTjPsUi6Ar5A'>Just The Tap</a> in Belltown this month!\n\n"
     }
 ]

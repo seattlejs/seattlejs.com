@@ -7,9 +7,9 @@ Here's what you need to know:
 1. You will be presenting on {date} at {location}
 2. As a presenter, we ask that you **arrive by 5PM** to complete a tech check before doors open at 5:30PM
 
----
+As a reminder, please arrive at the venue, {venue}, by 5:00PM for a tech check.
 
-Before we publish the event details, let's confirm your information. Here are the details from your submission.
+Before we publish the event details, we'd like to confirm your information. Here's the details from your submission - is there anything you'd like to change or are you happy with it as is?
 
 - **Name**: {name}
 - **Pronouns**: {pronouns}

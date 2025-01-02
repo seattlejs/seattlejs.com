@@ -1,6 +1,6 @@
 ---
 name: Meetup Checklist
-about: checklist for meetup organizers to track meetup tasks
+about: Checklist for meetup organizers to track meetup tasks
 title: '<Month> Meetup Checklist'
 labels: 'meetup-checklist'
 assignees: ''
@@ -18,22 +18,20 @@ assignees: ''
 ## (3 weeks out)
 
 - [ ] confirm sponsor & update website
-- [ ] submit invoice to sponsor
 - [ ] confirm speakers & update website
-- [ ] create calendar event and invite speakers, sponsor, & volunteers
-- [ ] create discord event
+- [ ] create lu.ma calendar event and invite speakers, sponsor, & volunteers
 - [ ] click "announce" on meetup.com
-- [ ] post tweet & paste in discord #announcements channel
+- [ ] post on BlueSky & paste in discord #announcements channel
 
 ## (2 weeks out)
 
-- [ ] send email to mailing list (customer.io)
+- [ ] send email to mailing list
 - [ ] Post on LinkedIn & repost using [SeattleJS account](https://www.linkedin.com/company/seattlejs)
 
 ## (1 week out)
 
 - [ ] send email to meetup.com
-- [ ] post tweet
+- [ ] post on BlueSky
 - [ ] announce in Discord #announcements channel
 
 ## (1-2 days before)
