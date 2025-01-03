@@ -22,6 +22,8 @@ export const getStaticPaths = (async () => {
         type: 'meetup',
         talk,
         speaker,
+        pageTitle: talk.title,
+        sharing: null,
       },
     }
   })
@@ -33,6 +35,10 @@ export const getStaticPaths = (async () => {
         type: 'conf-2023',
         talk,
         speaker: talk.speaker,
+        pageTitle: `SeattleJS Conf 2023 - ${talk.title}`,
+        sharing: {
+          image: `/_public/images/social/${talk.id}.png`,
+        },
       },
     }
   })
@@ -42,22 +48,12 @@ export const getStaticPaths = (async () => {
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>
 
-const { type, talk, speaker } = Astro.props as Props
-
-const pageTitle =
-  type === 'conf-2023' ? `SeattleJS Conf 2023 - ${talk.title}` : talk.title
+const { type, talk, speaker, sharing, pageTitle } = Astro.props as Props
 
 const bodyTitle =
   'type' in talk
     ? (talk.type === 'lightning' ? '⚡️ ' : '') + talk.title
     : talk.title
-
-let sharing = null
-if (type === 'conf-2023') {
-  sharing = {
-    image: `/_public/images/social/${talk.id}.png`,
-  }
-}
 
 const { title, abstract, topics } = talk
 const speakerPhoto = `/_public/images/speakers/${speaker.photo}`
