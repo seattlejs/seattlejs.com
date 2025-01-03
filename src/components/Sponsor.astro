@@ -14,9 +14,9 @@ const { tier, name, url, image } = sponsor
 
 const imageMetadata = await importImage(
   import.meta.glob<{ default: ImageMetadata }>(
-    '@/images/sponsors/*.{jpeg,jpg,png,gif,webp,svg}'
+    '@/images/sponsors/*.{jpeg,jpg,png,gif,webp,svg}',
   ),
-  image
+  image,
 )
 ---
 

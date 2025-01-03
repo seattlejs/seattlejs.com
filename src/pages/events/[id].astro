@@ -26,7 +26,7 @@ const hasSponsors = sponsors && sponsors.length > 0
 
 const speakerPhotoGlob = import.meta.glob<{ default: ImageMetadata }>(
   '@/images/speakers/*.{jpeg,jpg,png,gif,webp,svg}',
-  { eager: true }
+  { eager: true },
 )
 
 const findSpeakerPhoto = (photo: string) => {
@@ -35,7 +35,7 @@ const findSpeakerPhoto = (photo: string) => {
 
 const sponsorPhotoGlob = import.meta.glob<{ default: ImageMetadata }>(
   '@/images/sponsors/*.{jpeg,jpg,png,gif,webp,svg}',
-  { eager: true }
+  { eager: true },
 )
 
 const findSponsorPhoto = (photo: string) => {

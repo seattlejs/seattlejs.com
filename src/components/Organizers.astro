@@ -20,7 +20,7 @@ interface Organizer {
 const organizers = Astro.props.organizers
 const imageGlob = import.meta.glob<{ default: ImageMetadata }>(
   '@/images/organizers/*.{jpeg,jpg,png,gif,webp,svg}',
-  { eager: true }
+  { eager: true },
 )
 ---
 

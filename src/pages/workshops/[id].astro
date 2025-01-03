@@ -47,7 +47,7 @@ const { type, workshop } = Astro.props as Props
 const { topics, abstract, speaker } = workshop
 
 const imageGlob = import.meta.glob<{ default: ImageMetadata }>(
-  '@/images/speakers/*.{jpeg,jpg,png,gif,webp,svg}'
+  '@/images/speakers/*.{jpeg,jpg,png,gif,webp,svg}',
 )
 const speakerPhoto = await importImage(imageGlob, speaker.photo)
 
