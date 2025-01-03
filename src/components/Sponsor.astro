@@ -1,0 +1,44 @@
+---
+import { Image } from 'astro:assets'
+import type { Sponsor } from '@/data/types'
+import { importImage } from '@/utils/image'
+
+const props = Astro.props as { sponsor?: Sponsor } & Partial<Sponsor>
+
+let sponsor = {
+  ...(props.sponsor ?? {}),
+  ...props,
+} as Sponsor
+
+const { tier, name, url, image } = sponsor
+
+const imageMetadata = await importImage(
+  import.meta.glob<{ default: ImageMetadata }>(
+    '@/images/sponsors/*.{jpeg,jpg,png,gif,webp,svg}',
+  ),
+  image,
+)
+---
+
+<style>
+  .platinum img {
+    width: auto;
+    height: 200px;
+  }
+
+  .gold img {
+    width: auto;
+    height: 75px;
+  }
+
+  .gold {
+    display: inline-block;
+    margin: 16px;
+  }
+</style>
+
+<div class={tier}>
+  <a href={url} target="_new">
+    <Image layout="responsive" src={imageMetadata} alt={`logo for ${name}`} />
+  </a>
+</div>

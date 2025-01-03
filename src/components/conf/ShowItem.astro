@@ -1,0 +1,45 @@
+---
+export interface Props {
+  when: string
+  title?: string
+  children?: any
+}
+
+const { when, title } = Astro.props
+---
+
+<style>
+  .show-item {
+    display: flex;
+    margin: 16px;
+  }
+
+  .when {
+    min-width: 50px;
+    margin-right: 16px;
+  }
+
+  .what {
+    flex: 1;
+  }
+
+  .what .title {
+    /*font-size: 22px;*/
+    font-size: 120%;
+  }
+
+  .title :global(img) {
+    margin-left: 4px;
+    height: 20px;
+    vertical-align: middle;
+  }
+</style>
+<div class="show-item">
+  <div class="when">{when}</div>
+  <div class="what">
+    <div class="title">
+      <slot name="title">{title}</slot>
+    </div>
+    <slot />
+  </div>
+</div>

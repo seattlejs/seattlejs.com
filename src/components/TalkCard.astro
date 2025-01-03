@@ -1,0 +1,104 @@
+---
+import { Image } from 'astro:assets'
+import speakers from '@/data/speakers.json'
+import type { MeetupTalk, ConfTalk } from '@/data/types'
+import { importImage } from '@/utils/image'
+
+interface Props {
+  talk: MeetupTalk | ConfTalk
+  url?: string
+}
+
+const { talk, url } = Astro.props
+
+const { id, title, type } = talk
+
+const speaker =
+  'speaker' in talk
+    ? talk.speaker
+    : speakers.find(s => s.id === talk.speaker_id)
+
+if (!speaker) {
+  throw new Error(`Speaker not found for talk ${talk.id}`)
+}
+
+const location = 'location' in speaker ? speaker.location : ''
+const { name, company, photo } = speaker
+const speakerPhoto = await importImage(
+  import.meta.glob<{ default: ImageMetadata }>(
+    '@/images/speakers/*.{jpeg,jpg,png,gif,webp,svg}',
+  ),
+  photo,
+)
+---
+
+<style>
+  .speaker {
+    margin-right: 16px;
+  }
+
+  .photo {
+    position: relative;
+    height: 250px;
+    width: 250px;
+  }
+
+  .photo .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #ee3e4a;
+  }
+
+  .photo:hover .overlay {
+    opacity: 1;
+  }
+
+  .photo .overlay .text {
+    color: white;
+    font-family: headline-gothic-atf-round, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.125em;
+    margin: 16px;
+    text-align: left;
+  }
+
+  .photo img {
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+  }
+
+  .info {
+    margin: 8px 0 16px 0;
+  }
+
+  .name {
+    font-family: headline-gothic-atf-round, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+</style>
+
+<div class="speaker">
+  <a href={url ? url : `/talks/${id}`}>
+    <div class="photo">
+      <Image src={speakerPhoto} alt={`head shot of ${name}`} />
+      <div class="overlay">
+        <div class="text">{type === 'lightning' ? '⚡️ ' : ''}{title}</div>
+      </div>
+    </div>
+  </a>
+  <div class="info">
+    <div class="name">{name}</div>
+    <div class="misc">
+      {company}<br />{location}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+---
+import { Image } from 'astro:assets'
+import type { Links } from '@/data/types'
+import SocialLinks from './SocialLinks.astro'
+import type { ImageMetadata } from 'astro'
+import { findImage } from '@/utils/image'
+
+interface Props {
+  organizers: Organizer[]
+}
+
+interface Organizer {
+  id: string
+  full_name: string
+  role?: string
+  links?: Links
+  photo?: string
+}
+
+const organizers = Astro.props.organizers
+const imageGlob = import.meta.glob<{ default: ImageMetadata }>(
+  '@/images/organizers/*.{jpeg,jpg,png,gif,webp,svg}',
+  { eager: true },
+)
+---
+
+<div class="organizers">
+  {
+    organizers.map(o => {
+      const imgData = o.photo && findImage(imageGlob, o.photo, true)
+      return (
+        <div class="organizer">
+          {imgData && (
+            <p>
+              <Image src={imgData} alt={`head shot of ${o.full_name}`} />
+            </p>
+          )}
+          <p>
+            <div class="name">{o.full_name}</div>
+            {o.role && (
+              <>
+                {o.role} <br />
+              </>
+            )}
+            {o.links && <SocialLinks links={o.links} />}
+          </p>
+        </div>
+      )
+    })
+  }
+</div>
+
+<style>
+  .organizer img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .name {
+    font-family: headline-gothic-atf-round, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  @media only screen and (min-width: 768px) {
+    .organizers {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .organizer {
+      margin: 8px;
+    }
+  }
+</style>

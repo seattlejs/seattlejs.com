@@ -1,0 +1,294 @@
+{
+  "id": "seattlejs-conf-2023",
+  "title": "SeattleJS Conf 2023",
+  "date": "2023-08-08",
+  "talks": [
+    {
+      "id": "a-plea-for-boring-tech",
+      "title": "A Plea for Boring Tech",
+      "abstract": "As developers, we often get to combine the thing we do for work with a thing we do for fun. This is what all those embroidered pillows and motivational posters told us is the best possible outcome, and we should celebrate that! But doing a job that's also a thing we do for play isn't free of risks. If we treat our jobs as a hobby, we risk doing things because they're fun for us and not because they're good for our company or team. It's great to be excited about tech and to want to play with exciting tech in our free time — but the tech we choose at work should be boring.",
+      "topics": ["tools", "work", "play"],
+      "speaker": {
+        "id": "jason-lengstorf",
+        "name": "Jason Lengstorf",
+        "company": "Learn With Jason",
+        "twitter": "jlengstorf",
+        "photo": "jason-lengstorf.jpg",
+        "location": "Portland, OR"
+      }
+    },
+    {
+      "id": "flip-no-more",
+      "title": "FLIP no more; Viva View Transitions",
+      "abstract": "Transitioning elements across the DOM tree, DOM tree mods, or even dynamic positioning like animating stacked notifications as they pour in.. are all things that require the FLIP (first last invert play) technique. Not anymore, View Transitions have entered the ring, and they're faster, stronger and have rad tricks up their sleeve.",
+      "tweet": "1/ FLIP no more; Viva View Transitions by @argyleink\n\nTransitioning elements across the DOM tree, DOM tree mods, or even dynamic positioning are all things that require the FLIP (first last invert play) technique. Not anymore now that View Transitions have entered the ring 🥊",
+      "topics": ["css", "view transitions"],
+      "speaker": {
+        "id": "adam-argyle",
+        "name": "Adam Argyle",
+        "company": "Google",
+        "twitter": "argyleink",
+        "photo": "adam-argyle.jpg",
+        "location": "Seattle, WA"
+      }
+    },
+    {
+      "id": "deno-2.0",
+      "title": "What to Know About Deno 2.0",
+      "abstract": "Deno, the new JavaScript and TypeScript runtime built for globally distributed applications, is approaching a 2.0 release. In this talk, we'll cover what's new in 2.0, what's getting better, and why now is the time to consider building your next project on Deno.",
+      "tweet": "3/ What to Know About Deno 2.0 by @kevinwhinnery\n\nDeno, the new JavaScript and TypeScript runtime, is approaching a 2.0 release. In this talk, we'll cover what's new, what's getting better, and why now is the time to consider building your next project on Deno.",
+      "topics": ["javascript", "deno"],
+      "speaker": {
+        "id": "kevin-whinnery",
+        "name": "Kevin Whinnery",
+        "company": "Deno",
+        "twitter": "kevinwhinnery",
+        "photo": "kevin-whinnery.jpg",
+        "location": "Minneapolis, MN"
+      }
+    },
+    {
+      "id": "dont-fear-the-linter",
+      "title": "Static Analysis: Don't Fear the Linter!",
+      "abstract": "Static analysis tools scrutinize your code as you write it - giving you blazing fast feedback at development time. We're going to go into how that works, why it's useful, and -best of all- how to enable the best configurations for ESLint, TypeScript, and their associated tooling in your app.",
+      "tweet": "7/ Static Analysis: Don't Fear the Linter! by @JoshuaKGoldberg\n\nStatic analysis tools scrutinize your code as you write it - giving you blazing fast feedback at dev time. Let's go into how that works, why it's useful and how to enable the best configs for ESLint & TypeScript ⚡️",
+      "topics": ["static analysis", "linters", "eslint", "typescript"],
+      "speaker": {
+        "id": "josh-goldberg",
+        "name": "Josh Goldberg",
+        "twitter": "JoshuaKGoldberg",
+        "company": "typescript-eslint",
+        "photo": "josh-goldberg.jpg",
+        "location": "Philadelphia, PA"
+      }
+    },
+    {
+      "id": "move-over-passwords",
+      "title": "Move over passwords, passkeys are my new best friend!",
+      "abstract": "We know all passwords are essential but they also suck. The traditional password-based authentication system is riddled with vulnerabilities and usability challenges. On World Password Day (yes, it's a thing!) 2023, Google rolled out the next step towards a passwordless future: passkeys. In this talk, we will delve into the emerging use of passkeys - what they are, how they work, and where they can be used. We will explore how they are resistant to phishing and how you, as a developer, can use them to make your apps more secure. Worried about losing your password? passkeys are here to save the day!",
+      "tweet": "10/ Move Over Passwords, Passkeys are My New Best Friend by @thebetterdaphne\n\nOn World Password Day (yes, it's a thing!) 2023, Google rolled out passkeys, the next step in passwordless. In this talk, we will delve into what they are, how they work, and where they can be used. 🔑",
+      "topics": ["Security", "Web OTP", "Passkeys", "2FA"],
+      "speaker": {
+        "id": "daphne-liu",
+        "name": "Daphne Liu",
+        "twitter": "thebetterdaphne",
+        "company": "Grow Therapy ",
+        "photo": "daphne-liu.jpg",
+        "pronouns": "she/her",
+        "location": "Seattle, WA"
+      }
+    },
+    {
+      "id": "rebuilding-in-rust",
+      "title": "Rebuilding in Rust for Good Reason",
+      "abstract": "Diving into Rust can feel daunting, but daunting can be worth it! In this talk, we'll discuss some of the best entry points into the world of Rust and build for performance, interoperability, and fun.",
+      "tweet": "9/ Rebuilding in Rust for Good Reason by @eveporcello\n\nDiving into Rust can feel daunting, but daunting can be worth it! In this talk, we'll discuss some of the best entry points into the world of Rust and build for performance, interoperability, and fun. 📦",
+      "topics": ["Rust", "IoT", "API"],
+      "speaker": {
+        "id": "eve-porcello",
+        "name": "Eve Porcello",
+        "twitter": "EvePorcello",
+        "company": "Moon Highway",
+        "photo": "eve-porcello.jpg",
+        "pronouns": "she/her",
+        "location": "Bend, OR"
+      }
+    },
+    {
+      "id": "react-rendering-with-nextjs",
+      "title": "50 shades of React rendering with Next.js",
+      "abstract": "CSR. SSG. SSR. ISR. These acronyms are different ways that we can render our React apps. Let’s explore all the types of rendering, and which we should choose for pages in our Next.js apps.",
+      "topics": [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "JavaScript",
+        "server-side rendering"
+      ],
+      "speaker": {
+        "id": "ben-ilegbodu",
+        "name": "Ben Ilegbodu",
+        "twitter": "benmvp",
+        "company": "StitchFix",
+        "photo": "ben-ilegbodu.jpg",
+        "location": "Houston, TX",
+        "url": "https://www.benmvp.com"
+      }
+    },
+    {
+      "id": "langchain-agents",
+      "title": "Understanding LangChain Agents and Tools with Twilio (or with SMS)",
+      "abstract": "With LangChain, developers “chain” together different LLM components to create more advanced use cases around LLMs. Agents use LLMs to decide what actions should be taken. Get introduced to LangChain about what you can do with Agents, Tools, and communication APIs!",
+      "tweet": "4/ Understanding LangChain Agents with @lizziepika\n\nWith LangChain, developers “chain” together different LLM components to create more advanced use cases around LLMs. Get introduced to LangChain and learn what you can do with Agents, Tools, and communication APIs!",
+      "topics": ["Machine Learning", "AI", "API"],
+      "speaker": {
+        "id": "lizzie-siegle",
+        "name": "Lizzie Siegle",
+        "twitter": "lizziepika",
+        "company": "Twilio",
+        "photo": "lizzie-siegle.jpg",
+        "pronouns": "she/her/hers",
+        "location": "San Francisco, CA"
+      }
+    },
+    {
+      "id": "creating-a-design-system",
+      "title": "Creating a Design System using Design Tokens With Amplify",
+      "abstract": "In this talk we will deep dive into design tokens and how they can be used with an overall design system for your organization or website. Every design token is the source of truth to name and store a design decision. We'll explore this idea, and see how in practice we use it in our Amplify UI components library. We'll look at before and after designs, and how branding and theming are affected by it. I'll finish the talk by a look at some tips on design.",
+      "tweet": "2/ Creating a Design System using Design Tokens by @ErikCH\n\nErik will dive deep into design tokens and how they function as the source of truth to name and store a design decisions when you're building websites and applications. 🎨",
+      "topics": ["Machine Learning", "AI", "API"],
+      "speaker": {
+        "id": "erik-hanchett",
+        "name": "Erik Hanchett",
+        "twitter": "Erikch",
+        "company": "Amazon Web Services",
+        "photo": "erik-hanchett.jpg",
+        "pronouns": "he/him",
+        "location": "Reno, NV"
+      }
+    },
+    {
+      "id": "every-process-everywhere-all-at-once",
+      "title": "Every Process, Everywhere, All at Once",
+      "abstract": "While true decentralized computing in web browsers still isn't quite there yet, recent developments might have you questioning just what on earth that busy browser tab is doing.",
+      "tweet": "8/ Every Process, Everywhere, All at Once by @monteslu\n\nWhile true decentralized computing in web browsers still isn't quite there yet, recent developments might have you questioning just what on earth that busy browser tab is doing. ⌛️",
+      "topics": [
+        "dweb",
+        "node.js",
+        "webrtc",
+        "web3",
+        "containerization",
+        "IoT",
+        "browsers",
+        "PWA"
+      ],
+      "speaker": {
+        "id": "luis-montes",
+        "name": "Luis Montes",
+        "twitter": "monteslu",
+        "company": "Iced Dev",
+        "photo": "luis-montes.jpg",
+        "pronouns": "he/him",
+        "location": "Mesa, AZ"
+      }
+    },
+    {
+      "id": "real-time-multiplayer-reactions-component",
+      "title": "Building a Real-Time Multiplayer Reactions Component",
+      "abstract": "Build a real-time multiplayer video reactions component with slick animations.",
+      "tweet": "6/ Building a Real-Time Multiplayer Reactions Component by @JohnPhamous\n\nImagine a livestream with thousands (millions?) of viewers and enabling people to react to what they're watching in real-time for everyone to see. John is going to show us how to design and build this!",
+      "topics": ["react.js", "css", "web sockets"],
+      "speaker": {
+        "id": "john-pham",
+        "name": "John Pham",
+        "twitter": "JohnPhamous",
+        "company": "Vercel",
+        "photo": "john-pham.jpg",
+        "pronouns": "he/him",
+        "location": "Seattle, WA"
+      }
+    },
+    {
+      "id": "es13-and-beyond",
+      "title": "ES13 and Beyond: The Future of JavaScript",
+      "abstract": "Many front-end developers have heard about ES6, but did they know we're already on ES13?! In this talk, I'll speak about the history and evolution of JavaScript, ECMA, and how features get suggested and implemented. I'll go over some of the exciting new features that have been released in ES12 and ES13, such as top-level await, private methods and fields, new operators, and best practices moving forward.",
+      "tweet": "",
+      "topics": ["javascript", "ECMA", "ES13"],
+      "speaker": {
+        "id": "christina-zhu",
+        "name": "Christina Zhu",
+        "twitter": "cszhu",
+        "company": "Ex-Retool",
+        "photo": "christina-zhu.jpg",
+        "pronouns": "she/her",
+        "location": "Cupertino, CA"
+      }
+    }
+  ],
+  "workshops": [
+    {
+      "id": "managing-data-in-a-react-application-aug-7",
+      "title": "Managing Data in a React Application (Aug 7)",
+      "abstract": "Fast user experiences are a requirement, and the developer tools for managing data handling have never been better! In this hands-on workshop, Eve Porcello will take a look at some of the preeminent patterns for building amazing user experiences with React. She'll also explore the latest features of React Server Components and how they can be leveraged with modern frameworks.\n\nTopics include: Data Loading Overview and Historical Tour, Understanding Streams, Suspense, React Server Components , GraphQL (Relay Fragments and Apollo Client), Exploring Next.js, Remix, and other frameworks",
+      "short": "In this hands-on workshop, Eve Porcello will take a look at some of the preeminent patterns for building amazing user experiences with React. She'll also explore the latest features of React Server Components and how they can be leveraged with modern frameworks",
+      "topics": ["react.js", "next.js", "remix", "react server components"],
+      "speaker": {
+        "id": "eve-porcello",
+        "name": "Eve Porcello",
+        "twitter": "EvePorcello",
+        "company": "Moon Highway",
+        "photo": "eve-porcello.jpg",
+        "pronouns": "she/her",
+        "location": "Bend, OR"
+      }
+    },
+    {
+      "id": "introduction-to-typescript-aug-9",
+      "title": "Introduction to TypeScript (Aug 9)",
+      "abstract": "Join Josh Goldberg in understanding the foundations of TypeScript! He'll cover how its type system works, how it lets you model user code, and -best of all- the benefits it can give you as a developer. And he'll show some great IDE tips & tricks enabled by TypeScript. ⚡",
+      "topics": ["typescript"],
+      "speaker": {
+        "id": "josh-goldberg",
+        "name": "Josh Goldberg",
+        "twitter": "JoshuaKGoldberg",
+        "company": "typescript-eslint",
+        "photo": "josh-goldberg.jpg",
+        "location": "Philadelphia, PA"
+      }
+    },
+    {
+      "id": "building-ai-apps-aug-10",
+      "title": "Building AI Apps (Aug 10)",
+      "short": "Join Brook Riggio In this hands-on workshop on building AI app! Learn about how to integrate generative AI capabilities into new or existing projects, within your own UI, fully utilizing your own domain knowledge. Whether you want to launch your own AI-powered product, or incorporate cutting-edge functionality into your existing offerings, this workshop will give you the practical details and a vision of what's even possible to inspire your next generation of applications.",
+      "abstract": "The power of Large Language Models (LLMs) is reshaping what our apps are capable of, 🤖 and how we build them. Get hands-on experience in this workshop, where you will build 2 distinct apps that leverage AI's strengths... and we'll see how to use AI tools to help us code more effectively!\n\nWe will leverage open source and best-of-breed options to:\n\n- Create an interactive customer service chat agent for your website, equipped to respond with your deep domain knowledge to boost conversions.\n- Deploy open models to AWS, for even more control over the data flow, and system prompts. 🌩\n\nWhether you're looking to launch 🚀 a new AI-driven product or elevate your current offerings, this workshop equips you with both practical experience and a vision for the future to inspire your next generation of applications. 🏗",
+      "topics": ["AI"],
+      "speaker": {
+        "id": "brook-riggio",
+        "name": "Brook Riggio",
+        "linkedin": "brookr",
+        "company": "Code Fellows",
+        "photo": "brook-riggio.jpg",
+        "location": "Seattle, WA"
+      }
+    }
+  ],
+  "organizers": [
+    {
+      "id": "carter-rabasa",
+      "full_name": "Carter Rabasa",
+      "twitter": "crtr0",
+      "role": "Lead Organizer",
+      "photo": "carter-rabasa.jpg"
+    },
+    {
+      "id": "carrie-rabasa",
+      "full_name": "Carrie Rabasa",
+      "twitter": "carrie_k",
+      "role": "Lead Designer",
+      "photo": "carrie-rabasa.jpg"
+    },
+    {
+      "id": "andre-wiggins",
+      "full_name": "Andre Wiggins",
+      "twitter": "andre_wiggins",
+      "role": "Co-Organizer",
+      "photo": "andre-wiggins.jpg"
+    },
+    {
+      "id": "rachel-lee-nabors",
+      "full_name": "Rachel Lee Nabors",
+      "twitter": "rachelnabors",
+      "role": "Emcee",
+      "photo": "rachel-lee-nabors.jpg"
+    },
+    {
+      "id": "jim-liu",
+      "full_name": "Jim Liu",
+      "twitter": "0xitsjim",
+      "role": "Speaker Wrangler",
+      "photo": "jim-liu.jpg"
+    }
+  ],
+  "sponsors": []
+}
