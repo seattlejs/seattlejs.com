@@ -4,6 +4,7 @@ import PageContainer from '@/components/PageContainer.astro'
 import Speaker from '@/components/Speaker.astro'
 import conf from '@/data/conf-2023.json'
 import BaseLayout from '@/layouts/BaseLayout.astro'
+import { importImage } from '@/utils/image'
 import { toHTML } from '@/utils/markdown'
 import type { GetStaticPaths, InferGetStaticPropsType } from 'astro'
 
@@ -44,7 +45,11 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>
 
 const { type, workshop } = Astro.props as Props
 const { topics, abstract, speaker } = workshop
-const speakerPhoto = `/_public/images/speakers/${speaker.photo}`
+
+const imageGlob = import.meta.glob<{ default: ImageMetadata }>(
+  '@/images/speakers/*.{jpeg,jpg,png,gif,webp,svg}'
+)
+const speakerPhoto = await importImage(imageGlob, speaker.photo)
 
 const pageTitle = `SeattleJS Conf 2023 - ${workshop.title}`
 const sharing = {

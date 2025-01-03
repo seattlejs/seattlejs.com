@@ -1,4 +1,12 @@
 ---
+import { Image } from 'astro:assets'
+
+interface Props {
+  name: string
+  title: string
+  photo: ImageMetadata
+}
+
 const { name, photo, title } = Astro.props
 ---
 
@@ -6,7 +14,11 @@ const { name, photo, title } = Astro.props
   style="background-image: url('/_public/images/social-sharing-card-conf.png'); height: 628px; width: 1200px"
 >
   <div style="position: absolute; top: 230px; left: 152px">
-    <img src={photo} alt={`photo of ${name}`} width="278" height="278" />
+    <Image
+      src={photo}
+      alt={`photo of ${name}`}
+      style={{ width: '278px', height: '278px' }}
+    />
   </div>
   <div style="position: absolute; top: 530px; left: 152px; font-size: 27px">
     {name}

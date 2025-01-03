@@ -3,6 +3,7 @@ import conf from '@/data/conf-2023.json'
 import talks from '@/data/talks.json'
 import speakers from '@/data/speakers.json'
 import { toHTML } from '@/utils/markdown'
+import { importImage } from '@/utils/image'
 import type { GetStaticPaths, InferGetStaticPropsType } from 'astro'
 import BaseLayout from '@/layouts/BaseLayout.astro'
 import PageContainer from '@/components/PageContainer.astro'
@@ -56,7 +57,11 @@ const bodyTitle =
     : talk.title
 
 const { title, abstract, topics } = talk
-const speakerPhoto = `/_public/images/speakers/${speaker.photo}`
+
+const imageGlob = import.meta.glob<{ default: ImageMetadata }>(
+  '@/images/speakers/*.{jpeg,jpg,png,gif,webp,svg}'
+)
+const speakerPhoto = await importImage(imageGlob, speaker.photo)
 ---
 
 <BaseLayout pageTitle={pageTitle} sharing={sharing}>

@@ -23,7 +23,7 @@ The event is being hosted by AWS and will feature a post-conference karaoke part
 
 ## Logo 
 
-https://seattlejs.com/_public/images/seattlejsconf-2023-logo-a274507057.png
+https://seattlejs.com/_public/images/seattlejsconf-2023-logo.png
 
 ## Website
 
