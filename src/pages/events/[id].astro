@@ -16,11 +16,11 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>
 const { event: baseEvent } = Astro.props as Props
 const event = inflateEvent(baseEvent)
 const { sponsors, talks, description, date, link } = event
+let location = event.location ?? null
 const pageTitle = event.title
 
 const hasTalks = talks && talks.length > 0
 const hasSponsors = sponsors && sponsors.length > 0
-let location = event.location ?? null
 
 // const eventDate = new Date(date)
 // const eventDateStr = `${eventDate.getFullYear()}-${

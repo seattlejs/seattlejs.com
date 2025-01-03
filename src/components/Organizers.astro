@@ -1,7 +1,7 @@
 ---
+import path from 'node:path'
 import { Image } from 'astro:assets'
 import type { Links } from '@/data/types'
-import { parseFileName } from '@/utils/data'
 import SocialLinks from './SocialLinks.astro'
 import type { ImageMetadata } from 'astro'
 
@@ -14,28 +14,26 @@ interface Organizer {
   full_name: string
   role?: string
   links?: Links
+  photo?: string
 }
 
 const organizers = Astro.props.organizers
 const imageGlob = import.meta.glob<{ default: ImageMetadata }>(
-  '@/images/organizers/*.jpg',
-  {
-    eager: true,
-  },
+  '@/images/organizers/*.{jpeg,jpg,png,gif,webp,svg}',
+  { eager: true }
 )
 
 const organizerImages = new Map<string, ImageMetadata>()
 for (const [key, value] of Object.entries(imageGlob)) {
-  const filename = parseFileName(key)
-  if (!filename) throw new Error(`Invalid filename: ${key}`)
-  organizerImages.set(filename, value.default)
+  const fileName = path.basename(key)
+  organizerImages.set(fileName, value.default)
 }
 ---
 
 <div class="organizers">
   {
     organizers.map(o => {
-      const imgData = organizerImages.get(o.id)
+      const imgData = o.photo && organizerImages.get(o.photo)
       return (
         <div class="organizer">
           {imgData && (

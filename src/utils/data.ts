@@ -8,10 +8,6 @@ import type {
   Sponsor,
 } from '@/data/types'
 
-export function parseFileName(srcPath: string): string | null {
-  return srcPath.match(/([^/]+)\.[\w]+$/)?.[1] ?? null
-}
-
 export function inflateEvent(event: SJSEvent): InflatedEvent {
   let inflatedEvent: InflatedEvent = { ...event, talks: [], sponsors: [] }
   if (event.talks) {

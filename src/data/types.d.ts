@@ -26,7 +26,6 @@ export interface Speaker {
 
 interface Talk {
   id: string
-  event_id: string
   title: string
   abstract: string
   topics?: string[]
@@ -34,6 +33,7 @@ interface Talk {
 }
 
 export interface MeetupTalk extends Talk {
+  event_id: string
   speaker_id: string
 }
 

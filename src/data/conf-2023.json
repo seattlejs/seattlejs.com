@@ -258,31 +258,36 @@
       "id": "carter-rabasa",
       "full_name": "Carter Rabasa",
       "twitter": "crtr0",
-      "role": "Lead Organizer"
+      "role": "Lead Organizer",
+      "photo": "carter-rabasa.jpg"
     },
     {
       "id": "carrie-rabasa",
       "full_name": "Carrie Rabasa",
       "twitter": "carrie_k",
-      "role": "Lead Designer"
+      "role": "Lead Designer",
+      "photo": "carrie-rabasa.jpg"
     },
     {
       "id": "andre-wiggins",
       "full_name": "Andre Wiggins",
       "twitter": "andre_wiggins",
-      "role": "Co-Organizer"
+      "role": "Co-Organizer",
+      "photo": "andre-wiggins.jpg"
     },
     {
       "id": "rachel-lee-nabors",
       "full_name": "Rachel Lee Nabors",
       "twitter": "rachelnabors",
-      "role": "Emcee"
+      "role": "Emcee",
+      "photo": "rachel-lee-nabors.jpg"
     },
     {
       "id": "jim-liu",
       "full_name": "Jim Liu",
       "twitter": "0xitsjim",
-      "role": "Speaker Wrangler"
+      "role": "Speaker Wrangler",
+      "photo": "jim-liu.jpg"
     }
   ],
   "sponsors": []

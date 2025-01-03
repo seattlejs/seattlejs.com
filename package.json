@@ -16,6 +16,7 @@
     "preact": "^10.25.3"
   },
   "devDependencies": {
+    "@types/node": "^22.10.4",
     "eslint": "^8.46.0",
     "eslint-config-prettier": "^8.6.0",
     "patch-package": "^8.0.0",
