@@ -33,6 +33,15 @@ const findSpeakerPhoto = (photo: string) => {
   return findImage(speakerPhotoGlob, photo)
 }
 
+const sponsorPhotoGlob = import.meta.glob<{ default: ImageMetadata }>(
+  '@/images/sponsors/*.{jpeg,jpg,png,gif,webp,svg}',
+  { eager: true }
+)
+
+const findSponsorPhoto = (photo: string) => {
+  return findImage(sponsorPhotoGlob, photo)
+}
+
 // const eventDate = new Date(date)
 // const eventDateStr = `${eventDate.getFullYear()}-${
 //   eventDate.getMonth() + 1
@@ -59,11 +68,10 @@ const findSpeakerPhoto = (photo: string) => {
             <div>
               <p>
                 <a href={s.url}>
-                  <img
-                    width="200"
+                  <Image
+                    style={{ width: '200px', height: 'auto' }}
                     alt={`${s.name} logo`}
-                    src={`https://seattlejs.com/_public/images/sponsors/${s.image}`}
-                    title={`${s.name} logo`}
+                    src={findSponsorPhoto(s.image)}
                   />
                 </a>
               </p>
@@ -137,11 +145,10 @@ const findSpeakerPhoto = (photo: string) => {
           <div>
             <p>
               <a href={s.url}>
-                <img
-                  width="200"
+                <Image
+                  style={{ width: '200px', height: 'auto' }}
                   alt={`${s.name} logo`}
-                  src={`https://seattlejs.com/_public/images/sponsors/${s.image}`}
-                  title={`${s.name} logo`}
+                  src={findSponsorPhoto(s.image)}
                 />
               </a>
             </p>

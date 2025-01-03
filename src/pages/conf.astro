@@ -9,6 +9,7 @@ import event from '@/data/conf-2023.json'
 import BaseLayout from '@/layouts/BaseLayout.astro'
 import { findImage } from '@/utils/image'
 import { toHTML } from '@/utils/markdown'
+import ConfLogSrc from '@/images/conf/seattlejsconf-2023-logo.png'
 
 const speakerImageGlob = import.meta.glob<{ default: ImageMetadata }>(
   '@/images/speakers/*.{jpeg,jpg,png,gif,webp,svg}',
@@ -54,10 +55,9 @@ const speakerImageGlob = import.meta.glob<{ default: ImageMetadata }>(
     <!-- no title needed -->
     <div class="page-body">
       <div style="text-align:center">
-        <img
+        <Image
           style={{ width: '500px' }}
-          width="500"
-          src="/_public/images/seattlejsconf-2023-logo.png"
+          src={ConfLogSrc}
           alt="logo for SeattleJS Conf 2023"
         />
       </div>
