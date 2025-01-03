@@ -1,9 +1,9 @@
 ---
-import path from 'node:path'
 import { Image } from 'astro:assets'
 import type { Links } from '@/data/types'
 import SocialLinks from './SocialLinks.astro'
 import type { ImageMetadata } from 'astro'
+import { findImage } from '@/utils/image'
 
 interface Props {
   organizers: Organizer[]
@@ -22,18 +22,12 @@ const imageGlob = import.meta.glob<{ default: ImageMetadata }>(
   '@/images/organizers/*.{jpeg,jpg,png,gif,webp,svg}',
   { eager: true }
 )
-
-const organizerImages = new Map<string, ImageMetadata>()
-for (const [key, value] of Object.entries(imageGlob)) {
-  const fileName = path.basename(key)
-  organizerImages.set(fileName, value.default)
-}
 ---
 
 <div class="organizers">
   {
     organizers.map(o => {
-      const imgData = o.photo && organizerImages.get(o.photo)
+      const imgData = o.photo && findImage(imageGlob, o.photo, true)
       return (
         <div class="organizer">
           {imgData && (

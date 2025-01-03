@@ -1,15 +1,17 @@
 ---
+import { Image } from 'astro:assets'
 import speakers from '@/data/speakers.json'
 import type { MeetupTalk, ConfTalk } from '@/data/types'
+import { importImage } from '@/utils/image'
 
 interface Props {
   talk: MeetupTalk | ConfTalk
   url?: string
 }
 
-let { talk, url } = Astro.props
+const { talk, url } = Astro.props
 
-let { id, title, type } = talk
+const { id, title, type } = talk
 
 const speaker =
   'speaker' in talk
@@ -20,8 +22,14 @@ if (!speaker) {
   throw new Error(`Speaker not found for talk ${talk.id}`)
 }
 
-let location = 'location' in speaker ? speaker.location : ''
-let { name, company, photo } = speaker
+const location = 'location' in speaker ? speaker.location : ''
+const { name, company, photo } = speaker
+const speakerPhoto = await importImage(
+  import.meta.glob<{ default: ImageMetadata }>(
+    '@/images/speakers/*.{jpeg,jpg,png,gif,webp,svg}'
+  ),
+  photo
+)
 ---
 
 <style>
@@ -81,10 +89,7 @@ let { name, company, photo } = speaker
 <div class="speaker">
   <a href={url ? url : `/talks/${id}`}>
     <div class="photo">
-      <img
-        src={`/_public/images/speakers/${photo}`}
-        alt={`head shot of ${name}`}
-      />
+      <Image src={speakerPhoto} alt={`head shot of ${name}`} />
       <div class="overlay">
         <div class="text">{type === 'lightning' ? '⚡️ ' : ''}{title}</div>
       </div>

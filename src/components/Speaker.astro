@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets'
+import { importImage } from '@/utils/image'
 import SocialLinks from './SocialLinks.astro'
 
 let {
@@ -12,7 +14,12 @@ let {
   linkedin,
 } = Astro.props.speaker
 let links = { twitter, url, linkedin }
-const photo = `/_public/images/speakers/${photoFile}`
+const photo = await importImage(
+  import.meta.glob<{ default: ImageMetadata }>(
+    '@/images/speakers/*.{jpeg,jpg,png,gif,webp,svg}'
+  ),
+  photoFile
+)
 ---
 
 <style>
@@ -42,7 +49,7 @@ const photo = `/_public/images/speakers/${photoFile}`
 </style>
 <h2>About {name}</h2>
 <div class="info">
-  <div class="photo"><img src={photo} alt={`photo of ${name}`} /></div>
+  <div class="photo"><Image src={photo} alt={`head shot of ${name}`} /></div>
   <div class="more">
     {
       pronouns && (

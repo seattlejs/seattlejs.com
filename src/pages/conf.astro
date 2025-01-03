@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets'
 import Footer from '@/components/Footer.astro'
 import Header from '@/components/Header.astro'
 import Organizers from '@/components/Organizers.astro'
@@ -6,7 +7,13 @@ import Sponsor from '@/components/Sponsor.astro'
 import TalkCard from '@/components/TalkCard.astro'
 import event from '@/data/conf-2023.json'
 import BaseLayout from '@/layouts/BaseLayout.astro'
+import { findImage } from '@/utils/image'
 import { toHTML } from '@/utils/markdown'
+
+const speakerImageGlob = import.meta.glob<{ default: ImageMetadata }>(
+  '@/images/speakers/*.{jpeg,jpg,png,gif,webp,svg}',
+  { eager: true }
+)
 ---
 
 <style>
@@ -48,6 +55,7 @@ import { toHTML } from '@/utils/markdown'
     <div class="page-body">
       <div style="text-align:center">
         <img
+          style={{ width: '500px' }}
           width="500"
           src="/_public/images/seattlejsconf-2023-logo.png"
           alt="logo for SeattleJS Conf 2023"
@@ -79,9 +87,10 @@ import { toHTML } from '@/utils/markdown'
       </ul>
       <h2>Where</h2>
       <div>
-        <img
+        <Image
           src="https://2022.cascadiajs.com/images/past/cjs18-sponsor.jpg"
           alt="Amazon Meeting Center"
+          inferSize={true}
         />
       </div>
       <ul>
@@ -162,7 +171,10 @@ import { toHTML } from '@/utils/markdown'
             event.workshops.map(w => (
               <div class="workshop">
                 <div style="width:200px;margin-right:24px;">
-                  <img src={`/_public/images/speakers/${w.speaker.photo}`} />
+                  <Image
+                    src={findImage(speakerImageGlob, w.speaker.photo)}
+                    alt={`head shot of ${w.speaker.name}`}
+                  />
                 </div>
                 <div style="flex:1">
                   <h3>

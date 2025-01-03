@@ -1,9 +1,12 @@
 ---
+import { Image } from 'astro:assets'
+
 // import LiveReactions from '@/components/conf/LiveReactions.astro'
 import ShowItem from '@/components/conf/ShowItem.astro'
 import SpeakerShowItem from '@/components/conf/SpeakerShowItem.astro'
 import Sponsor from '@/components/Sponsor.astro'
 import PageLayout from '@/layouts/PageLayout.astro'
+import CourierSrc from '@/images/sponsors/courier.png'
 ---
 
 <style>
@@ -97,8 +100,9 @@ import PageLayout from '@/layouts/PageLayout.astro'
       <div class="location">Lunch Room</div>
       <ShowItem when="12:40">
         <Fragment slot="title">
-          <i class="fas fa-taco"></i> Lunch by <img
-            src="/_public/images/sponsors/courier.png"
+          <i class="fas fa-taco"></i> Lunch by <Image
+            src={CourierSrc}
+            alt="Courier logo"
           />
         </Fragment>
       </ShowItem>

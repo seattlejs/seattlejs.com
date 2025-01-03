@@ -1,11 +1,13 @@
 ---
 import type { InferGetStaticPropsType, GetStaticPaths } from 'astro'
-import { toHTML } from '@/utils/markdown'
+import { Image } from 'astro:assets'
 
+import { toHTML } from '@/utils/markdown'
 import { inflateEvent } from '@/utils/data'
 import events from '@/data/events.json'
 import BaseLayout from '@/layouts/BaseLayout.astro'
 import PageContainer from '@/components/PageContainer.astro'
+import { findImage } from '@/utils/image'
 
 export const getStaticPaths = (async () => {
   return events.map(event => ({ params: { id: event.id }, props: { event } }))
@@ -21,6 +23,15 @@ const pageTitle = event.title
 
 const hasTalks = talks && talks.length > 0
 const hasSponsors = sponsors && sponsors.length > 0
+
+const speakerPhotoGlob = import.meta.glob<{ default: ImageMetadata }>(
+  '@/images/speakers/*.{jpeg,jpg,png,gif,webp,svg}',
+  { eager: true }
+)
+
+const findSpeakerPhoto = (photo: string) => {
+  return findImage(speakerPhotoGlob, photo)
+}
 
 // const eventDate = new Date(date)
 // const eventDateStr = `${eventDate.getFullYear()}-${
@@ -95,11 +106,10 @@ const hasSponsors = sponsors && sponsors.length > 0
                 {t.title} by {t.speaker.name}
               </h4>
               <p>
-                <img
-                  width="200"
-                  alt={`photo of ${t.speaker.name}`}
-                  src={`https://seattlejs.com/_public/images/speakers/${t.speaker.photo}`}
-                  title={`photo of ${t.speaker.name}`}
+                <Image
+                  style={{ width: '200px', height: 'auto' }}
+                  alt={`head shot of ${t.speaker.name}`}
+                  src={findSpeakerPhoto(t.speaker.photo)}
                 />
               </p>
               {t.abstract && <p set:html={toHTML(t.abstract)} />}
@@ -174,11 +184,10 @@ const hasSponsors = sponsors && sponsors.length > 0
               {t.title} by {t.speaker.name}
             </h4>
             <p>
-              <img
-                width="200"
-                alt={`photo of ${t.speaker.name}`}
-                src={`https://seattlejs.com/_public/images/speakers/${t.speaker.photo}`}
-                title={`photo of ${t.speaker.name}`}
+              <Image
+                style={{ width: '200px', height: 'auto' }}
+                alt={`head shot of ${t.speaker.name}`}
+                src={findSpeakerPhoto(t.speaker.photo)}
               />
             </p>
             {t.abstract && <p set:html={toHTML(t.abstract)} />}
