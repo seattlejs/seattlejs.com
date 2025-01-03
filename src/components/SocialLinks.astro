@@ -1,9 +1,21 @@
 ---
-const props = Astro.props
-const linkedin = props.linkedin
-const twitter = props.twitter
-const url = props.url
-const github = props.github
+interface SocialLinksProps {
+  linkedin?: string
+  twitter?: string
+  url?: string
+  github?: string
+}
+
+interface Props {
+  links: SocialLinksProps
+}
+
+const links = Astro.props.links
+
+const linkedin = links.linkedin
+const twitter = links.twitter
+const url = links.url
+const github = links.github
 ---
 
 <style>

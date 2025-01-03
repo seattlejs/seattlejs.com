@@ -35,16 +35,6 @@ const imageGlob = import.meta.glob<{ default: ImageMetadata }>(
               <Image src={imgData} alt={`head shot of ${o.full_name}`} />
             </p>
           )}
-          {!imgData && (
-            <p>
-              <Image
-                src={`/_public/images/organizers/${o.id}.jpg`}
-                alt={`head shot of ${o.full_name}`}
-                width={500}
-                height={500}
-              />
-            </p>
-          )}
           <p>
             <div class="name">{o.full_name}</div>
             {o.role && (
