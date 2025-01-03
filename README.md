@@ -6,6 +6,7 @@
 - `npm i`
 - `npm start` to start dev server
 - `npm run build` to build production assets
+- `npm run format` for format all code files
 
 ## Platform and Services
 
