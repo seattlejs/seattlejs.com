@@ -59,4 +59,5 @@ export interface Links {
   twitter?: string
   url?: string
   github?: string
+  bluesky?: string
 }

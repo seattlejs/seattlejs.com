@@ -38,5 +38,17 @@
       "twitter": "Panziewanz"
     },
     "photo": "lucas-steinmacher.jpg"
+  },
+  {
+    "id": "allan-deutsch",
+    "full_name": "Allan Deutsch",
+    "links": {
+      "twitter": "allandeutsch",
+      "github": "masstronaut",
+      "url": "https://allandeutsch.com",
+      "bluesky": "allandeutsch.com",
+      "linkedin": "allandeutsch"
+    },
+    "photo": "allan-deutsch.jpg"
   }
 ]

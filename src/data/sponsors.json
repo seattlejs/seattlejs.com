@@ -1,5 +1,10 @@
 [
   {
+    "id": "elastic",
+    "url": "https://www.elastic.co/",
+    "image": "elastic.png"
+  },
+  {
     "id": "collective-seattle",
     "url": "https://www.collectiveseattle.com",
     "image": "collective.webp"
