@@ -10,10 +10,11 @@ import BaseLayout from '@/layouts/BaseLayout.astro'
 import { findImage } from '@/utils/image'
 import { toHTML } from '@/utils/markdown'
 import ConfLogSrc from '@/images/conf/seattlejsconf-2023-logo.png'
+import AmazonMeetingCenterSrc from '@/images/cjs18-sponsor.jpg'
 
 const speakerImageGlob = import.meta.glob<{ default: ImageMetadata }>(
   '@/images/speakers/*.{jpeg,jpg,png,gif,webp,svg}',
-  { eager: true },
+  { eager: true }
 )
 ---
 
@@ -88,11 +89,7 @@ const speakerImageGlob = import.meta.glob<{ default: ImageMetadata }>(
       </ul>
       <h2>Where</h2>
       <div>
-        <Image
-          src="https://2022.cascadiajs.com/images/past/cjs18-sponsor.jpg"
-          alt="Amazon Meeting Center"
-          inferSize={true}
-        />
+        <Image src={AmazonMeetingCenterSrc} alt="Amazon Meeting Center" />
       </div>
       <ul>
         <li>The Amazon Meeting Center</li>
