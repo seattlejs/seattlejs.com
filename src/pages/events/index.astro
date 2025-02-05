@@ -1,0 +1,47 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro'
+import events from '@/data/events.json'
+
+const pageTitle = 'Our Past Events'
+
+const sortedEvents = events.sort(
+  (a, b) => +new Date(b.date) - +new Date(a.date),
+)
+---
+
+<PageLayout pageTitle={pageTitle}>
+  {sortedEvents.length === 0 && <p>No events at the moment.</p>}
+  {
+    sortedEvents.length && (
+      <div class="event-list">
+        <ul>
+          {sortedEvents.map(e => (
+            <li>
+              <a href={`/events/${e.id}`}>{e.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+</PageLayout>
+
+<style>
+  .event-list {
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      list-style-type: none;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .event-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+  }
+</style>

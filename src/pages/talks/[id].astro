@@ -1,0 +1,119 @@
+---
+import conf from '@/data/conf-2023.json'
+import talks from '@/data/talks.json'
+import speakers from '@/data/speakers.json'
+import { toHTML } from '@/utils/markdown'
+import { importImage } from '@/utils/image'
+import type { GetStaticPaths, InferGetStaticPropsType } from 'astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import PageContainer from '@/components/PageContainer.astro'
+import Speaker from '@/components/Speaker.astro'
+import ConfSocialCard from '@/components/conf/ConfSocialCard.astro'
+
+export const getStaticPaths = (async () => {
+  const meetupTalks = talks.map(talk => {
+    const speaker = speakers.find(s => s.id === talk.speaker_id)
+    if (!speaker) {
+      throw new Error(`Speaker not found for talk ${talk.id}`)
+    }
+
+    return {
+      params: { id: talk.id },
+      props: {
+        type: 'meetup',
+        talk,
+        speaker,
+        pageTitle: talk.title,
+        sharing: null,
+      },
+    }
+  })
+
+  const confTalks = conf.talks.map(talk => {
+    return {
+      params: { id: talk.id },
+      props: {
+        type: 'conf-2023',
+        talk,
+        speaker: talk.speaker,
+        pageTitle: `SeattleJS Conf 2023 - ${talk.title}`,
+        sharing: {
+          image: `/_public/images/social/${talk.id}.png`,
+        },
+      },
+    }
+  })
+
+  return [...meetupTalks, ...confTalks]
+}) satisfies GetStaticPaths
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>
+
+const { type, talk, speaker, sharing, pageTitle } = Astro.props as Props
+
+const bodyTitle =
+  'type' in talk
+    ? (talk.type === 'lightning' ? '⚡️ ' : '') + talk.title
+    : talk.title
+
+const { title, abstract, topics } = talk
+
+const imageGlob = import.meta.glob<{ default: ImageMetadata }>(
+  '@/images/speakers/*.{jpeg,jpg,png,gif,webp,svg}',
+)
+const speakerPhoto = await importImage(imageGlob, speaker.photo)
+---
+
+<BaseLayout pageTitle={pageTitle} sharing={sharing}>
+  {
+    type === 'conf-2023' && (
+      <div id="social-card" hidden>
+        <ConfSocialCard
+          name={speaker.name}
+          photo={speakerPhoto}
+          title={title}
+        />
+      </div>
+    )
+  }
+
+  <PageContainer pageTitle={bodyTitle}>
+    {
+      topics ? (
+        <div class="topics">
+          {topics.map(t => (
+            <div class="topic">{t}</div>
+          ))}
+        </div>
+      ) : null
+    }
+    <div class="abstract" set:html={toHTML(abstract)} />
+    <Speaker speaker={speaker} />
+  </PageContainer>
+</BaseLayout>
+
+<style>
+  .topics {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .topic {
+    display: inline-block;
+    background-color: #cfd3e4;
+    text-decoration: none;
+    margin: 3px;
+    padding: 8px;
+  }
+</style>
+
+<script>
+  import { initializeQuerySwitch } from '@/scripts/initializeQuerySwitch'
+
+  if (document.getElementById('social-card')) {
+    initializeQuerySwitch([
+      ['social', '#social-card'],
+      ['', '#main'],
+    ])
+  }
+</script>

@@ -1,65 +1,40 @@
 {
   "name": "seattle-js",
-  "version": "3.3.96",
+  "type": "module",
+  "version": "4.0.0",
   "description": "An evergreen website for the SeattleJS meetup and community",
   "engines": {
-    "node": ">=16.19.0"
+    "node": ">=22.12.0"
   },
   "dependencies": {
-    "@architect/functions": "latest",
-    "@aws-sdk/client-apigatewaymanagementapi": "^3.382.0",
-    "@aws-sdk/client-dynamodb": "^3.382.0",
-    "@aws-sdk/client-s3": "^3.383.0",
-    "@aws-sdk/client-sns": "^3.382.0",
-    "@aws-sdk/client-sqs": "^3.382.0",
-    "@aws-sdk/client-ssm": "^3.382.0",
-    "@aws-sdk/lib-dynamodb": "^3.382.0",
-    "@begin/data": "^4.0.2",
-    "@enhance/arc-plugin-enhance": "^11.0.4",
-    "@liveblocks/client": "^1.1.8",
-    "esbuild": "^0.18.17",
-    "front-matter": "^4.0.2",
-    "marked": "^4.0.12",
-    "node-fetch": "^2.6.7"
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/preact": "^4.0.1",
+    "@astrojs/ts-plugin": "^1.10.4",
+    "@liveblocks/client": "^2.15.1",
+    "astro": "^5.1.1",
+    "marked": "^15.0.4",
+    "preact": "^10.25.3"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.19.1",
-    "@babel/plugin-syntax-import-assertions": "^7.20.0",
-    "@begin/deploy": "^0.22.4",
-    "aws-sdk": "^2.1429.0",
-    "dotenv": "^16.3.1",
-    "eslint": "latest",
+    "@types/node": "^22.10.4",
+    "eslint": "^8.46.0",
     "eslint-config-prettier": "^8.6.0",
-    "prettier": "^2.8.3"
-  },
-  "eslintConfig": {
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "eslint:recommended",
-      "prettier"
-    ],
-    "ignorePatterns": [
-      "public/scripts/*",
-      "src/*"
-    ],
-    "parser": "@babel/eslint-parser",
-    "parserOptions": {
-      "requireConfigFile": false,
-      "babelOptions": {
-        "plugins": [
-          "@babel/plugin-syntax-import-assertions"
-        ]
-      },
-      "sourceType": "module",
-      "ecmaVersion": 2022
-    }
+    "patch-package": "^8.0.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript": "^5.7.2"
   },
   "scripts": {
-    "start": "begin dev",
-    "lint": "eslint ./app/**/*.mjs --fix && prettier \"**/*.mjs\" --write",
-    "build": "esbuild src/app.js --bundle --outfile=public/scripts/app.js"
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview --port 3333",
+    "astro": "astro",
+    "lint": "npm run check && npm run check-format",
+    "eslint": "eslint src/**/*.{js,jsx,ts,tsx}",
+    "check": "astro check",
+    "check-format": "prettier --no-error-on-unmatched-pattern --check **/*.{astro,js,jsx,ts,tsx,css,md,html,yml,yaml,json}",
+    "format": "prettier --no-error-on-unmatched-pattern --write **/*.{astro,js,jsx,ts,tsx,css,md,html,yml,yaml,json}",
+    "postinstall": "patch-package"
   },
   "repository": {
     "type": "git",
@@ -70,5 +45,23 @@
   "bugs": {
     "url": "https://github.com/seattlejs/seattlejs.com/issues"
   },
-  "homepage": "https://github.com/seattlejs/seattlejs.com#readme"
+  "homepage": "https://github.com/seattlejs/seattlejs.com#readme",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "parserOptions": {
+      "requireConfigFile": false,
+      "sourceType": "module",
+      "ecmaVersion": 2022,
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    }
+  }
 }

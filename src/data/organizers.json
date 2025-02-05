@@ -1,0 +1,54 @@
+[
+  {
+    "id": "andre-wiggins",
+    "full_name": "Andre Wiggins",
+    "links": {
+      "twitter": "andre_wiggins"
+    },
+    "photo": "andre-wiggins.jpg"
+  },
+  {
+    "id": "carter-rabasa",
+    "full_name": "Carter Rabasa",
+    "links": {
+      "twitter": "crtr0"
+    },
+    "photo": "carter-rabasa.jpg"
+  },
+  {
+    "id": "justin-oliver-lee",
+    "full_name": "Justin Oliver Lee",
+    "links": {
+      "twitter": "JustinOliverLee"
+    },
+    "photo": "justin-oliver-lee.jpg"
+  },
+  {
+    "id": "fx-wood",
+    "full_name": "FX Wood",
+    "links": {
+      "github": "fx-wood"
+    },
+    "photo": "fx-wood.jpg"
+  },
+  {
+    "id": "lucas-steinmacher",
+    "full_name": "Lucas Steinmacher",
+    "links": {
+      "twitter": "Panziewanz"
+    },
+    "photo": "lucas-steinmacher.jpg"
+  },
+  {
+    "id": "allan-deutsch",
+    "full_name": "Allan Deutsch",
+    "links": {
+      "twitter": "allandeutsch",
+      "github": "masstronaut",
+      "url": "https://allandeutsch.com",
+      "bluesky": "allandeutsch.com",
+      "linkedin": "allandeutsch"
+    },
+    "photo": "allan-deutsch.jpg"
+  }
+]

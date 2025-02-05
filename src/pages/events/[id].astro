@@ -1,0 +1,222 @@
+---
+import type { InferGetStaticPropsType, GetStaticPaths } from 'astro'
+import { Image } from 'astro:assets'
+
+import { toHTML } from '@/utils/markdown'
+import { inflateEvent } from '@/utils/data'
+import events from '@/data/events.json'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import PageContainer from '@/components/PageContainer.astro'
+import { findImage } from '@/utils/image'
+
+export const getStaticPaths = (async () => {
+  return events.map(event => ({ params: { id: event.id }, props: { event } }))
+}) satisfies GetStaticPaths
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>
+
+const { event: baseEvent } = Astro.props as Props
+const event = inflateEvent(baseEvent)
+const { sponsors, talks, description, date, link } = event
+let location = event.location ?? null
+const pageTitle = event.title
+
+const hasTalks = talks && talks.length > 0
+const hasSponsors = sponsors && sponsors.length > 0
+
+const speakerPhotoGlob = import.meta.glob<{ default: ImageMetadata }>(
+  '@/images/speakers/*.{jpeg,jpg,png,gif,webp,svg}',
+  { eager: true },
+)
+
+const findSpeakerPhoto = (photo: string) => {
+  return findImage(speakerPhotoGlob, photo)
+}
+
+const sponsorPhotoGlob = import.meta.glob<{ default: ImageMetadata }>(
+  '@/images/sponsors/*.{jpeg,jpg,png,gif,webp,svg}',
+  { eager: true },
+)
+
+const findSponsorPhoto = (photo: string) => {
+  return findImage(sponsorPhotoGlob, photo)
+}
+
+// const eventDate = new Date(date)
+// const eventDateStr = `${eventDate.getFullYear()}-${
+//   eventDate.getMonth() + 1
+// }`
+//
+// if (!location) {
+//   if (eventDateStr < '2024-07') {
+//     location = 'The Collective Seattle, 400 Dexter Ave N, Seattle, WA 98109'
+//   } else {
+//     location =
+//       'Silicon Valley Bank, 920 5th Ave Suite 300, Seattle, WA 98104'
+//   }
+// }
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <div id="email-container" class="container" hidden style={{ margin: '20px' }}>
+    <button id="copy-html-btn" type="button"> Copy HTML to clipboard </button>
+    <div id="html-contents">
+      {description && <div set:html={toHTML(description)} />}
+      {
+        hasSponsors &&
+          sponsors.map(s => (
+            <div>
+              <p>
+                <a href={s.url}>
+                  <Image
+                    style={{ width: '200px', height: 'auto' }}
+                    alt={`${s.name} logo`}
+                    src={findSponsorPhoto(s.image)}
+                  />
+                </a>
+              </p>
+              <p>
+                Special thanks to our friends at <a href={s.url}>{s.name}</a>{' '}
+                for sponsoring snacks for this month's event! 😎
+              </p>
+            </div>
+          ))
+      }
+      <ul>
+        <li>
+          🗓{' '}
+          {
+            new Date(date).toLocaleDateString(undefined, {
+              weekday: 'long',
+              month: 'long',
+              day: 'numeric',
+            })
+          }
+        </li>
+        <li>⏰ 5:30pm - 8:30pm</li>
+        {location && <li>📍 {location}</li>}
+        <li>
+          🎟 <a href={link}>RSVP</a>
+        </li>
+      </ul>
+      {
+        hasTalks &&
+          talks.map(t => (
+            <div>
+              <h4
+                style={{
+                  fontFamily: 'headline-gothic-atf-round, sans-serif',
+                  fontWeight: 700,
+                  fontSize: '24px',
+                }}
+              >
+                {t.type === 'lightning' ? '⚡️ ' : ''}
+                {t.title} by {t.speaker.name}
+              </h4>
+              <p>
+                <Image
+                  style={{ width: '200px', height: 'auto' }}
+                  alt={`head shot of ${t.speaker.name}`}
+                  src={findSpeakerPhoto(t.speaker.photo)}
+                />
+              </p>
+              {t.abstract && <p set:html={toHTML(t.abstract)} />}
+            </div>
+          ))
+      }
+      <p>
+        See you all on{' '}
+        {
+          new Date(date).toLocaleDateString(undefined, {
+            month: 'long',
+            day: 'numeric',
+          })
+        }
+      </p>
+    </div>
+  </div>
+
+  <PageContainer pageTitle={pageTitle}>
+    {description && <p set:html={toHTML(description)} />}
+    {location && <p>{location}</p>}
+    {
+      hasSponsors &&
+        sponsors.map(s => (
+          <div>
+            <p>
+              <a href={s.url}>
+                <Image
+                  style={{ width: '200px', height: 'auto' }}
+                  alt={`${s.name} logo`}
+                  src={findSponsorPhoto(s.image)}
+                />
+              </a>
+            </p>
+            <p>
+              Special thanks to our friends at <a href={s.url}>{s.name}</a> for
+              sponsoring snacks for this month's event! 😎
+            </p>
+          </div>
+        ))
+    }
+    <ul>
+      <li>
+        📆{' '}
+        {
+          new Date(date).toLocaleDateString(undefined, {
+            weekday: 'long',
+            month: 'long',
+            day: 'numeric',
+          })
+        }
+      </li>
+      <li>⏰ 5:30pm - 8:30pm</li>
+      {location && <li>📍 {location}</li>}
+      <li>
+        🎟 <a href={link}>RSVP</a>
+      </li>
+    </ul>
+    {
+      hasTalks &&
+        talks.map(t => (
+          <div>
+            <h4
+              style={{
+                fontFamily: 'headline-gothic-atf-round, sans-serif',
+                fontWeight: 700,
+                fontSize: '24px',
+              }}
+            >
+              {t.type === 'lightning' ? '⚡️ ' : ''}
+              {t.title} by {t.speaker.name}
+            </h4>
+            <p>
+              <Image
+                style={{ width: '200px', height: 'auto' }}
+                alt={`head shot of ${t.speaker.name}`}
+                src={findSpeakerPhoto(t.speaker.photo)}
+              />
+            </p>
+            {t.abstract && <p set:html={toHTML(t.abstract)} />}
+          </div>
+        ))
+    }
+  </PageContainer>
+</BaseLayout>
+
+<script>
+  import { initializeQuerySwitch } from '@/scripts/initializeQuerySwitch'
+
+  document
+    .getElementById('copy-html-btn')
+    ?.addEventListener('click', async () => {
+      const holder = document.getElementById('html-contents')
+      if (!holder) throw new Error('No HTML contents to copy')
+      await navigator.clipboard.writeText(holder.innerHTML)
+    })
+
+  initializeQuerySwitch([
+    ['email', '#email-container'],
+    ['', '#main'],
+  ])
+</script>

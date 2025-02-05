@@ -1,0 +1,17 @@
+---
+import Footer from '@/components/Footer.astro'
+import Header from '@/components/Header.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+const pageTitle = '404 Not Found'
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <Header />
+  <video autoplay muted loop width="100%">
+    <source
+      type="video/mp4"
+      src="https://media.giphy.com/media/jkZtSdwKOx05BOlapR/source.mp4?cid=ecf05e474kgt0ax6stge6re5otcyqmhf7p7bx1ncirx3lp2q&rid=source.mp4&ct=g"
+    />
+  </video>
+  <Footer />
+</BaseLayout>
