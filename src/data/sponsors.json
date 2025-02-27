@@ -1,5 +1,10 @@
 [
   {
+    "id": "docusign",
+    "url": "https://www.docusign.com/",
+    "image": "docusign.png"
+  },
+  {
     "id": "elastic",
     "url": "https://www.elastic.co/",
     "image": "elastic.png"
