@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
 
 // import LiveReactions from '@/components/conf/LiveReactions.astro'
 import ShowItem from '@/components/conf/ShowItem.astro'
@@ -91,7 +92,8 @@ import CourierSrc from '@/images/sponsors/courier.png'
       <SpeakerShowItem when="" speakerId="ben-ilegbodu" />
       <ShowItem when="10:40">
         <Fragment slot="title">
-          <i class="fas fa-coffee"></i> Break
+          <Icon name="fa6-solid:mug-saucer" style="vertical-align: top" />
+          Break
         </Fragment>
       </ShowItem>
       <SpeakerShowItem when="11:15" speakerId="adam-argyle" />
@@ -100,10 +102,8 @@ import CourierSrc from '@/images/sponsors/courier.png'
       <div class="location">Lunch Room</div>
       <ShowItem when="12:40">
         <Fragment slot="title">
-          <i class="fas fa-taco"></i> Lunch by <Image
-            src={CourierSrc}
-            alt="Courier logo"
-          />
+          <Icon name="fa6-solid:bowl-food" style="vertical-align: top" />
+          Lunch by <Image src={CourierSrc} alt="Courier logo" />
         </Fragment>
       </ShowItem>
       <div class="location">Talk Room</div>
@@ -112,7 +112,8 @@ import CourierSrc from '@/images/sponsors/courier.png'
       <SpeakerShowItem when="" speakerId="luis-montes" />
       <ShowItem when="15:05">
         <Fragment slot="title">
-          <i class="fas fa-donut"></i> Break
+          <Icon name="fa6-solid:carrot" style="vertical-align: top" />
+          Break
         </Fragment>
       </ShowItem>
       <SpeakerShowItem when="15:35" speakerId="christina-zhu" />

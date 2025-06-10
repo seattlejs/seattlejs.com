@@ -10,8 +10,11 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/preact": "^4.0.4",
     "@astrojs/ts-plugin": "^1.10.4",
+    "@iconify-json/fa6-brands": "^1.2.5",
+    "@iconify-json/fa6-solid": "^1.2.3",
     "@liveblocks/client": "^2.15.1",
     "astro": "^5.2.5",
+    "astro-icon": "^1.1.5",
     "marked": "^15.0.4",
     "preact": "^10.25.3"
   },
