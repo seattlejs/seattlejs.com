@@ -12,7 +12,7 @@ assignees: ''
 
 - [ ] confirm location
 - [ ] create new event on lu.ma
-- [ ] update meetup.com auto-created event with location info (if not Collective)
+- [ ] update meetup.com auto-created event with location info (if not JTT)
 - [ ] update website with event json
 
 ## (3 weeks out)
