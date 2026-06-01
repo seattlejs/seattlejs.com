@@ -1,5 +1,12 @@
 [
   {
+    "id": "interledger-foundation",
+    "name": "Interledger Foundation",
+    "url": "https://interledger.org/",
+    "copy": "​Interledger Foundation is building the open infrastructure for a more connected financial system. By advancing open standards like the Interledger Protocol and Open Payments, it enables money to move seamlessly across networks, borders, and currencies. Through open source investment and developer education, the Foundation helps create a financial web that is interoperable, inclusive, and free from gatekeepers.",
+    "image": "interledger-foundation.png"
+  },
+  {
     "id": "docusign",
     "url": "https://www.docusign.com/",
     "image": "docusign.png"
