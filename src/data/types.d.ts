@@ -52,6 +52,7 @@ export interface Sponsor {
   image: string
   name?: string
   copy?: string
+  dateAdded: string
 }
 
 export interface Links {

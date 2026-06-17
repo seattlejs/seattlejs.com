@@ -9,117 +9,136 @@
   {
     "id": "docusign",
     "url": "https://www.docusign.com/",
-    "image": "docusign.png"
+    "image": "docusign.png",
+    "dateAdded": "2025-02-27"
   },
   {
     "id": "elastic",
     "url": "https://www.elastic.co/",
-    "image": "elastic.png"
+    "image": "elastic.png",
+    "dateAdded": "2025-02-04"
   },
   {
     "id": "collective-seattle",
     "url": "https://www.collectiveseattle.com",
-    "image": "collective.webp"
+    "image": "collective.webp",
+    "dateAdded": "2023-03-16"
   },
   {
     "id": "svb",
     "url": "https://www.svb.com/startup-banking",
-    "image": "svb.svg"
+    "image": "svb.svg",
+    "dateAdded": "2023-03-16"
   },
   {
     "id": "aws-skills-center-seattle",
     "url": "https://aws.amazon.com/training/skills-centers/seattle-skills-center/",
-    "image": "aws-skills-center-seattle.png"
+    "image": "aws-skills-center-seattle.png",
+    "dateAdded": "2023-03-16"
   },
   {
     "id": "formidable",
     "url": "https://formidable.com",
-    "image": "formidable.svg"
+    "image": "formidable.svg",
+    "dateAdded": "2023-03-16"
   },
   {
     "id": "customer-io",
     "url": "https://customer.io/",
-    "image": "customer-io.svg"
+    "image": "customer-io.svg",
+    "dateAdded": "2023-03-16"
   },
   {
     "id": "remix",
     "url": "https://remix.run/",
-    "image": "remix.png"
+    "image": "remix.png",
+    "dateAdded": "2023-03-16"
   },
   {
     "id": "appwrite",
     "name": "Appwrite",
     "url": "https://appwrite.io",
     "image": "appwrite.jpg",
-    "copy": "Appwrite is a secure open-source backend server provides the core APIs required to build web and mobile applications. Appwrite provides authentication, database, storage, functions, and advanced real-time capabilities."
+    "copy": "Appwrite is a secure open-source backend server provides the core APIs required to build web and mobile applications. Appwrite provides authentication, database, storage, functions, and advanced real-time capabilities.",
+    "dateAdded": "2023-03-16"
   },
   {
     "id": "amplication",
     "name": "Amplication",
     "url": "https://amplication.com",
     "image": "amplication.png",
-    "copy": "Amplication is an opensource based SaaS backend development solution that empowers professional developers to accelerate the development of Node.js applications. By using Amplication to build repetitive backend services, development teams will yield significant increases in developer productivity, reliability, and consistency of delivering critical applications to production."
+    "copy": "Amplication is an opensource based SaaS backend development solution that empowers professional developers to accelerate the development of Node.js applications. By using Amplication to build repetitive backend services, development teams will yield significant increases in developer productivity, reliability, and consistency of delivering critical applications to production.",
+    "dateAdded": "2023-03-17"
   },
   {
     "id": "twilio",
     "name": "Twilio",
     "url": "https://www.twilio.com/en-us",
     "image": "twilio.png",
-    "copy": "Twilio is the customer layer for the internet, powering the most engaging interactions companies build for their customers. We provide simple tools that solve hard problems, delivered as a developer-first cloud platform with global reach and no shenanigans pricing."
+    "copy": "Twilio is the customer layer for the internet, powering the most engaging interactions companies build for their customers. We provide simple tools that solve hard problems, delivered as a developer-first cloud platform with global reach and no shenanigans pricing.",
+    "dateAdded": "2023-04-27"
   },
   {
     "id": "aws",
     "name": "AWS",
     "url": "https://docs.amplify.aws/",
     "image": "aws.png",
-    "copy": ""
+    "copy": "",
+    "dateAdded": "2023-05-19"
   },
   {
     "id": "courier",
     "name": "Courier",
     "url": "https://courier.com?utm_campaign=devrel-meetups&utm_source=meetups&utm_medium=website",
     "image": "courier.png",
-    "copy": ""
+    "copy": "",
+    "dateAdded": "2023-05-19"
   },
   {
     "id": "runme.dev",
     "name": "Runme",
     "url": "https://runme.dev",
     "image": "runme.png",
-    "copy": ""
+    "copy": "",
+    "dateAdded": "2023-08-10"
   },
   {
     "id": "polaris",
     "url": "https://getpolaris.ai",
     "copy": "Polaris is an AI-powered site reliability tool that helps you detect incidents in real-time. Its tiny JavaScript SDK lets you instrument key user workflows to create indicators of reliability and latency. Apply thresholds to your indicators to define performance objectives and be alerted when your app begins to experience degradations.",
-    "image": "polaris.png"
+    "image": "polaris.png",
+    "dateAdded": "2023-10-18"
   },
   {
     "id": "seekout",
     "name": "SeekOut",
     "url": "https://www.seekout.com/",
     "copy": "Grow the talent you have.\nFind the talent you need.\nSeekOut empowers great people and companies to grow together—with actionable insights at every step of your talent journey. ",
-    "image": "seekout.png"
+    "image": "seekout.png",
+    "dateAdded": "2023-11-01"
   },
   {
     "id": "datastax",
     "name": "DataStax",
     "url": "https://www.datastax.com/",
     "copy": "DataStax is your one-stop shop for building on GenAI.",
-    "image": "datastax.png"
+    "image": "datastax.png",
+    "dateAdded": "2024-02-10"
   },
   {
     "id": "fireproof",
     "name": "Fireproof",
     "url": "https://fireproof.storage/",
     "copy": "Fireproof is an [embedded database for collaborative applications](https://use-fireproof.com/). Install it in your front-end app, or use it in any serverless cloud or edge function. Fireproof’s document API includes live updates, flexible queries, binary attachments, encrypted block replication, and multi-user sync. Fireproof enables developers to ship interactive features faster in any deployment environment.\n\nDeploy your app however you like. Install the Fireproof module into your browser or server app code and sync using remixable open-source adapters. Experience live updates across peers so everyone can collaborate together, with any backend. Render dynamic HTML and interact with APIs from the edge. Connect with the community to add support for more backends.",
-    "image": "fireproof.png"
+    "image": "fireproof.png",
+    "dateAdded": "2024-02-15"
   },
   {
     "id": "sentry",
     "name": "Sentry",
     "url": "https://sentry.io/welcome/",
     "copy": "Sentry is the application monitoring platform for development teams to holistically monitor their code health from the frontend to the backend to see clearer, solve quicker, and learn continuously.",
-    "image": "sentry.png"
+    "image": "sentry.png",
+    "dateAdded": "2024-04-28"
   }
 ]
